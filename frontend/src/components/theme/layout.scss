@@ -1,0 +1,22 @@
+@import "./theme.scss";
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+.full-width-background {
+  position: relative;
+  z-index: 1;
+
+  &:before {
+    background-color: $backgroundBlue;
+    content: " ";
+    height: 100%;
+    left: -50%;
+    position: absolute;
+    top: 0;
+    width: 200%;
+    z-index: -1;
+  }
+}

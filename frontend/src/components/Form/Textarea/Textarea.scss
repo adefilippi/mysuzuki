@@ -1,0 +1,58 @@
+@import "../../theme/index.scss";
+
+.textarea{
+  margin-bottom: 1rem;
+  font-family: $text-font-family;
+  font-size: rem-calc($input-text-font-size);
+  letter-spacing: 1px;
+  color: $white;
+
+  &.transparent {color: $primary-color;}
+
+  &-label {
+      display: block;
+      margin-bottom: rem-calc(8px);
+
+      &.is-required {
+          &::after {
+              content: "*";
+              font-size: 65%;
+              vertical-align: top;
+              position: relative;
+              top: 1px;
+          }
+      }
+
+      &.error {
+        color: $red;
+      }
+
+      &.transparent{
+          font-family: $accent-font-family;
+          font-size: rem-calc($with-icon-input-text-label-font-size);
+          text-transform: uppercase;
+      }
+  }
+
+  &-input {
+      resize: none;
+      &.error{
+          border-color: $red;
+      }
+
+      width: 100%;
+      min-height: 6rem;
+      color: inherit;
+      background-color: $transparent;
+      border: 1px solid $white;
+      margin-right: 5px;
+      padding: 0.5rem;
+      box-sizing: border-box;
+      font-family: $text-font-family;
+      font-size: 80%;
+      letter-spacing: .5px;
+
+      &:focus {outline: none;}
+      &.transparent {border: 1px solid $primary-color;}
+  }
+}

@@ -1,0 +1,39 @@
+@import "../../../components/theme/index.scss";
+
+.faq {
+  width: 100%;
+
+  &-header {
+    align-items: flex-end;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 7.5rem;
+
+    &.mobile {
+      padding: 0 1rem;
+    }
+
+    & > h1,
+    &.tablet > h1,
+    &.mobile > h1 {
+      padding: 0;
+    }
+
+    & > .link {
+      padding-bottom: .25rem;
+    }
+
+    &.mobile-small > .link {
+      display: none;
+    }
+  }
+
+  & > .my-account-container {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+
+    & > .accordion-section {
+      margin-top: 1.5rem;
+    }
+  }
+}

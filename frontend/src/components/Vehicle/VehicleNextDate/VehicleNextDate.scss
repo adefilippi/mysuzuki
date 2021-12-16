@@ -1,0 +1,27 @@
+@import "../../theme/index.scss";
+
+.vehicle-next-date {
+  &-title,
+  &-content {
+    font-family: $header-font-family;
+    font-size: 1.65rem;
+    font-size: 1.65rem;
+  }
+
+  &-title {
+    margin: 0 0 .3rem 0;
+
+    &.inverse-colors {
+      color: $blue;
+    }
+  }
+
+  &-content {
+    color: $blue;
+    margin: 0;
+
+    &.inverse-colors {
+      color: $white;
+    }
+  }
+}

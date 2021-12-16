@@ -1,0 +1,80 @@
+@import "../../theme/index.scss";
+
+$form-submit-button-margin-top: 2.5rem;
+
+.false-information-modal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    letter-spacing: 0.5px;
+    box-sizing: border-box;
+    width: 95%; // quick fix : this avoids the modal content to scroll from left to right. There must be a misssing box-sizing: border-box somewhere.
+
+
+    &-title {
+        color: $primary-color;
+        font-family: $header-font-family;
+        font-size: $fontSizeLarge !important;
+        text-align: center;
+        // RESET
+        line-height: normal;
+        padding-left: 0;
+        margin-top: 0;
+
+        &.mobile {
+            text-align: left;
+        }
+    }
+
+    &-header {
+        color: $secondary-color;
+        font-family: $header-font-family;
+        font-size: $fontSizeLarge * 0.9;
+        line-height: normal;
+        margin-top: 0.5rem;
+
+        &.mobile {
+            font-size: 1.2em;
+            text-align: left;
+            width: 100%;
+        }
+    }
+
+    &-form {
+        margin-top: 1.5rem;
+        box-sizing: border-box;
+        width: 100%;
+
+        & .button:last-child {
+            margin-top: $form-submit-button-margin-top;
+            justify-content: center;
+        }
+
+    }
+
+    &-entry {
+        span:nth-of-type(1) {
+            color: $primary-color;
+            font-family: $header-font-family;
+            font-size: $fontSize;
+        }
+
+        span:nth-of-type(2) {
+            color: $secondary-color;
+            font-family: $text-font-family;
+            font-size: $fontSizeSmall;
+        }
+
+        &.mobile{
+
+        }
+    }
+
+    &-fields {
+        width: 100%;
+
+        .button {
+            margin-top: $form-submit-button-margin-top;
+        }
+    }
+}

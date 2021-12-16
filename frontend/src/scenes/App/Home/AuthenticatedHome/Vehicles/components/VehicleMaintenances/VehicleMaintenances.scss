@@ -1,0 +1,164 @@
+@import "../../../../../../../components/theme/index.scss";
+
+$my-vehicle-maintenances-padding-sides: 7.5rem;
+$my-vehicle-maintenances-padding-sides-mobile: .75rem;
+
+.my-vehicle-maintenances{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  &-title {
+    padding-left: $my-vehicle-maintenances-padding-sides;
+    font-size: $hearder-one-font-size;
+    font-family: $header-font-family;
+    color: $primary-color;
+    margin-bottom: 0rem;
+
+    .icon {margin-right: .5rem;}
+
+    &.mobile, &.tablet {
+      padding-left: $my-vehicle-maintenances-padding-sides-mobile;
+    }
+
+    &.mobile-small {
+      font-size: 2.8rem;
+    }
+
+    @media(max-width: 1200px) {
+      padding-left: $my-vehicle-maintenances-padding-sides-mobile;
+    }
+  }
+
+
+  &-section {
+    display: flex;
+    flex-wrap: wrap;
+    color: $darkBlue;
+    padding: 0 $my-vehicle-maintenances-padding-sides;
+    box-sizing: border-box;
+    margin-bottom: 0;
+
+    &.mobile,
+    &.tablet {
+      padding: 0 $my-vehicle-maintenances-padding-sides-mobile;
+    }
+
+    @media(max-width: 1200px) {
+      padding: 0 $my-vehicle-maintenances-padding-sides-mobile;
+    }
+
+    &.tablet-portrait,
+    &.mobile {
+      flex-direction: column;
+    }
+  }
+
+  &-section-skew {
+    position: relative;
+    top: 0;
+    right: 0;
+    display: flex;
+
+
+    .icon {
+      align-self: stretch;
+      height: 100%;
+      position: absolute;
+      top: 0;
+      right: 0;
+      z-index: 99;
+
+      .skew-svg {
+        height: 100%;
+
+        &.mobile,
+        &.tablet-portrait {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &-section-skew-image {
+    width: 24rem;
+    background-size: cover;
+    background-position: center;
+
+    &.mobile,
+    &.tablet-portrait
+    {
+      width: 100%;
+      height: 250px;
+    }
+  }
+
+  &-section-skew-overlay:not(.mobile) {
+    position: absolute;
+    width: 0px;
+    height: 0px;
+    right: 0;
+    border-style: solid;
+    border-width: 0px 76px 328px 0px;
+    border-color: transparent rgb(239, 243, 244) transparent transparent;
+
+    &.tablet{
+      border-width: 0px 76px 295px 0px;
+    }
+  }
+  &-section-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    background-color: $backgroundBlue;
+    padding: 2.5rem;
+
+    &.tablet-portrait,
+    &.mobile {
+      align-items: center;
+    }
+
+    // OVERRIDE FOR BUTTON LINK
+    .button-link {
+      height: 2.5rem;
+      input {letter-spacing: .3px;}
+    }
+  }
+
+  &-buttons-group {
+    min-height: 144px;
+
+    .button {
+      display: inline-flex;
+    }
+
+    .btn {
+      margin-bottom: .75rem;
+      margin-right: 1rem;
+    }
+
+    &.tablet {
+      min-height: 111px;
+      flex-direction: column;
+
+      .btn {
+        margin-left: 0;
+      }
+    }
+
+    &.tablet-portrait,
+    &.mobile {
+      flex-direction: column;
+
+      .btn {
+        margin-bottom: .75rem;
+        margin-left: auto;
+        flex: 1;
+      }
+    }
+  }
+
+  & .vehicle-next-date-container {
+    margin-bottom: 2rem;
+  }
+}

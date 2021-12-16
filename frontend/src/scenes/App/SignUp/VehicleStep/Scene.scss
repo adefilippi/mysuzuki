@@ -1,0 +1,125 @@
+@import "../../../../components/theme/index.scss";
+
+.sign-up-vehicule-step {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+    padding: rem-calc(66px) 7.5rem;
+    box-sizing: border-box;
+
+    &.mobile,
+    &.tablet {
+        padding: rem-calc(66px) 1rem;
+    }
+
+    &.mobile-small {
+        padding: rem-calc(66px) .25rem;
+    }
+
+    &-logo {
+        margin-top: 0;
+        height: rem-calc(140px);
+    }
+
+    &-title {
+        text-align: center;
+        font-size: $fontSizeLarge;
+        font-family: $header-font-family;
+        letter-spacing: 0.2px;
+        color: $darkBlue;
+        margin-top: 1rem;
+        margin-bottom: 1.9rem;
+        //RESET
+        padding-left: 0;
+        line-height: normal;
+    }
+
+    &-header {
+        align-self: flex-start;
+        font-size: $hearder-one-font-size;
+        font-family: $header-font-family;
+        color: $primary-color;
+
+        &.mobile {
+            font-size: 13vw;
+        }
+    }
+
+    &-form {
+        align-self: stretch;
+        display: flex;
+        background-color: $backgroundBlue;
+        color: $darkBlue;
+        padding: 2.5rem;
+        box-sizing: border-box;
+
+        &.mobile,
+        &.tablet {
+            padding: rem-calc(66px) 1rem;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &.mobile-small {
+            padding: rem-calc(66px) .25rem;
+        }
+    }
+
+    &-form-elements {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .datepicker-input-wrapper {
+            justify-content: space-between;
+            padding: 0;
+        }
+
+        .react-datepicker__input-container {
+            width: calc(100% + 22px);
+
+            & > input {
+              width: 100%;
+            }
+        }
+    }
+
+    &-form-inputs-group {
+        .text,
+        .datepicker,
+        .radio-group {
+            margin-bottom: rem-calc(20px);
+        }
+    }
+
+    &-form-information {
+        width: 38%;
+        margin-bottom: 1.5rem;
+
+        &.mobile,
+        &.tablet {
+            width: auto;
+        }
+    }
+
+    &-form-information-update-link {
+        text-decoration: underline;
+        font-family: $text-light-font-family;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .btn {
+        margin-top: 1rem !important;
+    }
+
+    &-modal {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}

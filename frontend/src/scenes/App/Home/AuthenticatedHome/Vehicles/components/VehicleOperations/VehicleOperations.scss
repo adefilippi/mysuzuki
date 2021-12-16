@@ -1,0 +1,99 @@
+@import "../../../../../../../components/theme/index.scss";
+
+$my-vehicle-operations-padding-sides: 7.5rem;
+$my-vehicle-operations-padding-sides-mobile: .75rem;
+
+.my-vehicle-operations{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    &-title {
+         padding-left: $my-vehicle-operations-padding-sides;
+         font-size: $hearder-one-font-size;
+         font-family: $header-font-family;
+         color: $primary-color;
+         margin-bottom: 0rem;
+
+             .icon {margin-right: .5rem;}
+
+             &.mobile, &.tablet{
+                 padding-left: $my-vehicle-operations-padding-sides-mobile;
+             }
+
+             &.mobile-small {
+                 font-size: 2.8rem;
+             }
+
+             @media(max-width: 1200px) {
+                 padding-left: $my-vehicle-operations-padding-sides-mobile;
+             }
+     }
+
+
+     &-section {
+         display: flex;
+         flex-wrap: wrap;
+         color: $darkBlue;
+         padding: 0 $my-vehicle-operations-padding-sides;
+         box-sizing: border-box;
+         margin-bottom: 0;
+
+         &.mobile,
+         &.tablet {
+             padding: 0 $my-vehicle-operations-padding-sides-mobile;
+         }
+
+         @media(max-width: 1200px) {
+             padding: 0 $my-vehicle-operations-padding-sides-mobile;
+         }
+
+         &.tablet-portrait,
+         &.mobile {
+             flex-direction: column;
+         }
+     }
+
+
+     &-section-content {
+         flex: 1;
+         display: flex;
+         flex-direction: column;
+         background-color: $backgroundBlue;
+         padding: 2.5rem;
+
+         &.mobile {
+             padding: 1.5rem 1rem;
+         }
+
+         &.mobile-small {
+             padding: 1rem .5rem;
+         }
+     }
+
+     &-section-content-buttons {
+         position: relative;
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+
+         .button {
+             margin: .75rem;
+         }
+
+         .button-link {
+             position: absolute;
+             top: .75rem;
+             right: -2rem;
+             margin-left: auto;
+         }
+
+         @media (max-width: 1097px) {
+             .button-link {
+                 position: relative;
+                 margin-left: 0;
+                 right: 0;
+             }
+         }
+     }
+ }

@@ -1,0 +1,82 @@
+@import "./fonts/fonts.scss";
+@import "./theme.scss";
+@import "./mixins.scss";
+
+$fontSizeH1: 3.5rem;
+$fontSizeH2: 3rem;
+$fontSizeH3: 1.9rem;
+
+body {
+  font-family: $text-font-family;
+  font-size: .95rem;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: $darkBlue;
+  font-family: $header-font-family;
+}
+
+h1,
+h2 {
+  margin: 2rem 0 0;
+  padding-left: 4rem;
+}
+
+h1 {
+  font-size: $fontSizeH1;
+  line-height: $fontSizeH1;
+
+  &.sticky-title {
+    @include sticky-line-height($fontSizeH1);
+  }
+}
+
+h2 {
+  font-size: $fontSizeH2;
+  line-height: $fontSizeH2;
+
+  &.sticky-title {
+    @include sticky-line-height($fontSizeH2);
+  }
+}
+
+h3 {
+  font-size: $fontSizeH3;
+  line-height: $fontSizeH3;
+}
+
+h1.sticky-title,
+h2.sticky-title {
+  position: relative;
+  z-index: 50;
+}
+
+a {
+  color: $secondary-color;
+  cursor: pointer;
+}
+
+ul {
+  list-style-type: square;
+}
+
+.uppercase{
+  text-transform: uppercase;
+}
+
+.add-colon::after{
+  content: ":";
+  position: relative;
+  left: 3px;
+  top: 0;
+}
+
+.text-underline{
+    text-decoration: underline !important;
+    &:hover{cursor: pointer;}
+}

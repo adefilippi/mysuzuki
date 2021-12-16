@@ -1,0 +1,68 @@
+@import "../../theme/index.scss";
+
+.find-client-id-modal {
+    text-align: center;
+
+    figure.find-client-id-help {
+        display: flex;
+        flex-direction: row;
+        margin: 3rem;
+
+        img {
+            max-width: 40%;
+            object-fit: contain;
+        }
+
+        figcaption {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            margin-left: 3rem;
+            font-size: 1.2em;
+        }
+    }
+
+    a.resend-code {
+        display: block;
+        margin-top: 1rem;
+        color: $primary-color-dark;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+
+    &.mobile {
+        h2 {
+            font-size: $fontSizeLarge;
+            line-height: unset;
+            margin-top: 0;
+        }
+        a.resend-code {
+            font-size: $fontSizeLarge * .9;
+        }
+
+        figure.find-client-id-help {
+            flex-direction: column;
+            align-items: center;
+            margin: 1rem;
+
+            img {
+                max-width: 80%;
+                object-fit: contain;
+            }
+
+            figcaption {
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                margin-left: 0;
+                font-size: $fontSizeRegular;
+
+                p {
+                    margin-bottom: .5em;
+                }
+            }
+        }
+    }
+}
+

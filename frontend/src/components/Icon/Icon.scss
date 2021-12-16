@@ -1,0 +1,32 @@
+@import "../theme/index.scss";
+
+.icon {
+  -ms-transform: rotate(0deg);
+  transform: rotate(0deg);
+  transition: transform 0.45s ease-in-out;
+  display: inline-block;
+
+  .pin-loc-index {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    margin-top: 8px;
+    text-align: center;
+    font-family: $header-font-family;
+    font-size: 1.3em;
+  }
+
+  &.clickable {
+    cursor: pointer;
+  }
+
+  &.rotable {
+    -ms-transform: rotate(180deg);
+    transform: rotate(180deg);
+  }
+
+  &.disabled {
+    cursor: default;
+  }
+}

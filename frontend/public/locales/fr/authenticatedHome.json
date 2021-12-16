@@ -1,0 +1,47 @@
+{
+    "benefitsTitle": "En ce moment",
+    "benefitsButton": "Tous mes avantages",
+    "newsTitle": "Actualités",
+    "articlesTitle": "Tutoriels et conseils",
+    "newsButton": "Tous les articles",
+    "advicesButton": "Tous les tutoriels et conseils",
+    "dealershipTitle": "Ma concession",
+    "dealershipButton": "Modifier ma concession",
+    "chooseDealershipButton": "Choisir ma concession",
+    "dealershipContact": "Contacter",
+    "vehicleTitle": "Mon véhicule",
+    "vehicleButton": "Gérer mes véhicules",
+    "vehicleMaintenanceProgram": "Accéder au carnet d'entretien",
+    "vehicleSelect": "Choisissez votre véhicule",
+    "vehicleMileage": "Kilométrage",
+    "vehicleKmPerYear": "En moyenne, combien de KM faites-vous par an ?",
+    "nextDate": {
+        "type": {
+            "control": "Contrôle Technique",
+            "courtesy": "Visite de courtoisie"
+        }
+    },
+    "mileageVehicleError": "Donnée non valide. Le kilométrage est inférieur à celui de votre dernière visite ou a une valeur trop grande.",
+    "dealCard": {
+        "dealType": {
+            "advantage": "Avantage",
+            "game": "Jeu",
+            "invitation": "Invitation",
+            "offer": "Offre",
+            "welcome-offer": "Offre de bienvenue",
+            "targeted": "Offre ciblée",
+            "avantage-offer": "Offre avant-Age"
+        },
+        "reductionType": {
+            "free": "Gratuit"
+        },
+        "welcome-title": "OFFRE DE BIENVENUE mySUZUKI",
+        "avantage-offer-title": "OFFRE AVANT-AGE + 5 ANS",
+        "only": "Uniquement",
+        "dealershipOnly": "dans votre concession : ",
+        "endDateUntil": "Jusqu'au "
+    },
+    "welcome-title": "OFFRE DE BIENVENUE mySUZUKI",
+    "avantage-offer-title": "OFFRE AVANT-AGE + 5 ANS",
+    "accessoriesButton": "Découvrir les accessoires"
+}

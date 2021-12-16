@@ -1,0 +1,30 @@
+@import "../../../../../../../components/theme/index.scss";
+
+.vehicle-tab-content {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    margin: 0;
+    color: $primary-color;
+
+    .my-vehicle-form {
+        max-height: 45rem;
+    }
+
+    &.mobile {
+        .my-vehicle-form {
+            margin: .5rem;
+            width: 100%;
+        }
+    }
+
+    &.mobile-small {
+        .my-vehicle-form {
+            margin: .35rem;
+        }
+    }
+
+    &.tablet {
+        flex-direction: column;
+    }
+}

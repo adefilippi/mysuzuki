@@ -1,0 +1,66 @@
+@import "../../theme/index.scss";
+
+.checkbox {
+    width: 95%;
+    white-space: pre-wrap;
+
+    &-label {
+        color: inherit;
+        display: inline-block;
+        font-family: inherit;
+        font-size: rem-calc(30px);
+        line-height: 1.5rem;
+
+        &:hover{
+            cursor: pointer;
+        }
+        .error & {
+            color: $red;
+        }
+    }
+    &.border {
+        [type="checkbox"]:checked + label:before,
+        [type="checkbox"]:not(:checked) + label:before {
+            outline: rem-calc(1px) solid $primary-color;
+        }
+    }
+
+    .text-label.transparent {
+        color: $darkBlue;
+    }
+}
+
+/* Base for label styling */
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+    position: absolute;
+    left: -9999px;
+}
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {
+    position: relative;
+    padding-left: 1.75rem;
+    box-sizing: border-box;
+}
+
+/* checkbox aspect */
+[type="checkbox"]:checked + label:before,
+[type="checkbox"]:not(:checked) + label:before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: .05rem;
+    width: 1.15rem;
+    height: 1.15rem;
+    border: 0.25rem solid $white;
+    background-color: $white;
+
+    .error & {
+        border-color: $red;
+    }
+}
+
+[type="checkbox"]:checked + label:before {
+    background-color: $darkBlue;
+}

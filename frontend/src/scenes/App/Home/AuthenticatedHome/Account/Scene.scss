@@ -1,0 +1,33 @@
+@import "../../../../../components/theme/index.scss";
+
+$accordion-padding-sides: 7.5rem;
+$accordion-padding-sides-mobile: .75rem;
+
+.my-account{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  &-title {
+    text-transform: uppercase;
+    padding-left: $accordion-padding-sides;
+    font-size: $hearder-one-font-size;
+    font-family: $header-font-family;
+    color: $primary-color;
+    margin-bottom: 0rem;
+
+    &.mobile{
+      padding-left: $accordion-padding-sides-mobile;
+    }
+  }
+
+  &-container {
+    flex: 1;
+    background-color: $backgroundBlue;
+    padding: 2rem $accordion-padding-sides;
+
+    &.mobile {
+      padding: 2rem $accordion-padding-sides-mobile;
+    }
+  }
+}

@@ -1,0 +1,24 @@
+%error-label {
+    color: $red;
+    font-family: $text-light-font-family;
+    font-size: $fontSizeMacro;
+    letter-spacing: -.1px;
+    position: relative;
+    top: 4px;
+}
+
+.error-span {
+    @extend %error-label;
+
+    &__link {
+        cursor: pointer;
+        text-decoration: underline;
+    }
+}
+
+%user-select {
+    -webkit-user-select: none;  /* Chrome all / Safari all */
+    -moz-user-select: none;     /* Firefox all */
+    -ms-user-select: none;      /* IE 10+ */
+    user-select: none;
+}

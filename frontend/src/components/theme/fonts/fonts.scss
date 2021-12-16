@@ -1,0 +1,47 @@
+html{
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-smoothing: antialiased;
+}
+
+@font-face {
+  font-family: 'Graphik-Light';
+  font-weight: 300;
+  font-style: normal;
+  src: url('./Graphik-Light.otf?#iefix') format('opentype');
+}
+
+@font-face {
+  font-family: 'Graphik-Regular';
+  font-weight: 400;
+  font-style: normal;
+  src: url('./Graphik-Regular.otf?#iefix') format('opentype');
+}
+
+@font-face {
+  font-family: 'Graphik-Medium';
+  font-weight: 400;
+  font-style: normal;
+  src: url('./Graphik-Medium.otf?#iefix') format('opentype');
+}
+
+@font-face {
+   font-family: 'SuzukiPROBold';
+   font-weight: 700;
+   font-style: normal;
+   src: url('./SuzukiPROBold.otf?#iefix') format('opentype');
+}
+
+@font-face {
+   font-family: 'SuzukiPRORegular';
+   font-weight: 400;
+   font-style: normal;
+   src: url('./SuzukiPRORegular.otf?#iefix') format('opentype');
+}
+
+@font-face {
+   font-family: 'SuzukiPROHeadline';
+   font-weight: 400;
+   font-style: normal;
+   src: url('./SuzukiPROHeadline.otf?#iefix') format('opentype');
+}

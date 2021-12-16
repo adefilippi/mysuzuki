@@ -1,0 +1,57 @@
+.game-card-list {
+  position: relative;
+
+  &_card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 0;
+    transition: opacity .5s ease;
+
+    &.tablet-portrait,
+    &.mobile {
+      position: relative;
+      opacity: 1;
+      padding: 1rem;
+    }
+
+    &-active {
+      position: relative;
+      z-index: 3;
+      opacity: 1;
+    }
+
+    &_nav {
+      position: absolute;
+      bottom: 0.5rem;
+      left: 2rem;
+      z-index: 5;
+
+      &.tablet {
+        left: 0.5rem;
+      }
+
+      &.tablet-portrait,
+      &.mobile {
+        display: none;
+      }
+
+      button {
+        display: inline-block;
+        width: 3rem;
+        height: 3rem;
+        padding: 0.5rem;
+        border: 0;
+        margin-right: 0.25rem;
+        background-color: #fff;
+        cursor: pointer;
+
+        .icon {
+          width: 100%;
+          height: 100%;
+        }
+      }
+    }
+  }
+}

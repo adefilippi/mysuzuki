@@ -1,0 +1,247 @@
+@import "../../../../../components/theme/index.scss";
+
+.authenticated-home {
+  &-header {
+    position: relative;
+
+    &-nextdate {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      right: 0;
+      z-index: 100;
+      background-color: $primary-color-dark;
+      padding: 2rem 5rem 2rem 2rem;
+
+      &-header {
+        display: flex;
+
+        .icon {
+          margin-right: .5rem;
+        }
+      }
+
+      &-action {
+        margin: 1rem auto 2rem;
+      }
+
+      @media all and (max-width: 1024px) {
+        position: relative;
+        top: 0;
+        transform: none;
+      }
+    }
+  }
+
+  &-container {
+    display: flex;
+    flex-direction: row;
+  }
+
+  &-column {
+    &:first-of-type {
+      flex: 2;
+
+      &.tablet {
+        flex: 1 1 0;
+        width: 55%;
+      }
+
+      &.tablet-portrait > section > h2,
+      &.mobile > section > h2 {
+        padding-left: 2rem;
+      }
+    }
+
+    &:last-of-type {
+      flex: 1;
+
+      &.tablet {
+        width: 45%;
+      }
+    }
+  }
+
+  &-loader {
+    padding-left: 50%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+  }
+
+  &-cards-container {
+    background-color: $backgroundBlue;
+    margin-bottom: 5rem;
+    padding: 2rem 2rem 2rem 4rem;
+    position: relative;
+
+    &.tablet-landscape {
+      padding-left: 2rem;
+    }
+
+    &.tablet-portrait,
+    &.mobile {
+      padding-left: 0;
+      margin-bottom: 3rem;
+    }
+  }
+
+  &-infos {
+    &-container {
+      background-color: $darkBlue;
+      margin: 0 0 4rem 2rem;
+      padding: 2rem;
+    }
+
+    &-buttons-block {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+    }
+
+    &-buttons-container {
+      width: 100%;
+      margin-bottom: 1rem;
+      text-align: right;
+
+      .button {
+        display: inline-block;
+        margin: 1rem 0 0 1rem;
+
+        &:first-of-type {
+          margin-left: 0;
+        }
+
+        &.button-link > input[type=button] {
+          white-space: normal;
+          text-align: right;
+        }
+
+        & > input[type=button].btn.medium {
+          padding: 0 1.5rem;
+        }
+      }
+    }
+
+    &-form-container {
+      max-width: 17rem;
+    }
+  }
+
+  &-vehicle-next-date-container {
+    background-color: $darkerDarkBlue;
+    display: inline-block;
+    left: -1rem;
+    margin-bottom: 1rem;
+    padding: 1rem;
+    position: relative;
+    top: -1rem;
+    width: 100%;
+
+    & > .icon {
+      position: absolute;
+    }
+
+    & > .vehicle-next-date-container {
+      padding-left: 3rem;
+    }
+
+    &.tablet-portrait {
+      & > .vehicle-next-date-title,
+      & > .vehicle-next-date-content {
+        font-size: 1rem;
+      }
+    }
+  }
+
+  &-buttons {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 10px;
+  }
+}
+
+/* Specific media query for small desktops but not as small as tablets. */
+@media all and (min-width: 1024px) and (max-width: 1350px) {
+  .authenticated-home-vehicle-next-date-container > .vehicle-next-date-container {
+    & > .vehicle-next-date-title,
+    & > .vehicle-next-date-content {
+      font-size: 1.8vw;
+    }
+  }
+}
+
+/* Specific media query to break the layout with two columns. */
+@media all and (max-width: 750px) {
+  .authenticated-home {
+    &-container.tablet,
+    &-container.mobile {
+      flex-direction: column;
+
+      & > .authenticated-home-column {
+        width: auto;
+
+        &:first-of-type {
+          order: 2;
+        }
+
+        & > section > h2 {
+          padding-left: 2rem;
+        }
+      }
+    }
+
+    &-cards-container {
+      padding-right: 0;
+
+      & .authenticated-home-card-container:last-of-type {
+        border-right: 1.5rem solid $backgroundBlue;
+      }
+
+      & .authenticated-home-card-background-container > .authenticated-home-card-background {
+        &-left,
+        &-right {
+          display: none;
+        }
+      }
+    }
+
+    &-infos {
+      &-container {
+        margin: 0 .5rem 3rem .5rem;
+        padding: 1.5rem;
+      }
+
+      &-form-container {
+        max-width: 25rem;
+        margin: 0 auto;
+      }
+
+      &-buttons-container.dealership,
+      &-buttons-container.vehicle {
+        display: flex;
+        flex-wrap: wrap;
+
+        & .button-link > input {
+          font-size: .98rem;
+        }
+      }
+
+      &-buttons-container.dealership,
+      &-buttons-container.vehicle {
+        align-items: baseline !important;
+        flex-direction: row;
+        justify-content: space-between;
+
+        & > .button {
+          margin-left: auto;
+          margin-right: auto;
+        }
+      }
+    }
+
+    &-column > section:last-of-type > &-infos-container {
+      margin-bottom: 1rem;
+    }
+  }
+}

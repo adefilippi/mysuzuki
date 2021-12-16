@@ -1,0 +1,12 @@
+{
+    "locate": "Ou me localiser",
+    "geolocation": {
+        "errors": {
+            "failed": "Le service de géolocalisation ne fonctionne pas.",
+            "support": "Votre navigateur ne supporte pas la géolocalisation."
+        }
+    },
+    "autocomplete": {
+       "equipmentFilter": "Filtrer par équipement"
+    }
+}

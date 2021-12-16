@@ -1,0 +1,62 @@
+@import "../../../theme/index.scss";
+
+.authenticated-home-card {
+  &-list {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-bottom: 2rem;
+    justify-content: center;
+
+    &.tablet,
+    &.mobile {
+      overflow-x: scroll;
+    }
+  }
+
+  &-container {
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-basis: 0;
+    margin: 0 1.5rem 0 0;
+
+    &:not(.tablet):last-of-type {
+      margin-right: 0;
+    }
+
+    &.tablet:last-of-type {
+      border-right: 2rem solid $backgroundBlue;
+    }
+  }
+
+  &-background {
+    &-container.tablet > &-left,
+    &-container.tablet > &-right {
+      display: block;
+    }
+
+    &-left,
+    &-right {
+      height: 100%;
+      position: absolute;
+      width: 2rem;
+      display: none;
+    }
+
+    &-right {
+      background: linear-gradient(to right, rgba(239, 243, 244, 0) 0%, rgba(239, 243, 244, 1) 100%);
+      top: 0;
+      right: 2rem;
+    }
+
+    &-left {
+      background: linear-gradient(to left, rgba(239, 243, 244, 0) 0%, rgba(239, 243, 244, 1) 100%);
+      left: 2rem;
+      top: 0;
+    }
+
+    &-container.tablet-portrait > &-left,
+    &-container.mobile > &-left {
+      left: 0;
+    }
+  }
+}

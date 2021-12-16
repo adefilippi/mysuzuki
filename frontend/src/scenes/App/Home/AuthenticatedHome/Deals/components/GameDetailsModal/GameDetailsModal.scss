@@ -1,0 +1,112 @@
+@import "../../../../../../../components/theme/index.scss";
+
+.game-details-modal {
+  color: $primary-color;
+  font-family: $text-font-family;
+  font-size: $fontSizeRegular;
+
+  &-discount {
+    margin-right: .5rem;
+    color: $secondary-color;
+    font-family: $header-font-family;
+    font-size: $fontSizeHuge;
+    letter-spacing: .3px;
+  }
+
+  &-title, &-subtitle, &-available {
+    font-family: $header-font-family;
+    font-size: $fontSizeLarge;
+    text-transform: uppercase;
+    //RESET
+    padding-left: 0;
+    line-height: normal;
+    text-align: center;
+    margin-top: 0;
+
+    em {
+      font-style: normal;
+      color: $secondary-color;
+    }
+
+    &.welcome-offer {
+      text-transform: none;
+    }
+  }
+
+  &-subtitle {
+    margin: 1rem auto;
+    font-size: $fontSizeLarge * .8;
+  }
+
+  &-available {
+    text-transform: none;
+    margin-bottom: 1rem;
+  }
+
+  &-valid {
+    font-family: $header-font-family;
+    font-size: $fontSizeLarge;
+    padding: 1rem 0;
+    color: $validColor;
+    text-align: left;
+  }
+
+  &-error {
+    color: $errorColor;
+    text-align: left;
+  }
+
+  &-description {
+    font-family: $header-font-family;
+    font-size: $fontSize * .85;
+    letter-spacing: .3px;
+  }
+
+  &-section {
+    margin-top: 1rem;
+  }
+
+  &-section-title {
+    margin-bottom: 0;
+    color: $secondary-color;
+    font-family: $header-font-family;
+    font-size: $fontSize;
+    letter-spacing: .3px;
+  }
+
+  &-section-text {
+    margin-top: .5rem;
+  }
+
+  &-values {
+    label {
+      margin: 0; 
+    }
+
+    .checkbox {
+      margin: 1rem 0 1rem 0.25rem;
+      white-space: normal;
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+    }
+
+    &:not(.checkbox) {
+      span {
+        &:first-of-type {
+          font-family: $header-font-family;
+          font-size: $fontSize;
+          margin-right: 0.5rem;
+        }
+
+        &:last-of-type {
+          color: $secondary-color;
+          font-size: $fontSize;
+        }
+      }
+    }
+
+  }
+}

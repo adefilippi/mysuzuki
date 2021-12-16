@@ -1,0 +1,50 @@
+{
+    "game": "jeu",
+    "placesLeft": "lot restant",
+    "placesLeft_plural": "lots restants",
+    "endDateUntil": "Jusqu'au ",
+    "participate": "Participer",
+    "thanks": "Votre participation au {{game}} a bien été validée",
+    "emptyStock": "Tous les lots ont déjà été gagnés.",
+    "sorryEmptyStock": "Dommage, tous les lots ont déjà été remportés !",
+    "modal": {
+        "availableUntil": "Vous avez jusqu'au",
+        "validateParticipation": "Valider ma participation",
+        "orEmptyStock": "ou l'épuisement des lots",
+        "toParticipate": "pour participer !",
+        "optin": {
+            "acceptRules": "J'accepte le ",
+            "CGU": "règlement",
+            "commercialEmailContact": "J'accepte de recevoir des offres commerciales par e-mail",
+            "commercialSmsContact": "J'accepte de recevoir des offres commerciales par sms"
+        }
+    },
+    "requiredFields": {
+        "lastName": "Nom",
+        "firstName": "Prénom",
+        "email": "Adresse e-mail",
+        "phone": "Téléphone",
+        "address": "Adresse"
+    },
+    "registerForm": {
+        "field": {
+            "name": "Nom",
+            "mobilePhone": "Téléphone",
+            "mobilePhoneTooltip": "tooltip",
+            "landlinePhone": "Téléphone fixe",
+            "landlinePhoneTooltip": "tooltip",
+            "street": "Rue",
+            "zipCode": "Code postal",
+            "city" : "Ville",
+            "additional1": "Complément d'adresse 1",
+            "additional2": "Complément d'adresse 2"
+        },
+        "placeholder": {
+            "additional1": "Appartement, étage, porte, couloir...",
+            "additional2": "Bâtiment, résidence, entrée, lieu-dit..."
+        },
+        "button": {
+            "submit": "Enregistrer"
+        }
+    }
+}

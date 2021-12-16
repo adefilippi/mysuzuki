@@ -1,0 +1,28 @@
+@import "../../../../../../../components/theme/index.scss";
+
+.vehicle-nav-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    padding-left: 5rem;
+    box-sizing: border-box;
+
+    & a {
+        text-decoration: none;
+    }
+
+    &.mobile,
+    &.tablet {padding: 0 .5rem;}
+
+    &-tabs {
+        flex: 1;
+        overflow-x: auto;
+        display: flex;
+    }
+
+    //OVERRIDES
+    .button.button-icon {
+        margin: 0 .5rem;
+    }
+
+}

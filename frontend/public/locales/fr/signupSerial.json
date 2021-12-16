@@ -1,0 +1,31 @@
+{
+    "title": "Plus qu'une voiture, un véritable mode de vie.",
+    "nameInput": "NOM",
+    "nameInputToolTip": "Votre nom de famille",
+    "vinInput": "VIN / NUMÉRO DE SÉRIE",
+    "vinInputToolTip": "Le numéro VIN, Numéro d’Identification du Véhicule est mentionné à la ligne E de votre certificat d’immatriculation.",
+    "clientIdInput": "CODE PERSONNEL",
+    "findMyClientId": "Où trouver mon code ?",
+    "findMyClientIdModal": {
+        "title": "Où trouver mon code personnel mySUZUKI ?",
+        "message1": "Vous avez reçu un courrier de bienvenue suite à votre achat de véhicule neuf, avec votre carte personnelle mySUZUKI.",
+        "message2": "Votre code est inscrit au dos de la carte.",
+        "continue": "Continuer mon inscription",
+        "noClientId": "Je n'ai pas reçu de code",
+        "resend": "M'envoyer un code"
+    },
+    "confirmRequestModal": {
+        "title": "Votre demande a bien été prise en compte.",
+        "message": "Vous recevrez une réponse de notre part dans les 2 jours ouvrés.",
+        "link": "Découvrez les avantages de votre espace mySUZUKI"
+    },
+    "button": "VALIDER",
+    "link": "J'ai déjà un compte",
+    "link2": "Je n'arrive pas à m'inscrire",
+    "vinLengthError": "Ce format est incorrect.",
+    "nameEmptyError": "Le nom doit être renseigné",
+    "error": "Votre nom et/ou votre VIN sont incorrects. Veuillez essayer de nouveau.",
+    "error2": "Veulliez essayer à nouveau s'il vous plait.",
+    "issueSignupModalTitle": "Vous rencontrez un problème lors de votre inscription sur mySUZUKI",
+    "issueResendModalTitle": "Demande de code personnel"
+}

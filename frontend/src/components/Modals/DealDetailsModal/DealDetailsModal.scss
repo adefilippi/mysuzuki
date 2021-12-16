@@ -1,0 +1,61 @@
+@import "../../theme/index.scss";
+
+.deal-details-modal {
+    color: $primary-color;
+    font-family: $text-font-family;
+    font-size: $fontSizeRegular;
+
+    &-discount {
+        margin-right: .5rem;
+        color: $secondary-color;
+        font-family: $header-font-family;
+        font-size: $fontSizeHuge;
+        letter-spacing: .3px;
+    }
+
+    &-title, &-subtitle {
+        font-family: $header-font-family;
+        font-size: $fontSizeLarge;
+        text-transform: uppercase;
+        //RESET
+        padding-left: 0;
+        line-height: normal;
+        text-align: center;
+        margin-top: 0;
+
+        em {
+            font-style: normal;
+            color: $secondary-color;
+        }
+
+        &.welcome-offer {
+            text-transform: none;
+        }
+    }
+
+    &-subtitle {
+        font-size: $fontSizeLarge * .8;
+    }
+
+    &-description {
+        font-family: $header-font-family;
+        font-size: $fontSize * .85;
+        letter-spacing: .3px;
+    }
+
+    &-section {
+        margin-top: 1rem;
+    }
+
+    &-section-title {
+        margin-bottom: 0;
+        color: $secondary-color;
+        font-family: $header-font-family;
+        font-size: $fontSize;
+        letter-spacing: .3px;
+    }
+
+    &-section-text {
+        margin-top: .5rem;
+    }
+}

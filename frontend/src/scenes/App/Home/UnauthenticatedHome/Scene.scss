@@ -1,0 +1,128 @@
+@import "../../../../components/theme/index.scss";
+
+.UnauthenticatedHome {
+  position: relative;
+  margin: 0;
+  padding: 0 0 1rem 0;
+  font-family: sans-serif;
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: flex-start;
+  width: 100%;
+  min-height: 100%;
+  background-color: white;
+
+  .logo-translation {
+    color:white;
+
+    &.mobile {
+      display: none;
+    }
+  }
+
+  .signing-section {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    background-image: url("../../../assets/img/loginDesktop.jpg");
+    background-size: cover;
+    background-position: top center;
+    background-repeat: no-repeat;
+    padding: $spacingSmall;
+    padding-bottom: 0;
+
+    &.mobile {
+      background-image: url("../../../assets/img/loginMobile.jpg");
+      background-size: cover;
+
+      .row {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+
+    &.tablet {
+      .row:nth-of-type(2) .column:not(.hide) {
+        margin-left: 1rem;
+        margin-right: 1rem;
+      }
+    }
+
+    .row {
+      display: flex;
+      flex-direction: row;
+      justify-content: center;
+      align-items: stretch;
+      z-index: 2;
+
+      &:nth-of-type(2) {
+        .column:not(.hide) {
+          max-width: 24rem;
+          margin-left: 4rem;
+          margin-right: 4rem;
+        }
+      }
+
+      .column {
+        margin-bottom: 1rem;
+
+        form {
+          height: 100%;
+        }
+
+        &.mobile {
+          justify-content: center;
+          margin-right: 0 !important;
+          margin-left: 0 !important;
+        }
+        &.tablet {
+          max-width: 25rem;
+          margin-right: 0;
+        }
+        &.player {
+          flex: 2;
+        }
+        &.player.tablet {
+          min-width: 40rem;
+          order: 3;
+        }
+      }
+
+      h1 {
+        text-align: center;
+        color: white;
+        font-family: $header-font-family;
+        text-transform: uppercase;
+        font-size: $fontSizeXLarge;
+        max-width: 35rem;
+        padding: 0;
+      }
+
+      &.last {
+        margin-top: 2rem;
+      }
+
+      .advantages {
+        margin: 0;
+        font-weight: $fontWeight;
+        font-size: $fontSizeHuge;
+        padding: 0;
+        transform: translateY(13px);
+      }
+
+      .logo {
+        vertical-align: middle;
+        max-height: 1.5em;
+        margin: 0 $spacingSmall;
+      }
+
+      .hide {
+        display: none;
+      }
+    }
+  }
+}

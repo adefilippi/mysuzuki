@@ -1,0 +1,1 @@
+export { UpdateNameModal } from "./UpdateNameModal";

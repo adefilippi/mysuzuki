@@ -1,0 +1,7 @@
+@mixin transition($property) {
+  transition: $property $transition-duration $transition-timing-function;
+}
+
+@mixin sticky-line-height($value) {
+  line-height: $value / 3 * 2;
+}

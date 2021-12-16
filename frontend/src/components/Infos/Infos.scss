@@ -1,0 +1,36 @@
+@import "../theme/index.scss";
+
+.infos-entry {
+    line-height: 1.5rem;
+    margin: .65rem 0;
+
+    &-title {
+        display: inline-block;
+        width: 100%;
+        text-transform: uppercase;
+        font-family: $accent-font-family;
+        font-size: $fontSize * .83;
+        letter-spacing: .5px;
+        color: $white;
+
+        &.inline {
+            width: auto;
+            display: inline;
+        }
+    }
+
+    &-text {
+        display: inline-block;
+        width: 100%;
+        color: $secondary-color;
+        font-family: $text-light-font-family;
+        font-size: $fontSize * .83;
+        letter-spacing: .5px;
+
+        &.inline {
+            width: auto;
+            margin-left: rem;
+            display: inline;
+        }
+    }
+}

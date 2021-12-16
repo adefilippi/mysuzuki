@@ -1,0 +1,57 @@
+{
+    "title": "Bienvenue sur votre espace personnel",
+    "videoTitle": "En savoir plus sur mySUZUKI",
+    "videoText": "Regarder la vidéo",
+
+    "signInTitle": "Déjà membre mySUZUKI ?",
+    "signInEmail": "Email",
+    "signInPW": "Mot de passe",
+    "signInButton": "Me connecter",
+    "signInForgotPW": "Mot de passe oublié ?",
+
+    "signUpTitle": "Nouveau membre mySUZUKI ?",
+    "signUpText": "Inscrivez-vous à l'aide du code VIN de votre véhicule inscrit sur votre carte grise ou votre carte mySUZUKI reçue par courrier.",
+    "signUpInfo": "Si vous venez d'acheter un véhicule neuf, vous profiterez de votre offre de bienvenue",
+    "signUpInfo2": "-20% sur votre premier accessoire.",
+    "signUpButton": "M'inscrire",
+
+    "playerTitle": "En savoir plus sur mySUZUKI",
+
+    "advantagesTitle": "Vos avantages",
+    "error" : {
+        "login": {
+            "credentials": "Votre identifiant et/ou votre mot de passe sont incorrects. Veuillez essayer de nouveau.",
+            "disabled": "Votre compte est désactivé car vous n’avez plus de véhicules Suzuki."
+        }
+    },
+    "sendLink": {
+        "header": "REINITIALISER VOTRE MOT DE PASSE",
+        "text": "Merci de renseigner l'email utilisé pour votre compte",
+        "sentText":"Un e-mail vient de vous être envoyé. Vérifiez votre boîte de réception (sans oublier le dossier 'courrier indésirable') et cliquez sur le lien du mail pour réinitialiser votre mot de passe.",
+        "button": "VALIDER",
+        "input": "Votre email de connexion",
+        "question": "Vous n'avez rien reçu ?",
+        "buttons": {
+            "home": "Revenir à la page d'accueil",
+            "resend": "Renvoyer le lien"
+        }
+    },
+    "updatePassword": {
+        "header": "REINITIALISER VOTRE MOT DE PASSE",
+        "expired": "Ce lien est expiré, veuillez en redemander un nouveau",
+        "text": "Renseignez votre nouveau mot de passe. Il doit contenir 6 caractères minimum.",
+        "redirect": "Votre mot de passe a été mis à jour avec succès, vous allez être redirigé automatiquement afin de vous connecter",
+        "input": "Nouveau mot de passe",
+        "buttons": {
+            "home": "Revenir à la page d'accueil"
+        },
+        "link": "Demander un nouveau lien",
+        "button": "VALIDER"
+    },
+    "validators": {
+        "email": "L'adresse email doit être valide",
+        "minLength": {
+            "password": "Le mot de passe doit contenir au moins {{length}} caractères"
+        }
+    }
+}

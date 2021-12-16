@@ -1,0 +1,25 @@
+@import "../../components/theme/index.scss";
+
+// Overflow is 'hidden' so that react-responsive-modal does not cut the layout
+// when applying overflow: hidden to <html> (at the opening of the modal).
+html {
+    margin: 0px;
+}
+
+body {
+    margin: 0px;
+}
+
+#root {
+    overflow: hidden;
+    height: 100%;
+    margin: 0px;
+}
+
+.logo-translation {
+    position: absolute;
+    top: 5px;
+    right:5px;
+    font-size: 13px;
+    font-family: "SuzukiPROHeadline";
+}

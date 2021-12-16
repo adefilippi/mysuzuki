@@ -1,0 +1,28 @@
+name: frontend
+
+type: nodejs:10
+
+build:
+    flavor: default
+
+web:
+    locations:
+        "/":
+            root: 'build'
+            index:
+                - 'index.html'
+            passthru: '/index.html'
+
+disk: 1024
+
+hooks:
+    deploy: |
+        npm run build
+
+mounts:
+    run:
+        source: local
+        source_path: run
+    "build":
+        source: local
+        source_path: 'build'

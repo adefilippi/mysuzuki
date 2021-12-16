@@ -1,0 +1,1 @@
+export { DealershipsMarker } from "./DealershipsMarker";

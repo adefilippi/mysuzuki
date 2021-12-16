@@ -1,0 +1,10 @@
+@import "../../../../components/theme/index.scss";
+
+.AuthenticatedHome {
+    position:relative;
+    width: 100%;
+
+    .logo-translation {
+        top: 76px;
+    }
+}

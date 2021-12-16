@@ -1,0 +1,29 @@
+@import "../../../components/theme/index.scss";
+
+.confirm-delete-modal {
+  &-title {
+    font-size: 2rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+    padding: 0;
+    text-align: center;
+  }
+
+  &-buttons {
+    display: flex;
+    justify-content: space-around;
+
+    & > .button {
+      width: 40%;
+    }
+
+    & input.btn {
+      min-width: 100%;
+      width: 100%;
+    }
+
+    &.mobile input.btn {
+      padding: 0;
+    }
+  }
+}

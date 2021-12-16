@@ -1,0 +1,42 @@
+@import "../../theme/index.scss";
+
+.radio-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: $input-width;
+
+        .error-label {
+            @extend %error-label;
+        }
+
+    &-label{
+        display: block;
+        margin-bottom: rem-calc(16px);
+        color: inherit;
+        font-family: $accent-font-family;
+        font-size: rem-calc($with-icon-input-text-label-font-size);
+        text-transform: uppercase;
+
+        &.is-required {
+            &::after {
+                content: "*";
+                font-size: 65%;
+                vertical-align: top;
+                position: relative;
+                top: 1px;
+            }
+        }
+
+        &.error{
+            color: $red;
+        }
+
+    }
+
+    &-choices{
+        display: flex;
+        flex-direction: column;
+        &.inline{flex-direction: row;}
+    }
+}

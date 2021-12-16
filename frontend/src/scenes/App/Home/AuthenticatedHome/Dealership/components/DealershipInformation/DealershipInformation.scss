@@ -1,0 +1,38 @@
+@import "../../../../../../../components/theme/index.scss";
+
+.dealership-information {
+    color: $primary-color;
+
+    &-title {
+        font-family: $header-font-family;
+        font-size: $fontSizeLarge;
+        margin-bottom: 0.5rem;
+    }
+
+    &-name {
+        color: $secondary-color;
+        font-family: $header-font-family;
+        font-size: $fontSize * 1.2;
+        letter-spacing: 0.3px;
+        margin-bottom: 0.4rem;
+    }
+
+    &-address {
+        text-transform: uppercase;
+        line-height: 1.5rem;
+        font-size: $fontSizeMicro;
+        margin-bottom: 0.8rem;
+
+        span {
+            margin-right: 0.3rem;
+        }
+
+        .phone {
+            text-transform: none;
+        }
+
+        &.inverse-colors {
+            color: $white;
+        }
+    }
+}

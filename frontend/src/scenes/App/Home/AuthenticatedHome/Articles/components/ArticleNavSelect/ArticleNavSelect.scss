@@ -1,0 +1,27 @@
+@import "../../../../../../../components/theme/index.scss";
+
+.article-nav-select {
+    background-color: $backgroundBlue;
+    color: $primary-color;
+    width: $input-width;
+    margin: auto;
+
+    // OVERRIDES STYLES OF SELECT COMPONENT
+    .select {
+        margin: auto;
+        color: $primary-color;
+    }
+
+    .select-input {
+         font-family: $header-font-family;
+         font-size: $fontSizeSmall;
+         text-align: center;
+         text-transform: uppercase;
+    }
+
+    .select-input-wrapper {
+        padding-top: 0;
+        padding-bottom: 0;
+        height: 2.75rem;
+    }
+}

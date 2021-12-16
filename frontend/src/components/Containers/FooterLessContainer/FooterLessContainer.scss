@@ -1,0 +1,32 @@
+@import "../../theme/index.scss";
+
+.app-footerless-container {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background-color: $white;
+    align-items: stretch;
+    width: 100%;
+    min-height: 100%;
+
+    .app-footerless-content {
+        position: relative;
+        display: flex;
+        min-height: calc(100vh - 125px);
+    }
+    .app-footerless-bottom-bar {
+        display: flex;
+        height: $spacing;
+        background-color: $darkBlue;
+    }
+
+    .logo-translation {
+        position: absolute;
+        top: 5px;
+        right:5px;
+        font-size: 13px;
+        font-family: "SuzukiPROHeadline";
+    }
+}

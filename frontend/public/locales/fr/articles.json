@@ -1,0 +1,23 @@
+{
+    "adviceTutorialTitle": "Tutoriels et conseils",
+    "newsTitle": "Actualités",
+    "seeMoreButton": "En voir plus",
+    "imageAlt": "image",
+    "navBar": {
+        "root": "Articles récents",
+        "tutorial": "Nos tutoriels",
+        "advice": "Nos conseils",
+        "news": "L'actu suzuki"
+    },
+    "types": {
+        "tutorial": "Tutoriel",
+        "advice": "Conseil",
+        "news": "Actu"
+    },
+    "article": {
+        "header": "Actus et Conseils",
+        "back": "Retour",
+        "linkedArticles": "Nos conseils qui peuvent vous intéresser"
+    },
+    "fitlerByVehicle": "Filtrer par véhicule"
+}

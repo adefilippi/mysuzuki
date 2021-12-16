@@ -1,0 +1,118 @@
+@import "../../../../../components/theme/index.scss";
+
+$deals-padding-sides: 7.5rem;
+$deals-padding-sides-mobile: 1.5rem;
+
+%container-full {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 1rem;
+  max-width: $list-max-width;
+  margin: auto;
+
+  .deal-card-container,
+  .deal-card-container-placeholder {
+    margin: 1.75rem 1.5rem;
+  }
+
+  &.mobile {
+    padding: 1rem 0rem 0rem;
+  }
+
+  &.mobile-small {
+    .deal-card-container,
+    .deal-card-container-placeholder {
+      margin: 0;
+      margin-bottom: 2.5rem;
+    }
+  }
+}
+
+%title {
+  padding-left: $deals-padding-sides;
+  font-size: $hearder-one-font-size;
+  font-family: $header-font-family;
+  color: $primary-color;
+  margin-bottom: 0rem;
+  z-index: 99;
+
+  &.mobile{
+    font-size: 11vw;
+    padding-left: $deals-padding-sides-mobile;
+  }
+
+  @media(max-width: 1380px) {
+    padding-left: 7.5rem;
+  }
+}
+
+.deals {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+
+  &-title {
+    @extend %title;
+  }
+
+  &-container {
+    background-color: $backgroundBlue;
+    padding: 2.5rem 0;
+    $self: &;
+
+    &-full {
+      @extend %container-full;
+    }
+
+    & > .button {
+      margin-top: 2rem;
+    }
+
+    &.mobile {
+      padding: 0 1rem 2rem 1rem;
+
+      #{$self}-full {
+        padding: 0;
+      }
+    }
+
+    &.tablet {
+      padding: 2rem 0;
+    }
+
+    .deals-empty {
+      text-align: center;
+    }
+  }
+
+  &-cards {
+    @extend %container-full;
+  }
+
+  &-loader {
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+  }
+ }
+
+.games {
+  &-title {
+    @extend %title;
+  }
+
+  &-container {
+    &-full {
+      @extend %container-full;
+
+      padding: 0;
+      overflow: hidden;
+
+      &.mobile,
+      &.tablet-portrait {
+        padding: 0 1rem;
+      }
+    }
+  }
+}

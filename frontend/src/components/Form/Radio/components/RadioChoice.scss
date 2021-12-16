@@ -1,0 +1,50 @@
+@import "../../../theme/index.scss";
+
+.radio {
+    margin-right: $radio-button-horizontal-spacing;
+    margin-bottom: $radio-button-vertical-spacing;
+    white-space: nowrap;
+
+    &-label {
+        color: inherit;
+        font-family: $text-font-family;
+        font-size: rem-calc(30px);
+        margin-right: rem-calc(50px);
+        margin-bottom:  2rem;
+
+        &.error {
+            @extend %error-label;
+        }
+    }
+}
+
+/* Base for label styling */
+[type="radio"]:not(:checked),
+[type="radio"]:checked {
+    position: absolute;
+    left: -9999px;
+}
+[type="radio"]:not(:checked) + label,
+[type="radio"]:checked + label {
+    position: relative;
+    padding-left: 1.75rem;
+}
+
+/* radio aspect */
+[type="radio"]:checked + label:before,
+[type="radio"]:not(:checked) + label:before {
+    content: "";
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: -0.15rem;
+    width: 1.15rem;
+    height: 1.15rem;
+    border-radius: 50%;
+    border: 0.25rem solid $white;
+    background-color: $white;
+}
+
+[type="radio"]:checked + label:before {
+    background-color: $darkBlue;
+}

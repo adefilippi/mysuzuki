@@ -1,0 +1,35 @@
+{
+    "telEmailModalTitle": "Relations clients",
+    "telEmailModalEmail": "Envoyer un email",
+    "dealershipMeetingRequestModalTitle": "Demande de rendez-vous",
+    "sendEmail": "Envoyer un email",
+    "noDealershipContact": "Cette action n'est pas possible pour cette concession.",
+    "helpModalTitle": "Assistance",
+
+    "navBarVehicles": "Mes véhicules",
+    "navBarDealership": "Ma concession",
+    "navBarDeals": "Mes offres et avantages",
+    "navBarAdviceTutorial": "Tutoriels et conseils",
+    "navBarNews": "Actualités",
+    "navBarWelcome": "Bienvenue {{name}}",
+    "navBarAccount": "Mon compte",
+    "navBarLogout": "Déconnexion",
+    "buttons" : {
+        "success": "Envoyé",
+        "submit": "Envoyer"
+    },
+    "footer": {
+        "hotline-phone": "08.25.00.40.63*",
+        "hotline-phone-price": "*0,15€ la minute + le prix d'un appel",
+        "hotline-email": "contact@suzuki.fr",
+        "assist-phone": "04.72.43.69.39"
+    },
+    "legal": {
+        "title": "Mentions légales"
+    },
+    "cgu": {
+        "title": "Conditions générales d'utilisation"
+    },
+    "assist": "Assistance routière",
+    "selectAll": "Tout sélectionner"
+}

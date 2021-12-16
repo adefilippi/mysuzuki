@@ -1,0 +1,55 @@
+@import "../../theme/index.scss";
+
+.DealershipsListWithMap {
+    flex: 1;
+    display: flex;
+    height: auto;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    box-sizing: border-box;
+    margin-top: 1.5rem;
+
+
+    &-map {
+        flex: 1;
+        min-width: 30rem;
+        height: 35rem;
+        display: flex;
+        box-sizing: border-box;
+
+        &.mobile{
+            min-width: 20rem;
+            height: 20rem;
+        }
+    }
+
+    &-list {
+        flex: 1;
+        min-width: 30rem;
+        display: flex;
+        box-sizing: border-box;
+        overflow-y: scroll;
+        max-height: 35rem;
+        padding-left: 7.5rem;
+        padding-right: 10px;
+        -ms-overflow-x: hidden;
+
+        &.mobile, &.tablet{
+            overflow-y: hidden;
+            max-height: none;
+            padding-top: .5rem;
+            padding-right: 0;
+            padding-left: 0;
+            min-width: 10rem;
+            justify-content: center;
+        }
+    }
+
+    &.mobile, &.tablet {
+        margin-top: .5rem;
+        padding: 0 .5rem;
+        height: auto;
+        flex-direction: column-reverse;
+    }
+
+}

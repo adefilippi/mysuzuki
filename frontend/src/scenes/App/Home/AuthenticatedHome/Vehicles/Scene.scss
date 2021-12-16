@@ -1,0 +1,9 @@
+@import "../../../../../components/theme/index.scss";
+
+.vehicles {
+    padding: 3rem 0rem;
+
+    &.mobile {
+        padding: 1rem 0rem;
+    }
+}

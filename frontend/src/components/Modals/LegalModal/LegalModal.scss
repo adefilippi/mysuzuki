@@ -1,0 +1,11 @@
+@import "../../theme/index.scss";
+
+.legal {
+  &-container{
+    overflow: auto;
+  }
+  &-title {
+    margin-top: 0;
+    padding: 0;
+  }
+}

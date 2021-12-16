@@ -1,0 +1,61 @@
+@import "../../theme/index.scss";
+
+.modal {
+  display: flex;
+  justify-content: center;
+  width: rem-calc(1500px);
+  box-sizing: border-box;
+  padding: 2rem 0;
+  background-color: white;
+  position: relative;
+  max-height: 80%;
+  max-height: 80vh;
+  max-width: 80%;
+  max-width: 80vw;
+  z-index: 1001;
+
+  &.mobile {
+    width: rem-calc(700px);
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+
+  .false-information-modal{
+    padding: 0 1.5rem;
+    overflow: hidden;
+    width: 100%;
+    max-width: 600px;
+    min-width: 315px;
+  }
+
+  .modal-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  // OVERIDES - sorry for !important
+  label {
+    text-transform: none !important;
+    font-family: $header-font-family;
+    font-size: $fontSize;
+    margin-top: 1.5rem;
+  }
+
+  &.large {
+    width: inherit;
+  }
+
+  .modal-content-overflow{
+    max-height: calc(80vh - 20px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    width: 100%;
+    max-width: 608px;
+    min-width: 320px;
+  }
+
+  h2 {
+    padding-left: 0;
+  }
+}

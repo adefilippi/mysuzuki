@@ -1,0 +1,50 @@
+{
+    "title": "Mes offres et avantages",
+    "seeMoreButton": "En voir plus",
+    "endDateUntil": "Jusqu'au ",
+    "dealCard": {
+        "dealType": {
+            "advantage": "Avantage",
+            "game": "Jeu",
+            "invitation": "Invitation",
+            "offer": "Offre",
+            "welcome-offer": "Offre de bienvenue",
+            "targeted": "Offre ciblée",
+            "avantage-offer": "Offre avant-Age",
+            "news": "Actualité",
+            "tutorial": "Tutoriel",
+            "advice": "Conseil"
+        },
+        "reductionType": {
+            "free": "Gratuit"
+        },
+        "buttonOffer": "Profitez de l'offre",
+        "buttonInvite": "S'inscrire",
+        "buttonGame": "Jouez",
+        "only": "Uniquement",
+        "dealershipOnly": "dans votre concession : ",
+        "endDateUntil": "Jusqu'au "
+    },
+    "modal":{
+        "availableUntil": "Offre valable jusqu'au",
+        "rules": "Comment en profiter ?",
+        "rulesMessage": "Imprimez votre offre et présentez la à votre concessionnaire.",
+        "conditions": "Conditions de l'offre",
+        "conditionsMessage": "Voir conditions et minimum d'achat auprès de votre concession{{dealership}}.",
+        "cta": {
+            "link" : "Voir l'offre",
+            "file" : "Imprimer le coupon"
+        },
+        "welcome-message-1": "Pour vous souhaiter la bienvenue, Suzuki vous fait bénéficier d’une offre exceptionnelle : 20% de remise sur l’achat de votre prochain accessoire dès 50 € TTC d’achat(1) (hors pose et main d’œuvre) valable la première année après la mise en circulation de votre véhicule.",
+        "welcome-message-2": "Venez vite en profiter dans votre concession sur présentation du coupon reçu par email et de votre carte mySUZUKI !",
+        "welcome-message-3": "L’équipe Suzuki France",
+        "welcome-conditions": "(1) Offre non cumulable avec d'autres offres promotionnelles, réservée aux particuliers dans le réseau Suzuki participant et valable une fois dans votre concession SUZUKI jusqu’à un an après la mise en circulation de votre véhicule.",
+        "avantage-offer-message-1": "Choisissez le meilleur pour votre Suzuki. Pour assurer sa longévité, nous vous avons réservé des offres exclusives à valoir sur les pièces et accessoires Suzuki, pour l'entretien de votre véhicule ! Ces offres ne sont pas limitées. Vous pouvez donc en profiter à votre guise chez un réparateur agréé Suzuki.",
+        "avantage-offer-message-2": "-30€ dès 100€ d'achat.<br/> -60€ dès 300€ d'achat.<br/> -90€ dès 600€ d'achat.<br/> -120€ dès 1200€ d'achat",
+        "avantage-offer-message-3": "L’équipe Suzuki France",
+        "avantage-offer-conditions": "*Offres applicables aux pièces et accessoires d'origine Suzuki, hors main d'oeuvre. Offres non cumulables avec une offre promotionnelle en cours.  Remises appliquées dans la limite de 120 € de réduction par achat effectué le même jour. Réductions applicables pour les véhicules Suzuki de plus de 5 ans à date de la première mise en circulation."
+    },
+    "noDeal": "Vous n’avez aucune offre en cours.",
+    "welcome-title": "OFFRE DE BIENVENUE mySUZUKI",
+    "avantage-offer-title": "OFFRE AVANT-AGE + 5 ANS"
+}

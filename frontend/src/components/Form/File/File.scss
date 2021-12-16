@@ -1,0 +1,15 @@
+@import "../../theme/index.scss";
+
+.file-updloaded-file {
+    @extend .flex-align-center;
+
+    span {
+        margin-right: 4px;
+
+    }
+
+    .icon {
+        position: relative;
+        top: 3px;
+    }
+}

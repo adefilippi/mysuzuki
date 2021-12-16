@@ -1,0 +1,45 @@
+@import "../../../../../components/theme/index.scss";
+
+.sign-up {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  box-sizing: border-box;
+
+  .sign-up-title {
+    color: $white;
+    text-align: left;
+    font-family: $header-font-family;
+    font-size: $fontSize * 1.2;
+    position: relative;
+    padding: 0;
+    top: 0;
+    left: rem-calc(-10px);
+    margin-bottom: 0;
+  }
+
+  .sign-up-content {
+    display: flex;
+    align-self: stretch;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: stretch;
+    margin-bottom: 1rem;
+
+    p {
+      width: $input-width;
+      font-family: $text-light-font-family;
+      font-size: $fontSizeMicro;
+      font-weight: 100;
+      line-height: 1.5rem;
+      color: $white;
+      margin-bottom: 1rem;
+
+      &.sign-up-bold {
+        font-family: $text-bold-font-family;
+      }
+    }
+  }
+
+}

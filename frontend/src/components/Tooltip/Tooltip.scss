@@ -1,0 +1,46 @@
+@import "../theme/index.scss";
+
+.tooltip{
+  display: inline-flex;
+  margin-left: 15px;
+  position: relative;
+  top: 0;
+  right: 0;
+  z-index: 100;
+
+  &-text-wrapper{
+    min-width: 500px;
+    position: absolute;
+      &.right{left: rem-calc(30px);}
+      &.left{right: rem-calc(30px);}
+      &.top{bottom: rem-calc(75px);}
+      &.bottom{top: rem-calc(75px);}
+
+      &.mobile {
+        width: 65vw;
+        min-width: unset;
+      }
+  }
+
+  &-title {
+    margin: 1rem 0;
+  }
+
+  &-text{
+    flex: 0 0 auto;
+    box-sizing: border-box;
+    max-width: rem-calc(1000px);
+    margin: 0;
+    padding: .5rem 1rem;
+    color: $primary-color;
+    border: 1px solid $primary-color;
+    background-color: $white;
+    font-family: $text-font-family;
+    font-size: .8rem;
+    line-height: 1.2rem;
+
+    &.mobile {
+        width: 65vw;
+    }
+  }
+}

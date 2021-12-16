@@ -1,0 +1,202 @@
+@import "../../../../../../../components/theme/index.scss";
+
+$game-card-full-padding-sides: 1.5rem;
+$game-card-full-padding-sides-mobile: .75rem;
+$deal-card-size: 790px;
+
+.game-card-full {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  $self: &;
+
+  &-title {
+    margin: 0rem;
+    padding: 0;
+    font-size: 2.2em;
+    font-family: $header-font-family;
+    color: $primary-color;
+    text-align: left;
+    text-transform: uppercase;
+    line-height: 1.2;
+  }
+
+  &-date {
+    font-family: $header-font-family;
+    font-size: $fontSize;
+    color: $secondary-color;
+  }
+
+  &-section {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    color: $darkBlue;
+    padding: 0 $game-card-full-padding-sides;
+    box-sizing: border-box;
+    margin-bottom: 0;
+    width: 100%;
+
+    &.mobile,
+    &.tablet {
+      padding: 0;
+    }
+
+    &.mobile,
+    &.tablet-portrait {
+      width: rem-calc($deal-card-size * 7/8);
+    }
+
+    &-label {
+      position: absolute;
+      top: 0;
+      left: $game-card-full-padding-sides;
+      padding: 0.5rem 2.5rem;
+      font-family: $header-font-family;
+      font-size: $fontSize;
+      color: $white;
+      text-transform: uppercase;
+      background-color: $secondary-color;
+      z-index: 10;
+
+      &.tablet {
+        left: 0;
+      }
+
+      &.mobile,
+      &.tablet-portrait {
+        width: 100%;
+        left: 0;
+        position: relative;
+        display: block;
+        text-align: center;
+        margin-bottom: 0.1rem;
+      }
+    }
+
+    &-places {
+      position: absolute;
+      top: 2.5rem;
+      left: $game-card-full-padding-sides;
+      font-family: $header-font-family;
+      color: $secondary-color;
+      font-size: $fontSize;
+      text-transform: uppercase;
+      z-index: 10;
+      padding: 0.25rem;
+
+      &.tablet {
+        left: 0;
+      }
+
+      &-number {
+        display: inline-block;
+        font-size: 3em;
+        margin-right: 0.25rem;
+        vertical-align: middle;
+
+      }
+
+      &-text {
+        display: inline-block;
+        width: 5rem;
+        vertical-align: middle;
+      }
+    }
+
+    &-skew {
+      position: relative;
+      top: 0;
+      right: 0;
+      display: flex;
+      overflow: hidden;
+      max-width: 60%;
+
+      &.tablet {
+        width: 100%;
+        max-width: 55%;
+      }
+
+      &.mobile,
+      &.tablet-portrait {
+        width: 100%;
+        max-width: 100%;
+      }
+
+      &-image {
+        width: 100%;
+        text-align: center;
+        position: relative;
+
+        &-background {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          z-index: 1;
+          background: rgba($white, 0.2);
+          filter: blur(2rem);
+        }
+
+        img {
+          position: relative;
+          z-index: 2;
+          height: 328px;
+          object-fit: contain;
+          vertical-align: middle;
+        }
+      }
+
+      &-overlay:not(.mobile) {
+        position: absolute;
+        width: 0px;
+        height: 0px;
+        right: 0;
+        border-style: solid;
+        border-width: 0px 46px 328px 0px;
+        border-color: transparent $white transparent transparent;
+        z-index: 3;
+
+        &.tablet{
+          border-width: 0px 46px 295px 0px;
+        }
+      }
+    }
+
+    &-content {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      background-color: $white;
+      padding: 1.5rem;
+
+      &.tablet-portrait,
+      &.mobile {
+        align-items: center;
+
+        #{$self}-title {
+          text-align: center;
+        }
+      }
+
+      .button-link {
+        height: 2.5rem;
+        input {letter-spacing: .3px;}
+      }
+    }
+  }
+
+  &-buttons-group {
+    .btn {
+      margin: 0
+    }
+  }
+
+  &-error {
+    font-family: $header-font-family;
+    font-size: $fontSize;
+    color: $primary-color;
+  }
+}

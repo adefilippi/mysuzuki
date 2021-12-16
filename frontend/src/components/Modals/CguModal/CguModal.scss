@@ -1,0 +1,11 @@
+@import "../../theme/index.scss";
+
+.cgu {
+  &-container{
+    overflow: auto;
+  };
+  &-title {
+    margin-top: 0;
+    padding: 0;
+  };
+}

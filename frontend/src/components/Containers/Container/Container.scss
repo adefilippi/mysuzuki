@@ -1,0 +1,17 @@
+@import "../../theme/index.scss";
+
+.app-container {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    background-color: $white;
+    align-items: stretch;
+    width: 100%;
+    min-height: 100%;
+
+    .app-content {
+        min-height: calc(100vh - 172px);
+    }
+}

@@ -1,0 +1,56 @@
+@import "../../../../../../../components/theme/index.scss";
+
+.my-vehicle-form {
+    background-color: $primary-color;
+    padding: .5rem 2rem;
+    box-sizing: border-box;
+
+
+    &.mobile {
+        padding: .5rem .75rem;
+    }
+
+    &.mobile-small {
+        padding: .35rem .5rem;
+    }
+
+    &.tablet {
+        padding: 2rem 0;
+        margin: 0rem .5rem .5rem .5rem;
+    }
+
+    .btn-underline {
+        margin-bottom: 1rem;
+    }
+
+    .text-label.large {
+        width: 125%;
+    }
+
+    &-inputs-group {
+        max-width: $input-max-width;
+        margin: auto;
+        box-sizing: border-box;
+    }
+
+
+// OVERRIDE DATEPICKER
+    .datepicker-input-wrapper {
+        box-sizing: border-box;
+        border: 1px solid $white;
+
+        &.large {
+            .icon {
+                right: 0rem;
+                margin-left: auto;
+                margin-right: .6rem;
+            }
+        }
+    }
+
+    .react-datepicker__input-container {
+        input {
+            border: none;
+        }
+    }
+}

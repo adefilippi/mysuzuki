@@ -1,0 +1,32 @@
+@import "../../../../../../../components/theme/index.scss";
+
+.articles-nav-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: stretch;
+    overflow-x: auto;
+    padding-left: 7.5rem;
+    margin-top: 2.5rem;
+
+    & a {
+        text-decoration: none;
+    }
+
+    &.mobile {
+        padding-left: .5rem;
+    }
+
+    &.tablet {
+        margin-top: 1.5rem;
+        padding-left: .5rem;
+
+        @media (max-width: 750px) {
+            margin-top: .5rem;
+        }
+    }
+
+    // OVERRIDES FIRST TAB
+    a:nth-of-type(1) {
+        .articles-nav-bar-tab { border-left: none;}
+    }
+}

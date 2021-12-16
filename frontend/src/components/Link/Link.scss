@@ -1,0 +1,32 @@
+@import "../theme/index.scss";
+
+a.link {
+  display: inline;
+  color: $primary-color;
+  text-decoration: none;
+  font-family: $text-font-family;
+
+  &.medium {
+    font-size: 1.1rem;
+  }
+
+  &.white {
+    color: $white;
+  }
+
+  &:hover {
+    color: $blue;
+  }
+
+  .icon {
+    vertical-align: middle;
+    padding-left: 1rem;
+  }
+}
+
+.button > a {
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

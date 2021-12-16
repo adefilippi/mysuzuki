@@ -1,0 +1,112 @@
+@import "../../theme/index.scss";
+
+.authenticated-home-card {
+  &-container {
+    background-color: $white;
+    margin: 0 1.5rem 0 0;
+    max-width: 260px;
+    position: relative;
+
+    &.clickable {
+      cursor: pointer;
+    }
+
+    &.tablet,
+    &.mobile {
+      flex: none;
+
+      &:first-of-type {
+        margin-left: 2rem;
+      }
+    }
+  }
+
+  &-image {
+    width: 100%;
+
+    &.welcome-offer {
+      margin-top: 3em;
+    }
+  }
+
+  &-caption {
+    padding: 0 1rem 1rem;
+  }
+
+  &-header {
+    background-color: $secondary-color;
+    font-family: $header-font-family;
+    font-size: 1.2rem;
+    line-height: 3rem;
+    text-align: center;
+    width: 100%;
+    color: $white;
+    text-transform: uppercase;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    &-dealership-only {
+      background-color: $primary-color;
+      color: $secondary-color;
+      text-align: center;
+      font-size: $fontSizeMicro;
+      line-height: normal;
+      text-transform: none;
+      padding: .5rem 0;
+      height: 3rem;
+      box-sizing: border-box;
+      letter-spacing: .3px;
+
+      & span:nth-of-type(1){
+        display: inline-block;
+        width: 100%;
+      }
+
+      & span:nth-of-type(3){
+        color: $white;
+        margin-left: 4px;
+      }
+    }
+  }
+
+  &-title {
+    color: $primary-color;
+    font-family: $header-font-family;
+    font-size: 1.6rem;
+    letter-spacing: -.1px;
+    line-height: 1.6rem;
+    margin: 1rem 0 0 0;
+    padding: 0;
+    text-transform: uppercase;
+
+    &.welcome-offer {
+      text-transform: none;
+    }
+  }
+
+  &-text {
+    $max-lines: 4;
+    $line-height: 1.5rem;
+    color: $darkerDarkBlue;
+    font-family: $text-light-font-family;
+    font-size: .9rem;
+    line-height: 1.5rem;
+    max-height: $max-lines * $line-height;
+    margin: .5rem 0 0;
+    overflow: hidden;
+  }
+
+  &-date {
+    font-family: $header-font-family;
+    font-size: $fontSize;
+    color: $secondary-color;
+
+    span {
+      position: absolute;
+      bottom: 0;
+      padding-bottom: .5rem;
+    }
+  }
+}

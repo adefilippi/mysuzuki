@@ -1,0 +1,39 @@
+@import "../../../components/theme/index.scss";
+
+.false-information-modal-form {
+  .textarea {
+    margin-bottom: 0;
+  }
+
+  [type="checkbox"]:checked,
+  [type="checkbox"]:not(:checked),
+  [type="radio"]:checked,
+  [type="radio"]:not(:checked) {
+    & + label {
+      font-family: $text-font-family;
+      font-weight: normal;
+      font-size: 1rem;
+
+      &:before {
+        border: 1px solid $darkBlue;
+      }
+    }
+  }
+
+  .honor-certification {
+    margin: 1.3rem 0;
+
+    label {
+      font-size: .9rem;
+      line-height: 1.1rem;
+    }
+  }
+
+  .support-contact {
+    margin-top: 1em;
+
+    p {
+      margin: 0;
+    }
+  }
+}

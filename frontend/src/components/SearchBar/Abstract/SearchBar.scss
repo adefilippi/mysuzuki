@@ -1,0 +1,39 @@
+@import "../../theme/index.scss";
+
+.searchbar {
+    display: flex;
+    align-items: center;
+    width: rem-calc(550px);
+    height: $input-height;
+    color: $primary-color;
+    font-size: rem-calc($input-text-font-size);
+    letter-spacing: 1px;
+
+    &.large {
+        min-width: rem-calc(932px);
+    }
+
+    &-input {
+        flex: 2;
+        height: 100%;
+        box-sizing: border-box;
+        padding: rem-calc(20px);
+        margin-right: rem-calc(20px);
+        color: inherit;
+        background-color: $transparent;
+        border: 1px solid $primary-color;
+        font-family: $text-font-family;
+        font-size: rem-calc($input-text-font-size);
+        letter-spacing: 1px;
+
+        &:focus {
+            outline: none;
+        }
+
+        &::placeholder {
+            font-size: 85%;
+            font-family: $text-font-family;
+            color: $primary-color;
+        }
+    }
+}

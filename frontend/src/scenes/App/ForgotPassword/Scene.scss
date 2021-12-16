@@ -1,0 +1,65 @@
+@import "../../../components/theme/index.scss";
+
+.forgot-password {
+    margin: 2rem auto;
+    letter-spacing: 0.5px;
+    font-family: $text-font-family;
+    font-size: $fontSizeSmall;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .btn-simple {
+        margin-top: 3rem;
+    }
+
+    &-title {
+        color: $primary-color;
+        font-family: $header-font-family;
+        font-size: $fontSizeLarge;
+        margin: 1rem auto 1.9rem auto;
+        text-align: center;
+        width: 95%;
+
+        &.mobile {
+            margin-bottom: 1rem;
+        }
+    }
+
+    &-logo {
+        margin-top: 0;
+        height: rem-calc(140px);
+    }
+
+    &-header {
+        margin-top: rem-calc(66px);
+        color: $primary-color;
+        font-family: $header-font-family;
+        font-size: 3.4rem;
+        text-align: center;
+        width: 95%;
+
+        &.mobile {
+            margin-top: 1rem;
+            font-size: 2.8em;
+        }
+    }
+
+    &-text {
+        font-family: $text-font-family;
+        letter-spacing: 0.1px;
+        line-height: 1.5rem;
+        width: 85%;
+        margin: 1.5rem 0 2.4rem 0;
+        text-align: center;
+    }
+
+    &-question {
+        font-family: $accent-font-family;
+        font-size: 94%;
+        margin-bottom: 1.5rem;
+        letter-spacing: 0.1px;
+    }
+
+    .error-label{ @extend %error-label;}
+}

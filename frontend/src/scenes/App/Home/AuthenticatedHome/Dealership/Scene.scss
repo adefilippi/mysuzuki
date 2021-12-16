@@ -1,0 +1,222 @@
+@import "../../../../../components/theme/index.scss";
+
+$padding-sides: 7.5rem;
+$padding-sides-mobile: 1rem;
+$space-left: 1.5rem;
+$space-left-mobile: 0.5rem;
+
+.my-dealership {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+    padding: rem-calc(66px) 0;
+    box-sizing: border-box;
+    font-family: $text-light-font-family;
+    box-sizing: border-box;
+
+    &.mobile,
+    &.tablet {
+        padding: rem-calc(66px) 0rem 0rem 0rem;
+    }
+
+    &-title {
+        align-self: flex-start;
+        font-size: $hearder-one-font-size;
+        font-family: $header-font-family;
+        color: $primary-color;
+        margin: 0;
+        position: relative;
+        top: 5px;
+
+        .icon {
+            margin: 0 0.65rem;
+        }
+
+        &.mobile,
+        &.tablet {
+            margin-left: 0;
+            padding-left: 0;
+            font-size: $fontSizeHuge * 1.05;
+        }
+    }
+
+    &-loader {
+        display: flex;
+        flex-direction: column;
+        align-self: stretch;
+        align-items: center;
+        padding: 4rem $spacingSmall;
+        max-width: $input-width;
+    }
+
+    &-section {
+        align-self: stretch;
+        color: $darkBlue;
+        padding: 0 $padding-sides;
+        box-sizing: border-box;
+        margin-bottom: 0;
+
+        &.mobile,
+        &.tablet {
+            padding: 0 .5rem;
+        }
+
+        &.wide {
+            padding: 1.5rem 0 0 0;
+
+            &.mobile,
+            &.tablet {
+                padding: .75rem 0;
+            }
+        }
+    }
+
+    &-section-title {
+        box-sizing: border-box;
+        align-self: flex-start;
+        width: 100%;
+        font-size: $fontSizeHuge;
+        font-family: $header-font-family;
+        color: $primary-color;
+        margin: 0;
+        padding-left: $padding-sides;
+        position: relative;
+        top: 10px;
+
+        &.mobile,
+        &.tablet {
+            padding-left: $padding-sides-mobile;
+            font-size: $fontSizeXLarge * 1.1;
+            top: 6px;
+        }
+    }
+
+    &-section-content {
+        display: flex;
+        flex-wrap: wrap;
+        background-color: $backgroundBlue;
+        padding: 2.5rem 2.5rem 2.5rem 3.2rem;
+
+        &.mobile,
+        &.tablet {
+            justify-content: flex-start;
+            padding: 2rem;
+        }
+
+        &.section-dealership {
+            .btn {
+                letter-spacing: 0.5px;
+                margin-top: 1.5rem;
+            }
+
+            .btn.btn-tertiary {
+                margin-left: 1.3rem;
+            }
+
+            &.mobile,
+            &.tablet {
+                .btn {
+                    margin-top: 1rem;
+                }
+                .btn.btn-primary {
+                    margin-right: 1rem;
+                }
+                .btn.btn-tertiary {
+                    margin-left: 0;
+                }
+            }
+
+            .column {
+                &:nth-of-type(1) {
+                    flex: 1;
+                    min-width: 20rem;
+
+                    &.mobile,
+                    &.tablet {
+                        min-width: 15rem;
+                    }
+                }
+                &:nth-of-type(2) {
+                    width: auto;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: flex-end;
+                    align-content: flex-end;
+                    justify-content: flex-end;
+
+                    &.mobile,
+                    &.tablet {
+                        justify-content: flex-start;
+                    }
+                }
+            }
+        }
+
+        &.section-search {
+            align-items: center;
+            justify-content: center;
+            font-family: $header-font-family;
+            font-size: 1.7rem;
+            letter-spacing: 0.5px;
+
+            span {
+                margin: 0 1rem 0 1rem;
+            }
+
+            .icon {
+                position: relative;
+                top: 4px;
+            }
+
+            &.mobile,
+            &.tablet {
+                justify-content: flex-start;
+
+                .searchbar {
+                    width: 90% !important;
+                }
+
+                span {
+                    margin: 1rem 0.5rem 1rem 0;
+                }
+            }
+        }
+    }
+
+    &-modal {
+        &-addon {
+            text-decoration: underline;
+            letter-spacing: 0.1px;
+            font-family: $accent-font-family;
+            font-size: 85%;
+            margin-left: 1rem;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+    }
+
+    &-errors-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1rem;
+
+        .my-dealership-error {
+            text-decoration: underline;
+            color: $red;
+            margin: 0;
+            margin-bottom: 10px;
+            font-family: $text-light-font-family;
+            font-size: $fontSizeMacro;
+            text-align: center;
+            &.hide {
+                display: none;
+            }
+        }
+    }
+}

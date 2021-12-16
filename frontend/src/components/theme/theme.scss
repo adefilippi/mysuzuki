@@ -1,0 +1,95 @@
+//TODO PUT HERE THE RIGHT VALUES
+
+// Colors
+$white: #ffffff;
+$black: #000000;
+$grey: #c2bebe;
+$blue: #73b5e0; //previously #043146
+$transparent: rgba(0, 0, 0, 0);
+$darkBlue: #003145;
+$darkerDarkBlue: #001c28;
+$red: #d52b1e;
+$darkRed: #aa2029;
+$green: #18ba5c;
+
+$backgroundGrey: #e5e5e6;
+$backgroundBlue: #eff3f4;
+$backgroundDarkBlue: #003145;
+$backgroundRed: #d52b1e;
+$backgroundDarkRed: #aa2029;
+
+$errorColor: #e82530;
+$validColor: $green;
+
+// primary color
+$primary-color: $darkBlue;
+$primary-color-dark: $darkerDarkBlue;
+
+// secondary color
+$secondary-color: $blue;
+
+// $tertiary-color
+$tertiary-color: $red;
+$tertiary-color-dark: $darkRed;
+
+// Fonts
+$fontSizeMicro: 0.85rem;
+$fontSizeRegular: 0.93rem;
+$fontSizeMacro: 1rem;
+$fontSizeSmall: 1.2rem;
+$fontSize: 1.4rem;
+$fontSizeBig: 1.7rem;
+$fontSizeLarge: 1.85rem;
+$fontSizeXLarge: 2.2rem;
+$fontSizeHuge: 3rem;
+
+$text-light-font-family: "Graphik-Light";
+$text-font-family: "Graphik-Regular";
+$text-bold-font-family: "Graphik-Medium";
+$header-font-family: "SuzukiPROHeadline";
+$accent-font-family: "SuzukiPROBold";
+
+$fontWeight: 400;
+$fontWeightLight: 100;
+
+// Fonts > headers
+$hearder-one-font-size: rem-calc(110px);
+
+// Fonts > buttons
+$primary-button-font-size: 38px;
+$link-button-font-size: 35px;
+$simple-button-font-size: 31px;
+$return-button-font-size: 28px;
+
+// Fonts > inputs
+$input-text-font-size: 35px;
+$with-icon-input-text-label-font-size: 37px;
+$with-icon-input-text-font-size: 32px;
+
+// Size
+$input-width: rem-calc(550px);
+$input-height: rem-calc(102px);
+$input-min-width: rem-calc(550px);
+$input-max-width: 35rem;
+$button-min-width: $input-min-width;
+$button-shrink-min-width: rem-calc(375px);
+$button-large-min-width: rem-calc(660px);
+$password-strength-font-size: 24px;
+$list-max-width: 74rem;
+$article-card-width: 18.5rem;
+$article-card-height: $article-card-width * 3.6/3;
+
+// Spacing
+$spacing: 2rem;
+$spacingSmall: 1rem;
+$spacingTiny: 0.3rem;
+$spacingLarge: 4rem;
+$spacingXLarge: 8rem;
+
+// Spacing > radiobuttons
+$radio-button-vertical-spacing: 0.8rem;
+$radio-button-horizontal-spacing: 1rem;
+
+// Transitions
+$transition-duration: 200ms;
+$transition-timing-function: linear;

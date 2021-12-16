@@ -1,0 +1,46 @@
+@import "../../theme/index.scss";
+
+.operation-card {
+  color: $secondary-color;
+  background-color: $primary-color;
+  border-radius: 3px;
+  padding: 1rem;
+  margin: .75rem;
+  box-sizing: border-box;
+  width: $input-min-width;
+  min-height: 11.5rem;
+
+  &.mobile {
+    width: 100%;
+  }
+
+  // OVERRIDES <Infos> home component basic styles
+  .infos-entry {
+    margin: .25rem 0rem 0rem;
+  }
+  .infos-entry-title {
+    text-transform: none;
+    letter-spacing: -.1px;
+  }
+  .infos-entry-text {
+    font-family: $text-font-family;
+  }
+  // ENDS OVERRIDES
+
+  &-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: .75rem;
+  }
+
+  &-edit-buttons > .icon {
+    margin-left: .8rem;
+  }
+}
+
+.operation-card-placeholder {
+  width: $input-min-width;
+  box-sizing: border-box;
+  padding: 0 1rem;
+  margin: 0 .75rem;
+}

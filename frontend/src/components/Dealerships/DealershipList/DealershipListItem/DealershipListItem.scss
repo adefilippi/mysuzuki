@@ -1,0 +1,95 @@
+@import "../../../theme/index.scss";
+
+.DealershipListItem {
+    align-items: stretch;
+    background-color: $white;
+    border-bottom: .1px solid #d8e3ee;
+    box-sizing: border-box;
+    color: $primary-color;
+    display: flex;
+    height: auto;
+    min-height: rem-calc(350px);
+    padding: 1.5rem 1rem 1.5rem 0rem;
+    width: 100%;
+
+    &.current {
+        color: $white;
+        background-color: $darkBlue;
+    }
+    &-pin {
+        width: auto;
+        padding: 1rem 2.75rem;
+
+        &.mobile {
+            padding: 1rem;
+        }
+
+        &.mobile-small {
+            padding: .25rem;
+        }
+    }
+    &-content {
+        flex: 1;
+        display: flex;
+        flex-wrap: wrap;
+
+        &.mobile {
+            display: block;
+        }
+    }
+    &-address {
+        line-height: 1.5rem;
+        font-size: $fontSizeMicro;
+        min-width: $input-width;
+
+        &.mobile {
+            min-width: 0;
+        }
+
+        flex: 1;
+
+        span {
+            margin-right: 0.3rem;
+        }
+
+        .phone {
+            text-transform: none;
+            font-family: $text-light-font-family;
+        }
+        &-name {
+            color: $secondary-color;
+            font-family: $header-font-family;
+            font-size: $fontSize * 1.2;
+            letter-spacing: 0.3px;
+            margin-bottom: 0.4rem;
+        }
+    }
+    &-buttons {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        justify-content: space-between;
+        width: auto;
+
+        &.mobile{
+            align-items: flex-start;
+            width: 100%;
+
+            .button {
+                margin-top: 5px;
+            }
+        }
+
+        @media (max-width: 1550px) {
+            align-items: flex-start;
+            width: 100%;
+        }
+    }
+    &-current-dealership{
+        text-transform: uppercase;
+        font-family: $header-font-family;
+        font-size: $fontSize * 1.2;
+        letter-spacing: -.1px;
+        padding-right: 5px;
+    }
+}

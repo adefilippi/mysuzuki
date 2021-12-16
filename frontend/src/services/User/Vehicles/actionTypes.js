@@ -1,0 +1,4 @@
+export const ActionTypes = {
+    SET_VEHICLES: "USER_VEHICLES_SET_VEHICLES",
+    SET_VEHICLE: "USER_VEHICLES_SET_VEHICLE"
+};

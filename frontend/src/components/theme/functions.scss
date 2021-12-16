@@ -1,0 +1,6 @@
+
+// Rem calculator
+@function rem-calc($size) {
+  $remSize: $size / 32px;
+  @return #{$remSize}rem;
+}

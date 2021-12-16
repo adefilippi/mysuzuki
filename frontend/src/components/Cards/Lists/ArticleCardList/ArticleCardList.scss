@@ -1,0 +1,9 @@
+@import "../../../theme/index.scss";
+
+.article-card-list {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: center;
+   max-width: 80rem;
+   margin: auto;
+}

@@ -1,0 +1,17 @@
+@import "../theme/index.scss";
+
+.tags {
+    background-color: $backgroundBlue;
+    padding: 1rem;
+
+    &__button.btn.small {
+        padding: 10px 15px;
+        display: inline-block;
+        margin:0 10px 0 0;
+        max-width: none;
+
+        .icon {
+            vertical-align: middle;
+        }
+    }
+}

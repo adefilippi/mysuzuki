@@ -1,0 +1,42 @@
+@import "../../theme/index.scss";
+
+.confirm-request-modal {
+  text-align: center;
+  margin: 2rem 3rem 1rem;
+
+  p {
+    font-size: 1.3em;
+    margin-bottom: 3.5rem;
+  }
+
+  .button {
+    justify-content: center;
+
+    input {
+      font-size: rem-calc($link-button-font-size * 1.4);
+    }
+  }
+
+  &.mobile {
+    margin: 1rem .5rem 0;
+
+    h2 {
+      font-size: $fontSizeLarge;
+      line-height: unset;
+      margin-top: 0;
+    }
+
+    p {
+      font-size: $fontSizeRegular;
+      margin-bottom: 2em;
+    }
+
+    .button {
+      input {
+        font-size: rem-calc($link-button-font-size * 1.2);
+        white-space: normal;
+      }
+    }
+  }
+}
+

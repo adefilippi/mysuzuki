@@ -1,0 +1,51 @@
+{
+  "demandTitle": "Votre demande",
+  "falseInformationModalTitle": "Vos informations véhicules sont érronées",
+  "falseInformationModalHeader": "Merci de nous préciser votre demande.",
+  "modalName": "Nom : ",
+  "modalVin": "VIN / Numéro de série : ",
+  "modalEmail": "Email : ",
+  "incident": "Incident",
+  "helpForm": {
+    "field": {
+      "demandType": "Nature de la demande",
+      "deleteVehicle": "Nature de la suppression",
+      "date": "Date",
+      "buyDate": "Date d'achat du véhicule",
+      "vin": "VIN / Numéro de série",
+      "name": "Nom",
+      "firstName": "Prénom",
+      "postalCode": "Code postal",
+      "email": "Email",
+      "subject": "Objet",
+      "message": "Message",
+      "vehicle": "Véhicule",
+      "file": "Joindre un fichier",
+      "honorCertification": "Je certifie sur l'honneur que les informations ci-dessus sont bien mes informations personnelles*"
+    },
+    "option": {
+      "resell": "Vente d’occasion en France",
+      "resellAbroad": "Vente à l’étranger",
+      "stolen": "Vol",
+      "destruction": "Mise à la casse",
+      "competition": "Véhicule de compétition"
+    },
+    "choice": {
+      "vehicleNew": "Véhicule neuf",
+      "vehicleSecondHand": "Véhicule d'occasion"
+    },
+    "button": {
+      "submit": "ENVOYER",
+      "sent": "ENVOYÉ",
+      "file": "Parcourir"
+    },
+    "supportContact": "Vous avez un doute, une question ? Contactez le service client au 08.25.00.40.65*",
+    "callPrice": "*O,15€ la minute + prix d'un appel"
+  },
+  "resendClientId": {
+    "subject": "Une personne souhaite recevoir son code client"
+  },
+  "errors": {
+    "vin": "Ce format est incorrect."
+  }
+}

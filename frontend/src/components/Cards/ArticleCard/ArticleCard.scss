@@ -1,0 +1,106 @@
+@import "../../theme/index.scss";
+
+.article-card {
+  align-items: stretch;
+  background-color: $white;
+  box-sizing: border-box;
+  color: $primary-color;
+  display: flex;
+  flex-direction: column;
+  height: $article-card-height;
+  margin: .75rem;
+  width: $article-card-width;
+
+  &--deals {
+    max-width: calc(33% - (2 * .75rem));
+    height: auto;
+
+    @media all and (max-width: 1350px) {
+      max-width: calc(50% - (2 * .75rem));
+    }
+
+    @media all and (max-width: 1024px) {
+      max-width: calc(100% - (2 * .75rem));
+    }
+  }
+
+  h2, p {
+    margin: 0;
+    padding-left: 0;
+    line-height: 1.5rem;
+  }
+
+  &-header {
+    color: $white;
+    background-color: $secondary-color;
+    font-family: $header-font-family;
+    font-size: 1.2rem;
+    letter-spacing: 1px;
+    padding: .5rem 1rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center;
+    text-transform: uppercase;
+    width: auto;
+  }
+
+  &-figure {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    position: relative;
+    width: 100%;
+  }
+
+  &-figure-image {
+    height: $article-card-width * 2/3;
+    object-fit: cover;
+    object-position: right;
+  }
+
+  &-figcaption {
+    overflow: hidden;
+    height: $article-card-width * 1.6/3;
+    box-sizing: border-box;
+    padding: 1.75rem 1rem 1.25rem 1rem;
+
+    &--deals {
+      height: auto;
+    }
+  }
+
+  &-figure-title {
+    box-sizing: border-box;
+    font-size: $fontSize;
+    font-family: $header-font-family;
+    letter-spacing: -.1px;
+    text-transform: uppercase;
+    color: $primary-color;
+    padding-bottom: .5rem;
+
+    em {
+      color: $secondary-color;
+      font-size: $fontSizeXLarge;
+      margin-right: .5rem;
+    }
+  }
+
+  &-figure-text {
+    box-sizing: border-box;
+    height: 100%;
+    line-height: 1.5rem;
+    letter-spacing: .3px;
+    font-size: $fontSizeMicro;
+    font-family: $text-font-family;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+}
+
+.article-card-placeholder {
+  box-sizing: border-box;
+  margin: 0 .75rem;
+  width: $article-card-width;
+}

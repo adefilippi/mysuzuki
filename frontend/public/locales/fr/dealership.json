@@ -1,0 +1,17 @@
+{
+    "title": "Ma concession",
+    "informationTitle": "Votre concessionnaire SUZUKI à ",
+    "phone": "Tel :{{phone}}",
+    "city": "Ville",
+    "detailedRecord": "Voir la fiche détaillée",
+    "workshopMeetingRequest": "Demander un rendez-vous atelier",
+    "dealershipContactRequest": "Contacter le concessionnaire",
+    "dealershipSearchTitle": "Choisir une autre concession",
+    "dealershipSearchTitle2": "Choisir une concession",
+    "dealershipSearchLocalisation": "Ou me localiser",
+    "yourDealerships": "Vos concessionnaires Suzuki",
+    "yourDealershipsLocalized": "Vos concessionnaires Suzuki à {{city}}",
+    "detailedRecordButton": "Voir la fiche détaillée",
+    "selectDealershipButton": "Choisir cette concession",
+    "currentDealership": "CONCESSION ACTUELLE"
+}

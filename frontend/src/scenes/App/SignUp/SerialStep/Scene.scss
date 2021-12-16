@@ -1,0 +1,95 @@
+@import "../../../../components/theme/index.scss";
+
+.sign-up-serial-step {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    align-self: stretch;
+    padding: rem-calc(66px) 7.5rem;
+    box-sizing: border-box;
+
+    &.mobile {
+        padding: rem-calc(66px) 1rem;
+    }
+
+    &.mobile-small {
+        padding: rem-calc(66px) .25rem;
+    }
+
+    .sign-up-serial-step-logo {
+        margin-top: 0;
+        height: rem-calc(140px);
+    }
+    .sign-up-serial-step-title {
+        text-align: center;
+        font-size: $fontSizeLarge;
+        font-family: $header-font-family;
+        letter-spacing: .2px;
+        color: $darkBlue;
+        margin-top: 1rem;
+        margin-bottom: 1.9rem;
+        //RESET
+        padding-left: 0;
+        line-height: normal;
+    }
+    .sign-up-serial-step-form {
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: $backgroundBlue;
+        color: $darkBlue;
+        padding: 2.5rem;
+        box-sizing: border-box;
+
+        &.mobile {
+            padding: rem-calc(66px) 1rem;
+        }
+
+        .btn {
+            margin-bottom: 2rem;
+        }
+
+        .sign-up-serial-find-client-id {
+            text-align: center;
+
+            a {
+                color: $darkBlue;
+                text-decoration: underline;
+            }
+        }
+
+        .sign-up-serial-step-links {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            flex-wrap: wrap;
+
+            .button {
+                padding: 0 1rem;
+            }
+        }
+
+        .sign-up-serial-error-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: .5rem 0px .8rem 0px;
+
+            .sign-up-serial-error {
+                max-width: 275px;
+                color: $red;
+                margin: 0;
+                margin-bottom: 10px;
+                font-family: $text-light-font-family;
+                font-size: $fontSizeMacro;
+                text-align: center;
+                &.hide {
+                    display: none;
+                }
+            }
+        }
+    }
+}

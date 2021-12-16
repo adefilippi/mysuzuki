@@ -1,0 +1,112 @@
+{
+    "serialNumber": "VIN / Numéro de série",
+    "registrationNumber": "Immatriculation",
+    "purchaseType": "Véhicule",
+    "falseInformationModalTitle": "Vos informations véhicules sont erronées",
+    "newVehicleModalTitle": "Vous souhaitez ajouter un véhicule Suzuki",
+    "newVehicleModalSubject": "Un client souhaite ajouter un véhicule",
+    "newVehicleMessageInputLabel": "Précisions (modèle, année...)",
+    "falseInformationModalSubject": "Informations véhicule erronées ",
+    "falseInformationModalHeader": "Merci de nous préciser votre demande.",
+    "falseInformationModalName": "Nom : ",
+    "falseInformationModalVin": "VIN / Numéro de série : ",
+    "falseInformationModalEmail": "Email : ",
+    "falseInformationModalMessage": "Message",
+    "falseInformationModalButton": "ENVOYER",
+    "esEnergyType": "Essence",
+    "goEnergyType": "Diesel",
+    "nextDate": {
+        "title": "Prochaine date importante",
+        "types": {
+            "control": "Contrôle technique",
+            "courtesy": "Visite de courtoisie",
+            "maintenance": "Entretien"
+        },
+        "tooltips": {
+            "control": {
+                "title": "Le Contrôle Technique est obligatoire et s'effectue :",
+                "text": "<ul><li>Au 4ème anniversaire du véhicule neuf</li><li>Puis, tous les deux ans</li></ul><p>Il est donc primordial de bien s'y préparer !<br>Ainsi, Suzuki vous propose un examen gratuit de Pré-Contrôle couvrant un ensemble de points précis.<br>Si besoin et en fonction des résultats, vous pouvez ensuite remettre votre véhicule en conformité avant de passer votre Contrôle Technique.</p>"
+            },
+            "courtesy": {
+                "title": "Visite de courtoisie",
+                "text": "<p>À cette occasion, nos équipes du Service Après-Vente effectueront un contrôle préventif de votre véhicule et répondront à toutes vos questions sur l’utilisation de votre véhicule.</p>"
+            },
+            "maintenance": {
+                "title": "Entretien",
+                "text": "<p>Suzuki vous propose un entretien adapté et sans surprise pour une route sereine et sûre !<br>Véritable check up de votre véhicule, l’entretien s’effectue en suivant les échéances prévues par le carnet d’entretien et prend en compte de manière rigoureuse différents points de contrôle. Vous serez ensuite informés des entretiens à réaliser.</p>"
+            }
+        }
+    },
+    "form": {
+        "purchaseDate": "Date d'achat",
+        "registrationDate": "Date de 1ère immatriculation",
+        "mileage": "Kilométrage",
+        "annualMileage": "En moyenne, combien de kilomètres faites-vous par an ?",
+        "purchaseDealership": "Concession d'achat",
+        "seeInformation": "Voir les informations",
+        "uncorrectInformation": "Mes informations sont incorrectes",
+        "purchaseTypeVN": "Véhicule Neuf",
+        "purchaseTypeVO": "Véhicule d'occasion",
+        "undefinedValue": "Non renseigné",
+        "fundefinedValue": "Non renseignée"
+    },
+    "errors": {
+        "mileageError": "Donnée non valide. Le kilométrage est inférieur à celui de votre dernière visite ou a une valeur trop grande.",
+        "annualMileageError": "Donnée non valide. Le kilométrage annuel a une valeur trop grande.",
+        "purchaseDate": "La date d'achat doit être valide.",
+        "purchaseDateError": "La date doit être antérieure à aujourd’hui."
+    },
+    "buttons": {
+        "newVehicle": "J'ai un autre véhicule Suzuki",
+        "deleteVehicle": "Supprimer ce véhicule",
+        "userManual": "Voir le manuel"
+    },
+   "tabs": {
+        "defaultTabTitle": "Véhicule"
+    },
+    "images": {
+       "vehicleLogoAlt": "logo"
+   },
+   "maintenances": {
+       "title": "Mes entretiens",
+       "currentDealsButton": "Voir mes offres en cours",
+       "requestMeetingButton": "Demander un rendez-vous",
+       "seeManualLinkButton": "Voir le programme d'entretien de votre {{model}}"
+   },
+    "issueMessageInputLabel": "Précisions",
+    "deleteVehicleModalTitle": "Supprimer mon véhicule",
+    "deleteVehicleModalSubject": "Suppression d'un véhicule demandé ",
+    "operations": {
+        "title": "Historique de vos opérations",
+        "addOperationButton": "Ajouter une opération",
+        "seeMoreOperationsButton": "Voir plus",
+        "seeLessOperationsButton": "Voir moins",
+        "date": "Date : ",
+        "type": "Type : ",
+        "dealership": "Concession : ",
+        "place": "Lieu : ",
+        "dateFormat": "DD/MM/YY",
+        "undefinedValue": "Non renseignée"
+    },
+    "maintenanceModal": {
+        "title": {
+            "create": "Nouvelle opération",
+            "update": "Modifier l'opération"
+        },
+        "typeFieldLabel": "Nature de l'opération",
+        "dateFieldLabel": "Date de l'opération",
+        "placeFieldLabel": "Lieu de l'opération"
+    },
+    "ES" : "Essence",
+    "GO" : "Diesel",
+    "DI" : "Diesel",
+    "deleteModal": {
+        "title": "Souhaitez-vous réellement supprimer cette opération ?",
+        "deleteButton": "Supprimer",
+        "cancelButton": "Annuler"
+    },
+    "accessories": {
+        "title": "Mes accessoires",
+        "seeAllAccessories": "Découvrir tous les accessoires"
+    }
+}

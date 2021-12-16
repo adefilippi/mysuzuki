@@ -1,0 +1,15 @@
+@import "../../../components/theme/index.scss";
+
+.admin-session {
+  height: 100vh;
+
+  &, &__loader {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__loader {
+    flex-direction: column;
+  }
+}

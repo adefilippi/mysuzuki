@@ -1,0 +1,137 @@
+@import "../../../theme/index.scss";
+
+// FOOTER SOCIALS
+.footer-socials {
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  padding-left: $spacingLarge;
+  padding-right: $spacingLarge;
+  background-color: $darkBlue;
+
+  &.mobile, &.tablet {
+    flex-wrap: wrap;
+
+    & .contact {
+      font-size: .9em;
+    }
+  }
+
+  &.mobile {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+
+    & .contact {
+      &.start,
+      &.end {
+        justify-content: center;
+      }
+    }
+  }
+
+  &.mobile-small {
+    padding-left: .5rem;
+    padding-right: .5rem;
+  }
+
+  .contact {
+    flex: 1 1 auto;
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    font-family: $header-font-family;
+    letter-spacing: 0.08rem;
+    font-size: rem-calc(35px);
+    width: min-content;
+
+    &.start,
+    &.end {
+      min-width: fit-content;
+    }
+
+    &.start {
+      justify-content: flex-start;
+    }
+
+    &.end {
+      justify-content: flex-end;
+      margin: 15px;
+    }
+
+    span {
+      &.underlined {
+        border-bottom: solid 2px white;
+        cursor: pointer;
+      }
+      margin-right: 0.5rem;
+      font-weight: bold;
+    }
+
+    .separator {
+      width: $spacingSmall;
+    }
+  }
+
+  & .footer-legal {
+    margin-right: 1rem;
+  }
+}
+
+// FOOTER HELP
+.footer-help {
+  box-sizing: border-box;
+  display: flex;
+  align-self: stretch;
+  align-items: center;
+  height: 10rem;
+  width: 100%;
+  padding: 0 .5rem;
+  background-color: $darkerDarkBlue;
+  flex-wrap: wrap;
+
+  .contact:not(.end) {
+    box-sizing: border-box;
+    flex: 1 0 50%;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: flex-start;
+    color: $white;
+    font-family: $header-font-family;
+    letter-spacing: 0.08rem;
+    font-size: .9em;
+
+    span {
+      flex: 1 0 51%;
+      text-align: center;
+      padding: 0 .3rem .5rem 0;
+    }
+  }
+
+  .contact.end {
+    box-sizing: border-box;
+    justify-content: center;
+    display: flex;
+    flex-basis: 100%;
+    align-items: center;
+    align-content: flex-start;
+    color: $white;
+    font-family: $header-font-family;
+    letter-spacing: 0.08rem;
+    font-size: .9em;
+    width: 100%;
+    text-align: center;
+
+    span { padding: 0 .3rem .5rem 0;}
+  }
+
+  &.tablet{
+    .contact {
+      font-size: rem-calc(35px);
+      .icon { margin-left: .5rem;}
+    }
+  }
+}

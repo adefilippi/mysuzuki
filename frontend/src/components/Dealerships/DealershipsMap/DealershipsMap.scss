@@ -1,0 +1,17 @@
+@import "../../theme/index.scss";
+
+.DealershipsMap {
+    flex: 1;
+    display: flex;
+}
+
+.Map {
+    display: flex;
+    flex: 1 1 0%;
+}
+
+.isHidden {
+    opacity: 0;
+    height: 0;
+    padding: 0;
+}

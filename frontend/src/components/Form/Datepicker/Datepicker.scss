@@ -1,0 +1,202 @@
+@import "../../theme/index.scss";
+
+// Overrided classes on React Datepicker outside component
+.react-datepicker{
+  border: 1px solid $primary-color !important;
+  text-transform: capitalize;
+
+  &__input-container{
+    display: flex;
+
+    & input{
+      height: $input-height;
+      box-sizing: border-box;
+      padding: rem-calc(10px) rem-calc(20px) rem-calc(10px) rem-calc(40px);
+      border: 1px solid $white;
+      color: inherit;
+      background-color: $transparent;
+      font-family: $text-font-family;
+      font-size: rem-calc($with-icon-input-text-font-size);
+      letter-spacing: 1px;
+      margin-right: 8px;
+
+      &.error{color: $red;border: 1px solid $red !important;}
+      &:focus{outline:none !important;}
+      &.transparent{border: 1px solid $primary-color;}
+      &.auto-sizing{width:auto;}
+      &.large{width:100%;}
+    }
+  }
+
+  &__current-month{
+    color: $primary-color  !important;
+  }
+
+  &__day-name{
+    color: $primary-color  !important;
+  }
+
+  &__header{
+    border-bottom: 1px solid $primary-color !important;
+    background-color: #F1F1F1 !important;
+    color: $primary-color  !important;
+
+  }
+
+  &__navigation--next{
+    border-left-color: $primary-color  !important;
+    &:focus{outline:none !important;}
+  }
+
+  &__navigation--previous{
+    border-right-color: $primary-color  !important;
+    &:focus{outline:none !important;}
+  }
+
+  &__day--selected, &__day--keyboard-selected{
+    background-color: $primary-color !important;
+  }
+
+  &__day--outside-month {
+      color: $grey;
+  }
+
+  &__month-select, &__year-select {
+      background-color: $primary-color;
+      color: $white;
+      border: none;
+  }
+
+  &__header__dropdown, &__header__dropdown--select {
+      margin: 0.5rem 0;
+  }
+}
+
+.datepicker-input-wrapper:not(.large) {
+  padding: 0 10px;
+}
+
+.react-datepicker-popper[data-placement^="bottom"] .react-datepicker__triangle,
+.react-datepicker-popper[data-placement^="bottom"] .react-datepicker__triangle::before{
+  border-bottom-color: $primary-color !important;
+}
+
+// Added classes on home Datepicker component
+
+.datepicker{
+  margin-bottom: 1rem;
+  font-family: $accent-font-family;
+  font-size: rem-calc($input-text-font-size);
+  letter-spacing: 1px;
+  color: $white;
+
+  &.transparent {color: $primary-color;}
+  &.large {width: 100%}
+
+  .error-label{
+      @extend %error-label;
+  }
+
+  &-label {
+    display: block;
+    margin-bottom: rem-calc(8px);
+    color: inherit;
+    text-transform: uppercase;
+    font-size: rem-calc($with-icon-input-text-label-font-size);
+
+    &.is-required {
+      &::after {
+          content: "*";
+          font-size: 65%;
+          vertical-align: top;
+          position: relative;
+          top: 1px;
+      }
+    }
+
+    &.error{
+        color: $red;
+    }
+  }
+
+  &-input-wrapper{
+      width: $input-width;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      position: relative;
+      & input.datetype {
+        height: 100%;
+        -webkit-appearance: textfield;
+        padding: 0;
+        margin: 0;
+      }
+
+      & .icon {
+        padding-left: 15px;
+      }
+
+      & input.datetype:hover {
+        cursor: pointer;
+      }
+
+      & input.datetype::-webkit-inner-spin-button,
+      & input.datetype::-webkit-calendar-picker-indicator,
+      & input.datetype::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        display: none;
+      }
+
+      &.large{
+          width: 100%;
+          max-width: $input-max-width;
+
+         & > div:nth-of-type(1) {
+              width: 100%;
+          }
+
+         .react-datepicker-wrapper {
+             width: 100%;
+         }
+      }
+  }
+
+  &-popper-force-bottom {
+      position: absolute;
+      top: 21.2rem !important;
+      left: 0;
+
+      .react-datepicker {
+
+          .react-datepicker__triangle  {
+              visibility: hidden !important;
+          }
+      }
+  }
+}
+
+.datepicker.error{
+    & > label {
+      color: $red;
+    }
+
+    & > .datepicker-input-wrapper {
+      border-color: $red;
+    }
+
+    .react-datepicker-wrapper .text-input-wrapper {
+      border-color: $red;
+      color: $red;
+    }
+}
+
+input[type="date"] {
+  border: 1px solid rgba(255,255,255,0) !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.rdtPicker {
+  color: $primary-color;
+}

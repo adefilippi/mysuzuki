@@ -1,0 +1,170 @@
+@import "../../theme/index.scss";
+
+$input-width: rem-calc(550px);
+
+.text {
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+    font-family: $accent-font-family;
+    font-size: rem-calc($input-text-font-size);
+    letter-spacing: 1px;
+    width: $input-width;
+    max-width: $input-max-width;
+    color: $white;
+
+        .error-label {
+            @extend %error-label;
+        }
+
+    &.dark {
+        color: $darkBlue;
+    }
+    &.with-icon {
+        font-family: $accent-font-family;
+    }
+    &.transparent {
+        color: $primary-color;
+    }
+    &.error{
+        color: $red;
+    }
+    &.large {
+        width: 100%;
+    }
+    &.multi-input {
+        margin-bottom: .5rem;
+    }
+}
+
+.text-label {
+    display: block;
+    margin-bottom: rem-calc(8px);
+    font-family: $text-light-font-family;
+
+
+    &.with-icon {
+        text-transform: uppercase;
+        font-size: rem-calc($with-icon-input-text-label-font-size);
+        font-family: $accent-font-family;
+    }
+
+    &.transparent {
+        font-family: $accent-font-family;
+        font-size: rem-calc($with-icon-input-text-label-font-size);
+        text-transform: uppercase;
+    }
+
+    &.large {
+        width: 125%;
+    }
+
+    &.is-required {
+        &::after {
+            content: "*";
+            font-size: 65%;
+            vertical-align: top;
+            position: relative;
+            top: 1px;
+        }
+    }
+
+    &.is-strong-required {
+        &::after {
+            content: "**";
+            font-size: 65%;
+            vertical-align: top;
+            position: relative;
+            top: 1px;
+        }
+    }
+
+    &.error{
+        color: $red;
+    }
+}
+
+.text-wrapper {
+    @extend .flex-align-center;
+
+    &.large {
+        width: 100%;
+    }
+}
+
+.text-input-wrapper {
+    display: flex;
+    align-items: center;
+    width: $input-width;
+    height: $input-height;
+    box-sizing: border-box;
+    padding: rem-calc(10px) rem-calc(20px);
+    border: 1px solid $white;
+    background-color: $transparent;
+    font-size: rem-calc($input-text-font-size);
+    letter-spacing: 1px;
+    position: relative;
+
+    &.dark {
+        border: 1px solid $darkBlue;
+    }
+    &.transparent {
+        border: 1px solid $primary-color;
+    }
+    &.error{
+        border: 1px solid $red;
+    }
+    &:focus {
+        outline: none;
+    }
+    &.input-tooltip {
+        min-width: $input-width;
+    }
+    &.large {
+        width: 100%;
+    }
+}
+
+.text-input {
+    flex: 2;
+    color: inherit;
+    background-color: $transparent;
+    border: none;
+    height: 100%;
+    margin-right: 5px;
+    box-sizing: border-box;
+    font-family: $text-font-family;
+    font-size: rem-calc($input-text-font-size);
+    letter-spacing: 1px;
+
+    &.with-icon {
+        font-family: $text-font-family;
+        font-size: rem-calc($with-icon-input-text-font-size);
+        margin: 0 rem-calc(20px);
+    }
+
+    &:focus {
+        outline: none;
+    }
+
+    &.large {
+        width: 100%;
+    }
+
+    &.disabled {
+        cursor: not-allowed;
+    }
+
+    &::placeholder {
+        font-size: 75%;
+        font-family: $text-light-font-family;
+    }
+}
+
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}

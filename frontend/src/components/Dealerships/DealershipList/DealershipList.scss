@@ -1,0 +1,13 @@
+@import "../../theme/index.scss";
+
+.DealershipList {
+    width: 100%;
+    box-sizing: border-box;
+    padding-bottom: 4rem;
+
+    &-loader {
+        padding-left: 45%;
+        margin-top: 20%;
+    }
+
+}

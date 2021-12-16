@@ -1,0 +1,11 @@
+{
+    "welcomeTitle": "Plus qu'une voiture, un véritable mode de vie.",
+    "welcomeHeader": "BIENVENUE SUR mySUZUKI !",
+    "welcomeText": "Un email vous a été envoyé à {{userEmail}} pour confirmer votre inscription.",
+    "welcomeTextConfirming": "Votre email {{userEmail}} est en cours de confirmation.",
+    "welcomeTextConfirmed": "Votre email {{userEmail}} est confirmé, vous allez être redirigé automatiquement.",
+    "welcomeTextExpired": "Ce lien a expiré. Afin de confirmer votre inscription, veuillez demander un nouvel envoi d'email.",
+    "welcomeQuestion": "Vous n'avez rien reçu ?",
+    "welcomeButton": "Renvoyer l'email",
+    "welcomeGoToHomeButton": "Revenir à la page d'accueil"
+}

@@ -1,0 +1,312 @@
+@import "../../../../../../components/theme/index.scss";
+
+$navBarHeight: 4.4rem;
+$navBarHeightMobile: 4rem;
+
+.nav-bar {
+  background-color: $darkerDarkBlue;
+  display: flex;
+  flex-direction: row;
+  font-family: "SuzukiPROHeadline";
+  margin: 0;
+  text-align: center;
+
+  &.mobile,
+  &.tablet {
+    padding: 0;
+    background-color: $darkBlue;
+  }
+}
+
+.nav-bar-logo {
+  height: $navBarHeight;
+
+  & img {
+    display: block;
+    height: 90%;
+    margin-top: 4px;
+    margin-left: 10px;
+  }
+
+  &.tablet {
+    height: $navBarHeight - 1.6;
+    padding: 0.8rem;
+
+    & img {
+      height: $navBarHeight - 1.6;
+    }
+  }
+
+  &.mobile {
+    height: $navBarHeightMobile - 2;
+    padding: 1rem;
+
+    & img {
+      height: $navBarHeightMobile - 2;
+    }
+  }
+}
+
+.nav-bar-item {
+  flex-grow: 1;
+
+  &:first-of-type {
+    display: block;
+    flex-grow: 0;
+    text-align: left;
+  }
+
+  & > .nav-bar-submenu-title {
+    height: $navBarHeight;
+  }
+
+  &.tablet {
+    display: table;
+  }
+
+  &.mobile {
+    display: table;
+    & > .nav-bar-submenu-title {
+      height: $navBarHeightMobile;
+    }
+  }
+}
+
+.nav-bar-submenu-container {
+  position: relative;
+
+  & > .nav-bar-submenu.open {
+    opacity: 1;
+    visibility: visible;
+    @include transition(all);
+  }
+}
+
+.nav-bar-submenu {
+  border-top: 2px solid $white;
+  display: block;
+  right: 0;
+  margin: 0;
+  opacity: 0;
+  padding: 0;
+  position: absolute;
+  top: $navBarHeight;
+  visibility: hidden;
+  min-width: 100%;
+  z-index: 1000;
+  @include transition(all);
+
+  &.mobile {
+    top: $navBarHeightMobile;
+  }
+}
+
+.mobile, .tablet{
+  .nav-bar-submenu-item {
+    width: 100%;
+    display: table
+  }
+}
+
+.nav-bar-submenu-item {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  flex-grow: 1;
+  vertical-align: center;
+  height: 100%;
+}
+
+.nav-bar-submenu-item > a,
+.nav-bar-submenu-title{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-size: 1.4vw;
+  height: $navBarHeight;
+  letter-spacing: 0.05rem;
+  text-decoration: none;
+  vertical-align: middle;
+  @include transition(all);
+
+  &:hover {
+    @include transition(all);
+  }
+}
+
+@media all and (min-width: 1300px) {
+  .nav-bar-submenu-item > a,
+  .nav-bar-submenu-title {
+    font-size: 1.2rem;
+  }
+}
+
+@media all and (max-width: 1023px) {
+  .nav-bar-submenu-item > a,
+  .nav-bar-submenu-title,
+  .nav-bar-submenu-item > .contact {
+    font-size: 1.3rem;
+  }
+}
+
+.nav-bar-submenu-item .contact {
+  display: flex;
+  align-items: center;
+  .icon {
+    margin-right: .5rem;
+  }
+}
+
+.nav-bar-submenu-nav {
+  & > .nav-bar-submenu-title {
+    display: none;
+    background-color: $darkerDarkBlue;
+  }
+
+  & .nav-bar-submenu-item > a {
+    background-color: $darkerDarkBlue;
+    color: $blue;
+    text-align: center;
+
+    &:hover {
+      background-color: $darkBlue;
+      color: $white;
+    }
+
+    &.active > span {
+      border-bottom: 3px solid $white;
+      color: $white;
+      padding: .3rem 0;
+    }
+  }
+
+  &.mobile,
+  &.tablet {
+    flex: none;
+    margin-left: auto;
+    order: 3;
+    position: initial;
+    width: $navBarHeightMobile;
+
+    & > .nav-bar-submenu-title {
+      display: table-cell;
+
+      & > .icon {
+        font-size: 1rem;
+        padding-top: 6px;
+      }
+    }
+
+    & > .nav-bar-submenu {
+      width: 100vw;
+    }
+  }
+}
+
+.nav-bar-submenu-nav:not(.mobile):not(.tablet) > .nav-bar-submenu {
+  border: 0;
+  display: flex;
+  flex-direction: row;
+  opacity: 1;
+  top: 0;
+  position: initial;
+  visibility: visible;
+}
+
+.nav-bar-submenu-user {
+  flex: none;
+  max-width: calc(100% - 64px - 129px);
+
+  @media all and (max-width: 1023px) {
+    max-width: calc(100% - 64px - 160px);
+  }
+
+  @media all and (max-width: 639px) {
+    max-width: calc(100% - 64px - 129px);
+  }
+
+  @media all and (max-width: 375px) {
+    max-width: calc(100% - 64px - 89px);
+  }
+
+  & > .nav-bar-submenu-title {
+    background-color: $blue;
+    color: $white;
+    cursor: pointer;
+    max-width: 20vw;
+    padding: 0 2.5rem 0 1rem;
+    text-align: left;
+
+    & > .icon {
+      position: absolute;
+      margin-top: -10px;
+      right: 0.8rem;
+      top: 50%;
+    }
+  }
+
+  & .nav-bar-submenu-item {
+    background-color: $blue;
+    text-align: left;
+
+    & > a {
+      color: $darkBlue;
+      padding: 0 1rem;
+      text-transform: uppercase;
+
+      &:hover {
+        background-color: $darkBlue;
+        color: $white;
+      }
+    }
+  }
+
+  & .nav-bar-logout > a {
+    color: $white;
+    font-family: "Graphik-Regular";
+    font-size: 1.1rem;
+    letter-spacing: normal;
+    padding-right: 3.6rem;
+    position: relative;
+    text-transform: none;
+
+    & > .icon {
+      position: absolute;
+      top: 50%;
+      right: 0;
+      margin: -16px 22px 0 0;
+    }
+  }
+
+  &.mobile,
+  &.tablet {
+    order: 2;
+
+    & > .nav-bar-submenu-title {
+      max-width: none;
+    }
+  }
+
+  &.mobile {
+    & > .nav-bar-submenu-title {
+      font-size: 1rem;
+      padding-right: 2.2rem;
+    }
+  }
+}
+
+@media all and (max-width: 375px) {
+  .nav-bar-logo.mobile {
+    height: $navBarHeightMobile - 2.5;
+    padding: 1.25rem 0.5rem;
+
+    & img {
+      height: $navBarHeightMobile - 2.5;
+    }
+  }
+
+  .nav-bar-submenu-user.mobile > .nav-bar-submenu-title {
+    font-size: 4vw;
+  }
+}

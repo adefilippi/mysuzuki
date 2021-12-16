@@ -1,0 +1,5 @@
+{
+    "submitButton": "ENVOYER",
+    "messageInput": "Message",
+    "messageInputError": "Ce champ est obligatoire"
+}

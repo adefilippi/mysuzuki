@@ -1,0 +1,19 @@
+version: '3.2'
+
+services:
+
+  node:
+    build:
+      context: ./docker/node
+    environment:
+      - NODE_ENV
+      - PORT=${NODE_PORT}
+      - REACT_APP_DEVELOPEMENT_API_ROOT
+      - REACT_APP_DEVELOPEMENT_API_PORT
+      - REACT_APP_DEVELOPEMENT_API_CLIENT_ID
+      - REACT_APP_DEVELOPEMENT_API_APP_TOKEN
+    expose:
+      - "${NODE_PORT}"
+    volumes:
+      - ./:/home/node/app
+    command: "npm start"
