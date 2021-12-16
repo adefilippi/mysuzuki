@@ -1,0 +1,27 @@
+fos_ck_editor:
+    default_config: simple_toolbar_with_upload
+    jquery: true
+    configs:
+        simple_toolbar:
+            toolbar:
+                - ['Bold', 'Italic', 'Underline', 'Strike', 'Link']
+                - ['BulletedList', 'NumberedList']
+                - ['Copy', 'Paste', 'PasteFromWord', '-', 'Undo', 'Redo']
+                - ['Image']
+            title: false
+        simple_toolbar_with_upload:
+            toolbar:
+                - ['Bold', 'Italic', 'Underline', 'Strike', 'Link']
+                - ['BulletedList', 'NumberedList']
+                - ['Copy', 'Paste', 'PasteFromWord', '-', 'Undo', 'Redo']
+                - ['Image']
+            title: false
+            filebrowserBrowseRoute: "elfinder"
+            filebrowserBrowseRouteParameters:
+                instance: "ckeditor"
+        minimalist_toolbar:
+            toolbar:
+                - ['Bold', 'Italic', 'Underline', 'Strike', 'Link']
+                - ['BulletedList', 'NumberedList']
+                - ['Copy', 'Paste', 'PasteFromWord', '-', 'Undo', 'Redo']
+            title: false

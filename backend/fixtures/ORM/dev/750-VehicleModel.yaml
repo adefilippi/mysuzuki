@@ -1,0 +1,15 @@
+App\Entity\VehicleModel:
+    model_swift:
+        name : SWIFT
+
+    model_vitara:
+        name : VITARA
+
+    model_alto:
+        name : ALTO
+
+    model_jimny:
+        name : JIMNY
+
+    model_ignis:
+        name : IGNIS

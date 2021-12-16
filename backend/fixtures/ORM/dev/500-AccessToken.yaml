@@ -1,0 +1,9 @@
+App\Entity\AccessToken:
+    user-access-token:
+        token: user-access-token
+        user: "@user_richard"
+        client: "@client"
+        
+    app-access-token:
+        token: app-access-token
+        client: "@client"

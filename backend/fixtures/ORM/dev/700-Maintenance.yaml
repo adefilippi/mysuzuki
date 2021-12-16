@@ -1,0 +1,7 @@
+App\Entity\Maintenance:
+    maintenance_{1..5}:
+        date: <dateTimeThisDecade()>
+        type: "<randomElement(['Vidange', 'Contrôle technique', 'Changement de plaquettes'])>"
+        place: "<company()>"
+        vehicle: '@vehicle_richard'
+        local: true

@@ -1,0 +1,1459 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions targetNamespace="http://preprodws.izybysuzuki.fr/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://preprodws.izybysuzuki.fr/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+    <wsdl:types>
+        <s:schema elementFormDefault="qualified" targetNamespace="http://preprodws.izybysuzuki.fr/">
+            <s:element name="getInformationsClientVehicule">
+                <s:complexType>
+                    <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="nom" type="s:string"/>
+                        <s:element minOccurs="0" maxOccurs="1" name="vin" type="s:string"/>
+                    </s:sequence>
+                </s:complexType>
+            </s:element>
+            <s:element name="getInformationsClientVehiculeResponse">
+                <s:complexType>
+                    <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="getInformationsClientVehiculeResult" type="tns:GetInformationsClientVehiculeReponse"/>
+                    </s:sequence>
+                </s:complexType>
+            </s:element>
+            <s:complexType name="GetInformationsClientVehiculeReponse">
+                <s:sequence>
+                    <s:element minOccurs="0" maxOccurs="1" name="client" type="tns:Client"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="vehicule" type="tns:Vehicule"/>
+                </s:sequence>
+            </s:complexType>
+            <s:complexType name="Client">
+                <s:sequence>
+                    <s:element minOccurs="0" maxOccurs="1" name="champs_modifies" type="tns:ArrayOfString"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="id_client" type="s:long"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="adr2" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="adr3" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="adr4" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="adr5" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="pays" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="civ1" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="civ2" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="nom" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="prenom1" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="prenom2" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="code_postal" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="ville" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="insee" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="code_ce" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="tel" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="mobile" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="fax" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="email1" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="email2" type="s:string"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="date_naissance1" nillable="true" type="s:dateTime"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="date_naissance2" nillable="true" type="s:dateTime"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="optin_email1" type="s:boolean"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="optin_email2" type="s:boolean"/>
+                </s:sequence>
+            </s:complexType>
+            <s:complexType name="ArrayOfString">
+                <s:sequence>
+                    <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string"/>
+                </s:sequence>
+            </s:complexType>
+            <s:complexType name="Vehicule">
+                <s:sequence>
+                    <s:element minOccurs="0" maxOccurs="1" name="champs_modifies" type="tns:ArrayOfString"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="code_vin" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="libelle_gamme" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="carroserie" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="energie" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="code_couleur" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="libelle_couleur" type="s:string"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="date_achat_vehicule" type="s:dateTime"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="kilometrage" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="id_conc_orig_vehicule" type="s:string"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="date_entretien" nillable="true" type="s:dateTime"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="immatriculation" type="s:string"/>
+                </s:sequence>
+            </s:complexType>
+            <s:element name="getInformationsClientAllVehicules">
+                <s:complexType>
+                    <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="nom" type="s:string"/>
+                        <s:element minOccurs="0" maxOccurs="1" name="vin" type="s:string"/>
+                    </s:sequence>
+                </s:complexType>
+            </s:element>
+            <s:element name="getInformationsClientAllVehiculesResponse">
+                <s:complexType>
+                    <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="getInformationsClientAllVehiculesResult" type="tns:GetInformationsClientAllVehiculesReponse"/>
+                    </s:sequence>
+                </s:complexType>
+            </s:element>
+            <s:complexType name="GetInformationsClientAllVehiculesReponse">
+                <s:sequence>
+                    <s:element minOccurs="0" maxOccurs="1" name="client" type="tns:Client"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="vehicules" type="tns:ArrayOfVehicule"/>
+                </s:sequence>
+            </s:complexType>
+            <s:complexType name="ArrayOfVehicule">
+                <s:sequence>
+                    <s:element minOccurs="0" maxOccurs="unbounded" name="Vehicule" nillable="true" type="tns:Vehicule"/>
+                </s:sequence>
+            </s:complexType>
+            <s:element name="saveClient">
+                <s:complexType>
+                    <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="client" type="tns:Client"/>
+                    </s:sequence>
+                </s:complexType>
+            </s:element>
+            <s:element name="saveClientResponse">
+                <s:complexType>
+                    <s:sequence>
+                        <s:element minOccurs="1" maxOccurs="1" name="saveClientResult" type="s:boolean"/>
+                    </s:sequence>
+                </s:complexType>
+            </s:element>
+            <s:element name="saveClient2">
+                <s:complexType>
+                    <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="client" type="tns:Client2"/>
+                        <s:element minOccurs="1" maxOccurs="1" name="source" type="s:short"/>
+                        <s:element minOccurs="1" maxOccurs="1" name="date_modification" type="s:dateTime"/>
+                    </s:sequence>
+                </s:complexType>
+            </s:element>
+            <s:complexType name="Client2">
+                <s:sequence>
+                    <s:element minOccurs="0" maxOccurs="1" name="champs_modifies" type="tns:ArrayOfString"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="id_client" type="s:long"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="adr2" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="adr3" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="adr4" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="adr5" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="pays" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="civ1" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="civ2" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="nom" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="prenom1" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="prenom2" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="code_postal" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="ville" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="insee" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="code_ce" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="tel" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="mobile" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="fax" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="email1" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="email2" type="s:string"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="date_naissance1" nillable="true" type="s:dateTime"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="date_naissance2" nillable="true" type="s:dateTime"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="optin_email1" type="s:boolean"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="optin_email2" type="s:boolean"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="code_ce_decla" type="s:string"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="demarchage_tel" type="s:boolean"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="optin_SMS" type="s:boolean"/>
+                </s:sequence>
+            </s:complexType>
+            <s:element name="saveClient2Response">
+                <s:complexType>
+                    <s:sequence>
+                        <s:element minOccurs="1" maxOccurs="1" name="saveClient2Result" type="s:boolean"/>
+                    </s:sequence>
+                </s:complexType>
+            </s:element>
+            <s:element name="saveClient3">
+                <s:complexType>
+                    <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="client3" type="tns:Client3"/>
+                        <s:element minOccurs="1" maxOccurs="1" name="source" type="s:short"/>
+                        <s:element minOccurs="1" maxOccurs="1" name="date_modification" type="s:dateTime"/>
+                        <s:element minOccurs="1" maxOccurs="1" name="id_utilisateur" nillable="true" type="s:long"/>
+                    </s:sequence>
+                </s:complexType>
+            </s:element>
+            <s:complexType name="Client3">
+                <s:sequence>
+                    <s:element minOccurs="0" maxOccurs="1" name="champs_modifies" type="tns:ArrayOfString"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="id_client" type="s:long"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="adr2" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="adr3" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="adr4" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="adr5" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="pays" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="civ1" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="civ2" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="nom" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="prenom1" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="prenom2" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="code_postal" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="ville" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="insee" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="code_ce" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="tel" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="mobile" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="email1" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="email2" type="s:string"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="date_naissance1" nillable="true" type="s:dateTime"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="date_naissance2" nillable="true" type="s:dateTime"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="optin_email1" type="s:boolean"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="optin_email2" type="s:boolean"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="code_ce_decla" type="s:string"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="demarchage_tel" nillable="true" type="s:boolean"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="demarchage_mobile" nillable="true" type="s:boolean"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="optin_SMS" type="s:boolean"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="Bloctel_tel" nillable="true" type="s:boolean"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="Bloctel_mobile" nillable="true" type="s:boolean"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="intention_achat" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="raison_sociale2" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="APE" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="fax" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="code_sirene" type="s:string"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="id_tranche_effectif" nillable="true" type="s:unsignedByte"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="moment_joindre" nillable="true" type="s:int"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="libelle_APE" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="siret" type="s:string"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="nombre_vehicules_flotte" nillable="true" type="s:short"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="type_modele_flotte" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="ListVehicule_Concurrent" type="tns:ArrayOfVehiculeConcurrent2"/>
+                </s:sequence>
+            </s:complexType>
+            <s:complexType name="ArrayOfVehiculeConcurrent2">
+                <s:sequence>
+                    <s:element minOccurs="0" maxOccurs="unbounded" name="VehiculeConcurrent2" nillable="true" type="tns:VehiculeConcurrent2"/>
+                </s:sequence>
+            </s:complexType>
+            <s:complexType name="VehiculeConcurrent2">
+                <s:sequence>
+                    <s:element minOccurs="1" maxOccurs="1" name="id_vehicule_concurrent" nillable="true" type="s:long"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="code_vin" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="marque" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="modele" type="s:string"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="puissance_fiscale" nillable="true" type="s:unsignedByte"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="energie" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="genre" type="s:string"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="date_achat_vehicule" nillable="true" type="s:dateTime"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="kilometrage" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="immatriculation" type="s:string"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="date_premiere_immat" nillable="true" type="s:dateTime"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="type_achat" type="s:string"/>
+                </s:sequence>
+            </s:complexType>
+            <s:element name="saveClient3Response">
+                <s:complexType>
+                    <s:sequence>
+                        <s:element minOccurs="1" maxOccurs="1" name="saveClient3Result" type="s:boolean"/>
+                    </s:sequence>
+                </s:complexType>
+            </s:element>
+            <s:element name="saveVehicule">
+                <s:complexType>
+                    <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="vehicule" type="tns:Vehicule"/>
+                        <s:element minOccurs="0" maxOccurs="1" name="nom" type="s:string"/>
+                        <s:element minOccurs="0" maxOccurs="1" name="id_client" type="s:string"/>
+                    </s:sequence>
+                </s:complexType>
+            </s:element>
+            <s:element name="saveVehiculeResponse">
+                <s:complexType>
+                    <s:sequence>
+                        <s:element minOccurs="1" maxOccurs="1" name="saveVehiculeResult" type="s:boolean"/>
+                    </s:sequence>
+                </s:complexType>
+            </s:element>
+            <s:element name="GetInformationEntretienVehicule">
+                <s:complexType>
+                    <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="vin" type="s:string"/>
+                    </s:sequence>
+                </s:complexType>
+            </s:element>
+            <s:element name="GetInformationEntretienVehiculeResponse">
+                <s:complexType>
+                    <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="GetInformationEntretienVehiculeResult" type="tns:GetInformationEntretienVehiculeReponse"/>
+                    </s:sequence>
+                </s:complexType>
+            </s:element>
+            <s:complexType name="GetInformationEntretienVehiculeReponse">
+                <s:sequence>
+                    <s:element minOccurs="0" maxOccurs="1" name="entretiens" type="tns:ArrayOfEntretien"/>
+                </s:sequence>
+            </s:complexType>
+            <s:complexType name="ArrayOfEntretien">
+                <s:sequence>
+                    <s:element minOccurs="0" maxOccurs="unbounded" name="Entretien" nillable="true" type="tns:Entretien"/>
+                </s:sequence>
+            </s:complexType>
+            <s:complexType name="Entretien">
+                <s:sequence>
+                    <s:element minOccurs="1" maxOccurs="1" name="id_entretien" type="s:long"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="_idVoiture" type="s:string"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="idClient" type="s:long"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="nom_client" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="prenom_client" type="s:string"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="date_entretien" type="s:dateTime"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="kilometrage" type="s:int"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="code_CE" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="type_entretien" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="detail_entretien" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="ordreReparation" type="s:string"/>
+                </s:sequence>
+            </s:complexType>
+            <s:element name="insertProspect">
+                <s:complexType>
+                    <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="prospect" type="tns:prospect"/>
+                    </s:sequence>
+                </s:complexType>
+            </s:element>
+            <s:complexType name="prospect">
+                <s:sequence>
+                    <s:element minOccurs="0" maxOccurs="1" name="adresse2" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="adresse3" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="adresse4" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="civ" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="nom" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="prenom" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="code_postal" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="ville" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="code_ce_choisi" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="telephone" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="mobile" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="date_naissance" nillable="true" type="s:dateTime"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="optin_email" nillable="true" type="s:boolean"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="optin_SMS" nillable="true" type="s:boolean"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="demarchage_tel" nillable="true" type="s:boolean"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="date_inscription" type="s:dateTime"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="Source" nillable="true" type="s:short"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="id_utilisateur" nillable="true" type="s:long"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="marque_concurrent" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="modele_concurrent" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="type_vente" type="s:string"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="date_acquisition" nillable="true" type="s:dateTime"/>
+                </s:sequence>
+            </s:complexType>
+            <s:element name="insertProspectResponse">
+                <s:complexType>
+                    <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="insertProspectResult" type="tns:InsertProspectReponse"/>
+                    </s:sequence>
+                </s:complexType>
+            </s:element>
+            <s:complexType name="InsertProspectReponse">
+                <s:sequence>
+                    <s:element minOccurs="1" maxOccurs="1" name="id_client" type="s:long"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="validation" type="s:boolean"/>
+                </s:sequence>
+            </s:complexType>
+            <s:element name="insertProspect2">
+                <s:complexType>
+                    <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="prospect" type="tns:prospect2"/>
+                    </s:sequence>
+                </s:complexType>
+            </s:element>
+            <s:complexType name="prospect2">
+                <s:sequence>
+                    <s:element minOccurs="0" maxOccurs="1" name="vehicule_concurent" type="tns:ArrayOfVehiculeConcurrent2"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="adresse2" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="adresse3" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="adresse4" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="adresse5" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="civ" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="nom" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="prenom" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="code_postal" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="ville" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="code_ce_choisi" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="telephone" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="mobile" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="date_naissance" nillable="true" type="s:dateTime"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="optin_email" nillable="true" type="s:boolean"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="optin_SMS" nillable="true" type="s:boolean"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="demarchage_tel" nillable="true" type="s:boolean"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="date_inscription" type="s:dateTime"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="Source" nillable="true" type="s:short"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="id_utilisateur" nillable="true" type="s:long"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="moment_joindre" nillable="true" type="s:int"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="demarchage_mobile" nillable="true" type="s:boolean"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="raison_sociale2" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="APE" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="fax" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="code_sirene" type="s:string"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="id_tranche_effectif" nillable="true" type="s:unsignedByte"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="insee" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="libelle_APE" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="siret" type="s:string"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="nombre_vehicules_flotte" nillable="true" type="s:short"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="type_modele_flotte" type="s:string"/>
+                </s:sequence>
+            </s:complexType>
+            <s:element name="insertProspect2Response">
+                <s:complexType>
+                    <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="insertProspect2Result" type="tns:InsertProspectReponse2"/>
+                    </s:sequence>
+                </s:complexType>
+            </s:element>
+            <s:complexType name="InsertProspectReponse2">
+                <s:sequence>
+                    <s:element minOccurs="1" maxOccurs="1" name="id_client" type="s:long"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="validation" type="s:boolean"/>
+                </s:sequence>
+            </s:complexType>
+            <s:element name="AuthentificationUtilisateur">
+                <s:complexType>
+                    <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="user" type="tns:UserAuthentification"/>
+                    </s:sequence>
+                </s:complexType>
+            </s:element>
+            <s:complexType name="UserAuthentification">
+                <s:sequence>
+                    <s:element minOccurs="0" maxOccurs="1" name="Login" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="applicatif" type="s:unsignedByte"/>
+                </s:sequence>
+            </s:complexType>
+            <s:element name="AuthentificationUtilisateurResponse">
+                <s:complexType>
+                    <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="AuthentificationUtilisateurResult" type="tns:AuthentificationReponse"/>
+                    </s:sequence>
+                </s:complexType>
+            </s:element>
+            <s:complexType name="AuthentificationReponse">
+                <s:sequence>
+                    <s:element minOccurs="1" maxOccurs="1" name="validation" type="s:boolean"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="id_utilisateur" type="s:long"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="droit" type="s:short"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="nom_prenom" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="concession" type="tns:ArrayOfString"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="admin" type="s:boolean"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="message" type="s:string"/>
+                </s:sequence>
+            </s:complexType>
+            <s:element name="AuthentificationUtilisateur2">
+                <s:complexType>
+                    <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="user" type="tns:UserAuthentification2"/>
+                    </s:sequence>
+                </s:complexType>
+            </s:element>
+            <s:complexType name="UserAuthentification2">
+                <s:sequence>
+                    <s:element minOccurs="0" maxOccurs="1" name="Login" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="applicatif" type="s:unsignedByte"/>
+                </s:sequence>
+            </s:complexType>
+            <s:element name="AuthentificationUtilisateur2Response">
+                <s:complexType>
+                    <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="AuthentificationUtilisateur2Result" type="tns:AuthentificationReponse2"/>
+                    </s:sequence>
+                </s:complexType>
+            </s:element>
+            <s:complexType name="AuthentificationReponse2">
+                <s:sequence>
+                    <s:element minOccurs="1" maxOccurs="1" name="validation" type="s:boolean"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="id_utilisateur" type="s:long"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="droit" type="s:short"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="nom_prenom" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="SiteDeVente" type="tns:ArrayOfString"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="SiteSAV" type="tns:ArrayOfString"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="admin" type="s:boolean"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="message" type="s:string"/>
+                </s:sequence>
+            </s:complexType>
+            <s:element name="GetInfoContactVehicule">
+                <s:complexType>
+                    <s:sequence>
+                        <s:element minOccurs="1" maxOccurs="1" name="id_client" type="s:long"/>
+                        <s:element minOccurs="0" maxOccurs="1" name="Vin" type="s:string"/>
+                    </s:sequence>
+                </s:complexType>
+            </s:element>
+            <s:element name="GetInfoContactVehiculeResponse">
+                <s:complexType>
+                    <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="GetInfoContactVehiculeResult" type="tns:GetInfoContactVehiculeReponse"/>
+                    </s:sequence>
+                </s:complexType>
+            </s:element>
+            <s:complexType name="GetInfoContactVehiculeReponse">
+                <s:sequence>
+                    <s:element minOccurs="0" maxOccurs="1" name="contact" type="tns:Contact"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="vehicule" type="tns:vehicule_Simple"/>
+                </s:sequence>
+            </s:complexType>
+            <s:complexType name="Contact">
+                <s:sequence>
+                    <s:element minOccurs="1" maxOccurs="1" name="id_client" type="s:long"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="civ" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="nom" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="prenom" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="adr2" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="adr3" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="adr4" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="adr5" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="pays" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="code_postal" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="ville" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="tel" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="mobile" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="optin_email" type="s:boolean"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="date_naissance" nillable="true" type="s:dateTime"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="Moment_joindre" type="s:string"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="Demarchage_Tel" nillable="true" type="s:boolean"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="statut" type="s:string"/>
+                </s:sequence>
+            </s:complexType>
+            <s:complexType name="vehicule_Simple">
+                <s:sequence>
+                    <s:element minOccurs="0" maxOccurs="1" name="code_vin" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="libelle_gamme" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="libelle_court_gamme" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="carrosserie" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="energie" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="libelle_couleur" type="s:string"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="date_achat_vehicule" nillable="true" type="s:dateTime"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="date_premiere_immat" nillable="true" type="s:dateTime"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="kilometrage" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="id_conc_orig_vehicule" type="s:string"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="date_entretien" nillable="true" type="s:dateTime"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="immatriculation" type="s:string"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="date_vente" nillable="true" type="s:dateTime"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="type_achat" type="s:string"/>
+                </s:sequence>
+            </s:complexType>
+            <s:element name="GetInfoContactVehicule2">
+                <s:complexType>
+                    <s:sequence>
+                        <s:element minOccurs="1" maxOccurs="1" name="id_client" type="s:long"/>
+                        <s:element minOccurs="0" maxOccurs="1" name="Vin" type="s:string"/>
+                    </s:sequence>
+                </s:complexType>
+            </s:element>
+            <s:element name="GetInfoContactVehicule2Response">
+                <s:complexType>
+                    <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="GetInfoContactVehicule2Result" type="tns:GetInfoContactVehiculeReponse2"/>
+                    </s:sequence>
+                </s:complexType>
+            </s:element>
+            <s:complexType name="GetInfoContactVehiculeReponse2">
+                <s:sequence>
+                    <s:element minOccurs="0" maxOccurs="1" name="contact2" type="tns:Contact2"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="vehicule_simple" type="tns:vehicule_Simple"/>
+                </s:sequence>
+            </s:complexType>
+            <s:complexType name="Contact2">
+                <s:sequence>
+                    <s:element minOccurs="1" maxOccurs="1" name="id_client" type="s:long"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="civ" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="nom" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="prenom" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="adr2" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="adr3" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="adr4" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="adr5" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="pays" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="code_postal" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="ville" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="tel" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="mobile" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="Code_CE" type="s:string"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="optin_email" type="s:boolean"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="date_naissance" nillable="true" type="s:dateTime"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="Moment_joindre" type="s:string"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="Demarchage_Tel" nillable="true" type="s:boolean"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="Demarchage_mobile" nillable="true" type="s:boolean"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="statut" type="s:string"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="optin_SMS" type="s:boolean"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="Bloctel_tel" nillable="true" type="s:boolean"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="Bloctel_mobile" nillable="true" type="s:boolean"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="raison_sociale2" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="APE" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="fax" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="code_sirene" type="s:string"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="id_tranche_effectif" nillable="true" type="s:unsignedByte"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="libelle_APE" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="siret" type="s:string"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="nombre_vehicules_flotte" nillable="true" type="s:short"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="type_modele_flotte" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="Source_origine" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="Mention_legale" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="vehicule_concurrent" type="tns:ArrayOfVehiculeConcurrent2"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="contacts_entreprise" type="tns:ArrayOfContact_entreprise"/>
+                </s:sequence>
+            </s:complexType>
+            <s:complexType name="ArrayOfContact_entreprise">
+                <s:sequence>
+                    <s:element minOccurs="0" maxOccurs="unbounded" name="contact_entreprise" nillable="true" type="tns:contact_entreprise"/>
+                </s:sequence>
+            </s:complexType>
+            <s:complexType name="contact_entreprise">
+                <s:sequence>
+                    <s:element minOccurs="1" maxOccurs="1" name="id_contact_entreprise" nillable="true" type="s:long"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="civilite" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="nom" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="prenom" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="fonction" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="service" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="telephone" type="s:string"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="top_decideur" type="s:boolean"/>
+                </s:sequence>
+            </s:complexType>
+            <s:element name="GetListVehiculeContact">
+                <s:complexType>
+                    <s:sequence>
+                        <s:element minOccurs="1" maxOccurs="1" name="id_contact" type="s:long"/>
+                    </s:sequence>
+                </s:complexType>
+            </s:element>
+            <s:element name="GetListVehiculeContactResponse">
+                <s:complexType>
+                    <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="GetListVehiculeContactResult" type="tns:GetListVeiculeClientReponse"/>
+                    </s:sequence>
+                </s:complexType>
+            </s:element>
+            <s:complexType name="GetListVeiculeClientReponse">
+                <s:sequence>
+                    <s:element minOccurs="1" maxOccurs="1" name="id_client" type="s:long"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="listVehiculeSuzuki" type="tns:ArrayOfVehicule_Simple"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="listVehiculeconcurent" type="tns:ArrayOfVehiculeConcurent"/>
+                </s:sequence>
+            </s:complexType>
+            <s:complexType name="ArrayOfVehicule_Simple">
+                <s:sequence>
+                    <s:element minOccurs="0" maxOccurs="unbounded" name="vehicule_Simple" nillable="true" type="tns:vehicule_Simple"/>
+                </s:sequence>
+            </s:complexType>
+            <s:complexType name="ArrayOfVehiculeConcurent">
+                <s:sequence>
+                    <s:element minOccurs="0" maxOccurs="unbounded" name="VehiculeConcurent" nillable="true" type="tns:VehiculeConcurent"/>
+                </s:sequence>
+            </s:complexType>
+            <s:complexType name="VehiculeConcurent">
+                <s:sequence>
+                    <s:element minOccurs="0" maxOccurs="1" name="code_vin" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="marque" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="modele" type="s:string"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="puissance_fiscale" nillable="true" type="s:unsignedByte"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="energie" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="genre" type="s:string"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="date_achat_vehicule" nillable="true" type="s:dateTime"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="kilometrage" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="immatriculation" type="s:string"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="date_premiere_immat" nillable="true" type="s:dateTime"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="type_achat" type="s:string"/>
+                </s:sequence>
+            </s:complexType>
+            <s:element name="GetListSiteDeVenteAll">
+                <s:complexType/>
+            </s:element>
+            <s:element name="GetListSiteDeVenteAllResponse">
+                <s:complexType>
+                    <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="GetListSiteDeVenteAllResult" type="tns:SiteDeVenteReponse"/>
+                    </s:sequence>
+                </s:complexType>
+            </s:element>
+            <s:complexType name="SiteDeVenteReponse">
+                <s:sequence>
+                    <s:element minOccurs="0" maxOccurs="1" name="ListeSiteDeVente" type="tns:ArrayOfSiteDevente"/>
+                </s:sequence>
+            </s:complexType>
+            <s:complexType name="ArrayOfSiteDevente">
+                <s:sequence>
+                    <s:element minOccurs="0" maxOccurs="unbounded" name="SiteDevente" nillable="true" type="tns:SiteDevente"/>
+                </s:sequence>
+            </s:complexType>
+            <s:complexType name="SiteDevente">
+                <s:sequence>
+                    <s:element minOccurs="0" maxOccurs="1" name="code_sitePrimaire" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="code_CE" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="raison_sociale" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="adr3" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="adr4" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="adr5" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="code_postal" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="ville" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="RCS" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="telephone" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="fax" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="nom_directeur" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="prenom_directeur" type="s:string"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="id_region_vente" nillable="true" type="s:unsignedByte"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="id_region_SAV" nillable="true" type="s:unsignedByte"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="libelle_region_vente" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="libelle_region_sav" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="initiale_region_vente" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="initiale_region_sav" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="email_chef_region_vente" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="list_email_vendeur" type="tns:ArrayOfString"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="fermer" type="s:boolean"/>
+                </s:sequence>
+            </s:complexType>
+            <s:element name="GetListSiteDeVenteAll2">
+                <s:complexType/>
+            </s:element>
+            <s:element name="GetListSiteDeVenteAll2Response">
+                <s:complexType>
+                    <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="GetListSiteDeVenteAll2Result" type="tns:SiteDeVenteReponse2"/>
+                    </s:sequence>
+                </s:complexType>
+            </s:element>
+            <s:complexType name="SiteDeVenteReponse2">
+                <s:sequence>
+                    <s:element minOccurs="0" maxOccurs="1" name="ListeSiteDeVente" type="tns:ArrayOfSiteDevente2"/>
+                </s:sequence>
+            </s:complexType>
+            <s:complexType name="ArrayOfSiteDevente2">
+                <s:sequence>
+                    <s:element minOccurs="0" maxOccurs="unbounded" name="SiteDevente2" nillable="true" type="tns:SiteDevente2"/>
+                </s:sequence>
+            </s:complexType>
+            <s:complexType name="SiteDevente2">
+                <s:sequence>
+                    <s:element minOccurs="1" maxOccurs="1" name="fermer" type="s:boolean"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="code_sitePrimaire" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="code_CE" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="raison_sociale" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="adr3" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="adr4" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="adr5" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="code_postal" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="ville" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="RCS" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="telephone" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="fax" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="nom_directeur" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="prenom_directeur" type="s:string"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="id_region_vente" nillable="true" type="s:unsignedByte"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="id_region_SAV" nillable="true" type="s:unsignedByte"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="libelle_region_vente" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="libelle_region_sav" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="initiale_region_vente" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="initiale_region_sav" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="email_chef_region_vente" type="s:string"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="monde" nillable="true" type="s:unsignedByte"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="GPS_Longitude" nillable="true" type="s:double"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="GPS_Latitude" nillable="true" type="s:double"/>
+                </s:sequence>
+            </s:complexType>
+            <s:element name="GetHistoriqueMarketing">
+                <s:complexType>
+                    <s:sequence>
+                        <s:element minOccurs="1" maxOccurs="1" name="id_contact" type="s:long"/>
+                    </s:sequence>
+                </s:complexType>
+            </s:element>
+            <s:element name="GetHistoriqueMarketingResponse">
+                <s:complexType>
+                    <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="GetHistoriqueMarketingResult" type="tns:HistoriqueMarketingResponse"/>
+                    </s:sequence>
+                </s:complexType>
+            </s:element>
+            <s:complexType name="HistoriqueMarketingResponse">
+                <s:sequence>
+                    <s:element minOccurs="0" maxOccurs="1" name="Sollicitations" type="tns:ArrayOfSollicitation"/>
+                </s:sequence>
+            </s:complexType>
+            <s:complexType name="ArrayOfSollicitation">
+                <s:sequence>
+                    <s:element minOccurs="0" maxOccurs="unbounded" name="sollicitation" nillable="true" type="tns:sollicitation"/>
+                </s:sequence>
+            </s:complexType>
+            <s:complexType name="sollicitation">
+                <s:sequence>
+                    <s:element minOccurs="1" maxOccurs="1" name="id_sollicitation" type="s:long"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="libelle_monde" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="libelle_type_media" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="code_SiteDeVente" type="s:string"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="num_com_extramail" nillable="true" type="s:short"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="date_envoi" nillable="true" type="s:dateTime"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="libelle_campagne" type="s:string"/>
+                </s:sequence>
+            </s:complexType>
+            <s:element name="UpdatecontactEntreprise">
+                <s:complexType>
+                    <s:sequence>
+                        <s:element minOccurs="1" maxOccurs="1" name="id_client" type="s:long"/>
+                        <s:element minOccurs="0" maxOccurs="1" name="ObjetContactsEntreprise" type="tns:ObjetContactsEntreprise"/>
+                        <s:element minOccurs="1" maxOccurs="1" name="source" type="s:short"/>
+                        <s:element minOccurs="1" maxOccurs="1" name="date_Modification" type="s:dateTime"/>
+                        <s:element minOccurs="1" maxOccurs="1" name="id_utilisateur" type="s:long"/>
+                    </s:sequence>
+                </s:complexType>
+            </s:element>
+            <s:complexType name="ObjetContactsEntreprise">
+                <s:sequence>
+                    <s:element minOccurs="0" maxOccurs="1" name="List_ContactEntreprise" type="tns:ArrayOfContact_entreprise"/>
+                </s:sequence>
+            </s:complexType>
+            <s:element name="UpdatecontactEntrepriseResponse">
+                <s:complexType>
+                    <s:sequence>
+                        <s:element minOccurs="1" maxOccurs="1" name="UpdatecontactEntrepriseResult" type="s:boolean"/>
+                    </s:sequence>
+                </s:complexType>
+            </s:element>
+            <s:element name="GetInfoWebSite">
+                <s:complexType>
+                    <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="code_sitedevente" type="s:string"/>
+                    </s:sequence>
+                </s:complexType>
+            </s:element>
+            <s:element name="GetInfoWebSiteResponse">
+                <s:complexType>
+                    <s:sequence>
+                        <s:element minOccurs="0" maxOccurs="1" name="GetInfoWebSiteResult" type="tns:InfoWebSites"/>
+                    </s:sequence>
+                </s:complexType>
+            </s:element>
+            <s:complexType name="InfoWebSites">
+                <s:sequence>
+                    <s:element minOccurs="0" maxOccurs="1" name="website" type="tns:WebSite"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="code_sitedevente" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="URL" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="ListEspace" type="tns:ArrayOfEspace"/>
+                </s:sequence>
+            </s:complexType>
+            <s:complexType name="WebSite">
+                <s:sequence>
+                    <s:element minOccurs="1" maxOccurs="1" name="id_site_web" type="s:int"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="descriptif" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="info" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="listcontacts_web" type="tns:ArrayOfContact_web"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="ListPrestation" type="tns:ArrayOfString"/>
+                </s:sequence>
+            </s:complexType>
+            <s:complexType name="ArrayOfContact_web">
+                <s:sequence>
+                    <s:element minOccurs="0" maxOccurs="unbounded" name="contact_web" nillable="true" type="tns:contact_web"/>
+                </s:sequence>
+            </s:complexType>
+            <s:complexType name="contact_web">
+                <s:sequence>
+                    <s:element minOccurs="1" maxOccurs="1" name="id_contact_web" type="s:long"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="civilite" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="nom" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="prenom" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="telephone" type="s:string"/>
+                </s:sequence>
+            </s:complexType>
+            <s:complexType name="ArrayOfEspace">
+                <s:sequence>
+                    <s:element minOccurs="0" maxOccurs="unbounded" name="Espace" nillable="true" type="tns:Espace"/>
+                </s:sequence>
+            </s:complexType>
+            <s:complexType name="Espace">
+                <s:sequence>
+                    <s:element minOccurs="0" maxOccurs="1" name="email" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="type_espace" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="ListHoraires" type="tns:ArrayOfJour_ouverture"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="ListHoraires_exceptionnels" type="tns:ArrayOfJour_exceptionnel"/>
+                </s:sequence>
+            </s:complexType>
+            <s:complexType name="ArrayOfJour_ouverture">
+                <s:sequence>
+                    <s:element minOccurs="0" maxOccurs="unbounded" name="jour_ouverture" nillable="true" type="tns:jour_ouverture"/>
+                </s:sequence>
+            </s:complexType>
+            <s:complexType name="jour_ouverture">
+                <s:sequence>
+                    <s:element minOccurs="0" maxOccurs="1" name="jour" type="s:string"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="list_plage_horaire" type="tns:ArrayOfPlage_horaire"/>
+                </s:sequence>
+            </s:complexType>
+            <s:complexType name="ArrayOfPlage_horaire">
+                <s:sequence>
+                    <s:element minOccurs="0" maxOccurs="unbounded" name="Plage_horaire" nillable="true" type="tns:Plage_horaire"/>
+                </s:sequence>
+            </s:complexType>
+            <s:complexType name="Plage_horaire">
+                <s:sequence>
+                    <s:element minOccurs="1" maxOccurs="1" name="heure_debut" nillable="true" type="s:unsignedByte"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="heure_fin" nillable="true" type="s:unsignedByte"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="minute_debut" nillable="true" type="s:unsignedByte"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="minute_fin" nillable="true" type="s:unsignedByte"/>
+                </s:sequence>
+            </s:complexType>
+            <s:complexType name="ArrayOfJour_exceptionnel">
+                <s:sequence>
+                    <s:element minOccurs="0" maxOccurs="unbounded" name="Jour_exceptionnel" nillable="true" type="tns:Jour_exceptionnel"/>
+                </s:sequence>
+            </s:complexType>
+            <s:complexType name="Jour_exceptionnel">
+                <s:sequence>
+                    <s:element minOccurs="1" maxOccurs="1" name="date" type="s:dateTime"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="type_jour_exceptionnel" type="s:string"/>
+                    <s:element minOccurs="1" maxOccurs="1" name="date_fin_periode" nillable="true" type="s:dateTime"/>
+                    <s:element minOccurs="0" maxOccurs="1" name="ListPlageHoraires" type="tns:ArrayOfPlage_horaire"/>
+                </s:sequence>
+            </s:complexType>
+        </s:schema>
+    </wsdl:types>
+    <wsdl:message name="getInformationsClientVehiculeSoapIn">
+        <wsdl:part name="parameters" element="tns:getInformationsClientVehicule"/>
+    </wsdl:message>
+    <wsdl:message name="getInformationsClientVehiculeSoapOut">
+        <wsdl:part name="parameters" element="tns:getInformationsClientVehiculeResponse"/>
+    </wsdl:message>
+    <wsdl:message name="getInformationsClientAllVehiculesSoapIn">
+        <wsdl:part name="parameters" element="tns:getInformationsClientAllVehicules"/>
+    </wsdl:message>
+    <wsdl:message name="getInformationsClientAllVehiculesSoapOut">
+        <wsdl:part name="parameters" element="tns:getInformationsClientAllVehiculesResponse"/>
+    </wsdl:message>
+    <wsdl:message name="saveClientSoapIn">
+        <wsdl:part name="parameters" element="tns:saveClient"/>
+    </wsdl:message>
+    <wsdl:message name="saveClientSoapOut">
+        <wsdl:part name="parameters" element="tns:saveClientResponse"/>
+    </wsdl:message>
+    <wsdl:message name="saveClient2SoapIn">
+        <wsdl:part name="parameters" element="tns:saveClient2"/>
+    </wsdl:message>
+    <wsdl:message name="saveClient2SoapOut">
+        <wsdl:part name="parameters" element="tns:saveClient2Response"/>
+    </wsdl:message>
+    <wsdl:message name="saveClient3SoapIn">
+        <wsdl:part name="parameters" element="tns:saveClient3"/>
+    </wsdl:message>
+    <wsdl:message name="saveClient3SoapOut">
+        <wsdl:part name="parameters" element="tns:saveClient3Response"/>
+    </wsdl:message>
+    <wsdl:message name="saveVehiculeSoapIn">
+        <wsdl:part name="parameters" element="tns:saveVehicule"/>
+    </wsdl:message>
+    <wsdl:message name="saveVehiculeSoapOut">
+        <wsdl:part name="parameters" element="tns:saveVehiculeResponse"/>
+    </wsdl:message>
+    <wsdl:message name="GetInformationEntretienVehiculeSoapIn">
+        <wsdl:part name="parameters" element="tns:GetInformationEntretienVehicule"/>
+    </wsdl:message>
+    <wsdl:message name="GetInformationEntretienVehiculeSoapOut">
+        <wsdl:part name="parameters" element="tns:GetInformationEntretienVehiculeResponse"/>
+    </wsdl:message>
+    <wsdl:message name="insertProspectSoapIn">
+        <wsdl:part name="parameters" element="tns:insertProspect"/>
+    </wsdl:message>
+    <wsdl:message name="insertProspectSoapOut">
+        <wsdl:part name="parameters" element="tns:insertProspectResponse"/>
+    </wsdl:message>
+    <wsdl:message name="insertProspect2SoapIn">
+        <wsdl:part name="parameters" element="tns:insertProspect2"/>
+    </wsdl:message>
+    <wsdl:message name="insertProspect2SoapOut">
+        <wsdl:part name="parameters" element="tns:insertProspect2Response"/>
+    </wsdl:message>
+    <wsdl:message name="AuthentificationUtilisateurSoapIn">
+        <wsdl:part name="parameters" element="tns:AuthentificationUtilisateur"/>
+    </wsdl:message>
+    <wsdl:message name="AuthentificationUtilisateurSoapOut">
+        <wsdl:part name="parameters" element="tns:AuthentificationUtilisateurResponse"/>
+    </wsdl:message>
+    <wsdl:message name="AuthentificationUtilisateur2SoapIn">
+        <wsdl:part name="parameters" element="tns:AuthentificationUtilisateur2"/>
+    </wsdl:message>
+    <wsdl:message name="AuthentificationUtilisateur2SoapOut">
+        <wsdl:part name="parameters" element="tns:AuthentificationUtilisateur2Response"/>
+    </wsdl:message>
+    <wsdl:message name="GetInfoContactVehiculeSoapIn">
+        <wsdl:part name="parameters" element="tns:GetInfoContactVehicule"/>
+    </wsdl:message>
+    <wsdl:message name="GetInfoContactVehiculeSoapOut">
+        <wsdl:part name="parameters" element="tns:GetInfoContactVehiculeResponse"/>
+    </wsdl:message>
+    <wsdl:message name="GetInfoContactVehicule2SoapIn">
+        <wsdl:part name="parameters" element="tns:GetInfoContactVehicule2"/>
+    </wsdl:message>
+    <wsdl:message name="GetInfoContactVehicule2SoapOut">
+        <wsdl:part name="parameters" element="tns:GetInfoContactVehicule2Response"/>
+    </wsdl:message>
+    <wsdl:message name="GetListVehiculeContactSoapIn">
+        <wsdl:part name="parameters" element="tns:GetListVehiculeContact"/>
+    </wsdl:message>
+    <wsdl:message name="GetListVehiculeContactSoapOut">
+        <wsdl:part name="parameters" element="tns:GetListVehiculeContactResponse"/>
+    </wsdl:message>
+    <wsdl:message name="GetListSiteDeVenteAllSoapIn">
+        <wsdl:part name="parameters" element="tns:GetListSiteDeVenteAll"/>
+    </wsdl:message>
+    <wsdl:message name="GetListSiteDeVenteAllSoapOut">
+        <wsdl:part name="parameters" element="tns:GetListSiteDeVenteAllResponse"/>
+    </wsdl:message>
+    <wsdl:message name="GetListSiteDeVenteAll2SoapIn">
+        <wsdl:part name="parameters" element="tns:GetListSiteDeVenteAll2"/>
+    </wsdl:message>
+    <wsdl:message name="GetListSiteDeVenteAll2SoapOut">
+        <wsdl:part name="parameters" element="tns:GetListSiteDeVenteAll2Response"/>
+    </wsdl:message>
+    <wsdl:message name="GetHistoriqueMarketingSoapIn">
+        <wsdl:part name="parameters" element="tns:GetHistoriqueMarketing"/>
+    </wsdl:message>
+    <wsdl:message name="GetHistoriqueMarketingSoapOut">
+        <wsdl:part name="parameters" element="tns:GetHistoriqueMarketingResponse"/>
+    </wsdl:message>
+    <wsdl:message name="UpdatecontactEntrepriseSoapIn">
+        <wsdl:part name="parameters" element="tns:UpdatecontactEntreprise"/>
+    </wsdl:message>
+    <wsdl:message name="UpdatecontactEntrepriseSoapOut">
+        <wsdl:part name="parameters" element="tns:UpdatecontactEntrepriseResponse"/>
+    </wsdl:message>
+    <wsdl:message name="GetInfoWebSiteSoapIn">
+        <wsdl:part name="parameters" element="tns:GetInfoWebSite"/>
+    </wsdl:message>
+    <wsdl:message name="GetInfoWebSiteSoapOut">
+        <wsdl:part name="parameters" element="tns:GetInfoWebSiteResponse"/>
+    </wsdl:message>
+    <wsdl:portType name="IzyWebServiceSoap">
+        <wsdl:operation name="getInformationsClientVehicule">
+            <wsdl:input message="tns:getInformationsClientVehiculeSoapIn"/>
+            <wsdl:output message="tns:getInformationsClientVehiculeSoapOut"/>
+        </wsdl:operation>
+        <wsdl:operation name="getInformationsClientAllVehicules">
+            <wsdl:input message="tns:getInformationsClientAllVehiculesSoapIn"/>
+            <wsdl:output message="tns:getInformationsClientAllVehiculesSoapOut"/>
+        </wsdl:operation>
+        <wsdl:operation name="saveClient">
+            <wsdl:input message="tns:saveClientSoapIn"/>
+            <wsdl:output message="tns:saveClientSoapOut"/>
+        </wsdl:operation>
+        <wsdl:operation name="saveClient2">
+            <wsdl:input message="tns:saveClient2SoapIn"/>
+            <wsdl:output message="tns:saveClient2SoapOut"/>
+        </wsdl:operation>
+        <wsdl:operation name="saveClient3">
+            <wsdl:input message="tns:saveClient3SoapIn"/>
+            <wsdl:output message="tns:saveClient3SoapOut"/>
+        </wsdl:operation>
+        <wsdl:operation name="saveVehicule">
+            <wsdl:input message="tns:saveVehiculeSoapIn"/>
+            <wsdl:output message="tns:saveVehiculeSoapOut"/>
+        </wsdl:operation>
+        <wsdl:operation name="GetInformationEntretienVehicule">
+            <wsdl:input message="tns:GetInformationEntretienVehiculeSoapIn"/>
+            <wsdl:output message="tns:GetInformationEntretienVehiculeSoapOut"/>
+        </wsdl:operation>
+        <wsdl:operation name="insertProspect">
+            <wsdl:input message="tns:insertProspectSoapIn"/>
+            <wsdl:output message="tns:insertProspectSoapOut"/>
+        </wsdl:operation>
+        <wsdl:operation name="insertProspect2">
+            <wsdl:input message="tns:insertProspect2SoapIn"/>
+            <wsdl:output message="tns:insertProspect2SoapOut"/>
+        </wsdl:operation>
+        <wsdl:operation name="AuthentificationUtilisateur">
+            <wsdl:input message="tns:AuthentificationUtilisateurSoapIn"/>
+            <wsdl:output message="tns:AuthentificationUtilisateurSoapOut"/>
+        </wsdl:operation>
+        <wsdl:operation name="AuthentificationUtilisateur2">
+            <wsdl:input message="tns:AuthentificationUtilisateur2SoapIn"/>
+            <wsdl:output message="tns:AuthentificationUtilisateur2SoapOut"/>
+        </wsdl:operation>
+        <wsdl:operation name="GetInfoContactVehicule">
+            <wsdl:input message="tns:GetInfoContactVehiculeSoapIn"/>
+            <wsdl:output message="tns:GetInfoContactVehiculeSoapOut"/>
+        </wsdl:operation>
+        <wsdl:operation name="GetInfoContactVehicule2">
+            <wsdl:input message="tns:GetInfoContactVehicule2SoapIn"/>
+            <wsdl:output message="tns:GetInfoContactVehicule2SoapOut"/>
+        </wsdl:operation>
+        <wsdl:operation name="GetListVehiculeContact">
+            <wsdl:input message="tns:GetListVehiculeContactSoapIn"/>
+            <wsdl:output message="tns:GetListVehiculeContactSoapOut"/>
+        </wsdl:operation>
+        <wsdl:operation name="GetListSiteDeVenteAll">
+            <wsdl:input message="tns:GetListSiteDeVenteAllSoapIn"/>
+            <wsdl:output message="tns:GetListSiteDeVenteAllSoapOut"/>
+        </wsdl:operation>
+        <wsdl:operation name="GetListSiteDeVenteAll2">
+            <wsdl:input message="tns:GetListSiteDeVenteAll2SoapIn"/>
+            <wsdl:output message="tns:GetListSiteDeVenteAll2SoapOut"/>
+        </wsdl:operation>
+        <wsdl:operation name="GetHistoriqueMarketing">
+            <wsdl:input message="tns:GetHistoriqueMarketingSoapIn"/>
+            <wsdl:output message="tns:GetHistoriqueMarketingSoapOut"/>
+        </wsdl:operation>
+        <wsdl:operation name="UpdatecontactEntreprise">
+            <wsdl:input message="tns:UpdatecontactEntrepriseSoapIn"/>
+            <wsdl:output message="tns:UpdatecontactEntrepriseSoapOut"/>
+        </wsdl:operation>
+        <wsdl:operation name="GetInfoWebSite">
+            <wsdl:input message="tns:GetInfoWebSiteSoapIn"/>
+            <wsdl:output message="tns:GetInfoWebSiteSoapOut"/>
+        </wsdl:operation>
+    </wsdl:portType>
+    <wsdl:binding name="IzyWebServiceSoap" type="tns:IzyWebServiceSoap">
+        <soap:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+        <wsdl:operation name="getInformationsClientVehicule">
+            <soap:operation soapAction="http://preprodws.izybysuzuki.fr/getInformationsClientVehicule" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getInformationsClientAllVehicules">
+            <soap:operation soapAction="http://preprodws.izybysuzuki.fr/getInformationsClientAllVehicules" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="saveClient">
+            <soap:operation soapAction="http://preprodws.izybysuzuki.fr/saveClient" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="saveClient2">
+            <soap:operation soapAction="http://preprodws.izybysuzuki.fr/saveClient2" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="saveClient3">
+            <soap:operation soapAction="http://preprodws.izybysuzuki.fr/saveClient3" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="saveVehicule">
+            <soap:operation soapAction="http://preprodws.izybysuzuki.fr/saveVehicule" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="GetInformationEntretienVehicule">
+            <soap:operation soapAction="http://preprodws.izybysuzuki.fr/GetInformationEntretienVehicule" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="insertProspect">
+            <soap:operation soapAction="http://preprodws.izybysuzuki.fr/insertProspect" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="insertProspect2">
+            <soap:operation soapAction="http://preprodws.izybysuzuki.fr/insertProspect2" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="AuthentificationUtilisateur">
+            <soap:operation soapAction="http://preprodws.izybysuzuki.fr/AuthentificationUtilisateur" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="AuthentificationUtilisateur2">
+            <soap:operation soapAction="http://preprodws.izybysuzuki.fr/AuthentificationUtilisateur2" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="GetInfoContactVehicule">
+            <soap:operation soapAction="http://preprodws.izybysuzuki.fr/GetInfoContactVehicule" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="GetInfoContactVehicule2">
+            <soap:operation soapAction="http://preprodws.izybysuzuki.fr/GetInfoContactVehicule2" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="GetListVehiculeContact">
+            <soap:operation soapAction="http://preprodws.izybysuzuki.fr/GetListVehiculeContact" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="GetListSiteDeVenteAll">
+            <soap:operation soapAction="http://preprodws.izybysuzuki.fr/GetListSiteDeVenteAll" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="GetListSiteDeVenteAll2">
+            <soap:operation soapAction="http://preprodws.izybysuzuki.fr/GetListSiteDeVenteAll2" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="GetHistoriqueMarketing">
+            <soap:operation soapAction="http://preprodws.izybysuzuki.fr/GetHistoriqueMarketing" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="UpdatecontactEntreprise">
+            <soap:operation soapAction="http://preprodws.izybysuzuki.fr/UpdatecontactEntreprise" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="GetInfoWebSite">
+            <soap:operation soapAction="http://preprodws.izybysuzuki.fr/GetInfoWebSite" style="document"/>
+            <wsdl:input>
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:binding name="IzyWebServiceSoap12" type="tns:IzyWebServiceSoap">
+        <soap12:binding transport="http://schemas.xmlsoap.org/soap/http"/>
+        <wsdl:operation name="getInformationsClientVehicule">
+            <soap12:operation soapAction="http://preprodws.izybysuzuki.fr/getInformationsClientVehicule" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="getInformationsClientAllVehicules">
+            <soap12:operation soapAction="http://preprodws.izybysuzuki.fr/getInformationsClientAllVehicules" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="saveClient">
+            <soap12:operation soapAction="http://preprodws.izybysuzuki.fr/saveClient" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="saveClient2">
+            <soap12:operation soapAction="http://preprodws.izybysuzuki.fr/saveClient2" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="saveClient3">
+            <soap12:operation soapAction="http://preprodws.izybysuzuki.fr/saveClient3" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="saveVehicule">
+            <soap12:operation soapAction="http://preprodws.izybysuzuki.fr/saveVehicule" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="GetInformationEntretienVehicule">
+            <soap12:operation soapAction="http://preprodws.izybysuzuki.fr/GetInformationEntretienVehicule" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="insertProspect">
+            <soap12:operation soapAction="http://preprodws.izybysuzuki.fr/insertProspect" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="insertProspect2">
+            <soap12:operation soapAction="http://preprodws.izybysuzuki.fr/insertProspect2" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="AuthentificationUtilisateur">
+            <soap12:operation soapAction="http://preprodws.izybysuzuki.fr/AuthentificationUtilisateur" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="AuthentificationUtilisateur2">
+            <soap12:operation soapAction="http://preprodws.izybysuzuki.fr/AuthentificationUtilisateur2" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="GetInfoContactVehicule">
+            <soap12:operation soapAction="http://preprodws.izybysuzuki.fr/GetInfoContactVehicule" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="GetInfoContactVehicule2">
+            <soap12:operation soapAction="http://preprodws.izybysuzuki.fr/GetInfoContactVehicule2" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="GetListVehiculeContact">
+            <soap12:operation soapAction="http://preprodws.izybysuzuki.fr/GetListVehiculeContact" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="GetListSiteDeVenteAll">
+            <soap12:operation soapAction="http://preprodws.izybysuzuki.fr/GetListSiteDeVenteAll" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="GetListSiteDeVenteAll2">
+            <soap12:operation soapAction="http://preprodws.izybysuzuki.fr/GetListSiteDeVenteAll2" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="GetHistoriqueMarketing">
+            <soap12:operation soapAction="http://preprodws.izybysuzuki.fr/GetHistoriqueMarketing" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="UpdatecontactEntreprise">
+            <soap12:operation soapAction="http://preprodws.izybysuzuki.fr/UpdatecontactEntreprise" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+        <wsdl:operation name="GetInfoWebSite">
+            <soap12:operation soapAction="http://preprodws.izybysuzuki.fr/GetInfoWebSite" style="document"/>
+            <wsdl:input>
+                <soap12:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output>
+                <soap12:body use="literal"/>
+            </wsdl:output>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:service name="IzyWebService">
+        <wsdl:port name="IzyWebServiceSoap" binding="tns:IzyWebServiceSoap">
+            <soap:address location="http://preprodws.izybysuzuki.fr/IzyWebService.asmx"/>
+        </wsdl:port>
+        <wsdl:port name="IzyWebServiceSoap12" binding="tns:IzyWebServiceSoap12">
+            <soap12:address location="http://preprodws.izybysuzuki.fr/IzyWebService.asmx"/>
+        </wsdl:port>
+    </wsdl:service>
+</wsdl:definitions>

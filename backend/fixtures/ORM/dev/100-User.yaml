@@ -1,0 +1,33 @@
+App\Entity\User:
+    user (template):
+        firstName: "replaced_by_UserTransformer"
+        email: "replaced_by_UserTransformer"
+        plainPassword: "password"
+        enabled: true
+    user_richard (extends user):
+        lastName: "RICHARD"
+        firstName: "Thibault"
+        email: "thibault@widop.com"
+        externalId: "1"
+        vehicles:
+            - "@vehicle_richard"
+    user_dupont (extends user):
+        lastName: "DUPONT"
+        externalId: "9900001"
+        vehicles:
+            - "@vehicle_dupont"
+    user_martin (extends user):
+        lastName: "MARTIN"
+        externalId: "9900002"
+        vehicles:
+            - "@vehicle_martin"
+    user_bernard (extends user):
+        lastName: "BERNARD"
+        externalId: "9900003"
+        vehicles:
+            - "@vehicle_bernard"
+    user_petit (extends user):
+        lastName: "PETIT"
+        externalId: "9900004"
+        vehicles:
+            - "@vehicle_petit"

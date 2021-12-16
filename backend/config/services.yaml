@@ -1,0 +1,183 @@
+# Put parameters here that don't need to change on each machine where the app is deployed
+# https://symfony.com/doc/current/best_practices/configuration.html#application-related-configuration
+parameters:
+    locale: 'fr'
+    env(APP_ENV): prod
+    env(APP_SECRET): ThisIsNotASecret
+    env(CORS_ALLOW_ORIGIN): ^.*$
+    env(DATABASE_URL): FIXME
+    env(TEST_DATABASE_URL): FIXME
+    env(DPS_SOAP_URL): FIXME
+    env(SMART_FOCUS_SOAP_URL): FIXME
+    env(EMAIL_KEYS): '{}'
+    env(SENTRY_DSN): https://fixme@sentry.io/fixme
+    env(ADMIN_PASSWORD): uVxUpwa9KHcX
+    env(WIDOP_ADMIN_PASSWORD): 7DqSn6RUPeCb
+    env(DEALERSHIP_BASE_URL): https://suzuki.fr/store/show
+    email_confirmation_callback: '%env(EMAIL_CONFIRMATION_CALLBACK)%'
+    env(DELETE_USERS_WEBHOOK_API_KEY): FIXME
+
+services:
+    # default configuration for services in *this* file
+    _defaults:
+        autowire: true      # Automatically injects dependencies in your services.
+        autoconfigure: true # Automatically registers your services as commands, event subscribers, etc.
+        public: false       # Allows optimizing the container by removing unused services; this also means
+                            # fetching services directly from the container via $container->get() won't work.
+                            # The best practice is to be explicit about your dependencies anyway.
+        bind:
+            $smartFocusKeys: '%env(json:EMAIL_KEYS)%'
+            $dealershipBaseUrl: '%env(DEALERSHIP_BASE_URL)%'
+            $fileDir: '%kernel.project_dir%/public/upload'
+            $frontUrl: '%env(FRONT_URL)%'
+
+    _instanceof:
+        SoapBundle\Transformer\TransformerInterface:
+            tags: ['soap.transformer']
+
+        Doctrine\Common\EventSubscriber:
+            tags: ['doctrine.event_subscriber']
+
+        ApiPlatform\Core\Bridge\Doctrine\Orm\Extension\QueryCollectionExtensionInterface:
+            tags: [{ name: api_platform.doctrine.orm.query_extension.collection, priority: 9 }]
+
+        ApiPlatform\Core\Bridge\Doctrine\Orm\Extension\QueryItemExtensionInterface:
+            tags: ['api_platform.doctrine.orm.query_extension.item']
+
+    # makes classes in src/ available to be used as services
+    # this creates a service per class whose id is the fully-qualified class name
+    App\:
+        resource: '../src/*'
+        exclude: '../src/{Entity,Migrations,Tests,Kernel.php}'
+
+    # controllers are imported separately to make sure services can be injected
+    # as action arguments even if you don't extend any base controller class
+    App\Controller\:
+        resource: '../src/Controller'
+        tags: ['controller.service_arguments']
+
+    App\Soap\Client\DPSWebServiceClient:
+        arguments:
+            - '@soap.factory'
+            - '%env(resolve:DPS_SOAP_URL)%'
+
+    App\Soap\Client\SmartFocusClient:
+        arguments:
+            - '@soap.factory'
+            - '%env(resolve:SMART_FOCUS_SOAP_URL)%'
+
+    App\Soap\Mocker\WsdlCacher:
+        arguments:
+            - '%kernel.project_dir%/resources/Soap/Wsdl'
+
+    App\Soap\Mocker\DpsWsMocker:
+        arguments: ['@doctrine.orm.default_entity_manager']
+        tags: ['soap.mocker']
+
+    SoapBundle\Transformer\TransformerManager: ~
+
+    'App\Serializer\ApiNormalizer':
+        decorates: 'api_platform.jsonld.normalizer.item'
+        arguments:
+            $decorated : '@App\Serializer\ApiNormalizer.inner'
+            $reader: '@annotations.cached_reader'
+            $requestStack: '@request_stack'
+            $filterService: '@liip_imagine.service.filter'
+
+    App\Serializer\ErrorNormalizer:
+        decorates: 'api_platform.hydra.normalizer.error'
+        arguments:
+            $decorated: '@App\Serializer\ErrorNormalizer.inner'
+
+    App\Faker\TransportImageProvider:
+        tags: [ { name: nelmio_alice.faker.provider } ]
+
+    App\Admin\UserAdmin:
+        arguments: [~, App\Entity\User, App\Controller\UserAdminController]
+        tags: [{ name: sonata.admin, manager_type: orm, label: Users }]
+
+    App\Admin\NewsAdmin:
+        arguments: [~, App\Entity\Article, ~]
+        tags: [{ name: sonata.admin, manager_type: orm, label: Actualités }]
+
+    App\Admin\AdviceTutorialAdmin:
+        arguments: [~, App\Entity\Article, ~]
+        tags: [{ name: sonata.admin, manager_type: orm, label: Tutos & Conseils }]
+
+    App\Admin\IssueTypeAdmin:
+        arguments: [~, App\Entity\IssueType, ~]
+        tags: [{ name: sonata.admin, manager_type: orm, label: Sujets formulaire de contact }]
+
+    App\Admin\ManualOfferAdmin:
+        arguments: [~, App\Entity\ManualOffer, ~]
+        tags: [{ name: sonata.admin, manager_type: orm, label: Offres nationales }]
+
+    App\Admin\QuestionAdmin:
+        arguments: [~, App\Entity\Question, ~]
+        tags: [{ name: sonata.admin, manager_type: orm, label: Questions }]
+
+    App\Admin\TopicAdmin:
+        arguments: [~, App\Entity\Topic, ~]
+        tags: [{ name: sonata.admin, manager_type: orm, label: Sujets }]
+
+    App\Admin\TagAdmin:
+        arguments: [~, App\Entity\Tag, ~]
+        tags: [{ name: sonata.admin, manager_type: orm, label: Tags }]
+
+    App\Admin\VehicleModelAdmin:
+        arguments: [~, App\Entity\VehicleModel, ~]
+        tags: [{ name: sonata.admin, manager_type: orm, label: Modèles de véhicules }]
+
+    App\Admin\BannerAdmin:
+        arguments: [~, App\Entity\Banner, ~]
+        tags: [{ name: sonata.admin, manager_type: orm, label: Bannières }]
+
+    App\Admin\FeaturedContentAdmin:
+        arguments: [~, App\Entity\FeaturedContent, ~]
+        tags: [{ name: sonata.admin, manager_type: orm, label: En ce moment }]
+
+    App\Admin\GameAdmin:
+        arguments: [~, App\Entity\Game, ~]
+        tags: [{ name: sonata.admin, manager_type: orm, label: Jeux }]
+    App\Admin\ParticipationAdmin:
+        arguments: [~, App\Entity\Participation, ~]
+        tags: [{ name: sonata.admin, manager_type: orm, label: Participations, label_translator_strategy: sonata.admin.label.strategy.noop }]
+
+    App\Workflow\MediaListener:
+        arguments:
+            $extension: '@sonata.media.twig.extension'
+        tags:
+            - { name: doctrine.event_listener, event: prePersist, priority: -255 }
+            - { name: doctrine.event_listener, event: preUpdate, priority: -255 }
+
+    App\Imagine\Filter\Loader\TrimFilter:
+        arguments:
+            $im: '@liip_imagine.imagick'
+        tags:
+            - { name: "liip_imagine.filter.loader", loader: trim }
+
+    App\Serializer\PhoneNumberNormalizer:
+        decorates: 'misd_phone_number.serializer.normalizer'
+        arguments:
+            - '@App\Serializer\PhoneNumberNormalizer.inner'
+
+    App\Soap\Mapping\OfferMapping:
+        arguments: ['@doctrine.orm.default_entity_manager']
+
+    App\Handler\ManualOfferHandler:
+        arguments: ['@doctrine.orm.default_entity_manager']
+
+    App\Controller\DeleteUserWebhookController:
+        arguments:
+            $deleteUserWebhookApiKey: '%env(DELETE_USERS_WEBHOOK_API_KEY)%'
+            $logger: '@monolog.logger.delete_user_webhook'
+
+    fos_oauth_server.storage.default:
+        class: App\Service\CustomOAuthStorageService
+        arguments:
+            $clientManager: '@fos_oauth_server.client_manager'
+            $accessTokenManager: '@fos_oauth_server.access_token_manager'
+            $refreshTokenManager: '@fos_oauth_server.refresh_token_manager'
+            $authCodeManager: '@fos_oauth_server.auth_code_manager'
+            $userProvider: '@fos_oauth_server.user_provider'
+            $encoderFactory: '@security.encoder_factory'

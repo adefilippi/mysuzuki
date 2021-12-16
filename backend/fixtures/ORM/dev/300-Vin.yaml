@@ -1,0 +1,4 @@
+App\Entity\Vin:
+    vin_1:
+        __construct: ["19UUB2F73FA074352", "RICHARD"]
+        client_id: 1

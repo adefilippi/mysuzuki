@@ -1,0 +1,4 @@
+<p>{{ issue.getMessage()|raw }}</p>
+{% if issue.getAttachment() %}
+    <a href="{{ absolute_url(issue.getAttachment().getContentUrl()) }}">{{ 'mail.issue.link_label'|trans }}</a>
+{% endif %}

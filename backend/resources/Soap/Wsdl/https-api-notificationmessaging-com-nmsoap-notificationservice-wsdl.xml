@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsdl:definitions name="NotificationServiceService" targetNamespace="http://api.service.nsapi.emailvision.com/" xmlns:ns1="http://exceptions.service.nsapi.emailvision.com/" xmlns:ns2="http://cxf.apache.org/bindings/xformat" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://api.service.nsapi.emailvision.com/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <wsdl:types>
+        <xs:schema attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://api.service.nsapi.emailvision.com/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+            <xs:element name="MultiSendRequest" type="tns:multiSendRequest"/>
+            <xs:element name="MultiSendRequestResponse" type="tns:multiSendRequestResponse"/>
+            <xs:element name="getSendRequestById" type="tns:getSendRequestById"/>
+            <xs:element name="getSendRequestByIdResponse" type="tns:getSendRequestByIdResponse"/>
+            <xs:element name="notificationExceptionDetails" type="tns:notificationExceptionDetails"/>
+            <xs:element name="sendObject" type="tns:sendObject"/>
+            <xs:element name="sendObjectResponse" type="tns:sendObjectResponse"/>
+            <xs:element name="sendObjects" type="tns:sendObjects"/>
+            <xs:element name="sendObjectsResponse" type="tns:sendObjectsResponse"/>
+            <xs:element name="sendObjectsWithFullStatus" type="tns:sendObjectsWithFullStatus"/>
+            <xs:element name="sendObjectsWithFullStatusResponse" type="tns:sendObjectsWithFullStatusResponse"/>
+            <xs:element name="sendrequest" type="tns:sendRequest"/>
+            <xs:element name="sendrequestresponse" type="tns:sendRequestResponse"/>
+            <xs:complexType name="sendObjects">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="arg0" type="tns:multiSendRequest"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="multiSendRequest">
+                <xs:sequence>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" name="sendrequest" nillable="true" type="tns:sendRequest"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="sendRequest">
+                <xs:sequence>
+                    <xs:element name="content">
+                        <xs:complexType>
+                            <xs:sequence>
+                                <xs:element maxOccurs="unbounded" minOccurs="0" name="entry">
+                                    <xs:complexType>
+                                        <xs:sequence>
+                                            <xs:element minOccurs="0" name="key" type="xs:int"/>
+                                            <xs:element minOccurs="0" name="value" type="xs:string"/>
+                                        </xs:sequence>
+                                    </xs:complexType>
+                                </xs:element>
+                            </xs:sequence>
+                        </xs:complexType>
+                    </xs:element>
+                    <xs:element name="dyn">
+                        <xs:complexType>
+                            <xs:sequence>
+                                <xs:element maxOccurs="unbounded" minOccurs="0" name="entry">
+                                    <xs:complexType>
+                                        <xs:sequence>
+                                            <xs:element minOccurs="0" name="key" type="xs:string"/>
+                                            <xs:element minOccurs="0" name="value" type="xs:string"/>
+                                        </xs:sequence>
+                                    </xs:complexType>
+                                </xs:element>
+                            </xs:sequence>
+                        </xs:complexType>
+                    </xs:element>
+                    <xs:element minOccurs="0" name="email" type="xs:string"/>
+                    <xs:element minOccurs="0" name="encrypt" type="xs:string"/>
+                    <xs:element name="notificationId" type="xs:long"/>
+                    <xs:element minOccurs="0" name="random" type="xs:string"/>
+                    <xs:element minOccurs="0" name="senddate" type="xs:dateTime"/>
+                    <xs:element minOccurs="0" name="synchrotype" type="tns:synchroType"/>
+                    <xs:element minOccurs="0" name="uidkey" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="sendObjectsResponse">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="return" type="tns:multiSendRequestResponse"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="multiSendRequestResponse">
+                <xs:sequence>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" name="element" nillable="true" type="tns:notificationServiceResponse"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="notificationServiceResponse">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="result" type="xs:anyType"/>
+                </xs:sequence>
+                <xs:attribute name="email" type="xs:string"/>
+                <xs:attribute name="responseStatus" type="xs:string"/>
+            </xs:complexType>
+            <xs:complexType name="notificationExceptionDetails">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="description" type="xs:string"/>
+                    <xs:element maxOccurs="unbounded" minOccurs="0" name="fields" nillable="true" type="xs:string"/>
+                    <xs:element minOccurs="0" name="status" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="getSendRequestById">
+                <xs:sequence>
+                    <xs:element name="arg0" type="xs:long"/>
+                    <xs:element minOccurs="0" name="arg1" type="xs:string"/>
+                    <xs:element minOccurs="0" name="arg2" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="getSendRequestByIdResponse">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="return" type="tns:sendRequestResponse"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="sendRequestResponse">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="email" type="xs:string"/>
+                    <xs:element name="id" type="xs:long"/>
+                    <xs:element name="notificationId" type="xs:long"/>
+                    <xs:element minOccurs="0" name="processDate" type="xs:dateTime"/>
+                    <xs:element minOccurs="0" name="requestDate" type="xs:dateTime"/>
+                    <xs:element minOccurs="0" name="sendDate" type="xs:dateTime"/>
+                    <xs:element minOccurs="0" name="status" type="xs:string"/>
+                    <xs:element minOccurs="0" name="UId" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="sendObject">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="arg0" type="tns:sendRequest"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="sendObjectResponse">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="return" type="xs:string"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="sendObjectsWithFullStatus">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="arg0" type="tns:multiSendRequest"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:complexType name="sendObjectsWithFullStatusResponse">
+                <xs:sequence>
+                    <xs:element minOccurs="0" name="return" type="tns:multiSendRequestResponse"/>
+                </xs:sequence>
+            </xs:complexType>
+            <xs:simpleType name="synchroType">
+                <xs:restriction base="xs:string">
+                    <xs:enumeration value="NOTHING"/>
+                    <xs:enumeration value="INSERT"/>
+                    <xs:enumeration value="UPDATE"/>
+                    <xs:enumeration value="INSERT_UPDATE"/>
+                </xs:restriction>
+            </xs:simpleType>
+        </xs:schema>
+        <xsd:schema attributeFormDefault="unqualified" elementFormDefault="unqualified" targetNamespace="http://exceptions.service.nsapi.emailvision.com/" xmlns:ns0="http://api.service.nsapi.emailvision.com/" xmlns:tns="http://exceptions.service.nsapi.emailvision.com/">
+            <xsd:element name="NotificationServiceException" nillable="true" type="ns0:notificationExceptionDetails"/>
+        </xsd:schema>
+    </wsdl:types>
+    <wsdl:message name="getSendRequestByIdResponse">
+        <wsdl:part element="tns:getSendRequestByIdResponse" name="parameters"/>
+    </wsdl:message>
+    <wsdl:message name="sendObjectsWithFullStatus">
+        <wsdl:part element="tns:sendObjectsWithFullStatus" name="parameters"/>
+    </wsdl:message>
+    <wsdl:message name="NotificationServiceException">
+        <wsdl:part element="ns1:NotificationServiceException" name="NotificationServiceException"/>
+    </wsdl:message>
+    <wsdl:message name="sendObjectResponse">
+        <wsdl:part element="tns:sendObjectResponse" name="parameters"/>
+    </wsdl:message>
+    <wsdl:message name="sendObjectsResponse">
+        <wsdl:part element="tns:sendObjectsResponse" name="parameters"/>
+    </wsdl:message>
+    <wsdl:message name="getSendRequestById">
+        <wsdl:part element="tns:getSendRequestById" name="parameters"/>
+    </wsdl:message>
+    <wsdl:message name="sendObjectsWithFullStatusResponse">
+        <wsdl:part element="tns:sendObjectsWithFullStatusResponse" name="parameters"/>
+    </wsdl:message>
+    <wsdl:message name="sendObjects">
+        <wsdl:part element="tns:sendObjects" name="parameters"/>
+    </wsdl:message>
+    <wsdl:message name="sendObject">
+        <wsdl:part element="tns:sendObject" name="parameters"/>
+    </wsdl:message>
+    <wsdl:portType name="NotificationService">
+        <wsdl:operation name="sendObjects">
+            <wsdl:input message="tns:sendObjects" name="sendObjects"/>
+            <wsdl:output message="tns:sendObjectsResponse" name="sendObjectsResponse"/>
+            <wsdl:fault message="tns:NotificationServiceException" name="NotificationServiceException"/>
+        </wsdl:operation>
+        <wsdl:operation name="getSendRequestById">
+            <wsdl:input message="tns:getSendRequestById" name="getSendRequestById"/>
+            <wsdl:output message="tns:getSendRequestByIdResponse" name="getSendRequestByIdResponse"/>
+            <wsdl:fault message="tns:NotificationServiceException" name="NotificationServiceException"/>
+        </wsdl:operation>
+        <wsdl:operation name="sendObject">
+            <wsdl:input message="tns:sendObject" name="sendObject"/>
+            <wsdl:output message="tns:sendObjectResponse" name="sendObjectResponse"/>
+            <wsdl:fault message="tns:NotificationServiceException" name="NotificationServiceException"/>
+        </wsdl:operation>
+        <wsdl:operation name="sendObjectsWithFullStatus">
+            <wsdl:input message="tns:sendObjectsWithFullStatus" name="sendObjectsWithFullStatus"/>
+            <wsdl:output message="tns:sendObjectsWithFullStatusResponse" name="sendObjectsWithFullStatusResponse"/>
+            <wsdl:fault message="tns:NotificationServiceException" name="NotificationServiceException"/>
+        </wsdl:operation>
+    </wsdl:portType>
+    <wsdl:binding name="NotificationServiceServiceSoapBinding" type="tns:NotificationService">
+        <soap:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <wsdl:operation name="sendObjects">
+            <soap:operation soapAction="" style="document"/>
+            <wsdl:input name="sendObjects">
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="sendObjectsResponse">
+                <soap:body use="literal"/>
+            </wsdl:output>
+            <wsdl:fault name="NotificationServiceException">
+                <soap:fault name="NotificationServiceException" use="literal"/>
+            </wsdl:fault>
+        </wsdl:operation>
+        <wsdl:operation name="getSendRequestById">
+            <soap:operation soapAction="" style="document"/>
+            <wsdl:input name="getSendRequestById">
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="getSendRequestByIdResponse">
+                <soap:body use="literal"/>
+            </wsdl:output>
+            <wsdl:fault name="NotificationServiceException">
+                <soap:fault name="NotificationServiceException" use="literal"/>
+            </wsdl:fault>
+        </wsdl:operation>
+        <wsdl:operation name="sendObject">
+            <soap:operation soapAction="" style="document"/>
+            <wsdl:input name="sendObject">
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="sendObjectResponse">
+                <soap:body use="literal"/>
+            </wsdl:output>
+            <wsdl:fault name="NotificationServiceException">
+                <soap:fault name="NotificationServiceException" use="literal"/>
+            </wsdl:fault>
+        </wsdl:operation>
+        <wsdl:operation name="sendObjectsWithFullStatus">
+            <soap:operation soapAction="" style="document"/>
+            <wsdl:input name="sendObjectsWithFullStatus">
+                <soap:body use="literal"/>
+            </wsdl:input>
+            <wsdl:output name="sendObjectsWithFullStatusResponse">
+                <soap:body use="literal"/>
+            </wsdl:output>
+            <wsdl:fault name="NotificationServiceException">
+                <soap:fault name="NotificationServiceException" use="literal"/>
+            </wsdl:fault>
+        </wsdl:operation>
+    </wsdl:binding>
+    <wsdl:service name="NotificationServiceService">
+        <wsdl:port binding="tns:NotificationServiceServiceSoapBinding" name="NotificationServicePort">
+            <soap:address location="http://api.notificationmessaging.com/nsapi/services/NotificationService"/>
+        </wsdl:port>
+    </wsdl:service>
+</wsdl:definitions>

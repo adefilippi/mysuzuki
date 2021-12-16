@@ -1,0 +1,6 @@
+App\Entity\RefreshToken:
+    user-refresh-token:
+        token:     user-refresh-token
+        user:      '@user_richard'
+        client:    '@client'
+        expiresAt: 1

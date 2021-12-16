@@ -1,0 +1,7 @@
+App\Entity\Participation:
+  participation1:
+    game: '@game_random1'
+    user: "@user_martin"
+  participation2:
+    game: '@game_random1'
+    user: "@user_dupont"

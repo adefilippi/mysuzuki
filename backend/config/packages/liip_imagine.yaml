@@ -1,0 +1,124 @@
+liip_imagine:
+    # valid drivers options include "gd" or "gmagick" or "imagick"
+    driver: "imagick"
+    cache: default
+
+    resolvers :
+        default:
+            web_path:
+                web_root: "%kernel.project_dir%/public"
+                cache_prefix: "media/cache"
+
+    filter_sets:
+        cache: ~
+        small_image:
+            jpeg_quality:          85
+            png_compression_level: 8
+            filters:
+                auto_rotate: ~
+                strip: ~
+                thumbnail:
+                    size: [1040, 800]
+                    mode: outbound
+                    position: center
+                scale:
+                    dim: [520, 400]
+
+        large_image:
+            jpeg_quality:          85
+            png_compression_level: 8
+            filters:
+                auto_rotate: ~
+                strip: ~
+                thumbnail:
+                    size: [1040, 800]
+                    mode: outbound
+                    position: center
+
+        small_logo:
+            jpeg_quality:          85
+            png_compression_level: 8
+            filters:
+                trim: ~
+                auto_rotate: ~
+                strip: ~
+                relative_resize:
+                    widen: 192
+
+        large_logo:
+            jpeg_quality:          85
+            png_compression_level: 8
+            filters:
+                trim: ~
+                auto_rotate: ~
+                strip: ~
+                relative_resize:
+                    widen: 394
+
+        small_accessories:
+            jpeg_quality:          85
+            png_compression_level: 8
+            filters:
+                auto_rotate: ~
+                strip: ~
+                relative_resize:
+                    widen: 238
+
+        large_accessories:
+            jpeg_quality:          85
+            png_compression_level: 8
+            filters:
+                auto_rotate: ~
+                strip: ~
+                relative_resize:
+                    widen: 476
+
+        small_picture:
+            jpeg_quality:          85
+            png_compression_level: 8
+            filters:
+                auto_rotate: ~
+                strip: ~
+                thumbnail:
+                  size: [980, 650]
+                  mode: outbound
+                  position: center
+
+        large_picture:
+            jpeg_quality:          85
+            png_compression_level: 8
+            filters:
+                auto_rotate: ~
+                strip: ~
+                thumbnail:
+                  size: [1960, 1300]
+                  mode: outbound
+                  position: center
+
+        large_desktopImage:
+            jpeg_quality: 85
+            png_compression_level: 8
+            filters:
+                auto_rotate: ~
+                strip: ~
+
+        small_desktopImage:
+            jpeg_quality: 85
+            png_compression_level: 8
+            filters:
+                auto_rotate: ~
+                strip: ~
+
+        large_mobileImage:
+            jpeg_quality: 85
+            png_compression_level: 8
+            filters:
+                auto_rotate: ~
+                strip: ~
+
+        small_mobileImage:
+            jpeg_quality: 85
+            png_compression_level: 8
+            filters:
+                auto_rotate: ~
+                strip: ~

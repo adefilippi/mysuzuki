@@ -1,0 +1,22 @@
+sonata_media:
+    default_context: default
+    db_driver: doctrine_orm
+    contexts:
+        default:
+            providers:
+                - sonata.media.provider.image
+                - sonata.media.provider.file
+
+    class:
+        media: ApplicationSonataMediaBundle\Entity\Media
+        gallery: ApplicationSonataMediaBundle\Entity\Gallery
+        gallery_has_media: ApplicationSonataMediaBundle\Entity\GalleryHasMedia
+
+    cdn:
+        server:
+            path: /upload/media
+
+    filesystem:
+        local:
+            directory: "%kernel.project_dir%/public/upload/media"
+            create: false

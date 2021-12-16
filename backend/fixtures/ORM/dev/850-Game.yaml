@@ -1,0 +1,40 @@
+ApplicationSonataMediaBundle\Entity\Media:
+  game_media_{1..3}:
+    name: <words(1, true)>
+    enabled: false
+    providerName: sonata.media.provider.image
+    providerStatus: 1
+    binaryContent: <transportImage()>
+    context: default
+
+App\Entity\Game:
+  game (template):
+    title: <realText(70)>
+    summary: <realText(140, 5)>
+    requiredFields: ['lastName', 'firstName', 'email', 'phone', 'address']
+
+  game_random{1..40} (extends game):
+    media: '@game_media_1'
+    startDate: <dateTimeThisYear()>
+    endDate: <dateTimeBetween('now', '+2 months')>
+
+  game_limited_participants (extends game):
+    media: '@game_media_2'
+    maximumParticipants: <numberBetween(2, 50)>
+    startDate: <dateTimeThisYear()>
+    endDate: <dateTimeBetween('now', '+2 months')>
+
+  game_bot_started (extends game):
+    media: '@game_media_3'
+    startDate: <dateTimeBetween('+2 days', '+2 months')>
+    endDate: <dateTimeBetween('+2 months', '+6 months')>
+
+  game_not_started{1..2} (extends game):
+    media: '@game_media_1'
+    startDate: <dateTimeBetween('+2 days', '+2 months')>
+    endDate: <dateTimeBetween('+2 months', '+6 months')>
+
+  game_expired{1..2} (extends game):
+    media: '@game_media_1'
+    startDate: <dateTimeBetween('-6 months', '-5 months')>
+    endDate: <dateTimeBetween('-3 month', 'now')>

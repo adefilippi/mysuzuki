@@ -1,0 +1,9 @@
+{% if object.endDate < date('-3months') %}
+    {{ 'admin.game.export.export_disabled'|trans }}
+{% elseif object.participations is not empty %}
+    <a class="btn btn-success" href="{{ admin.routeGenerator.generate('admin_app_participation_export', {'filter': {'game': {'value': object.id}}, 'format': 'csv'}) }}">
+        <i class="fa fa-download"></i> {{ 'admin.game.export.download_list'|trans }}
+    </a>
+{% else %}
+    {{ 'admin.game.export.no_participation'|trans }}
+{% endif %}

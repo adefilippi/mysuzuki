@@ -1,0 +1,89 @@
+default:
+  suites:
+    mysuzuki.user:
+      contexts:
+        - App\Behat\Context\FeatureContext
+        - Behat\MinkExtension\Context\MinkContext
+        - App\Behat\Context\JsonContext
+        - behatch:context:rest
+      filters:
+        tags: "@mysuzuki.user"
+
+    mysuzuki.vin:
+      contexts:
+        - App\Behat\Context\FeatureContext
+        - Behat\MinkExtension\Context\MinkContext
+        - App\Behat\Context\JsonContext
+        - behatch:context:rest
+      filters:
+        tags: "@mysuzuki.vin"
+
+    mysuzuki.dealership:
+      contexts:
+        - App\Behat\Context\FeatureContext
+        - Behat\MinkExtension\Context\MinkContext
+        - App\Behat\Context\JsonContext
+        - behatch:context:rest
+      filters:
+        tags: "@mysuzuki.dealership"
+
+    mysuzuki.maintenance:
+      contexts:
+        - App\Behat\Context\FeatureContext
+        - Behat\MinkExtension\Context\MinkContext
+        - App\Behat\Context\JsonContext
+        - behatch:context:rest
+      filters:
+        tags: "@mysuzuki.maintenance"
+
+    mysuzuki.offer:
+      contexts:
+        - App\Behat\Context\FeatureContext
+        - Behat\MinkExtension\Context\MinkContext
+        - App\Behat\Context\JsonContext
+        - behatch:context:rest
+      filters:
+        tags: "@mysuzuki.offer"
+  extensions:
+    Behat\Symfony2Extension:
+      kernel:
+        env: 'test'
+        debug: 'true'
+        bootstrap: features/bootstrap/bootstrap.php
+        class: App\Kernel
+    Behat\MinkExtension:
+      sessions:
+        default:
+          symfony2: ~
+    Behatch\Extension: ~
+default:
+  suites:
+    mysuzuki.user:
+      contexts:
+        - App\Behat\Context\FeatureContext
+        - Behat\MinkExtension\Context\MinkContext
+        - App\Behat\Context\JsonContext
+        - behatch:context:rest
+      filters:
+        tags: "@mysuzuki.user"
+
+    mysuzuki.vin:
+      contexts:
+        - App\Behat\Context\FeatureContext
+        - Behat\MinkExtension\Context\MinkContext
+        - App\Behat\Context\JsonContext
+        - behatch:context:rest
+      filters:
+        tags: "@mysuzuki.vin"
+  extensions:
+    Behat\Symfony2Extension:
+      kernel:
+        env: 'test'
+        debug: 'true'
+        bootstrap: features/bootstrap/bootstrap.php
+        class: App\Kernel
+    Behat\MinkExtension:
+      sessions:
+        default:
+          symfony2: ~
+    Behatch\Extension: ~

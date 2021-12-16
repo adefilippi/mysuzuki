@@ -1,0 +1,7029 @@
+App\Entity\Dealership:
+  dealership_1:
+    externalId: 0000A
+    name: 'PAS DE CE'
+    address: '@address_1'
+    phone: <e164PhoneNumber()>
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_2:
+    externalId: 0001A
+    name: emailtest
+    address: '@address_2'
+    phone: <e164PhoneNumber()>
+    email: <email()>
+    coordinates: '@coordinates_1'
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_3:
+    externalId: 0165A
+    name: 'GARAGE MEUNIER'
+    address: '@address_3'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    email: <email()>
+    workshopEmail: <email()>
+    coordinates: '@coordinates_2'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_4:
+    externalId: 0165B
+    name: 'GARAGE MEUNIER'
+    address: '@address_4'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_3'
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_5:
+    externalId: 0165D
+    name: 'ABC automobiles'
+    address: '@address_5'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    email: <email()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_6:
+    externalId: 0165E
+    name: test
+    address: '@address_6'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    email: <email()>
+    coordinates: '@coordinates_4'
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_7:
+    externalId: 0165F
+    name: test
+    address: '@address_7'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    email: <email()>
+    coordinates: '@coordinates_5'
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_8:
+    externalId: 0275A
+    name: 'CENTER AUTO MOTO'
+    address: '@address_8'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_6'
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_9:
+    externalId: 0280A
+    name: 'COLBEAUX SA'
+    address: '@address_9'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_7'
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_10:
+    externalId: 0280C
+    name: 'Test Site Max'
+    address: '@address_10'
+    phone: <e164PhoneNumber()>
+    email: <email()>
+    coordinates: '@coordinates_8'
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_11:
+    externalId: 0280E
+    name: deuxciemsite
+    address: '@address_11'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    email: <email()>
+    coordinates: '@coordinates_9'
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_12:
+    externalId: 0280F
+    name: tset
+    address: '@address_12'
+    phone: <e164PhoneNumber()>
+    email: <email()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_13:
+    externalId: 0285A
+    name: 'COLBEAUX S.A.S'
+    address: '@address_13'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_10'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_14:
+    externalId: 0290A
+    name: 'SARL TRIBOUILLOY'
+    address: '@address_14'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_15:
+    externalId: 0295A
+    name: 'COLBEAUX SA'
+    address: '@address_15'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_11'
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_16:
+    externalId: 0295E
+    name: Prestiges
+    address: '@address_16'
+    phone: <e164PhoneNumber()>
+    email: <email()>
+    coordinates: '@coordinates_12'
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_17:
+    externalId: 0295F
+    name: 'Verbaeres auto'
+    address: '@address_17'
+    phone: <e164PhoneNumber()>
+    email: <email()>
+    coordinates: '@coordinates_13'
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_18:
+    externalId: 0360A
+    name: 'GRUET AUTOMOBILES'
+    address: '@address_18'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_19:
+    externalId: 0360B
+    name: 'GRUET AUTOMOBILES'
+    address: '@address_19'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_20:
+    externalId: 0369A
+    name: 'Concession test2'
+    address: '@address_20'
+    phone: <e164PhoneNumber()>
+    email: <email()>
+    coordinates: '@coordinates_14'
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_21:
+    externalId: 0369B
+    name: 'ABC123 super autos'
+    address: '@address_21'
+    phone: <e164PhoneNumber()>
+    email: <email()>
+    coordinates: '@coordinates_15'
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_22:
+    externalId: 0375A
+    name: 'N C C'
+    address: '@address_22'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_16'
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_23:
+    externalId: 0380A
+    name: 'GRUET AUTOMOBILES'
+    address: '@address_23'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_24:
+    externalId: 0380B
+    name: 'GRUET AUTOMOBILES'
+    address: '@address_24'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_25:
+    externalId: 0485A
+    name: 'IMBERT AUTOMOBILES'
+    address: '@address_25'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_26:
+    externalId: 0490A
+    name: 'ALPES SPORT AUTOS'
+    address: '@address_26'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_27:
+    externalId: 0490Z
+    name: 'ALPES SPORT AUTOS'
+    address: '@address_27'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_28:
+    externalId: 0495A
+    name: AUTOLYV
+    address: '@address_28'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    email: <email()>
+    workshopEmail: <email()>
+    coordinates: '@coordinates_17'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_29:
+    externalId: 0565A
+    name: 'INTERNATIONAL GARAGE'
+    address: '@address_29'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    email: <email()>
+    coordinates: '@coordinates_18'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_30:
+    externalId: 0565B
+    name: 'INTERNATIONAL GARAGE'
+    address: '@address_30'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_31:
+    externalId: 0660A
+    name: 'SEM - 3 BLD ARMEE DES ALPES'
+    address: '@address_31'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_32:
+    externalId: 0665A
+    name: 'SARL AMADEUS AUTOMOBILES'
+    address: '@address_32'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    email: <email()>
+    coordinates: '@coordinates_19'
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_33:
+    externalId: 0665B
+    name: 'AMADEUS AUTOMOBILES'
+    address: '@address_33'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_34:
+    externalId: 0675A
+    name: 'GARAGE EUROPA'
+    address: '@address_34'
+    phone: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_35:
+    externalId: 0675B
+    name: 'GARAGE EUROPA - 3 BLD ARMEE DES ALPES'
+    address: '@address_35'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_36:
+    externalId: 0675F
+    name: testSavIndeser
+    address: '@address_36'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    email: <email()>
+    coordinates: '@coordinates_20'
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_37:
+    externalId: 0680A
+    name: 'AMADEUS PUGET'
+    address: '@address_37'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_21'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_38:
+    externalId: 0685B
+    name: 'AMADEUS AUTOMOBILES'
+    address: '@address_38'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    email: <email()>
+    coordinates: '@coordinates_22'
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_39:
+    externalId: 0685C
+    name: 'AMADEUS AUTOMOBILES'
+    address: '@address_39'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    email: <email()>
+    coordinates: '@coordinates_23'
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_40:
+    externalId: 0765A
+    name: 'LV AUTOMOBILES'
+    address: '@address_40'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    email: <email()>
+    coordinates: '@coordinates_24'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_41:
+    externalId: 0865A
+    name: 'SARL DEVILLE AUTOMOBILES'
+    address: '@address_41'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_25'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_42:
+    externalId: 0960A
+    name: 'SARL GARAGE BRILLAS'
+    address: '@address_42'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_26'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_43:
+    externalId: 0999A
+    name: 'test Log Julien'
+    address: '@address_43'
+    phone: <e164PhoneNumber()>
+    email: <email()>
+    coordinates: '@coordinates_27'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_44:
+    externalId: 1065A
+    name: 'SA J.P. FROMENT'
+    address: '@address_44'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_28'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_45:
+    externalId: 1065B
+    name: 'CHATILLON AUTOMOBILES'
+    address: '@address_45'
+    phone: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_46:
+    externalId: 1165A
+    name: 'SARL EASY CAR'
+    address: '@address_46'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_47:
+    externalId: 1175A
+    name: 'SARL PLANETE AUTOS'
+    address: '@address_47'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_29'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_48:
+    externalId: 1180A
+    name: 'AUTO DLC'
+    address: '@address_48'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_30'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_49:
+    externalId: 1222A
+    name: 'CHARLOTTE HUGOOOOO'
+    address: '@address_49'
+    phone: <e164PhoneNumber()>
+    email: <email()>
+    coordinates: '@coordinates_31'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_50:
+    externalId: 1234C
+    name: 'Audrey Arrault'
+    address: '@address_50'
+    phone: <e164PhoneNumber()>
+    email: <email()>
+    coordinates: '@coordinates_32'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_51:
+    externalId: 1265A
+    name: 'SARL GARAGE NEGRIER'
+    address: '@address_51'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_33'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_52:
+    externalId: 1270A
+    name: 'SARL S.A.M.'
+    address: '@address_52'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_53:
+    externalId: 1363A
+    name: 'AUTORAMA S.A.S. - CLUB AUTO AIX'
+    address: '@address_53'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_54:
+    externalId: 1363B
+    name: 'AUTORAMA S.A.S. - CLUB AUTO AIX'
+    address: '@address_54'
+    phone: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_55:
+    externalId: 1367A
+    name: JAPASUD
+    address: '@address_55'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    workshopEmail: <email()>
+    coordinates: '@coordinates_34'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_56:
+    externalId: 1367B
+    name: JAPASUD
+    address: '@address_56'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_35'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_57:
+    externalId: 1367C
+    name: JAPASUD
+    address: '@address_57'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    email: <email()>
+    workshopEmail: <email()>
+    coordinates: '@coordinates_36'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_58:
+    externalId: 1370A
+    name: 'GARAGE LE NATIONAL'
+    address: '@address_58'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_37'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_59:
+    externalId: 1372A
+    name: 'ANGEVIN AUTOMOBILES'
+    address: '@address_59'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_60:
+    externalId: 1373A
+    name: SUZUKI-AIX.COM
+    address: '@address_60'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_38'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_61:
+    externalId: 1376A
+    name: 'GRANDS GARAGES DE CAMARGUE'
+    address: '@address_61'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_39'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_62:
+    externalId: 1378A
+    name: M.V.A.
+    address: '@address_62'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_63:
+    externalId: 1378B
+    name: M.V.A.
+    address: '@address_63'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_64:
+    externalId: 1378C
+    name: M.V.A.
+    address: '@address_64'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_65:
+    externalId: 1383A
+    name: 'SAS HPL MANAGEMENT'
+    address: '@address_65'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_66:
+    externalId: 1383B
+    name: 'SAS HPL MANAGEMENT'
+    address: '@address_66'
+    phone: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_67:
+    externalId: 1384A
+    name: 'SAS ASTRADA'
+    address: '@address_67'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_68:
+    externalId: 1396A
+    name: MV-ASIA
+    address: '@address_68'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_69:
+    externalId: 1397A
+    name: MV-ASIA
+    address: '@address_69'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_70:
+    externalId: 1470A
+    name: 'B.M.J. ONESIME S.A.'
+    address: '@address_70'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_71:
+    externalId: 1480A
+    name: 'J.S. AUTO'
+    address: '@address_71'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_72:
+    externalId: 1480B
+    name: 'J.M. AUTO '
+    address: '@address_72'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_73:
+    externalId: 1480C
+    name: 'J.S. AUTO'
+    address: '@address_73'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_74:
+    externalId: 1480D
+    name: 'J.S. AUTO'
+    address: '@address_74'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_75:
+    externalId: 1480E
+    name: 'J.S. AUTO'
+    address: '@address_75'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_76:
+    externalId: 1483A
+    name: 'JW AUTO'
+    address: '@address_76'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_40'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_77:
+    externalId: 1483B
+    name: 'J.S. AUTO'
+    address: '@address_77'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_78:
+    externalId: 1485A
+    name: SOCADIA
+    address: '@address_78'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_41'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_79:
+    externalId: 1485B
+    name: SOCADIA
+    address: '@address_79'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_42'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_80:
+    externalId: 1485Z
+    name: SOCADIA
+    address: '@address_80'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_81:
+    externalId: 1490A
+    name: 'GARAGE DESPERROIS'
+    address: '@address_81'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    email: <email()>
+    workshopEmail: <email()>
+    coordinates: '@coordinates_43'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_82:
+    externalId: 1570A
+    name: LOCAMAR
+    address: '@address_82'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_44'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_83:
+    externalId: 1660A
+    name: 'ST CHRISTOPHE AUTOMOBILE'
+    address: '@address_83'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    email: <email()>
+    coordinates: '@coordinates_45'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_84:
+    externalId: 1765A
+    name: 'SA GABARDOS'
+    address: '@address_84'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_46'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_85:
+    externalId: 1765B
+    name: 'SA GABARDOS'
+    address: '@address_85'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_47'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_86:
+    externalId: 1765C
+    name: 'SA GABARDOS'
+    address: '@address_86'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_87:
+    externalId: 1770A
+    name: 'ESCALE AUTOMOBILES'
+    address: '@address_87'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_88:
+    externalId: 1775A
+    name: 'CAP AUTOMOBILES '
+    address: '@address_88'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    email: <email()>
+    workshopEmail: <email()>
+    coordinates: '@coordinates_48'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_89:
+    externalId: 1863A
+    name: 'PRESTIGE AUTOMOBILES 18'
+    address: '@address_89'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_49'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_90:
+    externalId: 1875A
+    name: 'CENTRE FRANCE AUTOMOBILES'
+    address: '@address_90'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_91:
+    externalId: 1875B
+    name: 'VIERZON CENTRE AUTO BDA'
+    address: '@address_91'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_92:
+    externalId: 1965A
+    name: 'PASCAL PERICAUD'
+    address: '@address_92'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_50'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_93:
+    externalId: 2065A
+    name: 'CASELLA - CENTRAL GARAGE'
+    address: '@address_93'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_51'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_94:
+    externalId: 2070A
+    name: 'SARL MASSA AUTOMOBILES'
+    address: '@address_94'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_95:
+    externalId: 2075A
+    name: 'MB AUTOMOBILES'
+    address: '@address_95'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_96:
+    externalId: 2080A
+    name: 'SUD AUTOMOBILES SERVICES'
+    address: '@address_96'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_52'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_97:
+    externalId: 2165A
+    name: 'GARAGE EUROPE'
+    address: '@address_97'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    email: <email()>
+    coordinates: '@coordinates_53'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_98:
+    externalId: 2270A
+    name: 'SA GARAGE DE DOUVENANT'
+    address: '@address_98'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_99:
+    externalId: 2275A
+    name: 'SAINT MARC AUTOMOBILE'
+    address: '@address_99'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_100:
+    externalId: 2280A
+    name: 'CORRE AUTOMOBILES'
+    address: '@address_100'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_101:
+    externalId: 2285A
+    name: 'FP – AUTO EVASION'
+    address: '@address_101'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    email: <email()>
+    workshopEmail: <email()>
+    coordinates: '@coordinates_54'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_102:
+    externalId: 2285B
+    name: 'FP – AUTO EVASION'
+    address: '@address_102'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    email: <email()>
+    workshopEmail: <email()>
+    coordinates: '@coordinates_55'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_103:
+    externalId: 2285C
+    name: 'CORRE AUTO EVASION'
+    address: '@address_103'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_104:
+    externalId: 2290A
+    name: 'CORRE AUTOMOBILES'
+    address: '@address_104'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    email: <email()>
+    workshopEmail: <email()>
+    coordinates: '@coordinates_56'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_105:
+    externalId: 2361A
+    name: 'PRESTIGE CARS SARL'
+    address: '@address_105'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_106:
+    externalId: 2361B
+    name: 'PRESTIGE CARS SARL'
+    address: '@address_106'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_107:
+    externalId: 2365A
+    name: 'BARRAT AUTOMOBILES'
+    address: '@address_107'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_57'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_108:
+    externalId: 2365B
+    name: 'BARRAT AUTOMOBILES'
+    address: '@address_108'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_58'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_109:
+    externalId: 2365C
+    name: 'BARRAT AUTOMOBILES'
+    address: '@address_109'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    email: <email()>
+    workshopEmail: <email()>
+    coordinates: '@coordinates_59'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_110:
+    externalId: 2465A
+    name: 'AUTO F. DAVID'
+    address: '@address_110'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_111:
+    externalId: 2465B
+    name: 'AUTO F. DAVID'
+    address: '@address_111'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_112:
+    externalId: 2470A
+    name: 'FRANCIS DAVID AUTOMOBILES'
+    address: '@address_112'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_60'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_113:
+    externalId: 2475A
+    name: 'ALARY PATRICE AUTOMOBILES'
+    address: '@address_113'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_61'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_114:
+    externalId: 2565A
+    name: 'GALMICHE AUTOMOBILES'
+    address: '@address_114'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_115:
+    externalId: 2565B
+    name: 'GALMICHE AUTOMOBILES'
+    address: '@address_115'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_116:
+    externalId: 2570A
+    name: 'SUD ALSACE MOTORS'
+    address: '@address_116'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_62'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_117:
+    externalId: 2570B
+    name: 'SUD ALSACE MOTORS'
+    address: '@address_117'
+    phone: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_118:
+    externalId: 2575A
+    name: 'DUMONT CEDRIC'
+    address: '@address_118'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    email: <email()>
+    workshopEmail: <email()>
+    coordinates: '@coordinates_63'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_119:
+    externalId: 2660A
+    name: 'SAS AUTO DISPO'
+    address: '@address_119'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_120:
+    externalId: 2670A
+    name: 'P.G AUTOMOBILES'
+    address: '@address_120'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_121:
+    externalId: 2675A
+    name: 'MONT BLANC AUTOMOBILES SUD'
+    address: '@address_121'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_64'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_122:
+    externalId: 2680A
+    name: 'CARGIN AUTO'
+    address: '@address_122'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_65'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_123:
+    externalId: 2765A
+    name: 'V.A.E. AUTOMOBILES'
+    address: '@address_123'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_124:
+    externalId: 2765B
+    name: 'VERNOUILLET AUTOMOBILES'
+    address: '@address_124'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_125:
+    externalId: 2770A
+    name: 'MSA SPORT AUTO'
+    address: '@address_125'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_126:
+    externalId: 2775A
+    name: 'MSA SUZUKI VERNON'
+    address: '@address_126'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_127:
+    externalId: 2780A
+    name: 'CLAUDE FOURNIS AUTOMOBILES'
+    address: '@address_127'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_66'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_128:
+    externalId: 2790A
+    name: 'SAINT CLAIR AUTO 27 '
+    address: '@address_128'
+    phone: <e164PhoneNumber()>
+    email: <email()>
+    workshopEmail: <email()>
+    coordinates: '@coordinates_67'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_129:
+    externalId: 2870A
+    name: 'SARL ISA'
+    address: '@address_129'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_68'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_130:
+    externalId: 2875A
+    name: 'O.L AUTOMOBILE'
+    address: '@address_130'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_131:
+    externalId: 2880A
+    name: 'SAUSSEREAU S.A.'
+    address: '@address_131'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    email: <email()>
+    workshopEmail: <email()>
+    coordinates: '@coordinates_69'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_132:
+    externalId: 2963A
+    name: 'ALLIANCE MOTORS 29'
+    address: '@address_132'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_133:
+    externalId: 2963B
+    name: 'SAS ALLIANCE MOTORS 29'
+    address: '@address_133'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_134:
+    externalId: 2967A
+    name: 'MDA - PACIFIC AUTO'
+    address: '@address_134'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_70'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_135:
+    externalId: 2972A
+    name: 'CAP MOTORS 29'
+    address: '@address_135'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_136:
+    externalId: 2978A
+    name: 'SELECTION AUTO'
+    address: '@address_136'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    email: <email()>
+    coordinates: '@coordinates_71'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_137:
+    externalId: 2983A
+    name: 'BRETAGNE AUTOMOBILE'
+    address: '@address_137'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_72'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_138:
+    externalId: 2990A
+    name: 'RENE GUILLOU & FILS'
+    address: '@address_138'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_139:
+    externalId: 3070A
+    name: 'FRANCE AUTO ROUGIER'
+    address: '@address_139'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_73'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_140:
+    externalId: 3085A
+    name: 'GRANDS GARAGES NIMOIS'
+    address: '@address_140'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_141:
+    externalId: 3090A
+    name: 'GRANDS GARAGES DU GARD'
+    address: '@address_141'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_74'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_142:
+    externalId: 3090B
+    name: 'GRANDS GARAGES DU GARD'
+    address: '@address_142'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_143:
+    externalId: 3165A
+    name: 'EAS AUTOMOBILES'
+    address: '@address_143'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_144:
+    externalId: 3175A
+    name: 'LAND''AUTO'
+    address: '@address_144'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_145:
+    externalId: 3180A
+    name: 'LAND AUTO 31'
+    address: '@address_145'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_146:
+    externalId: 3185A
+    name: 'AUTO REAL VEHICULES'
+    address: '@address_146'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_75'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_147:
+    externalId: 3185B
+    name: 'AUTO REAL VEHICULES'
+    address: '@address_147'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_76'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_148:
+    externalId: 3185C
+    name: 'AUTO REAL VEHICULES'
+    address: '@address_148'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_77'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_149:
+    externalId: 3185D
+    name: 'AUTO REAL VEHICULES'
+    address: '@address_149'
+    phone: <e164PhoneNumber()>
+    email: <email()>
+    workshopEmail: <email()>
+    coordinates: '@coordinates_78'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_150:
+    externalId: 3190A
+    name: 'DALLARD MOTORS'
+    address: '@address_150'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    email: <email()>
+    workshopEmail: <email()>
+    coordinates: '@coordinates_79'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_151:
+    externalId: 3265A
+    name: 'GRAND GARAGE AUSCITAIN'
+    address: '@address_151'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_80'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_152:
+    externalId: 3370A
+    name: 'DIFFUSION AUTOMOBILE GIRONDINE'
+    address: '@address_152'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_81'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_153:
+    externalId: 3370B
+    name: 'STEWART ET ARDERN S.A.'
+    address: '@address_153'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_154:
+    externalId: 3375A
+    name: 'AUTOMOBILES PALAU 17'
+    address: '@address_154'
+    phone: <e164PhoneNumber()>
+    email: <email()>
+    workshopEmail: <email()>
+    coordinates: '@coordinates_82'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_155:
+    externalId: 3470A
+    name: 'SUZUKI CERDAN ET FILS'
+    address: '@address_155'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_156:
+    externalId: 3470B
+    name: 'SARL CERDAN GAROSUD '
+    address: '@address_156'
+    phone: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_157:
+    externalId: 3480A
+    name: 'KIKAJE MOTORS '
+    address: '@address_157'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_158:
+    externalId: 3480B
+    name: 'KIKAJE MOTORS'
+    address: '@address_158'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_159:
+    externalId: 3485A
+    name: 'MONTIMARAN AUTOMOBILE'
+    address: '@address_159'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_83'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_160:
+    externalId: 3490A
+    name: 'MONTIMARAN AUTOMOBILE'
+    address: '@address_160'
+    phone: <e164PhoneNumber()>
+    email: <email()>
+    workshopEmail: <email()>
+    coordinates: '@coordinates_84'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_161:
+    externalId: 3570A
+    name: 'SARL GGE DU MOULIN'
+    address: '@address_161'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_162:
+    externalId: 3585A
+    name: 'PRESTIGE AUTOS'
+    address: '@address_162'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_163:
+    externalId: 3585C
+    name: 'L.C.R. MOTORS'
+    address: '@address_163'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_164:
+    externalId: 3585D
+    name: 'LANGLOIS MOTORS'
+    address: '@address_164'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_165:
+    externalId: 3590A
+    name: 'CEZEMBRE AUTOMOBILES'
+    address: '@address_165'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_85'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_166:
+    externalId: 3595A
+    name: 'LEGRAND BRETAGNE AUTOMOBILES'
+    address: '@address_166'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_86'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_167:
+    externalId: 3660A
+    name: 'SARL PERIER'
+    address: '@address_167'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_87'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_168:
+    externalId: 3775A
+    name: SOMAT
+    address: '@address_168'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_88'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_169:
+    externalId: 3775B
+    name: 'PRESTIGE AUTOS'
+    address: '@address_169'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_89'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_170:
+    externalId: 3860A
+    name: 'SEYSSINET ALPES AUTO'
+    address: '@address_170'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    email: <email()>
+    coordinates: '@coordinates_90'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_171:
+    externalId: 3865A
+    name: 'SARL DALLA AUTOMOBILES'
+    address: '@address_171'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_172:
+    externalId: 3870A
+    name: 'RHONALP''AUTO'
+    address: '@address_172'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_173:
+    externalId: 3875A
+    name: 'JEAN TUNESI'
+    address: '@address_173'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_91'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_174:
+    externalId: 3880A
+    name: 'SAS LAURIE  (RHONALP’AUTO)'
+    address: '@address_174'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    email: <email()>
+    workshopEmail: <email()>
+    coordinates: '@coordinates_92'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_175:
+    externalId: 3965A
+    name: 'GARAGE ZANGRANDI'
+    address: '@address_175'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_93'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_176:
+    externalId: 3965B
+    name: 'GARAGE ZANGRANDI'
+    address: '@address_176'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_177:
+    externalId: 4065A
+    name: 'AQUITAINE AUTOMOBILES'
+    address: '@address_177'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_178:
+    externalId: 4065B
+    name: 'AQUITAINE AUTOMOBILES'
+    address: '@address_178'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_179:
+    externalId: 4070A
+    name: 'I AUTO MONT DE MARSAN'
+    address: '@address_179'
+    phone: <e164PhoneNumber()>
+    email: <email()>
+    workshopEmail: <email()>
+    coordinates: '@coordinates_94'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_180:
+    externalId: 4072A
+    name: 'I AUTO DAX'
+    address: '@address_180'
+    phone: <e164PhoneNumber()>
+    email: <email()>
+    workshopEmail: <email()>
+    coordinates: '@coordinates_95'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_181:
+    externalId: 4180A
+    name: 'MEDICIS AUTOMOBILES'
+    address: '@address_181'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_182:
+    externalId: 4185A
+    name: 'BEHRA CENTRE LOIRE AUTOMOBILE'
+    address: '@address_182'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_183:
+    externalId: 4190A
+    name: 'LAURIER AUTOMOBILES BLOIS'
+    address: '@address_183'
+    phone: <e164PhoneNumber()>
+    email: <email()>
+    workshopEmail: <email()>
+    coordinates: '@coordinates_96'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_184:
+    externalId: 4260A
+    name: 'BONNEVIE AUTOMOBILES'
+    address: '@address_184'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_185:
+    externalId: 4260B
+    name: 'GARAGE DE LA PIERRE PLANTEE'
+    address: '@address_185'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_186:
+    externalId: 4265A
+    name: 'FELIX FAURE AUTOMOBILES'
+    address: '@address_186'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_187:
+    externalId: 4275A
+    name: 'ESPACE ZEN'
+    address: '@address_187'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_97'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_188:
+    externalId: 4275B
+    name: 'ESPACE BORGNAT 71'
+    address: '@address_188'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_189:
+    externalId: 4280A
+    name: 'AC BOUGAULT AUTOMOBILES'
+    address: '@address_189'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_98'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_190:
+    externalId: 4360A
+    name: 'GARAGE DE LA PIERRE PLANTEE'
+    address: '@address_190'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_99'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_191:
+    externalId: 4480A
+    name: 'AUTOMOBILES OCEANES'
+    address: '@address_191'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_192:
+    externalId: 4480B
+    name: 'AUTOMOBILES OCEANES'
+    address: '@address_192'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_193:
+    externalId: 4485A
+    name: 'SUZUKI NANTES'
+    address: '@address_193'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_100'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_194:
+    externalId: 4490A
+    name: 'B.S.A ATLANTIQUE'
+    address: '@address_194'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_195:
+    externalId: 4495A
+    name: 'MUSTIERE AUTOMOBILES'
+    address: '@address_195'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    email: <email()>
+    workshopEmail: <email()>
+    coordinates: '@coordinates_101'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_196:
+    externalId: 4585A
+    name: 'GARAGE PAUMIER'
+    address: '@address_196'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_102'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_197:
+    externalId: 4590A
+    name: 'AUTO MART 45 SAS'
+    address: '@address_197'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_198:
+    externalId: 4595A
+    name: 'PRESTIGE AUTOMOBILES 45'
+    address: '@address_198'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_103'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_199:
+    externalId: 4670A
+    name: 'MACARIE AUTOMOBILES'
+    address: '@address_199'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_200:
+    externalId: 4765A
+    name: 'ETS BOUDOU S.A.'
+    address: '@address_200'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_201:
+    externalId: 4770A
+    name: 'CENTRE AUTO DE LESTANG'
+    address: '@address_201'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    email: <email()>
+    coordinates: '@coordinates_104'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_202:
+    externalId: 4770B
+    name: 'ESPACE DECOUVERTE AUTO II'
+    address: '@address_202'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_105'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_203:
+    externalId: 4775A
+    name: P.V.A.
+    address: '@address_203'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_106'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_204:
+    externalId: 4865A
+    name: 'CAR''S SERVICES MENDE'
+    address: '@address_204'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_107'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_205:
+    externalId: 4865B
+    name: 'CAR''S SERVICES MILLAU'
+    address: '@address_205'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_108'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_206:
+    externalId: 4985A
+    name: 'SA VAL DE LOIRE AUTOMOBILES'
+    address: '@address_206'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_109'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_207:
+    externalId: 4985B
+    name: 'SA VAL DE LOIRE AUTOMOBILES'
+    address: '@address_207'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_110'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_208:
+    externalId: 4985C
+    name: 'SA VAL DE LOIRE AUTOMOBILES'
+    address: '@address_208'
+    phone: <e164PhoneNumber()>
+    coordinates: '@coordinates_111'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_209:
+    externalId: 5065A
+    name: 'AUTO VOGUE'
+    address: '@address_209'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_210:
+    externalId: 5070A
+    name: 'GODEFROY AUTO'
+    address: '@address_210'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_211:
+    externalId: 5180A
+    name: A.F.L.
+    address: '@address_211'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_112'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_212:
+    externalId: 5180B
+    name: A.F.L.
+    address: '@address_212'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_213:
+    externalId: 5180Z
+    name: A.F.L.
+    address: '@address_213'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_214:
+    externalId: 5185A
+    name: PWA
+    address: '@address_214'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_113'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_215:
+    externalId: 5185B
+    name: PWA
+    address: '@address_215'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_114'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_216:
+    externalId: 5260A
+    name: 'SA BAZIN'
+    address: '@address_216'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_115'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_217:
+    externalId: 5265A
+    name: 'FELINE AUTO'
+    address: '@address_217'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_218:
+    externalId: 5265C
+    name: 'C.M. AUTOS'
+    address: '@address_218'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_219:
+    externalId: 5360A
+    name: 'AUTOS SELECTION'
+    address: '@address_219'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_116'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_220:
+    externalId: 5463A
+    name: 'H.B.S. AUTOMOBILES'
+    address: '@address_220'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_117'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_221:
+    externalId: 5465A
+    name: 'S. M. A. '
+    address: '@address_221'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_222:
+    externalId: 5468A
+    name: 'CAR AVENUE'
+    address: '@address_222'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_223:
+    externalId: 5482A
+    name: MILLAUTO
+    address: '@address_223'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    email: <email()>
+    coordinates: '@coordinates_118'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_224:
+    externalId: 5485A
+    name: 'AUTOMOBILES GOUTH'
+    address: '@address_224'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_225:
+    externalId: 5485B
+    name: 'AUTOMOBILES GOUTH'
+    address: '@address_225'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_226:
+    externalId: 5490A
+    name: 'LORRAINE AUTO '
+    address: '@address_226'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_227:
+    externalId: 5495A
+    name: 'STATION GARAGE FLEURANTIN'
+    address: '@address_227'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    email: <email()>
+    workshopEmail: <email()>
+    coordinates: '@coordinates_119'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_228:
+    externalId: 5565A
+    name: 'CT AUTOMOBILES'
+    address: '@address_228'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_229:
+    externalId: 5570A
+    name: 'WAM''AUTOS'
+    address: '@address_229'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_230:
+    externalId: 5575A
+    name: SFB
+    address: '@address_230'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_120'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_231:
+    externalId: 5580A
+    name: 'SAINT CHRISTOPHE AUTOMOBILES'
+    address: '@address_231'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    email: <email()>
+    workshopEmail: <email()>
+    coordinates: '@coordinates_121'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_232:
+    externalId: 5662A
+    name: PRIMAUTO
+    address: '@address_232'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_233:
+    externalId: 5667A
+    name: 'MORBIHAN AUTO'
+    address: '@address_233'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_122'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_234:
+    externalId: 5685A
+    name: 'VENETE AUTOMOBILE'
+    address: '@address_234'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_235:
+    externalId: 5690A
+    name: 'MUSTIERE PONTIVY'
+    address: '@address_235'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_123'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_236:
+    externalId: 5690B
+    name: 'MUSTIERE VANNES'
+    address: '@address_236'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_124'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_237:
+    externalId: 5695A
+    name: 'L''AUTOMOBILE'
+    address: '@address_237'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_238:
+    externalId: 5695B
+    name: 'L''AUTOMOBILE - OCEANE AUTOMOBILE'
+    address: '@address_238'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_239:
+    externalId: 5765A
+    name: 'CAR AVENUE'
+    address: '@address_239'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_240:
+    externalId: 5770A
+    name: 'GARAGE DU HERAPEL'
+    address: '@address_240'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_241:
+    externalId: 5770B
+    name: 'AUTOMOBILES SHAEFFER'
+    address: '@address_241'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_242:
+    externalId: 5775A
+    name: 'CAR AVENUE'
+    address: '@address_242'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_243:
+    externalId: 5775B
+    name: 'CAR AVENUE'
+    address: '@address_243'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_244:
+    externalId: 5780A
+    name: 'AUTO CONTACT'
+    address: '@address_244'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_245:
+    externalId: 5780B
+    name: 'INTER AUTO'
+    address: '@address_245'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_246:
+    externalId: 5780C
+    name: 'LORRAINE AUTO '
+    address: '@address_246'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_247:
+    externalId: 5783A
+    name: 'AUTOMOBILES SCHNEIDER'
+    address: '@address_247'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_125'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_248:
+    externalId: 5785A
+    name: SWA
+    address: '@address_248'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_126'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_249:
+    externalId: 5790A
+    name: 'PACCI AUTOMOBILES'
+    address: '@address_249'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_127'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_250:
+    externalId: 5790B
+    name: 'PACCI AUTOMOBILES'
+    address: '@address_250'
+    phone: <e164PhoneNumber()>
+    coordinates: '@coordinates_128'
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_251:
+    externalId: 5795A
+    name: 'AUTOMOBILES PATRICE ESCH'
+    address: '@address_251'
+    phone: <e164PhoneNumber()>
+    email: <email()>
+    coordinates: '@coordinates_129'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_252:
+    externalId: 5796A
+    name: 'GARAGE ESCH'
+    address: '@address_252'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    email: <email()>
+    workshopEmail: <email()>
+    coordinates: '@coordinates_130'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_253:
+    externalId: 5865A
+    name: 'GARAGE TENAILLES AUTO'
+    address: '@address_253'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_254:
+    externalId: 5870A
+    name: 'GARAGE JACQUEY'
+    address: '@address_254'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_131'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_255:
+    externalId: 5962A
+    name: 'CROSETTI AUTOMOBILES'
+    address: '@address_255'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    email: <email()>
+    workshopEmail: <email()>
+    coordinates: '@coordinates_132'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_256:
+    externalId: 5963A
+    name: 'SA DRAKKAR AUTOMOBILES'
+    address: '@address_256'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_133'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_257:
+    externalId: 5970A
+    name: 'DK. STAR'
+    address: '@address_257'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_258:
+    externalId: 5970B
+    name: 'OPALE STAR AUTOMOBILES'
+    address: '@address_258'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_259:
+    externalId: 5977A
+    name: 'CORMONTOISE D''AUTOMOBILES'
+    address: '@address_259'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_134'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_260:
+    externalId: 5980A
+    name: 'DOUAI AUTOMOBILE'
+    address: '@address_260'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_135'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_261:
+    externalId: 5982A
+    name: 'LILLE DIFFUSION AUTO'
+    address: '@address_261'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_136'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_262:
+    externalId: 5985A
+    name: 'GARAGE BOURSIER'
+    address: '@address_262'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_263:
+    externalId: 5987A
+    name: 'LE RELAIS'
+    address: '@address_263'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_137'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_264:
+    externalId: 5995A
+    name: FRANCO
+    address: '@address_264'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_138'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_265:
+    externalId: 6067A
+    name: 'GROUPE AUTOS 60 - SMAS'
+    address: '@address_265'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_139'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_266:
+    externalId: 6072A
+    name: 'H.G. AUTO 60'
+    address: '@address_266'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_267:
+    externalId: 6072B
+    name: 'H.G. AUTO 60'
+    address: '@address_267'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_268:
+    externalId: 6072C
+    name: 'H.G. AUTO 60'
+    address: '@address_268'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_269:
+    externalId: 6078A
+    name: 'COURTOISE AUTOMOBILES'
+    address: '@address_269'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    email: <email()>
+    workshopEmail: <email()>
+    coordinates: '@coordinates_140'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_270:
+    externalId: 6085A
+    name: 'EURAUTO 60'
+    address: '@address_270'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_271:
+    externalId: 6085B
+    name: 'EURAUTO 60'
+    address: '@address_271'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_272:
+    externalId: 6090A
+    name: 'DELTA AUTOS'
+    address: '@address_272'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_273:
+    externalId: 6095A
+    name: 'L’AUTO RECENTE'
+    address: '@address_273'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_141'
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_274:
+    externalId: 6165A
+    name: 'GARAGE MEZENGE'
+    address: '@address_274'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_142'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_275:
+    externalId: 6267A
+    name: 'IBERIA CONCEPT'
+    address: '@address_275'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_276:
+    externalId: 6272A
+    name: 'SARL CL STAR AUTOMOBILES'
+    address: '@address_276'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_277:
+    externalId: 6272B
+    name: 'OPALE STAR AUTOMOBILES'
+    address: '@address_277'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_278:
+    externalId: 6277A
+    name: H.M.A
+    address: '@address_278'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_143'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_279:
+    externalId: 6285A
+    name: 'SA BARRE AUTOMOBILES'
+    address: '@address_279'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_144'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_280:
+    externalId: 6290A
+    name: 'SA BARRE AUTOMOBILES'
+    address: '@address_280'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_145'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_281:
+    externalId: 6295A
+    name: 'SUZUKI BETHUNE - S. DELABRE'
+    address: '@address_281'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_146'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_282:
+    externalId: 6370A
+    name: 'AUTOMOBILES RVO'
+    address: '@address_282'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_147'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_283:
+    externalId: 6461A
+    name: 'SAS LAFONTAINE 64'
+    address: '@address_283'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_148'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_284:
+    externalId: 6475A
+    name: 'SARL FAMILY'
+    address: '@address_284'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_149'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_285:
+    externalId: 6570A
+    name: 'TECHNICENTRE AUTOMOBILES'
+    address: '@address_285'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_150'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_286:
+    externalId: 6665A
+    name: 'RIVIERA AUTOMOBILE'
+    address: '@address_286'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_287:
+    externalId: 6666A
+    name: 'GARAGE DE LA NUIT'
+    address: '@address_287'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    email: <email()>
+    workshopEmail: <email()>
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_288:
+    externalId: 6670A
+    name: 'AUTO DLC'
+    address: '@address_288'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_151'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_289:
+    externalId: 6770A
+    name: 'SARL PIERRE SCHUMPP'
+    address: '@address_289'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_152'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_290:
+    externalId: 6785A
+    name: 'FRANCE AUTOMOBILES'
+    address: '@address_290'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_291:
+    externalId: 6790A
+    name: 'PRESTIGE AUTOS'
+    address: '@address_291'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    email: <email()>
+    workshopEmail: <email()>
+    coordinates: '@coordinates_153'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_292:
+    externalId: 6790B
+    name: 'PRESTIGE AUTOS'
+    address: '@address_292'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    email: <email()>
+    coordinates: '@coordinates_154'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_293:
+    externalId: 6875A
+    name: 'SUD ALSACE MOTORS'
+    address: '@address_293'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_155'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_294:
+    externalId: 6880A
+    name: 'SUD ALSACE MOTORS'
+    address: '@address_294'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_156'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_295:
+    externalId: 6880B
+    name: 'SUD ALSACE MOTORS'
+    address: '@address_295'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_157'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_296:
+    externalId: 6880C
+    name: 'SUD ALSACE MOTORS'
+    address: '@address_296'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_297:
+    externalId: 6880D
+    name: 'SUD ALSACE MOTORS'
+    address: '@address_297'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_298:
+    externalId: 6961A
+    name: 'L''ESPACE LYONNAIS S.A.'
+    address: '@address_298'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_299:
+    externalId: 6962A
+    name: 'GARAGE RICHARD DREVET'
+    address: '@address_299'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_158'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_300:
+    externalId: 6980A
+    name: 'EVASION AUTOMOBILES'
+    address: '@address_300'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_159'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_301:
+    externalId: 6985A
+    name: 'FELIX FAURE AUTOMOBILES'
+    address: '@address_301'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_302:
+    externalId: 6990A
+    name: 'VALVERT SPORT AUTOMOBILES'
+    address: '@address_302'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    email: <email()>
+    workshopEmail: <email()>
+    coordinates: '@coordinates_160'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_303:
+    externalId: 7075A
+    name: 'GARAGE DE FRANCHE COMTE'
+    address: '@address_303'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_161'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_304:
+    externalId: 7080A
+    name: 'THIEBAUT AUTOMOBILES'
+    address: '@address_304'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_162'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_305:
+    externalId: 7170A
+    name: 'EUROPE AUTOMOBILES'
+    address: '@address_305'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_306:
+    externalId: 7180A
+    name: 'BOLATRE AUTOMOBILES'
+    address: '@address_306'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_307:
+    externalId: 7190A
+    name: 'C. CHAUVOT AUTOMOBILES'
+    address: '@address_307'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    email: <email()>
+    workshopEmail: <email()>
+    coordinates: '@coordinates_163'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_308:
+    externalId: 7190B
+    name: 'CHRISTIAN CHAUVOT AUTOMOBILES'
+    address: '@address_308'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_309:
+    externalId: 7195A
+    name: 'GROUPE GUILLET'
+    address: '@address_309'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_164'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_310:
+    externalId: 7195B
+    name: 'HALL DE L’AUTOMOBILE'
+    address: '@address_310'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_165'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_311:
+    externalId: 7270A
+    name: '72 AUTO PARC'
+    address: '@address_311'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_166'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_312:
+    externalId: 7361A
+    name: 'SAVOIE MOTORS ALBERTVILLE'
+    address: '@address_312'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_167'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_313:
+    externalId: 7370A
+    name: 'SAVOIE MOTORS CHAMBERY'
+    address: '@address_313'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_168'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_314:
+    externalId: 7370B
+    name: 'SAVOIE MOTORS '
+    address: '@address_314'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_315:
+    externalId: 7462A
+    name: 'SARL FAVRET AUTOMOBILES'
+    address: '@address_315'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_169'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_316:
+    externalId: 7462B
+    name: 'SARL FAVRET AUTOMOBILES'
+    address: '@address_316'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_170'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_317:
+    externalId: 7470A
+    name: 'SAVOIE MOTORS - ANNECY'
+    address: '@address_317'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_171'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_318:
+    externalId: 7475A
+    name: 'SAVOIE MOTORS ANNEMASSE'
+    address: '@address_318'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_172'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_319:
+    externalId: 7575A
+    name: 'SUZUKI PARIS'
+    address: '@address_319'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_173'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_320:
+    externalId: 7575B
+    name: 'SUZUKI PARIS'
+    address: '@address_320'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_174'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_321:
+    externalId: 7585A
+    name: 'SUZUKI PARIS'
+    address: '@address_321'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_175'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_322:
+    externalId: 7585D
+    name: test
+    address: '@address_322'
+    phone: <e164PhoneNumber()>
+    email: <email()>
+    coordinates: '@coordinates_176'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_323:
+    externalId: 7662A
+    name: 'CONTINENTAL AUTOMOBILES'
+    address: '@address_323'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_177'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_324:
+    externalId: 7667A
+    name: 'CONTINENTAL AUTOMOBILES'
+    address: '@address_324'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_178'
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_325:
+    externalId: 7672A
+    name: 'GARAGE DES HALLES'
+    address: '@address_325'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_326:
+    externalId: 7675A
+    name: 'CITY S.A.'
+    address: '@address_326'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_327:
+    externalId: 7676A
+    name: 'SAINT CLAIR AUTO'
+    address: '@address_327'
+    phone: <e164PhoneNumber()>
+    email: <email()>
+    workshopEmail: <email()>
+    coordinates: '@coordinates_179'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_328:
+    externalId: 7677A
+    name: 'MOTORS 76 '
+    address: '@address_328'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_180'
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_329:
+    externalId: 7680A
+    name: 'SARL ESPACE AUTO '
+    address: '@address_329'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_330:
+    externalId: 7680B
+    name: 'ETOILE AUTO'
+    address: '@address_330'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_331:
+    externalId: 7685A
+    name: 'STAR AUTOMOBILES'
+    address: '@address_331'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_332:
+    externalId: 7685B
+    name: 'REDELE AUTOMOBILES'
+    address: '@address_332'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_333:
+    externalId: 7690A
+    name: 'MSA SPORT AUTO'
+    address: '@address_333'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_334:
+    externalId: 7695A
+    name: 'MSA SPORT AUTO - LE HAVRE'
+    address: '@address_334'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_335:
+    externalId: 7696A
+    name: 'MSA SPORT AUTO - DIEPPE'
+    address: '@address_335'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_336:
+    externalId: 7762A
+    name: S.M.D.A
+    address: '@address_336'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_181'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_337:
+    externalId: 7763A
+    name: 'ZELUS AUTOMOBILES'
+    address: '@address_337'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_182'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_338:
+    externalId: 7763B
+    name: 'ZELUS AUTOMOBILES'
+    address: '@address_338'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    email: <email()>
+    coordinates: '@coordinates_183'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_339:
+    externalId: 7766A
+    name: 'DANIEL AUTOMOBILES'
+    address: '@address_339'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_184'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_340:
+    externalId: 7782A
+    name: MTPA
+    address: '@address_340'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_341:
+    externalId: 7785A
+    name: S.A.M.S.
+    address: '@address_341'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_342:
+    externalId: 7787A
+    name: M.C.V.A
+    address: '@address_342'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    email: <email()>
+    coordinates: '@coordinates_185'
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_343:
+    externalId: 7792A
+    name: 'GRAND GARAGE DE LA CAVE'
+    address: '@address_343'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_344:
+    externalId: 7795A
+    name: 'EURAUTO 77'
+    address: '@address_344'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_345:
+    externalId: 7871A
+    name: 'GRAND GARAGE DE CHANTEREINE'
+    address: '@address_345'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_346:
+    externalId: 7874A
+    name: 'TAJIMA France'
+    address: '@address_346'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_347:
+    externalId: 7877A
+    name: 'GARAGE DU MONTOIR'
+    address: '@address_347'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_348:
+    externalId: 7879A
+    name: 'PGM COIGNIERES'
+    address: '@address_348'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_349:
+    externalId: 7886A
+    name: 'SAINT GERMAIN MOTORS'
+    address: '@address_349'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_186'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_350:
+    externalId: 7893A
+    name: 'ILE DE FRANCE AUTOMOBILES'
+    address: '@address_350'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_187'
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_351:
+    externalId: 7895A
+    name: 'GARAGE GAMELINES AUTO'
+    address: '@address_351'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_352:
+    externalId: 7896A
+    name: M.G.A
+    address: '@address_352'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_353:
+    externalId: 7897A
+    name: 'FOUCHE MOTORS'
+    address: '@address_353'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_354:
+    externalId: 7970A
+    name: 'SA GABARDOS'
+    address: '@address_354'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_355:
+    externalId: 7975A
+    name: 'XAV AUTO'
+    address: '@address_355'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_188'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_356:
+    externalId: 8065A
+    name: 'ROCADE AUTOMOBILES'
+    address: '@address_356'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_357:
+    externalId: 8075A
+    name: 'AUTO REPUBLIQUE'
+    address: '@address_357'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_358:
+    externalId: 8080A
+    name: 'SAS JAMES LEFEBVRE'
+    address: '@address_358'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_189'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_359:
+    externalId: 8080B
+    name: 'SAS JAMES LEFEBVRE'
+    address: '@address_359'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_360:
+    externalId: 8170A
+    name: 'SARL GARAGE PIROLA'
+    address: '@address_360'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_190'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_361:
+    externalId: 8170B
+    name: 'SARL GARAGE PIROLA'
+    address: '@address_361'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_191'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_362:
+    externalId: 8265A
+    name: 'GRAND SUD AUTOMOBILES'
+    address: '@address_362'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_192'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_363:
+    externalId: 8270A
+    name: 'AUTOMOBILES PALAU 17'
+    address: '@address_363'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_193'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_364:
+    externalId: 8365A
+    name: 'A.M.C. AUTOMOBILES'
+    address: '@address_364'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_365:
+    externalId: 8365B
+    name: 'A.M.C. AUTOMOBILES'
+    address: '@address_365'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_366:
+    externalId: 8380A
+    name: 'AUTO SERVICE VAROIS - AS 83'
+    address: '@address_366'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_194'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_367:
+    externalId: 8380B
+    name: 'AUTO SERVICE VAROIS'
+    address: '@address_367'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_195'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_368:
+    externalId: 8380C
+    name: 'AUTO SERVICE VAROIS - AS 83'
+    address: '@address_368'
+    phone: <e164PhoneNumber()>
+    coordinates: '@coordinates_196'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_369:
+    externalId: 8470A
+    name: 'AUTOMOBILES SP MOTORS'
+    address: '@address_369'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_197'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_370:
+    externalId: 8470B
+    name: 'AUTOMOBILES SP MOTORS'
+    address: '@address_370'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_371:
+    externalId: 8575A
+    name: 'SARL AILLERY RIDIER'
+    address: '@address_371'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_372:
+    externalId: 8580A
+    name: 'LAMY AUTO 85'
+    address: '@address_372'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_373:
+    externalId: 8585A
+    name: V.S.A
+    address: '@address_373'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_374:
+    externalId: 8590A
+    name: 'S.A. L''OCEANE AUTOMOBILES'
+    address: '@address_374'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_198'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_375:
+    externalId: 8595A
+    name: 'ITAL AUTO 85'
+    address: '@address_375'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_376:
+    externalId: 8661A
+    name: 'CACHET GIRAUD DIFFUSION AUTOMOBILES'
+    address: '@address_376'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_377:
+    externalId: 8670A
+    name: 'AUTOMOBILE DIFFUSION SA'
+    address: '@address_377'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_378:
+    externalId: 8670B
+    name: 'AUTOMOBILE DIFFUSION SA'
+    address: '@address_378'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_379:
+    externalId: 8675A
+    name: 'ECO DES NATIONS'
+    address: '@address_379'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_199'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_380:
+    externalId: 8675D
+    name: 'Hugoo Charlotte'
+    address: '@address_380'
+    phone: <e164PhoneNumber()>
+    email: <email()>
+    coordinates: '@coordinates_200'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_381:
+    externalId: 8770A
+    name: 'PASCAL PERICAUD'
+    address: '@address_381'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    email: <email()>
+    workshopEmail: <email()>
+    coordinates: '@coordinates_201'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_382:
+    externalId: 8865A
+    name: 'NEW AUTO SARL'
+    address: '@address_382'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_202'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_383:
+    externalId: 8865C
+    name: 'Julien Jollant'
+    address: '@address_383'
+    phone: <e164PhoneNumber()>
+    email: <email()>
+    coordinates: '@coordinates_203'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_384:
+    externalId: 8865E
+    name: 'Julien Jollant'
+    address: '@address_384'
+    phone: <e164PhoneNumber()>
+    email: <email()>
+    coordinates: '@coordinates_204'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_385:
+    externalId: 8865F
+    name: 'Julien Jollant'
+    address: '@address_385'
+    phone: <e164PhoneNumber()>
+    email: <email()>
+    coordinates: '@coordinates_205'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_386:
+    externalId: 8970A
+    name: 'PONT NEUF AUTOMOBILES'
+    address: '@address_386'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_387:
+    externalId: 8975A
+    name: 'ESPACE MOTORS'
+    address: '@address_387'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_388:
+    externalId: 8980A
+    name: A.P.S.
+    address: '@address_388'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_206'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_389:
+    externalId: 8980E
+    name: 'Julien Jollant'
+    address: '@address_389'
+    phone: <e164PhoneNumber()>
+    email: <email()>
+    coordinates: '@coordinates_207'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_390:
+    externalId: 8985A
+    name: 'PREMIUM II AUTOMOBILES'
+    address: '@address_390'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_208'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_391:
+    externalId: 9065A
+    name: 'THIEBAUT AUTOMOBILES'
+    address: '@address_391'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_209'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_392:
+    externalId: 9065B
+    name: 'THIEBAUT AUTOMOBILES'
+    address: '@address_392'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_210'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_393:
+    externalId: 9163A
+    name: 'GARAGE DE L''YVETTE'
+    address: '@address_393'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_394:
+    externalId: 9167A
+    name: 'ZELUS AUTOMOBILES'
+    address: '@address_394'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_395:
+    externalId: 9170A
+    name: 'AUTO RACING'
+    address: '@address_395'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_396:
+    externalId: 9172A
+    name: 'AERO LES ULIS'
+    address: '@address_396'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    email: <email()>
+    coordinates: '@coordinates_211'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_397:
+    externalId: 9177A
+    name: 'O.L. AUTOMOBILES'
+    address: '@address_397'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_212'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_398:
+    externalId: 9182A
+    name: 'GDS AUTOMOBILES'
+    address: '@address_398'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_399:
+    externalId: 9182B
+    name: 'LIGN'' AUTOMOBILES'
+    address: '@address_399'
+    phone: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_400:
+    externalId: 9185A
+    name: 'GARAGE ST PIERRE'
+    address: '@address_400'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_213'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_401:
+    externalId: 9192A
+    name: 'S.A.S EVASION VPS'
+    address: '@address_401'
+    phone: <e164PhoneNumber()>
+    email: <email()>
+    workshopEmail: <email()>
+    coordinates: '@coordinates_214'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_402:
+    externalId: 9195A
+    name: 'SOLAC S.A.'
+    address: '@address_402'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_403:
+    externalId: 9195B
+    name: 'SOLAC S.A.'
+    address: '@address_403'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_404:
+    externalId: 9267A
+    name: 'PAX AUTOMOBILES'
+    address: '@address_404'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_215'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_405:
+    externalId: 9285A
+    name: AUTOGIR
+    address: '@address_405'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_406:
+    externalId: 9295A
+    name: AUTOMOTION
+    address: '@address_406'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_216'
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_407:
+    externalId: 9295F
+    name: 'tset tunnel'
+    address: '@address_407'
+    phone: <e164PhoneNumber()>
+    email: <email()>
+    coordinates: '@coordinates_217'
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_408:
+    externalId: 9362A
+    name: 'CROMIER S.A.'
+    address: '@address_408'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_218'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_409:
+    externalId: 9362B
+    name: 'CROMIER S.A.'
+    address: '@address_409'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_219'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_410:
+    externalId: 9390A
+    name: 'GARAGE DES RICHARDETS'
+    address: '@address_410'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_220'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_411:
+    externalId: 9395A
+    name: SMJ
+    address: '@address_411'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_221'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_412:
+    externalId: 9472A
+    name: SAFI
+    address: '@address_412'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_222'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_413:
+    externalId: 9472B
+    name: SAFI
+    address: '@address_413'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_223'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_414:
+    externalId: 9485A
+    name: 'SAS GASPARD BEKE'
+    address: '@address_414'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_224'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_415:
+    externalId: 9490A
+    name: 'GLG AUTOMOBILE'
+    address: '@address_415'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_416:
+    externalId: 9490B
+    name: 'GLG AUTOMOBILE'
+    address: '@address_416'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_417:
+    externalId: 9562A
+    name: INAUTO
+    address: '@address_417'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_418:
+    externalId: 9565A
+    name: C.D.A.
+    address: '@address_418'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_419:
+    externalId: 9568A
+    name: 'ESPACE DEFENSE AUTOMOBILES'
+    address: '@address_419'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_420:
+    externalId: 9572A
+    name: 'COURTOISE MOTORS'
+    address: '@address_420'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    email: <email()>
+    workshopEmail: <email()>
+    coordinates: '@coordinates_225'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_421:
+    externalId: 9575A
+    name: 'GARAGE MINISINI '
+    address: '@address_421'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_422:
+    externalId: 9580A
+    name: 'N.D.G. AUTO S.A.'
+    address: '@address_422'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_423:
+    externalId: 9582A
+    name: 'GARGES AUTOMOBILES SERVICES'
+    address: '@address_423'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    email: <email()>
+    workshopEmail: <email()>
+    coordinates: '@coordinates_226'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_424:
+    externalId: 9585A
+    name: 'FOUCHE SAA'
+    address: '@address_424'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_425:
+    externalId: 9590A
+    name: 'ACTION AUTOMOBILE DU VAL D''OISE'
+    address: '@address_425'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_426:
+    externalId: 9595A
+    name: 'ROUSSEAU SAINT OUEN L''AUMONE'
+    address: '@address_426'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_227'
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_427:
+    externalId: 9775A
+    name: 'DIN AUTOS S.A.'
+    address: '@address_427'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_428:
+    externalId: 9775B
+    name: 'DIN AUTOS S.A.'
+    address: '@address_428'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    closed: true
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_429:
+    externalId: 9780A
+    name: 'MONACO MEDITERRANEE MOTORS'
+    address: '@address_429'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_228'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_430:
+    externalId: 9780B
+    name: 'MENTON MEDITERRANEE MOTORS'
+    address: '@address_430'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_229'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+  dealership_431:
+    externalId: 9790A
+    name: 'COTRANS AUTOMOBILES'
+    address: '@address_431'
+    phone: <e164PhoneNumber()>
+    fax: <e164PhoneNumber()>
+    coordinates: '@coordinates_230'
+    closed: false
+    moreInformationUrl: 'https://www.suzuki.fr/concessionaires/'
+App\Entity\Embed\Address:
+  address_1:
+    street: ''
+    additional1: ''
+    additional2: ''
+    zipCode: ''
+    city: ''
+  address_2:
+    street: '14 RUE MARC LANVIN'
+    additional1: ''
+    additional2: ''
+    zipCode: '62320'
+    city: DROCOURT
+  address_3:
+    street: '76 CHEMIN DES PLACES'
+    additional1: ''
+    additional2: ''
+    zipCode: '01170'
+    city: CESSY
+  address_4:
+    street: '1615 ROUTE DE STRASBOURG'
+    additional1: ''
+    additional2: ''
+    zipCode: '01140'
+    city: VIRIAT
+  address_5:
+    street: '28 rue des paquerettes'
+    additional1: ''
+    additional2: ''
+    zipCode: '12345'
+    city: Bordeaux
+  address_6:
+    street: '14 RUE MARC LANVI'
+    additional1: ''
+    additional2: ''
+    zipCode: '62320'
+    city: DROCOURT
+  address_7:
+    street: '14 RUE MARC LANVIN'
+    additional1: ''
+    additional2: ''
+    zipCode: '62320'
+    city: DROCOURT
+  address_8:
+    street: 'RUE GUSTAVE EIFFEL'
+    additional1: 'ZONE INDUSTRIELLE'
+    additional2: ''
+    zipCode: '02400'
+    city: 'CHATEAU THIERRY'
+  address_9:
+    street: 'RUE PARMENTIER'
+    additional1: 'ZAC LA VALLEE'
+    additional2: ''
+    zipCode: '02100'
+    city: 'SAINT QUENTIN '
+  address_10:
+    street: '134 RUE ROYALE'
+    additional1: ''
+    additional2: ''
+    zipCode: '59800'
+    city: LILLE
+  address_11:
+    street: dsfsdf
+    additional1: ''
+    additional2: ''
+    zipCode: '50140'
+    city: sdfsdf
+  address_12:
+    street: TSET
+    additional1: ''
+    additional2: ''
+    zipCode: '62320'
+    city: TSET
+  address_13:
+    street: '17 RUE TURGOT'
+    additional1: 'ZI CHAMPS DU ROY'
+    additional2: ''
+    zipCode: '02000'
+    city: LAON
+  address_14:
+    street: '69 RUE CHEVREUX'
+    additional1: ''
+    additional2: ''
+    zipCode: '02204'
+    city: SOISSONS
+  address_15:
+    street: '98 AVENUE DE COMPIEGNE'
+    additional1: ''
+    additional2: ''
+    zipCode: '02200'
+    city: SOISSONS
+  address_16:
+    street: '3 rue des rétros'
+    additional1: ''
+    additional2: ''
+    zipCode: '59260'
+    city: Hellemmes
+  address_17:
+    street: '134 RUE ROYALE'
+    additional1: ''
+    additional2: ''
+    zipCode: '59260'
+    city: LILLE
+  address_18:
+    street: 'ROUTE DE VICHY'
+    additional1: ''
+    additional2: ''
+    zipCode: '03130'
+    city: 'LE PIN'
+  address_19:
+    street: 'ZA DE LARRY'
+    additional1: ''
+    additional2: ''
+    zipCode: '03400'
+    city: 'TOULON SUR ALLIER '
+  address_20:
+    street: '8 AVENUE DES MARÉCHAUX DE FRANCE'
+    additional1: ''
+    additional2: ''
+    zipCode: '59240'
+    city: DUNKERQUE
+  address_21:
+    street: '17 RUE DU DOCTEUR VERHAEGHE'
+    additional1: ''
+    additional2: ''
+    zipCode: '59260'
+    city: HELLEMMES
+  address_22:
+    street: '140 AVENUE DE VICHY'
+    additional1: ''
+    additional2: ''
+    zipCode: '03700'
+    city: 'BELLERIVE SUR ALLIER'
+  address_23:
+    street: 'ROUTE DE VICHY'
+    additional1: ''
+    additional2: ''
+    zipCode: '03130'
+    city: 'LE PIN'
+  address_24:
+    street: 'ZA DE LARRY'
+    additional1: ''
+    additional2: ''
+    zipCode: '03400'
+    city: 'TOULON SUR ALLIER '
+  address_25:
+    street: 'ROUTE DE MARSEILLE'
+    additional1: ''
+    additional2: ''
+    zipCode: '04000'
+    city: 'DIGNE LES BAINS'
+  address_26:
+    street: '777 AVENUE JOSEPH GUGNOT'
+    additional1: 'ETS R.S.A'
+    additional2: 'ZI DE SAINT JOSEPH'
+    zipCode: '04100'
+    city: MANOSQUE
+  address_27:
+    street: 'ROUTE DE MARSEILLE'
+    additional1: 'ALPES DE PROVENCE AUTOMOBILES'
+    additional2: ''
+    zipCode: '04000'
+    city: 'DIGNE LES BAINS'
+  address_28:
+    street: '777 AVENUE JOSEPH CUGNOT'
+    additional1: ''
+    additional2: 'ZI SAINT JOSEPH'
+    zipCode: '04100'
+    city: MANOSQUE
+  address_29:
+    street: '2 RUE DE TOKORO'
+    additional1: ''
+    additional2: ''
+    zipCode: '05000'
+    city: GAP
+  address_30:
+    street: '2 RUE CLAUDE CHAPPE'
+    additional1: 'ZI ST CHRISTOPHE'
+    additional2: ''
+    zipCode: '04000'
+    city: 'DIGNE LES BAINS'
+  address_31:
+    street: 'CAR 3001 - FACE CAP 3000 - 06700'
+    additional1: '06300 NICE - 04.92.00.06.97'
+    additional2: 'ST LAURENT DU VAR - 04.93.14.27.81'
+    zipCode: 'SEM (SAV)'
+    city: '- 13 RUE GUSTAVE GARAUD'
+  address_32:
+    street: 'AVENUE DU CAMPON'
+    additional1: ''
+    additional2: ''
+    zipCode: '06110'
+    city: 'LE CANNET'
+  address_33:
+    street: '87 BOULEVARD DE L''INDUSTRIE'
+    additional1: 'CHEZ ALDO GORINI'
+    additional2: ''
+    zipCode: '83480'
+    city: 'PUGET SUR ARGENS'
+  address_34:
+    street: '50 AVENUE DU CAMPON'
+    additional1: 'BRETELLE DE L’AUTOROUTE'
+    additional2: ''
+    zipCode: '06110'
+    city: 'LE CANNET'
+  address_35:
+    street: 'GARAGE EUROPA- FACE CAP 3000 – 06700'
+    additional1: '06300 NICE - 04.92.00.06.97'
+    additional2: 'ST LAURENT DU VAR - 04.93.14.27.81'
+    zipCode: 'GARAGE EUROPA SAV -'
+    city: '39 AV AIME MARTIN'
+  address_36:
+    street: '14 RUE MARC LANVIN'
+    additional1: ''
+    additional2: ''
+    zipCode: '62320'
+    city: DROCOURT
+  address_37:
+    street: 'RN 7'
+    additional1: 'SA ALDO GORINI'
+    additional2: ''
+    zipCode: '83480'
+    city: 'PUGET SUR ARGENS'
+  address_38:
+    street: '3 BD ARMEE ALPES'
+    additional1: ''
+    additional2: ''
+    zipCode: '06300'
+    city: 'NICE RIQUIER'
+  address_39:
+    street: 'FACE CAP3000'
+    additional1: ''
+    additional2: ''
+    zipCode: '06700'
+    city: 'ST LAURENT DU VAR'
+  address_40:
+    street: 'ROUTE DE TARTARY'
+    additional1: 'PONT D AUBENAS'
+    additional2: ''
+    zipCode: '07200'
+    city: AUBENAS
+  address_41:
+    street: '203 AVENUE CHARLES DE GAULLE'
+    additional1: ''
+    additional2: ''
+    zipCode: '08000'
+    city: 'CHARLEVILLE MEZIERES '
+  address_42:
+    street: 'ROUTE DE MIREPOIX'
+    additional1: ''
+    additional2: 'BP 8'
+    zipCode: '09100'
+    city: 'LA TOUR DU CRIEU'
+  address_43:
+    street: '2 RUE PAUL'
+    additional1: ''
+    additional2: ''
+    zipCode: '59000'
+    city: DROCOURT
+  address_44:
+    street: '4 AVENUE DU PRESIDENT RENE COTY'
+    additional1: ''
+    additional2: ''
+    zipCode: '10602'
+    city: 'LA CHAPELLE SAINT LUC CEDEX'
+  address_45:
+    street: '20 AVENUE DE LA GARE'
+    additional1: ''
+    additional2: ''
+    zipCode: '21400'
+    city: 'CHATILLON SUR SEINE'
+  address_46:
+    street: 'ZI DU PONT ROUGE'
+    additional1: ''
+    additional2: ''
+    zipCode: '11009'
+    city: CARCASSONNE
+  address_47:
+    street: 'ZI CROIX SUD'
+    additional1: ''
+    additional2: 'BP 7103'
+    zipCode: '11781'
+    city: 'NARBONNE CEDEX'
+  address_48:
+    street: '660 RUE GUSTAVE EIFFEL'
+    additional1: 'ZAC LA FERRAUDIERE 3'
+    additional2: ''
+    zipCode: '11000'
+    city: CARCASSONNE
+  address_49:
+    street: '32 ROUTE DE MANTES'
+    additional1: ''
+    additional2: ''
+    zipCode: '59240'
+    city: DUNKERQUE
+  address_50:
+    street: '134 RUE ROYALE'
+    additional1: ''
+    additional2: ''
+    zipCode: '59000'
+    city: LILLE
+  address_51:
+    street: 'ROUTE D ESPALION'
+    additional1: 'LOT L ASTRAGALE'
+    additional2: ''
+    zipCode: '12850'
+    city: 'ONET LE CHATEAU'
+  address_52:
+    street: 'ROND POINT DE RAUJOLLES'
+    additional1: ''
+    additional2: ''
+    zipCode: '12100'
+    city: CREISSELS
+  address_53:
+    street: 'RUE PIERRE LEYDET'
+    additional1: 'ZI LA PIOLINE'
+    additional2: 'CEDEX 4'
+    zipCode: '13546'
+    city: 'AIX EN PROVENCE'
+  address_54:
+    street: 'RUE LEONARD DE VINCI'
+    additional1: 'ZAC ST MARTIN'
+    additional2: ''
+    zipCode: '84120'
+    city: PERTUIS
+  address_55:
+    street: '4 BD DES ACIERIES'
+    additional1: 'VILLAGE AUTOMOBILE'
+    additional2: ''
+    zipCode: '13010'
+    city: MARSEILLE
+  address_56:
+    street: 'CAMP MAJOR'
+    additional1: '2115, Cd2'
+    additional2: ''
+    zipCode: '13400'
+    city: AUBAGNE
+  address_57:
+    street: '7 RUE DE MADRID'
+    additional1: 'ZI DES ESTROUBLANS'
+    additional2: ''
+    zipCode: '13127'
+    city: VITROLLES
+  address_58:
+    street: '1480 AVENUE DE LA PATROUILLE DE FRANCE'
+    additional1: ''
+    additional2: ''
+    zipCode: '13300'
+    city: 'SALON DE PROVENCE'
+  address_59:
+    street: '5 AVENUE DE LA LIBERATION'
+    additional1: ''
+    additional2: ''
+    zipCode: '13200'
+    city: ARLES
+  address_60:
+    street: 'RUE ARNAUD BORRILI'
+    additional1: 'ZONE ARTISANALE LA PIOLINE'
+    additional2: ''
+    zipCode: '13290'
+    city: 'AIX EN PROVENCE'
+  address_61:
+    street: '12 AVENUE DE LA LIBERATION'
+    additional1: ''
+    additional2: ''
+    zipCode: '13200'
+    city: ARLES
+  address_62:
+    street: '130 AVENUE JACQUES PREVERT'
+    additional1: ''
+    additional2: ''
+    zipCode: '13730'
+    city: 'SAINT VICTORET'
+  address_63:
+    street: 'ROUTE DE MARTIGUES'
+    additional1: 'D9 - QUARTIER BRICARD'
+    additional2: 'SORTIE MARIGNANE - DIR CARRY LE ROUET'
+    zipCode: '13700'
+    city: MARIGNANE
+  address_64:
+    street: 'QUARTIER SAINT JEAN'
+    additional1: 'RN 568'
+    additional2: ''
+    zipCode: '13500'
+    city: MARTIGUES
+  address_65:
+    street: 'RUE PIERRE LEYDET'
+    additional1: 'CHEZ AUTORAMA'
+    additional2: 'AIX LA PIOLINE'
+    zipCode: '13546'
+    city: 'AIX EN PROVENCE CEDEX 4'
+  address_66:
+    street: 'RUE LEONARD DE VINCI'
+    additional1: 'ZAC ST MARTIN'
+    additional2: ''
+    zipCode: '84120'
+    city: PERTUIS
+  address_67:
+    street: 'RUE PIERRE LEYDET'
+    additional1: ''
+    additional2: 'AIX LA PIOLINE'
+    zipCode: '13546'
+    city: 'AIX EN PROVENCE CEDEX 4'
+  address_68:
+    street: '45 RUE ARNAUD BORILLI'
+    additional1: 'ZAC LA PIOLINE'
+    additional2: ''
+    zipCode: '13290'
+    city: 'AIX EN PROVENCE'
+  address_69:
+    street: 'RUE RENE CAILLOUX'
+    additional1: ''
+    additional2: ''
+    zipCode: '13700'
+    city: MARIGNANE
+  address_70:
+    street: '1 ROUTE DE CAEN'
+    additional1: ''
+    additional2: 'BP 134'
+    zipCode: '14504'
+    city: 'VIRE CEDEX'
+  address_71:
+    street: 'BOULEVARD DE SUFFOLK'
+    additional1: 'ROND POINT DE LA BIJUDE'
+    additional2: ''
+    zipCode: '14112'
+    city: 'BIEVILLE BEUVILLE'
+  address_72:
+    street: 'ROND POINT DE GLATIGNY'
+    additional1: ''
+    additional2: 'BP 4144'
+    zipCode: '14104'
+    city: 'LISIEUX CEDEX'
+  address_73:
+    street: 'BOULEVARD WINSTON CHURCHILL'
+    additional1: ''
+    additional2: ''
+    zipCode: '14400'
+    city: 'SAINT VIGOR LE GRAND'
+  address_74:
+    street: '1 ROUTE DE CAEN'
+    additional1: ''
+    additional2: ''
+    zipCode: '14500'
+    city: VIRE
+  address_75:
+    street: '2 BIS RUE DU BOIS'
+    additional1: 'ROUTE DE VILLEDIEU'
+    additional2: ''
+    zipCode: '50320'
+    city: BEAUCHAMPS
+  address_76:
+    street: 'BOULEVARD WINSTON CHURCHILL'
+    additional1: ''
+    additional2: ''
+    zipCode: '14400'
+    city: 'SAINT VIGOR LE GRAND'
+  address_77:
+    street: '161 RUE DU MESNIL'
+    additional1: 'ZA DU MESNIL'
+    additional2: ''
+    zipCode: '50400'
+    city: GRANVILLE
+  address_78:
+    street: 'BOULEVARD DE SUFFOLK'
+    additional1: 'ROND POINT DE LA BIJUDE'
+    additional2: ''
+    zipCode: '14112'
+    city: 'BIEVILLE BEUVILLE'
+  address_79:
+    street: 'BOULEVARD WINSTON CHURCHILL'
+    additional1: ''
+    additional2: ''
+    zipCode: '14400'
+    city: 'SAINT VIGOR LE GRAND'
+  address_80:
+    street: 'ROND POINT DE GLATIGNY'
+    additional1: ''
+    additional2: 'BP 54144'
+    zipCode: '14104'
+    city: 'LISIEUX CEDEX'
+  address_81:
+    street: 'BOULEVARD JEAN CHARLES CONTEL'
+    additional1: ''
+    additional2: 'ZAC LES HAUTS DE GLOS'
+    zipCode: '14100'
+    city: GLOS
+  address_82:
+    street: '12 AVENUE GEORGES POMPIDOU'
+    additional1: ''
+    additional2: ''
+    zipCode: '15000'
+    city: AURILLAC
+  address_83:
+    street: 'ROND POINT DES PLANTES NEUVES'
+    additional1: 'ESPACE DES MONTAGNES'
+    additional2: 'BP 702'
+    zipCode: '16430'
+    city: CHAMPNIERS
+  address_84:
+    street: '13 RUE DES BRANDES'
+    additional1: 'ZI DES CHARRIERS'
+    additional2: ''
+    zipCode: '17100'
+    city: SAINTES
+  address_85:
+    street: '138 AVENUE D''AUNIS'
+    additional1: ''
+    additional2: ''
+    zipCode: '17430'
+    city: 'TONNAY CHARENTE'
+  address_86:
+    street: 'ZA DES ORMEAUX'
+    additional1: ''
+    additional2: ''
+    zipCode: '17690'
+    city: ANGOULINS
+  address_87:
+    street: '21 RUE D''AVIGNON'
+    additional1: ''
+    additional2: ''
+    zipCode: '17140'
+    city: LAGORD
+  address_88:
+    street: '21 RUE D’AVIGNON'
+    additional1: ''
+    additional2: ''
+    zipCode: '17140'
+    city: LAGORD
+  address_89:
+    street: '207 ROUTE DE LA CHARITE'
+    additional1: ''
+    additional2: ''
+    zipCode: '18000'
+    city: BOURGES
+  address_90:
+    street: 'RUE DES RACINES'
+    additional1: ''
+    additional2: 'BP 65'
+    zipCode: '18230'
+    city: 'SAINT DOULCHARD'
+  address_91:
+    street: '6-8 AVENUE EDOUARD VAILLANT'
+    additional1: ''
+    additional2: ''
+    zipCode: '18100'
+    city: VIERZON
+  address_92:
+    street: 'ZAC BRIVE OUEST'
+    additional1: 'PARC D''ENTREPRISES'
+    additional2: ''
+    zipCode: '19100'
+    city: BRIVE
+  address_93:
+    street: '2 ROUTE DE L ANNONCIADE'
+    additional1: ''
+    additional2: ''
+    zipCode: '20200'
+    city: BASTIA
+  address_94:
+    street: 'ROUTE DE MEZZAVIA'
+    additional1: ''
+    additional2: 'LIEU DIT LEVITAN'
+    zipCode: '20090'
+    city: AJACCIO
+  address_95:
+    street: 'ROUTE DE CALDANICCIA'
+    additional1: ''
+    additional2: ''
+    zipCode: '20167'
+    city: 'CARROLA - CARCOPINO'
+  address_96:
+    street: 'LIEU-DIT PERNICAGGIO'
+    additional1: ''
+    additional2: ''
+    zipCode: '20167'
+    city: 'SARROLA CARCOPINO'
+  address_97:
+    street: '48 BIS RUE DE LONGVIC'
+    additional1: ''
+    additional2: ''
+    zipCode: '21300'
+    city: CHENOVE
+  address_98:
+    street: 'ROND POINT DE BREZILLET'
+    additional1: ''
+    additional2: ''
+    zipCode: '22950'
+    city: TREGUEUX
+  address_99:
+    street: '6 RUE SAINT MARC'
+    additional1: ''
+    additional2: 'BP 50337'
+    zipCode: '22303'
+    city: 'LANNION CEDEX'
+  address_100:
+    street: '44 RUE DU DOCTEUR RAHUEL'
+    additional1: ''
+    additional2: ''
+    zipCode: '22000'
+    city: 'SAINT BRIEUC'
+  address_101:
+    street: '6 RUE PIERRE-GILLES DE GENNES'
+    additional1: 'ZONE D''ACTIVITE DE BEAUFEUILLAGE'
+    additional2: ''
+    zipCode: '22000'
+    city: 'SAINT BRIEUC'
+  address_102:
+    street: '2 RUE DE LA SAINT LOUP'
+    additional1: 'ESPACE COMMERCIAL SAINT LOUP'
+    additional2: ''
+    zipCode: '22200'
+    city: 'PABU- GUINGAMP'
+  address_103:
+    street: 'AVENUE DE LA RESISTANCE'
+    additional1: ''
+    additional2: 'BP 60302'
+    zipCode: '22300'
+    city: LANNION
+  address_104:
+    street: 'AVENUE DE LA RESISTANCE'
+    additional1: ''
+    additional2: ''
+    zipCode: '22300'
+    city: LANNION
+  address_105:
+    street: 'AVENUE RENE CASSIN'
+    additional1: ''
+    additional2: ''
+    zipCode: '23000'
+    city: GUERET
+  address_106:
+    street: 'RUE DE PASQUIS'
+    additional1: ''
+    additional2: 'BP 1219'
+    zipCode: '03100'
+    city: MONTLUCON
+  address_107:
+    street: 'AVENUE RENE CASSIN'
+    additional1: ''
+    additional2: 'BP 178'
+    zipCode: '23004'
+    city: 'GUERET CEDEX'
+  address_108:
+    street: 'RUE DE PASQUIS'
+    additional1: ''
+    additional2: 'BP 1219'
+    zipCode: '03104'
+    city: 'MONTLUCON CEDEX'
+  address_109:
+    street: 'ZI MOULINS SUD'
+    additional1: ''
+    additional2: ''
+    zipCode: '03400'
+    city: 'TOULON SUR ALLIER'
+  address_110:
+    street: '157 AVENUE DU MARECHAL JUIN'
+    additional1: ''
+    additional2: ''
+    zipCode: '24000'
+    city: PERIGUEUX
+  address_111:
+    street: '73 AVENUE PAUL DOUMER'
+    additional1: ''
+    additional2: ''
+    zipCode: '24100'
+    city: BERGERAC
+  address_112:
+    street: '156 AVENUE DU MARECHAL JUIN'
+    additional1: 'SARL B D AUTOS'
+    additional2: ''
+    zipCode: '24000'
+    city: PERIGUEUX
+  address_113:
+    street: 'ZA VALLADE NORD'
+    additional1: ''
+    additional2: ''
+    zipCode: '24100'
+    city: BERGERAC
+  address_114:
+    street: '7 RUE PIERRE DECHANET'
+    additional1: 'ZAC DES GRANDS PLANCHANTS'
+    additional2: ''
+    zipCode: '25300'
+    city: PONTARLIER
+  address_115:
+    street: 'RTE DE VESOUL'
+    additional1: ''
+    additional2: ''
+    zipCode: '25480'
+    city: 'ECOLE VALENTIN'
+  address_116:
+    street: 'RTE DE VESOUL'
+    additional1: ''
+    additional2: ''
+    zipCode: '25480'
+    city: 'ECOLE VALENTIN'
+  address_117:
+    street: 'ZI DES BOUQUIERES'
+    additional1: ''
+    additional2: ''
+    zipCode: '25400'
+    city: EXINCOURT
+  address_118:
+    street: '3 RUE PIERRE DECHANET'
+    additional1: 'ZA LES GRANDS PLANCHANTS'
+    additional2: ''
+    zipCode: '25300'
+    city: PONTARLIER
+  address_119:
+    street: '32 AVENUE MAURICE SIMONET'
+    additional1: 'ZONE BRIFFAULT EST'
+    additional2: ''
+    zipCode: '26000'
+    city: VALENCE
+  address_120:
+    street: 'PARC D ACTIVITE DE FORTUNEAU'
+    additional1: ''
+    additional2: 'BP 151'
+    zipCode: '26200'
+    city: MONTELIMAR
+  address_121:
+    street: '32 AVENUE MAURICE SIMONET'
+    additional1: 'ZONE BRIFFAULT EST'
+    additional2: ''
+    zipCode: '26000'
+    city: VALENCE
+  address_122:
+    street: 'PARC D ACTIVITE DE FORTUNEAU'
+    additional1: ''
+    additional2: 'BP 151'
+    zipCode: '26200'
+    city: MONTELIMAR
+  address_123:
+    street: 'RUE JEAN MONNET'
+    additional1: 'ZAC DU BOIS DES COMMUNES'
+    additional2: ''
+    zipCode: '27000'
+    city: EVREUX
+  address_124:
+    street: 'RUE LOUIS FAUVEL'
+    additional1: ''
+    additional2: ''
+    zipCode: '28500'
+    city: VERNOUILLET
+  address_125:
+    street: '2 RUE JACQUARD'
+    additional1: ''
+    additional2: '27000 EVREUX'
+    zipCode: ''
+    city: 02.32.23.33.00
+  address_126:
+    street: 'RN 15'
+    additional1: ''
+    additional2: ''
+    zipCode: '27950'
+    city: 'SAINT JUST'
+  address_127:
+    street: 'ROND POINT, ROUTE DE BROGLIE'
+    additional1: ''
+    additional2: ''
+    zipCode: '27300'
+    city: BERNAY
+  address_128:
+    street: 'RUE ALFRED NOBEL'
+    additional1: ''
+    additional2: 'ZAC DE LA ROUGEMARE'
+    zipCode: '27000'
+    city: EVREUX
+  address_129:
+    street: '18 RUE JEAN PERRIN'
+    additional1: ''
+    additional2: 'LE VAL DE LUISANT'
+    zipCode: '28600'
+    city: LUISANT
+  address_130:
+    street: '4 RUE DE LA BRIQUETERIE'
+    additional1: ''
+    additional2: 'LES CORVEES'
+    zipCode: '28500'
+    city: VERNOUILLET
+  address_131:
+    street: 'RUE GEORGES BESSE'
+    additional1: ''
+    additional2: ''
+    zipCode: '28100'
+    city: DREUX
+  address_132:
+    street: '175 RUE DE GOUESNOU'
+    additional1: 'ANGLE BOULEVARD DE L''EUROPE'
+    additional2: ''
+    zipCode: '29200'
+    city: BREST
+  address_133:
+    street: '1 RUE NOBEL'
+    additional1: 'ZI DE KERNEVEZ'
+    additional2: ''
+    zipCode: '29000'
+    city: QUIMPER
+  address_134:
+    street: 'ROUTE DE PARIS'
+    additional1: ''
+    additional2: 'LA CROIX ROUGE'
+    zipCode: '29600'
+    city: MORLAIX
+  address_135:
+    street: '11 AVENUE DE TY DOUAR - 29000 QUIMPER'
+    additional1: '2 CONCESSIONS POUR VOUS SERVIR :'
+    additional2: 'TEL : 02.98.52.03.03'
+    zipCode: '9 RUE DE PARIS'
+    city: '- 29200 BREST'
+  address_136:
+    street: 'BOULEVARD DE L’EUROPE'
+    additional1: ''
+    additional2: 'BP 107'
+    zipCode: '29802'
+    city: BREST
+  address_137:
+    street: '105/111 AVENUE DE TY BOS'
+    additional1: ''
+    additional2: ''
+    zipCode: '29000'
+    city: QUIMPER
+  address_138:
+    street: '288 ROUTE DE GOUESNOU'
+    additional1: 'ZONE DE KERGARADEC'
+    additional2: 'BP 22128'
+    zipCode: '29221'
+    city: 'BREST CEDEX 2'
+  address_139:
+    street: 'AVENUE O DE SERRE'
+    additional1: 'ROCADE SUD'
+    additional2: ''
+    zipCode: '30100'
+    city: ALES
+  address_140:
+    street: '1667 AVENUE DU MARECHAL JUIN'
+    additional1: ''
+    additional2: ''
+    zipCode: '30900'
+    city: NIMES
+  address_141:
+    street: '1667 AVENUE DU MARECHAL JUIN'
+    additional1: ''
+    additional2: ''
+    zipCode: '30942'
+    city: 'NIMES CEDEX 9'
+  address_142:
+    street: 'ROUTE D''AVIGNON'
+    additional1: ''
+    additional2: ''
+    zipCode: '30200'
+    city: 'BAGNOLS SUR CEZE'
+  address_143:
+    street: '109 AVENUE DES ETATS UNIS'
+    additional1: ''
+    additional2: ''
+    zipCode: '31200'
+    city: TOULOUSE
+  address_144:
+    street: 'RN 117'
+    additional1: ''
+    additional2: ''
+    zipCode: '31800'
+    city: LANDORTHE
+  address_145:
+    street: 'RN 117'
+    additional1: ''
+    additional2: ''
+    zipCode: '31800'
+    city: LANDORTHE
+  address_146:
+    street: '109 AVENUE DES ETATS UNIS'
+    additional1: ''
+    additional2: ''
+    zipCode: '31200'
+    city: TOULOUSE
+  address_147:
+    street: '2979 ROUTE DE BAZIEGE'
+    additional1: ''
+    additional2: ''
+    zipCode: '31680'
+    city: LABEGE
+  address_148:
+
+    street: '21 BOULEVARD JOFFRERY'
+    additional1: ''
+    additional2: ''
+    zipCode: '31600'
+    city: MURET
+  address_149:
+    street: '123 BIS RUE NICOLAS LOUIS VAUQUELIN'
+    additional1: ''
+    additional2: ''
+    zipCode: '31100'
+    city: TOULOUSE
+  address_150:
+    street: '139–141 AVENUE FRANÇOIS MITTERAND'
+    additional1: ''
+    additional2: ''
+    zipCode: '31800'
+    city: 'SAINT GAUDENS'
+  address_151:
+    street: '19 RUE AIME CESAIRE'
+    additional1: 'ZAC DU MOULIOT'
+    additional2: ''
+    zipCode: '32000'
+    city: AUCH
+  address_152:
+    street: 'RUE JACQUES PREVERT'
+    additional1: 'ZA MARRON OUEST'
+    additional2: 'BP 3'
+    zipCode: '33702'
+    city: 'MERIGNAC CEDEX'
+  address_153:
+    street: '140 AVENUE DU GENERAL DE GAULLE'
+    additional1: ''
+    additional2: ''
+    zipCode: '33500'
+    city: LIBOURNE
+  address_154:
+    street: '430 AVENUE DE L’EUROPE'
+    additional1: 'ZONE INDUSTRIELLE'
+    additional2: ''
+    zipCode: '33260'
+    city: 'LA TESTE DE BUCH'
+  address_155:
+    street: 'P.A AUBE ROUGE'
+    additional1: ''
+    additional2: ''
+    zipCode: '34170 '
+    city: 'CASTELNAU LE LEZ'
+  address_156:
+    street: '28 RUE ETTORE BUGATTI'
+    additional1: ''
+    additional2: ''
+    zipCode: '34000'
+    city: MONTPELLIER
+  address_157:
+    street: 'ALLEE DES CHARMES'
+    additional1: 'ZAC DE MONTIMARAN'
+    additional2: ''
+    zipCode: '34500'
+    city: BEZIERS
+  address_158:
+    street: '6 RUE PIERRE PAUL RIQUET'
+    additional1: 'ZI DES 7 FONTS'
+    additional2: ''
+    zipCode: '34300'
+    city: AGDE
+  address_159:
+    street: '261 RUE RAOUL BAYOU'
+    additional1: ''
+    additional2: ''
+    zipCode: '34500'
+    city: BEZIERS
+  address_160:
+    street: 'PARC D’ACTIVITES DE L’AUBE ROUGE'
+    additional1: ''
+    additional2: ''
+    zipCode: '34170'
+    city: 'CASTELNAU LE LEZ'
+  address_161:
+    street: '79 AVENUE DU GAL DE GAULLE'
+    additional1: ''
+    additional2: ''
+    zipCode: '35400'
+    city: 'ST MALO'
+  address_162:
+    street: '2 ROUTE DE PARIS'
+    additional1: 'ZAC DES PEUPLIERS'
+    additional2: ''
+    zipCode: '32510'
+    city: 'CESSON SEVIGNE'
+  address_163:
+    street: 'RUE MARCEL QUERCIA'
+    additional1: 'ZI DU COTARD'
+    additional2: ''
+    zipCode: '35600'
+    city: REDON
+  address_164:
+    street: '175 ROUTE DE LAVAL'
+    additional1: ''
+    additional2: ''
+    zipCode: '35500'
+    city: VITRE
+  address_165:
+    street: '65 AVENUE DU GENERAL DE GAULLE'
+    additional1: ''
+    additional2: ''
+    zipCode: '35400'
+    city: 'ST MALO'
+  address_166:
+    street: '46 RUE DE LA RIGOURDIERE'
+    additional1: ''
+    additional2: ''
+    zipCode: '35510'
+    city: 'CESSON SEVIGNE'
+  address_167:
+    street: 'ROUTE DE LA CHATRE'
+    additional1: ''
+    additional2: ''
+    zipCode: '36000'
+    city: CHATEAUROUX
+  address_168:
+    street: '211 BD CHARLES DE GAULLE'
+    additional1: ''
+    additional2: ''
+    zipCode: '37540'
+    city: 'SAINT CYR SUR LOIRE'
+  address_169:
+    street: '3 BIS, AVENUE HONORE DE BALZAC'
+    additional1: ''
+    additional2: ''
+    zipCode: '86100'
+    city: CHATELLERAULT
+  address_170:
+    street: 'AVENUE DU GENERAL DE GAULLE'
+    additional1: ''
+    additional2: ''
+    zipCode: '38170'
+    city: SEYSSINET
+  address_171:
+    street: '3 IMPASSE DE LA VIEILLE BORNE'
+    additional1: ''
+    additional2: RUY
+    zipCode: '38300'
+    city: 'BOURGOIN JALLIEU'
+  address_172:
+    street: '128 BIS AVENUE GENERAL LECLERC'
+    additional1: ''
+    additional2: 'BP 357'
+    zipCode: '38204'
+    city: 'VIENNE CEDEX'
+  address_173:
+    street: 'ZA LA MALADIERE'
+    additional1: 'IMPASSE LEON SERPOLLET'
+    additional2: 'CS 73019'
+    zipCode: '38307'
+    city: 'BOURGOIN JALLIEU CEDEX'
+  address_174:
+    street: '128B, AVENUE DU GENERAL LECLERC'
+    additional1: ''
+    additional2: ''
+    zipCode: '38200'
+    city: VIENNE
+  address_175:
+    street: '58 BIS RUE LECOURBE'
+    additional1: ''
+    additional2: 'BP 70091'
+    zipCode: '39000'
+    city: 'LONS LE SAUNIER'
+  address_176:
+    street: 'ZONE INDUSTRIELLE FOUCHERANS'
+    additional1: ''
+    additional2: ''
+    zipCode: '39100'
+    city: DOLE
+  address_177:
+    street: '226 RUE ANTOINE BECQUEREL'
+    additional1: 'ZAC DU BOURRASSE'
+    additional2: ''
+    zipCode: '40280'
+    city: 'SAINT PIERRE DU MONT'
+  address_178:
+    street: '11 RUE DES PRAIRIES'
+    additional1: 'ZAC DU SABLAR'
+    additional2: ''
+    zipCode: '40100'
+    city: DAX
+  address_179:
+    street: '226 RUE ANTOINE BECQUEREL'
+    additional1: ''
+    additional2: ''
+    zipCode: '40280 '
+    city: 'SAINT PIERRE DU MONT'
+  address_180:
+    street: '11 RUE DES PRAIRIES'
+    additional1: ''
+    additional2: 'ZAC DU SABLAR'
+    zipCode: '40100'
+    city: DAX
+  address_181:
+    street: '107 ROUTE DE CHATEAU RENAULT'
+    additional1: ''
+    additional2: 'BP 975'
+    zipCode: '41009'
+    city: 'BLOIS CEDEX'
+  address_182:
+    street: '129 AVENUE DE CHATEAUDUN'
+    additional1: ''
+    additional2: ''
+    zipCode: '41000'
+    city: BLOIS
+  address_183:
+    street: 'CARREFOUR ROBERT SCHUMAN'
+    additional1: ''
+    additional2: ''
+    zipCode: '41000 '
+    city: BLOIS
+  address_184:
+    street: '88 RUE DU DOCTEUR DESTRE'
+    additional1: ''
+    additional2: ''
+    zipCode: '42100'
+    city: 'ST ETIENNE'
+  address_185:
+    street: 'RN 102'
+    additional1: ''
+    additional2: ''
+    zipCode: '43350'
+    city: 'SAINT PAULIEN'
+  address_186:
+    street: '34 BOULEVARD JULES JANIN'
+    additional1: ''
+    additional2: ''
+    zipCode: '42000'
+    city: 'SAINT ETIENNE'
+  address_187:
+    street: '194 AVENUE DE LA LIBERATION'
+    additional1: ''
+    additional2: ''
+    zipCode: '42120'
+    city: 'LE COTEAU - ROANNE'
+  address_188:
+    street: 'ZAC LES CHARMES'
+    additional1: ''
+    additional2: ''
+    zipCode: '71600'
+    city: 'PARAY LE MONIAL'
+  address_189:
+    street: 'RUE VERNEY CARRON'
+    additional1: ''
+    additional2: 'FACE AU STADE GEOFFROY GUICHARD'
+    zipCode: '42000'
+    city: 'SAINT ETIENNE'
+  address_190:
+    street: 'RN 102'
+    additional1: ''
+    additional2: ''
+    zipCode: '43350'
+    city: 'SAINT PAULIEN'
+  address_191:
+    street: 'ROUTE DU PETIT LERIOUX'
+    additional1: 'ZAC OCEANIS'
+    additional2: ''
+    zipCode: '44600'
+    city: 'SAINT NAZAIRE'
+  address_192:
+    street: 'ROUTE DU PETIT LERIOUX'
+    additional1: 'ZAC OCEANIS'
+    additional2: ''
+    zipCode: '44600'
+    city: 'SAINT NAZAIRE'
+  address_193:
+    street: '4 RUE EMILE LEVASSOR'
+    additional1: ''
+    additional2: 'BP 80127'
+    zipCode: '44701'
+    city: ORVAULT
+  address_194:
+    street: '191 ROUTE DE ST NAZAIRE'
+    additional1: 'ROND POINT OCEANIS'
+    additional2: ''
+    zipCode: '44600'
+    city: 'SAINT NAZAIRE'
+  address_195:
+    street: '191 AVENUE DE ST NAZAIRE'
+    additional1: ''
+    additional2: 'ROND-POINT OCEANIS'
+    zipCode: '44600'
+    city: 'SAINT NAZAIRE'
+  address_196:
+    street: '85 RUE DE LA BARAUDIERE'
+    additional1: ZI
+    additional2: ''
+    zipCode: '45700'
+    city: VILLEMANDEUR
+  address_197:
+    street: '30 BIS RUE ANDRE DESSAUX'
+    additional1: ''
+    additional2: ''
+    zipCode: '45400'
+    city: 'FLEURY LES AUBRAIS'
+  address_198:
+    street: '2 BIS RUE TABART'
+    additional1: 'ZONE EXPO SUD'
+    additional2: 'BP 8152'
+    zipCode: '45081'
+    city: 'ORLEANS CEDEX 02'
+  address_199:
+    street: 'ROUTE DE TOULOUSE'
+    additional1: ''
+    additional2: ''
+    zipCode: '46000'
+    city: CAHORS
+  address_200:
+    street: '1 ET 3 AVENUE D AGEN'
+    additional1: ''
+    additional2: ''
+    zipCode: '47300'
+    city: 'VILLENEUVE SUR LOT'
+  address_201:
+    street: 'RD 813 LA BERGERI'
+    additional1: ''
+    additional2: ''
+    zipCode: '47180'
+    city: 'SAINTE BAZEILLE'
+  address_202:
+    street: 'AVENUE D AQUITAINE'
+    additional1: ''
+    additional2: 'BP 10068'
+    zipCode: '47552'
+    city: 'BOE CEDEX'
+  address_203:
+    street: 'ROUTE DE BORDEAUX'
+    additional1: ''
+    additional2: ''
+    zipCode: '47300'
+    city: BIAS
+  address_204:
+    street: 'Z.A.E. DU CAUSSE D''AUGE'
+    additional1: ''
+    additional2: ''
+    zipCode: '48000'
+    city: MENDE
+  address_205:
+    street: 'BOULEVARD JEAN GABRIAC'
+    additional1: ''
+    additional2: ''
+    zipCode: '12100'
+    city: MILLAU
+  address_206:
+    street: '11 BOULEVARD DE LA LIBERTE'
+    additional1: ''
+    additional2: 'BP 10202'
+    zipCode: '49002'
+    city: 'ANGERS CEDEX 01'
+  address_207:
+    street: 'BOULEVARD DES SORINIERES'
+    additional1: 'ZA LE CORMIER'
+    additional2: ''
+    zipCode: '49300'
+    city: CHOLET
+  address_208:
+    street: 'ROUTE DE CHOLET'
+    additional1: 'ZI DU CROULAY'
+    additional2: ''
+    zipCode: '49400'
+    city: SAUMUR-DISTRE
+  address_209:
+    street: '126 RUE DES METIERS'
+    additional1: ''
+    additional2: ''
+    zipCode: '50110'
+    city: TOURLAVILLE
+  address_210:
+    street: '2 BIS RUE DU BOIS'
+    additional1: 'AXE VILLEDIEU GRANDVILLE'
+    additional2: ''
+    zipCode: '50320'
+    city: BEAUCHAMPS
+  address_211:
+    street: 'LE PRE SAINT JULIEN'
+    additional1: ''
+    additional2: ''
+    zipCode: '51530'
+    city: PIERRY
+  address_212:
+    street: '90 FAUBOURG SAINT ANTOINE'
+    additional1: ''
+    additional2: ''
+    zipCode: '51000'
+    city: 'CHALONS EN CHAMPAGNE '
+  address_213:
+    street: 'LE PARC MILLESIME'
+    additional1: ''
+    additional2: ''
+    zipCode: '51370'
+    city: THILLOIS
+  address_214:
+    street: '16 RUE LENA BERNSTEIN'
+    additional1: ''
+    additional2: ''
+    zipCode: '51100'
+    city: REIMS
+  address_215:
+    street: '12 AVENUE MARC HAMET'
+    additional1: ''
+    additional2: ''
+    zipCode: '51470'
+    city: 'SAINT MEMMIE'
+  address_216:
+    street: '35 AVENUE DE LA REPUBLIQUE'
+    additional1: ''
+    additional2: ''
+    zipCode: '52000'
+    city: CHAUMONT
+  address_217:
+    street: '52100 SAINT DIZIER - 03.25.56.19.72'
+    additional1: '6 AVENUE DE PARCHIM - BP 10'
+    additional2: 'ZAC GRANDE TERRE - 2 AV DES ROMAINS'
+    zipCode: '55000'
+    city: 'LONGEVILLE EN BARROIS'
+  address_218:
+    street: '7 BOULEVARD DE L''EUROPE'
+    additional1: ''
+    additional2: ''
+    zipCode: '55100'
+    city: HAUDAINVILLE
+  address_219:
+    street: '11 RUE DE BRUXELLES'
+    additional1: ''
+    additional2: ''
+    zipCode: '53000'
+    city: LAVAL
+  address_220:
+    street: 'RUE DU STADE'
+    additional1: ''
+    additional2: 'BP 90154'
+    zipCode: '54200'
+    city: 'DOMMARTIN LES TOUL'
+  address_221:
+    street: 'ALLEE LOUIS-CAMILLE MAILLARD'
+    additional1: ''
+    additional2: ''
+    zipCode: '54700'
+    city: PONT-A-MOUSSON
+  address_222:
+    street: 'ALLEE LOUIS-CAMILLE MAILLARD'
+    additional1: ''
+    additional2: ''
+    zipCode: '54700'
+    city: PONT-A-MOUSSON
+  address_223:
+    street: '26 RUE DE LA SAPINIEREE'
+    additional1: ''
+    additional2: ''
+    zipCode: '54520'
+    city: LAXOU
+  address_224:
+    street: '54 AVENUE DE SAINTIGNON'
+    additional1: ''
+    additional2: ''
+    zipCode: '54400'
+    city: LONGWY
+  address_225:
+    street: '9 BOUCLE DU FORGERON'
+    additional1: 'ZI DU LINKLING II'
+    additional2: ''
+    zipCode: '57180'
+    city: TERVILLE
+  address_226:
+    street: '26 RUE DE LA SAPINIERE'
+    additional1: ''
+    additional2: ''
+    zipCode: '54520'
+    city: LAXOU
+  address_227:
+    street: '12 RUE BLAISE PASCAL'
+    additional1: ''
+    additional2: ''
+    zipCode: '54300'
+    city: CHANTEHEUX
+  address_228:
+    street: '26 RUE DE LA LIBERATION'
+    additional1: ''
+    additional2: ''
+    zipCode: '55000'
+    city: 'BAR LE DUC'
+  address_229:
+    street: 'ZA DU WAMEAU'
+    additional1: ''
+    additional2: ''
+    zipCode: '55430'
+    city: 'BELLEVILLE SUR MEUSE'
+  address_230:
+    street: '4-6 RUE DU BATAILLON XII 20'
+    additional1: ''
+    additional2: ''
+    zipCode: '55430'
+    city: 'BELLEVILLE SUR MEUSE'
+  address_231:
+    street: 'ROUTE DE REIMS'
+    additional1: ''
+    additional2: ''
+    zipCode: '55000'
+    city: 'FAINS LES SOURCES'
+  address_232:
+    street: 'ZA DU MOUSTOIR EST'
+    additional1: ''
+    additional2: ''
+    zipCode: '56950'
+    city: 'AURAY / CRACH'
+  address_233:
+    street: 'RUE ANTOINE LAVOISIER ET TRUDAINE'
+    additional1: ''
+    additional2: ''
+    zipCode: '56600'
+    city: 'LANESTER '
+  address_234:
+    street: 'RUE LEPINE'
+    additional1: 'PARC LANN'
+    additional2: 'BP 107'
+    zipCode: '56003'
+    city: 'VANNES CEDEX'
+  address_235:
+    street: 'ROUTE DE VANNES'
+    additional1: ''
+    additional2: 'B.P. 99'
+    zipCode: '56303'
+    city: PONTIVY
+  address_236:
+    street: KERTHOMAS
+    additional1: ''
+    additional2: 'MUSTIERE PONTIVY - ROUTE DE VANNES'
+    zipCode: '56000'
+    city: VANNES
+  address_237:
+    street: '43 RUE TRUDAINE'
+    additional1: ''
+    additional2: ''
+    zipCode: '56600'
+    city: LANESTER
+  address_238:
+    street: 'RUE DE L''IRLANDE'
+    additional1: ''
+    additional2: ''
+    zipCode: '56400'
+    city: AURAY
+  address_239:
+    street: '9 RUE PIERRE BOILEAU'
+    additional1: ''
+    additional2: 'BP 32081'
+    zipCode: '57052'
+    city: 'METZ CEDEX 02'
+  address_240:
+    street: '113 RUE NATIONALE'
+    additional1: ''
+    additional2: ''
+    zipCode: '57600'
+    city: MORSBACH
+  address_241:
+    street: 'ROUTE DE NIDERVILLER'
+    additional1: 'ZONE ARTISANALE'
+    additional2: ''
+    zipCode: '57400'
+    city: SARREBOURG
+  address_242:
+    street: '323 RUE NATIONALE'
+    additional1: ''
+    additional2: ''
+    zipCode: '57600'
+    city: FORBACH
+  address_243:
+    street: 'ROUTE DE NIDERVILLER'
+    additional1: 'ZONE ARTISANALE'
+    additional2: ''
+    zipCode: '57400'
+    city: SARREBOURG
+  address_244:
+    street: '10 RUE DU PRE-TALANGE'
+    additional1: ''
+    additional2: ''
+    zipCode: '57140'
+    city: WOIPPY
+  address_245:
+    street: '97 RUE NATIONALE'
+    additional1: ''
+    additional2: ''
+    zipCode: '57600 '
+    city: MORSBACH
+  address_246:
+    street: '6 RUE A. RAUSCH'
+    additional1: ''
+    additional2: ''
+    zipCode: '57200'
+    city: SARREGUEMINES
+  address_247:
+    street: '70 ROUTE DE BITCHE'
+    additional1: ''
+    additional2: ''
+    zipCode: '57200'
+    city: SARREGUEMINES
+  address_248:
+    street: '10 RUE DU PRE TALANGE'
+    additional1: ''
+    additional2: ''
+    zipCode: '57140'
+    city: WOIPPY
+  address_249:
+    street: '2 RUE DE LORRAINE'
+    additional1: ''
+    additional2: ''
+    zipCode: '57970'
+    city: YUTZ-THIONVILLE
+  address_250:
+    street: '22 RUE JEAN-BAPTISTE BLONDEAU'
+    additional1: ''
+    additional2: ''
+    zipCode: '54350'
+    city: 'MONT-SAINT-MARTIN (LONGWY)'
+  address_251:
+    street: '33 RUE DU BARROIS'
+    additional1: ''
+    additional2: ''
+    zipCode: '57150'
+    city: CREUTZWALD
+  address_252:
+    street: '76 RUE DE LA GARE'
+    additional1: ''
+    additional2: ''
+    zipCode: '57550'
+    city: HARGARTEN-AUX-MINES
+  address_253:
+    street: 'RN 7  NORD'
+    additional1: ''
+    additional2: ''
+    zipCode: '58640'
+    city: 'VARENNES VAUZELLES'
+  address_254:
+    street: '139 FAUBOURG DU GRAND MOUESSE'
+    additional1: ''
+    additional2: ''
+    zipCode: '58000'
+    city: NEVERS
+  address_255:
+    street: 'ROND POINT CROIZAT'
+    additional1: ''
+    additional2: ''
+    zipCode: '59450'
+    city: 'SIN LE NOBLE'
+  address_256:
+    street: '3 AVENUE FRANCOIS MITTERAND'
+    additional1: ''
+    additional2: 'BP 334'
+    zipCode: '59406'
+    city: 'CAMBRAI CEDEX'
+  address_257:
+    street: '67-69 QUAI WILSON'
+    additional1: ''
+    additional2: 'BP 87'
+    zipCode: '59430'
+    city: 'ST POL SUR MER'
+  address_258:
+    street: '1 RUE BLERIOT'
+    additional1: 'ZI DE LA LIANE'
+    additional2: ''
+    zipCode: '62360'
+    city: 'SAINT LEONARD'
+  address_259:
+    street: 'CENTRE COMMERCIAL AUCHAN'
+    additional1: ''
+    additional2: ''
+    zipCode: '59320'
+    city: SEQUEDIN
+  address_260:
+    street: 'ROUTE DE CAMBRAI'
+    additional1: 'RN 43'
+    additional2: ''
+    zipCode: '59169'
+    city: FERIN
+  address_261:
+    street: '120 RUE JULES GUESDE'
+    additional1: ''
+    additional2: 'BP 30066'
+    zipCode: '59652'
+    city: 'VILLENEUVE D ASCQ CEDEX'
+  address_262:
+    street: '72 RUE JEAN JAURES'
+    additional1: ''
+    additional2: ''
+    zipCode: '59410'
+    city: ANZIN
+  address_263:
+    street: "Tél\_: 03.27.46.33.61"
+    additional1: '72 RUE JEAN JAURES - 59410 ANZIN'
+    additional2: 'SAV – 17 RUE WALDECK ROUSSEAU'
+    zipCode: '59410'
+    city: ANZIN
+  address_264:
+    street: '87 ROUTE D AVESNES'
+    additional1: ''
+    additional2: ''
+    zipCode: '59600'
+    city: MAUBEUGE
+  address_265:
+    street: '75 RUE CLAIRE LACOMBE'
+    additional1: ''
+    additional2: ''
+    zipCode: '60740'
+    city: 'SAINT MAXIMIN'
+  address_266:
+    street: '75 RUE CLAIRE LACOMBE'
+    additional1: ''
+    additional2: ''
+    zipCode: '60740'
+    city: 'SAINT MAXIMIN'
+  address_267:
+    street: '4 RUE PIERRE ET MARIE CURIE'
+    additional1: ''
+    additional2: ''
+    zipCode: '60000'
+    city: BEAUVAIS
+  address_268:
+    street: '40 RUE FRANCOIS DE TESSAN'
+    additional1: ''
+    additional2: ''
+    zipCode: '77100'
+    city: MEAUX
+  address_269:
+    street: 'AVENUE DES POMMERETS'
+    additional1: 'ROUTE D’AMIENS'
+    additional2: ''
+    zipCode: '60000'
+    city: 'BEAUVAIS - TILLE'
+  address_270:
+    street: '4 RUE PIERRE ET MARIE CURIE'
+    additional1: ''
+    additional2: ''
+    zipCode: '60000'
+    city: BEAUVAIS
+  address_271:
+    street: 'AVENUE DE LA MARSEILLAISE'
+    additional1: 'CENTRE COMMERCIAL'
+    additional2: ''
+    zipCode: '60740'
+    city: 'SAINT MAXIMIN '
+  address_272:
+    street: '156 RUE DE BEAUVAIS'
+    additional1: ''
+    additional2: ''
+    zipCode: '60280'
+    city: 'MARGNY LES COMPIEGNE'
+  address_273:
+    street: '12 RUE DU FONDS PERNANT'
+    additional1: ''
+    additional2: ''
+    zipCode: '60200'
+    city: COMPIEGNE
+  address_274:
+    street: '244-246 AV DU GAL LECLERC'
+    additional1: ''
+    additional2: ''
+    zipCode: '61000'
+    city: ALENCON
+  address_275:
+    street: '169 BOULEVARD RAYMOND POINCARE'
+    additional1: ''
+    additional2: ''
+    zipCode: '62400'
+    city: BETHUNE
+  address_276:
+    street: '200 BOULEVARD DE L EGALITE'
+    additional1: ''
+    additional2: ''
+    zipCode: '62100'
+    city: CALAIS
+  address_277:
+    street: '1 RUE BLERIOT'
+    additional1: 'ZI DE LA LIANE'
+    additional2: ''
+    zipCode: '62360'
+    city: 'SAINT LEONARD'
+  address_278:
+    street: '61 AVENUE LEON BLUM'
+    additional1: ''
+    additional2: ''
+    zipCode: '62219'
+    city: LONGUENESSE
+  address_279:
+    street: '247 AVENUE DE BETHUNE'
+    additional1: ''
+    additional2: ''
+    zipCode: '62300'
+    city: LENS
+  address_280:
+    street: '15 BOULEVARD ROBERT SCHUMAN'
+    additional1: ''
+    additional2: ''
+    zipCode: '62000'
+    city: ARRAS
+  address_281:
+    street: 'RUE ARTHUR LAMENDIN'
+    additional1: 'PARC DU MOULIN'
+    additional2: ''
+    zipCode: '62660'
+    city: BEUVRY
+  address_282:
+    street: '248 BLD CLEMENTEL'
+    additional1: ''
+    additional2: ''
+    zipCode: '63100'
+    city: 'CLERMONT FERRAND'
+  address_283:
+    street: 'ALLEE DES CHAMPS'
+    additional1: 'ZAC DU GOLF'
+    additional2: ''
+    zipCode: '64200'
+    city: BASSUSSARY
+  address_284:
+    street: '111 BOULEVARD CHARLES DE GAULLE'
+    additional1: ''
+    additional2: ''
+    zipCode: '64140'
+    city: LONS
+  address_285:
+    street: 'ROUTE DE LOURDES'
+    additional1: ''
+    additional2: ''
+    zipCode: '65310'
+    city: TARBES-ODOS
+  address_286:
+    street: '115 CHEMIN DE LA FAUCILLE'
+    additional1: ''
+    additional2: ''
+    zipCode: '66100'
+    city: PERPIGNAN
+  address_287:
+    street: 'RUE DE L ORME'
+    additional1: ''
+    additional2: ''
+    zipCode: '66666'
+    city: SPRINGWOOD
+  address_288:
+    street: '115 CHEMIN DE LA FAUCILLE'
+    additional1: 'ESPACE AUTOMOBILE'
+    additional2: ''
+    zipCode: '66100'
+    city: PERPIGNAN
+  address_289:
+    street: '89A ROUTE DE MARIENTHAL'
+    additional1: ''
+    additional2: ''
+    zipCode: '67500'
+    city: HAGUENAU
+  address_290:
+    street: '210 AVENUE DE COLMAR'
+    additional1: ''
+    additional2: ''
+    zipCode: '67100'
+    city: STRASBOURG
+  address_291:
+    street: '62 RUE DES CHARMILLES'
+    additional1: ''
+    additional2: ''
+    zipCode: '67400'
+    city: 'ILLKIRCH GRAFFENSTADEN'
+  address_292:
+    street: '67 ROUTE DE BRUMATH'
+    additional1: ''
+    additional2: ''
+    zipCode: '67460'
+    city: SOUFFELWEYERSHEIM
+  address_293:
+    street: 'AVENUE JOSEPH REY'
+    additional1: ''
+    additional2: ''
+    zipCode: '68000'
+    city: COLMAR
+  address_294:
+    street: 'RUE ALCIDE DE GASPERI'
+    additional1: 'ZAC ESPALE'
+    additional2: 'BP 60050'
+    zipCode: '68392'
+    city: 'SAUSHEIM CEDEX'
+  address_295:
+    street: '156 RUE DE MULHOUSE'
+    additional1: ''
+    additional2: ''
+    zipCode: '68300'
+    city: 'SAINT LOUIS'
+  address_296:
+    street: 'RUE DE L''INDUSTRIE'
+    additional1: 'ZI NORD'
+    additional2: ''
+    zipCode: '67600'
+    city: SELESTAT
+  address_297:
+    street: '22 ROUTE DE THANN'
+    additional1: ''
+    additional2: ''
+    zipCode: '68130'
+    city: ALTKIRCH
+  address_298:
+    street: '15 AV VICTOR HUGO'
+    additional1: ''
+    additional2: ''
+    zipCode: '69160'
+    city: 'TASSIN LA DEMI-LUNE'
+  address_299:
+    street: '95 RUE LOUIS BECKER'
+    additional1: ''
+    additional2: ''
+    zipCode: '69100'
+    city: VILLEURBANNE
+  address_300:
+    street: '602 BOULEVARD ALBERT CAMUS'
+    additional1: ''
+    additional2: ''
+    zipCode: '69400'
+    city: 'VILLEFRANCHE SUR SAONE'
+  address_301:
+    street: '136 AVENUE BERTHELOT'
+    additional1: ''
+    additional2: ''
+    zipCode: '69007'
+    city: LYON
+  address_302:
+    street: '15 AVENUE VICTOR HUGO'
+    additional1: ''
+    additional2: ''
+    zipCode: '69160'
+    city: 'TASSIN LA DEMI LUNE'
+  address_303:
+    street: 'RUE DES FAINES'
+    additional1: ''
+    additional2: ''
+    zipCode: '70000'
+    city: 'NOIDANS LES VESOUL'
+  address_304:
+    street: 'ROUTE DE BELFORT'
+    additional1: 'ZA DE LA SALINE'
+    additional2: ''
+    zipCode: '70200'
+    city: LURE
+  address_305:
+    street: '111 RN 6'
+    additional1: 'SORTIE SUD'
+    additional2: ''
+    zipCode: '71000'
+    city: 'MACON '
+  address_306:
+    street: '16 RUE POITEVIN'
+    additional1: ''
+    additional2: 'BP 234'
+    zipCode: '71106'
+    city: 'CHALON SUR SAONE'
+  address_307:
+    street: '969 RUE DES FRERES LUMIERE'
+    additional1: ''
+    additional2: ''
+    zipCode: '71000'
+    city: MACON
+  address_308:
+    street: '1 ROUTE NATIONALE 6'
+    additional1: ''
+    additional2: ''
+    zipCode: '71260'
+    city: SENOZAN
+  address_309:
+    street: '18 AVENUE DE L’AUTOMOBILE'
+    additional1: ''
+    additional2: ''
+    zipCode: '71380'
+    city: 'SAINT MARCEL'
+  address_310:
+    street: '4 RUE ROMAIN GARRY'
+    additional1: ''
+    additional2: ''
+    zipCode: '71300'
+    city: 'MONTCEAU LES MINES'
+  address_311:
+    street: '10 BIS RUE DES FRERES RENAULT'
+    additional1: ''
+    additional2: ''
+    zipCode: '72000'
+    city: 'LE MANS'
+  address_312:
+    street: '515 AV J  FONTANET'
+    additional1: 'PARC OLYMPIQUE'
+    additional2: ''
+    zipCode: '73200'
+    city: ALBERTVILLE
+  address_313:
+    street: 'RUE PIERRE ET MARIE CURIE'
+    additional1: ''
+    additional2: 'BP 60'
+    zipCode: '73492'
+    city: 'LA RAVOIRE CEDEX'
+  address_314:
+    street: '1445 BOULEVARD LEPIC'
+    additional1: ''
+    additional2: ''
+    zipCode: '73200'
+    city: 'AIX LES BAINS'
+  address_315:
+    street: '158 RTE DE LETRAZ'
+    additional1: ''
+    additional2: DOMANCY
+    zipCode: '74700'
+    city: SALLANCHES
+  address_316:
+    street: '12 RUE DE L’EUROPE'
+    additional1: ''
+    additional2: 'MARCLAZ DESSUS'
+    zipCode: '74200'
+    city: THONON
+  address_317:
+    street: '13 AVENUE DES 3 FONTAINES'
+    additional1: ''
+    additional2: ''
+    zipCode: '74600'
+    city: SEYNOD
+  address_318:
+    street: '2 ALLEE DES MOUSSERONS DES PRES'
+    additional1: 'ZAC VILLAGE D''ENTREPRISE'
+    additional2: ''
+    zipCode: '74100'
+    city: 'VILLE LA GRAND'
+  address_319:
+    street: '117B RUE DES PYRENEES'
+    additional1: ''
+    additional2: ''
+    zipCode: '75020'
+    city: PARIS
+  address_320:
+    street: '65B RUE DES ENTREPRENEURS'
+    additional1: ''
+    additional2: ''
+    zipCode: '75015'
+    city: PARIS
+  address_321:
+    street: '85 BOULEVARD NEY'
+    additional1: ''
+    additional2: ''
+    zipCode: '75018'
+    city: PARIS
+  address_322:
+    street: '134 RUE ROYALE - DPS'
+    additional1: ''
+    additional2: ''
+    zipCode: '59000'
+    city: LILLE
+  address_323:
+    street: '138 avenue du Mont Riboudet'
+    additional1: ''
+    additional2: ''
+    zipCode: '76000'
+    city: ROUEN
+  address_324:
+    street: '14 BIS, RUE BERTHELOT'
+    additional1: ''
+    additional2: ''
+    zipCode: '76600'
+    city: 'LE HAVRE'
+  address_325:
+    street: '14 BIS RUE BERTHELOT'
+    additional1: ''
+    additional2: ''
+    zipCode: '76600'
+    city: 'LE HAVRE'
+  address_326:
+    street: '16 RUE DU DOCTEUR PIASCEKI'
+    additional1: ''
+    additional2: ''
+    zipCode: '76600'
+    city: 'LE HAVRE'
+  address_327:
+    street: '74 RUE GUSTAVE NICOLLE'
+    additional1: ''
+    additional2: ''
+    zipCode: '76600'
+    city: 'LE HAVRE'
+  address_328:
+    street: 'RUE LOUIS DELAPORTE'
+    additional1: 'ZI VERTE'
+    additional2: ''
+    zipCode: '76370'
+    city: ROUXMESNIL-BOUTEILLES
+  address_329:
+    street: '58 AVENUE VAUBAN'
+    additional1: ''
+    additional2: ''
+    zipCode: '76200'
+    city: DIEPPE
+  address_330:
+    street: 'RUE SEMICHON'
+    additional1: 'ZONE EUROPOLIS'
+    additional2: ''
+    zipCode: '76260'
+    city: EU
+  address_331:
+    street: '77 AVENUE DU MONT RIBOUDET'
+    additional1: ''
+    additional2: ''
+    zipCode: '76000'
+    city: ROUEN
+  address_332:
+    street: '226 AVENUE DES ALLIES'
+    additional1: ''
+    additional2: 'BP 74'
+    zipCode: '76140'
+    city: 'PETIT QUEVILLY'
+  address_333:
+    street: '77 AVENUE DU MONT RIBOUDET'
+    additional1: ''
+    additional2: ''
+    zipCode: '76000'
+    city: ROUEN
+  address_334:
+    street: '16 RUE DU DOCTEUR PIASCEKI'
+    additional1: ''
+    additional2: ''
+    zipCode: '76600'
+    city: 'LE HAVRE'
+  address_335:
+    street: '58 AVENUE VAUBAN'
+    additional1: ''
+    additional2: ''
+    zipCode: '76200'
+    city: DIEPPE
+  address_336:
+    street: '520 IMPASSE DE L’EPINET'
+    additional1: ''
+    additional2: ''
+    zipCode: '77240'
+    city: 'VERT SAINT DENIS'
+  address_337:
+    street: '70 RUE DU GENERAL LECLERC'
+    additional1: 'RN 19'
+    additional2: ''
+    zipCode: '77170'
+    city: 'BRIE COMTE ROBERT'
+  address_338:
+    street: 'ZI DU RÉVEIL MATIN'
+    additional1: 'RN 6'
+    additional2: ''
+    zipCode: '91230'
+    city: MONTGERON
+  address_339:
+    street: '820 RUE DES MADELEINES'
+    additional1: 'ZA DE LA HAUTE BORNE'
+    additional2: ''
+    zipCode: '77100'
+    city: 'MAREUIL LES MEAUX'
+  address_340:
+    street: '24 ROUTE DU PETIT FOSSARD'
+    additional1: ''
+    additional2: ''
+    zipCode: '77130'
+    city: 'VARENNES SUR SEINE'
+  address_341:
+    street: '550 IMPASSE DE L EPINET'
+    additional1: 'POLE AUTOMOBILES RN 6'
+    additional2: ''
+    zipCode: '77240'
+    city: 'VERT SAINT DENIS'
+  address_342:
+    street: '24 T ROUTE DU PETIT FOSSARD'
+    additional1: ''
+    additional2: ''
+    zipCode: '77130'
+    city: 'VARENNES SUR SEINE'
+  address_343:
+    street: '38 D306 VERT ST DENIS'
+    additional1: 'ZAC DE LA CAVE'
+    additional2: ''
+    zipCode: '77240'
+    city: 'VERT SAINT DENIS'
+  address_344:
+    street: '47-49 AVENUE DU PRESIDENT ROOSEVELT'
+    additional1: ''
+    additional2: ''
+    zipCode: '77100'
+    city: MEAUX
+  address_345:
+    street: '15 ROUTE DE CHANTEREINE'
+    additional1: ''
+    additional2: ''
+    zipCode: '78711'
+    city: 'MANTES LA VILLE'
+  address_346:
+    street: '1 RUE JACQUARD'
+    additional1: 'ROND POINT DE L EUROPE'
+    additional2: ''
+    zipCode: '78310'
+    city: COIGNIERES
+  address_347:
+    street: '150 AVENUE PAUL DOUMER'
+    additional1: ''
+    additional2: ''
+    zipCode: '78360'
+    city: MONTESSON
+  address_348:
+    street: '1 RUE JACQUARD'
+    additional1: 'ROND POINT DE L EUROPE'
+    additional2: ''
+    zipCode: '78310'
+    city: COIGNIERES
+  address_349:
+    street: '32 - 34 ROUTE DE MANTES'
+    additional1: RN13
+    additional2: ''
+    zipCode: '78240'
+    city: CHAMBOURCY
+  address_350:
+    street: '3 RUE DU VAR'
+    additional1: 'ZA BUCHELAY 3000'
+    additional2: ''
+    zipCode: '78200'
+    city: 'MANTES LA JOLIE'
+  address_351:
+    street: '1 RUE DES GAMELINES'
+    additional1: 'ZA DES CLOSEAUX'
+    additional2: ''
+    zipCode: '78200'
+    city: BUCHELAY
+  address_352:
+    street: '20 PLACE DU 8 MAI'
+    additional1: ''
+    additional2: ''
+    zipCode: '78200'
+    city: 'MANTES LA JOLIE'
+  address_353:
+    street: '21-26 RUE AMPERE'
+    additional1: ''
+    additional2: ''
+    zipCode: '78100'
+    city: 'SAINT GERMAIN EN LAYE'
+  address_354:
+    street: '2 BIS RUE DE VAUMORIN'
+    additional1: 'ESPACE MENDES France 1'
+    additional2: ''
+    zipCode: '79000'
+    city: NIORT
+  address_355:
+    street: '132 AVENUE DE NANTES'
+    additional1: ''
+    additional2: 'ESPACE NIORT OUEST'
+    zipCode: '79000'
+    city: NIORT
+  address_356:
+    street: '63-65 AVENUE HENRI BARBUSSE'
+    additional1: ''
+    additional2: ''
+    zipCode: '80330'
+    city: LONGUEAU
+  address_357:
+    street: 'RUE ROSE BERTIN'
+    additional1: 'ZAC DES 2 VALLEES'
+    additional2: 'BP 50022'
+    zipCode: '80101'
+    city: ABBEVILLE
+  address_358:
+    street: '656 RUE D''AMIENS'
+    additional1: RN1
+    additional2: ''
+    zipCode: '80480'
+    city: DURY
+  address_359:
+    street: 'AVENUE ROBERT SCHUMANN'
+    additional1: ''
+    additional2: ''
+    zipCode: '80100'
+    city: ABBEVILLE
+  address_360:
+    street: '175 ROUTE DE CASTRES'
+    additional1: ''
+    additional2: ''
+    zipCode: '81000'
+    city: ALBI
+  address_361:
+    street: '161 ROUTE DE TOULOUSE'
+    additional1: ''
+    additional2: ''
+    zipCode: '81100'
+    city: CASTRES
+  address_362:
+    street: '20 AVENUE DE L EUROPE'
+    additional1: 'ZONE ALBASUD'
+    additional2: ''
+    zipCode: '82000'
+    city: MONTAUBAN
+  address_363:
+    street: '1550 AVENUE DE L’EUROPE'
+    additional1: 'ZAC ALBASUD'
+    additional2: ''
+    zipCode: '82000'
+    city: MONTAUBAN
+  address_364:
+    street: '366 RUE STE CLAIRE DEVILLE'
+    additional1: 'QUARTIER STE MUSSE'
+    additional2: ''
+    zipCode: '83100'
+    city: TOULON
+  address_365:
+    street: 'ZI LES CONSACS'
+    additional1: ''
+    additional2: ''
+    zipCode: '83170'
+    city: BRIGNOLES
+  address_366:
+    street: 'AVENUE DE L''UNIVERSITE'
+    additional1: ''
+    additional2: ''
+    zipCode: '83160'
+    city: 'LA VALETTE DU VAR'
+  address_367:
+    street: 'AVENUE ARISTIDE BRIAND'
+    additional1: 'ZA MALBOUSQUET'
+    additional2: ''
+    zipCode: '83200'
+    city: TOULON
+  address_368:
+    street: 'LES MEISSUGUES'
+    additional1: RN7
+    additional2: ''
+    zipCode: '83480'
+    city: PUGET-SUR-ARGENS
+  address_369:
+    street: 'RUE CHARLES VALENTE'
+    additional1: 'ZAC DE LA CASTELETTE'
+    additional2: ''
+    zipCode: '84140'
+    city: MONTFAVET
+  address_370:
+    street: 'ZAC DU COUDOULET'
+    additional1: ''
+    additional2: ''
+    zipCode: '84100'
+    city: ORANGE
+  address_371:
+    street: '3-13 ROUTE D AIZENAY'
+    additional1: ''
+    additional2: ''
+    zipCode: '85000'
+    city: 'LA ROCHE SUR YON'
+  address_372:
+    street: 'IMPASSE JOSEPH MAINGUENEAU'
+    additional1: ''
+    additional2: ''
+    zipCode: '85200'
+    city: 'FONTENAY LE COMTE'
+  address_373:
+    street: 'IMPASSE JOSEPH MAINGUENEAU'
+    additional1: ''
+    additional2: ''
+    zipCode: '85200'
+    city: 'FONTENAY LE COMTE'
+  address_374:
+    street: '77 RUE DE LA CROISEE'
+    additional1: 'ZAC DE BEAUPUY 3'
+    additional2: ''
+    zipCode: '85000'
+    city: 'MOUILLERON LE CAPTIF'
+  address_375:
+    street: 'IMPASSE JOSEPH MAINGUENEAU'
+    additional1: ''
+    additional2: ''
+    zipCode: '85200'
+    city: 'FONTENAY LE COMTE'
+  address_376:
+    street: 'RUE FRANCOIS COLI'
+    additional1: ''
+    additional2: ''
+    zipCode: '86580'
+    city: BIARD
+  address_377:
+    street: 'AVENUE DE LA LOGE'
+    additional1: ''
+    additional2: 'BP 39'
+    zipCode: '86440'
+    city: 'MIGNE AUXANCES'
+  address_378:
+    street: '9-11 RUE THOMAS EDISON'
+    additional1: ''
+    additional2: ''
+    zipCode: '86100'
+    city: CHATELLERAULT
+  address_379:
+    street: '166 AVENUE DU PLATEAU DES GLIERES'
+    additional1: ''
+    additional2: 'BP 81174'
+    zipCode: '86062'
+    city: 'POITIERS CEDEX 9'
+  address_380:
+    street: '1'
+    additional1: ''
+    additional2: ''
+    zipCode: '59240'
+    city: DUNKERQUE
+  address_381:
+    street: '6 RUE EDOUARD GOURSAT'
+    additional1: ''
+    additional2: ''
+    zipCode: '87280'
+    city: LIMOGES
+  address_382:
+    street: 'ZI DU PRE DROUE'
+    additional1: ''
+    additional2: 'BP 25'
+    zipCode: '88150'
+    city: CHAVELOT
+  address_383:
+    street: '14 RUE MARC LANVIN'
+    additional1: ''
+    additional2: ''
+    zipCode: '62320'
+    city: DROCOURT
+  address_384:
+    street: '14 RUE MARC LANVIN'
+    additional1: ''
+    additional2: ''
+    zipCode: '62320'
+    city: DROCOURT
+  address_385:
+    street: '14 RUE MARC LANVIN'
+    additional1: ''
+    additional2: ''
+    zipCode: '62320'
+    city: DROCOURT
+  address_386:
+    street: '7 BIS RUE DU PONT NEUF'
+    additional1: ''
+    additional2: ''
+    zipCode: '89100'
+    city: SENS
+  address_387:
+    street: '23 ROUTE DE VALLAN'
+    additional1: ''
+    additional2: ''
+    zipCode: '89000'
+    city: AUXERRE
+  address_388:
+    street: '5 BOULEVARD DE VERDUN'
+    additional1: ''
+    additional2: ''
+    zipCode: '89100'
+    city: SENS
+  address_389:
+    street: '14 RUE MARC LANVIN'
+    additional1: ''
+    additional2: ''
+    zipCode: '62320'
+    city: DROCOURT
+  address_390:
+    street: '60 AVENUE JEAN JAURES'
+    additional1: ''
+    additional2: ''
+    zipCode: '89000'
+    city: AUXERRE
+  address_391:
+    street: '11 RUE XAVIER BICHAT'
+    additional1: 'ZAC DE LA JUSTICE'
+    additional2: ''
+    zipCode: '90000'
+    city: BELFORT
+  address_392:
+    street: '18 FAUBOURG DE BELFORT'
+    additional1: ''
+    additional2: ''
+    zipCode: '90100'
+    city: DELLE
+  address_393:
+    street: '123 AVENUE DU GENERAL LECLERC'
+    additional1: ''
+    additional2: ''
+    zipCode: '91190'
+    city: 'GIF SUR YVETTE'
+  address_394:
+    street: 'ZI DU REVEIL MATIN'
+    additional1: ''
+    additional2: ''
+    zipCode: '91230'
+    city: MONTGERON
+  address_395:
+    street: '4 AVENUE DE LA COUR DE FRANCE'
+    additional1: ''
+    additional2: ''
+    zipCode: '91260'
+    city: 'JUVISY SUR ORGE'
+  address_396:
+    street: '20 RUE THUILLERE'
+    additional1: ''
+    additional2: ''
+    zipCode: '91940'
+    city: 'GOMETZ LE CHATEL'
+  address_397:
+    street: '4 RUE JACQUES ANQUETIL'
+    additional1: ''
+    additional2: ''
+    zipCode: '91100'
+    city: 'CORBEIL ESSONNES'
+  address_398:
+    street: 'RUE DU MORVAN'
+    additional1: 'ZAC DE MAISONNEUVE'
+    additional2: ''
+    zipCode: '91220'
+    city: 'BRETIGNY SUR ORGE'
+  address_399:
+    street: '2 ROUTE DE LIMOURS'
+    additional1: ''
+    additional2: ''
+    zipCode: '91290'
+    city: ARPAJON
+  address_400:
+    street: 'ROUTE DE PITHIVIERS'
+    additional1: ''
+    additional2: ''
+    zipCode: '91150'
+    city: ETAMPES
+  address_401:
+    street: '23-25 AVENUE DE LA COUR DE FRANCE'
+    additional1: ''
+    additional2: ''
+    zipCode: '91260'
+    city: JUVISY-SUR-ORGE
+  address_402:
+    street: '10 RUE DES PRES'
+    additional1: 'ZA LES BELLES VUES'
+    additional2: ''
+    zipCode: '91290'
+    city: ARPAJON
+  address_403:
+    street: '108 AVENUE DE LA DIVISION LECLERC'
+    additional1: 'RN 20'
+    additional2: ''
+    zipCode: '92160'
+    city: ANTONY
+  address_404:
+    street: '199 BOULEVARD DE LA REPUBLIQUE'
+    additional1: HIPPODROME
+    additional2: ''
+    zipCode: '92210 '
+    city: 'SAINT CLOUD'
+  address_405:
+    street: '61 AVENUE DE LA MARNE'
+    additional1: ''
+    additional2: ''
+    zipCode: '92600'
+    city: ASNIERES
+  address_406:
+    street: '33 AVENUE D''ARGENTEUIL'
+    additional1: ''
+    additional2: ''
+    zipCode: '92600'
+    city: ASNIERES
+  address_407:
+    street: '14 Rue Marc Lanvin'
+    additional1: ''
+    additional2: ''
+    zipCode: '62320'
+    city: Drocourt
+  address_408:
+    street: '3 AVENUE DE LA GARE DE L''ABBAYE'
+    additional1: ''
+    additional2: ''
+    zipCode: '93600'
+    city: 'AULNAY SS BOIS'
+  address_409:
+    street: '33 BOULEVARD DE L''EUROPE'
+    additional1: ''
+    additional2: ''
+    zipCode: '93190'
+    city: 'LIVRY GARGAN'
+  address_410:
+    street: '33 AVENUE MEDERIC'
+    additional1: ''
+    additional2: ''
+    zipCode: '93160'
+    city: 'NOISY LE GRAND'
+  address_411:
+    street: '64 BOULEVARD MARCEL SEMBAT'
+    additional1: ''
+    additional2: ''
+    zipCode: '93200'
+    city: 'SAINT DENIS'
+  address_412:
+    street: '9-11 AVENUE MAURICE BERTEAUX'
+    additional1: ''
+    additional2: ''
+    zipCode: '94100'
+    city: 'SAINT MAUR DES FOSSES '
+  address_413:
+    street: '222 AVENUE ARISTIDE BRIAND'
+    additional1: ''
+    additional2: ''
+    zipCode: '92220'
+    city: BAGNEUX
+  address_414:
+    street: '163 AVENUE FONTAINEBLEAU'
+    additional1: ''
+    additional2: ''
+    zipCode: '94320'
+    city: THIAIS
+  address_415:
+    street: '3 RUE JEAN-JACQUES ROUSSEAU'
+    additional1: ''
+    additional2: ''
+    zipCode: '94120'
+    city: 'FONTENAY SOUS BOIS'
+  address_416:
+    street: '16 BOULEVARD ALSACE LORRAINE'
+    additional1: ''
+    additional2: ''
+    zipCode: '94170'
+    city: 'LE PERREUX'
+  address_417:
+    street: '111 AVENUE DE STALINGRAD'
+    additional1: ''
+    additional2: ''
+    zipCode: '95140'
+    city: 'GARGES LES GONESSE'
+  address_418:
+    street: '16-45 RUE DE PARIS'
+    additional1: ''
+    additional2: ''
+    zipCode: '95310'
+    city: 'ST OUEN L AUMONE'
+  address_419:
+    street: '72 ROUTE DE PONTOISE'
+    additional1: ''
+    additional2: ''
+    zipCode: '95100'
+    city: ARGENTEUIL
+  address_420:
+    street: '12 ROUTE DE VIARMES'
+    additional1: ''
+    additional2: ''
+    zipCode: '95570'
+    city: 'VILLAINES SOUS BOIS'
+  address_421:
+    street: '12 ROUTE DE VIARMES'
+    additional1: ''
+    additional2: ''
+    zipCode: '95570'
+    city: 'VILLAINES SOUS BOIS'
+  address_422:
+    street: 'ZI DES ECRICROLLES'
+    additional1: RN1
+    additional2: ''
+    zipCode: '95410'
+    city: GROSLAY
+  address_423:
+    street: '11 RUE MARCEL CERDAN'
+    additional1: ''
+    additional2: ''
+    zipCode: '95140'
+    city: 'GARGES LES GONESSE'
+  address_424:
+    street: '110 BOULEVARD JEAN ALLEMANE'
+    additional1: ''
+    additional2: ''
+    zipCode: '95100'
+    city: ARGENTEUIL
+  address_425:
+    street: '111 AVENUE DE STALINGRAD'
+    additional1: ''
+    additional2: ''
+    zipCode: '95140'
+    city: 'GARGES LES GONESSE'
+  address_426:
+    street: '11 RUE LOUIS DELAGE'
+    additional1: ''
+    additional2: ''
+    zipCode: '95310'
+    city: 'SAINT OUEN L''AUMONE'
+  address_427:
+    street: '6 ROUTE DU GYMNASE'
+    additional1: ''
+    additional2: ''
+    zipCode: '97490'
+    city: 'STE CLOTILDE'
+  address_428:
+    street: '217 RUE MARIUS ET ARY LEBLOND'
+    additional1: ''
+    additional2: 'BP 25'
+    zipCode: '97451'
+    city: 'SAINT PIERRE CEDEX'
+  address_429:
+    street: '9-15 BLD CHARLES III'
+    additional1: ''
+    additional2: ''
+    zipCode: '98000'
+    city: MONACO
+  address_430:
+    street: '68 RUE MARECHAL LECLERC DE HAUTECLOQUE'
+    additional1: ''
+    additional2: ''
+    zipCode: '06500'
+    city: MENTON
+  address_431:
+    street: '17 BOULEVARD DU CHAUDRON'
+    additional1: ''
+    additional2: ''
+    zipCode: '97490'
+    city: 'SAINTE CLOTILDE - LA REUNION'
+App\Entity\Embed\Coordinates:
+  coordinates_1:
+    latitude: '50.387'
+    longitude: '2.91926'
+  coordinates_2:
+    latitude: '46.3039277'
+    longitude: '6.0657151'
+  coordinates_3:
+    latitude: '46.3041351'
+    longitude: '6.0653724'
+  coordinates_4:
+    latitude: '50.3868344'
+    longitude: '2.9193784'
+  coordinates_5:
+    latitude: '50.3868344'
+    longitude: '2.9193784'
+  coordinates_6:
+    latitude: '49.03533'
+    longitude: '3.387334'
+  coordinates_7:
+    latitude: '49.847066'
+    longitude: '3.2874'
+  coordinates_8:
+    latitude: '50.645926'
+    longitude: '3.0537663'
+  coordinates_9:
+    latitude: '48.6148279'
+    longitude: '-0.9629983'
+  coordinates_10:
+    latitude: '49.564133'
+    longitude: '3.61989'
+  coordinates_11:
+    latitude: '49.38152'
+    longitude: '3.304807'
+  coordinates_12:
+    latitude: '50.6227004'
+    longitude: '3.1153929'
+  coordinates_13:
+    latitude: '50.645926'
+    longitude: '3.0537663'
+  coordinates_14:
+    latitude: '51.0454595'
+    longitude: '2.3894182'
+  coordinates_15:
+    latitude: '46.6192'
+    longitude: '6.82225'
+  coordinates_16:
+    latitude: '46.125598'
+    longitude: '3.401798'
+  coordinates_17:
+    latitude: '43.835744'
+    longitude: '5.790916'
+  coordinates_18:
+    latitude: '44.567022'
+    longitude: '6.1012603'
+  coordinates_19:
+    latitude: '43.575592'
+    longitude: '7.012337'
+  coordinates_20:
+    latitude: '50.3868344'
+    longitude: '2.9193784'
+  coordinates_21:
+    latitude: '43.457659'
+    longitude: '6.6818081'
+  coordinates_22:
+    latitude: '43.7061718'
+    longitude: '7.2913198'
+  coordinates_23:
+    latitude: '43.658772'
+    longitude: '7.197495'
+  coordinates_24:
+    latitude: '44.6228563'
+    longitude: '4.3970945'
+  coordinates_25:
+    latitude: '49.775723'
+    longitude: '4.699836'
+  coordinates_26:
+    latitude: '43.095964'
+    longitude: '1.662693'
+  coordinates_27:
+    latitude: '49.1415'
+    longitude: '5.93634'
+  coordinates_28:
+    latitude: '48.317511'
+    longitude: '4.039873'
+  coordinates_29:
+    latitude: '43.171143'
+    longitude: '2.977968'
+  coordinates_30:
+    latitude: '43.212161'
+    longitude: '2.353663'
+  coordinates_31:
+    latitude: '51.0343684'
+    longitude: '2.3767763'
+  coordinates_32:
+    latitude: '50.6419'
+    longitude: '3.05663'
+  coordinates_33:
+    latitude: '44.379481'
+    longitude: '2.589165'
+  coordinates_34:
+    latitude: '43.273183'
+    longitude: '5.430614'
+  coordinates_35:
+    latitude: '43.273183'
+    longitude: '5.430614'
+  coordinates_36:
+    latitude: '43.425687'
+    longitude: '5.252971'
+  coordinates_37:
+    latitude: '43.586132'
+    longitude: '5.128745'
+  coordinates_38:
+    latitude: '43.5078401'
+    longitude: '5.4093677'
+  coordinates_39:
+    latitude: '43.700911'
+    longitude: '4.64244'
+  coordinates_40:
+    latitude: '49.2802508'
+    longitude: '-0.6854949'
+  coordinates_41:
+    latitude: '49.238029'
+    longitude: '-0.342085'
+  coordinates_42:
+    latitude: '49.280251'
+    longitude: '-0.685495'
+  coordinates_43:
+    latitude: '49.145922'
+    longitude: '0.227849'
+  coordinates_44:
+    latitude: '44.912139'
+    longitude: '2.447002'
+  coordinates_45:
+    latitude: '45.7145'
+    longitude: '0.20436'
+  coordinates_46:
+    latitude: '45.720638'
+    longitude: '-0.639048'
+  coordinates_47:
+    latitude: '45.951803'
+    longitude: '-0.930483'
+  coordinates_48:
+    latitude: '46.179601'
+    longitude: '-1.155881'
+  coordinates_49:
+    latitude: '47.095477'
+    longitude: '2.422939'
+  coordinates_50:
+    latitude: '45.140582'
+    longitude: '1.474475'
+  coordinates_51:
+    latitude: '42.70355'
+    longitude: '9.449536'
+  coordinates_52:
+    latitude: '41.999768'
+    longitude: '8.830763'
+  coordinates_53:
+    latitude: '47.2873'
+    longitude: '5.01509'
+  coordinates_54:
+    latitude: '48.501321'
+    longitude: '-2.740981'
+  coordinates_55:
+    latitude: '48.586641'
+    longitude: '-3.136524'
+  coordinates_56:
+    latitude: '48.747891'
+    longitude: '-3.461181'
+  coordinates_57:
+    latitude: '46.190442'
+    longitude: '1.875442'
+  coordinates_58:
+    latitude: '46.364049'
+    longitude: '2.591917'
+  coordinates_59:
+    latitude: '46.518012'
+    longitude: '3.360313'
+  coordinates_60:
+    latitude: '45.186647'
+    longitude: '0.704638'
+  coordinates_61:
+    latitude: '44.853806'
+    longitude: '0.483392'
+  coordinates_62:
+    latitude: '47.271175'
+    longitude: '5.997483'
+  coordinates_63:
+    latitude: '46.904104'
+    longitude: '6.354242'
+  coordinates_64:
+    latitude: '44.918675'
+    longitude: '4.931605'
+  coordinates_65:
+    latitude: '44.556944'
+    longitude: '4.749496'
+  coordinates_66:
+    latitude: '49.078388'
+    longitude: '0.583852'
+  coordinates_67:
+    latitude: '49.025607'
+    longitude: '1.187216'
+  coordinates_68:
+    latitude: '48.417036'
+    longitude: '1.45182'
+  coordinates_69:
+    latitude: '48.746877'
+    longitude: '1.346953'
+  coordinates_70:
+    latitude: '48.577031'
+    longitude: '-3.810993'
+  coordinates_71:
+    latitude: '48.41319'
+    longitude: '-4.487509'
+  coordinates_72:
+    latitude: '47.97302'
+    longitude: '-4.065188'
+  coordinates_73:
+    latitude: '44.105794'
+    longitude: '4.088436'
+  coordinates_74:
+    latitude: '43.816539'
+    longitude: '4.33807'
+  coordinates_75:
+    latitude: '43.640948'
+    longitude: '1.427436'
+  coordinates_76:
+    latitude: '43.547642'
+    longitude: '1.514743'
+  coordinates_77:
+    latitude: '43.47904'
+    longitude: '1.336282'
+  coordinates_78:
+    latitude: '43.581324'
+    longitude: '1.4042'
+  coordinates_79:
+    latitude: '43.112265'
+    longitude: '0.744803'
+  coordinates_80:
+    latitude: '43.663627'
+    longitude: '0.614533'
+  coordinates_81:
+    latitude: '44.845407'
+    longitude: '-0.669313'
+  coordinates_82:
+    latitude: '44.6171036'
+    longitude: '-1.1211317'
+  coordinates_83:
+    latitude: '43.344171'
+    longitude: '3.255021'
+  coordinates_84:
+    latitude: '43.6382207'
+    longitude: '3.9264732'
+  coordinates_85:
+    latitude: '48.640064'
+    longitude: '-1.989091'
+  coordinates_86:
+    latitude: '48.115311'
+    longitude: '-1.586553'
+  coordinates_87:
+    latitude: '46.804148'
+    longitude: '1.714668'
+  coordinates_88:
+    latitude: '47.421151'
+    longitude: '0.662299'
+  coordinates_89:
+    latitude: '46.789134'
+    longitude: '0.5246645'
+  coordinates_90:
+    latitude: '45.1778394'
+    longitude: '5.6917011'
+  coordinates_91:
+    latitude: '45.597108'
+    longitude: '5.27212'
+  coordinates_92:
+    latitude: '45.50279'
+    longitude: '4.852828'
+  coordinates_93:
+    latitude: '46.675194'
+    longitude: '5.547612'
+  coordinates_94:
+    latitude: '43.871167'
+    longitude: '-0.482477'
+  coordinates_95:
+    latitude: '43.719588'
+    longitude: '-1.058185'
+  coordinates_96:
+    latitude: '47.6062976'
+    longitude: '1.3340078'
+  coordinates_97:
+    latitude: '46.017883'
+    longitude: '4.090574'
+  coordinates_98:
+    latitude: '45.461269'
+    longitude: '4.383809'
+  coordinates_99:
+    latitude: '45.134706'
+    longitude: '3.813037'
+  coordinates_100:
+    latitude: '47.256559'
+    longitude: '-1.62938'
+  coordinates_101:
+    latitude: '47.256679'
+    longitude: '-2.270658'
+  coordinates_102:
+    latitude: '47.990319'
+    longitude: '2.710694'
+  coordinates_103:
+    latitude: '47.875572'
+    longitude: '1.914109'
+  coordinates_104:
+    latitude: '44.529399'
+    longitude: '0.096297'
+  coordinates_105:
+    latitude: '44.183346'
+    longitude: '0.634445'
+  coordinates_106:
+    latitude: '44.404664'
+    longitude: '0.701249'
+  coordinates_107:
+    latitude: '44.535794'
+    longitude: '3.505286'
+  coordinates_108:
+    latitude: '44.091637'
+    longitude: '3.069217'
+  coordinates_109:
+    latitude: '47.449401'
+    longitude: '-0.5333'
+  coordinates_110:
+    latitude: '47.031239'
+    longitude: '-0.916848'
+  coordinates_111:
+    latitude: '47.229198'
+    longitude: '-0.130034'
+  coordinates_112:
+    latitude: '49.022091'
+    longitude: '3.949566'
+  coordinates_113:
+    latitude: '49.236832'
+    longitude: '4.082451'
+  coordinates_114:
+    latitude: '48.948408'
+    longitude: '4.393242'
+  coordinates_115:
+    latitude: '48.102238'
+    longitude: '5.144774'
+  coordinates_116:
+    latitude: '48.058375'
+    longitude: '-0.736062'
+  coordinates_117:
+    latitude: '48.672714'
+    longitude: '5.901961'
+  coordinates_118:
+    latitude: '48.692902'
+    longitude: '6.129049'
+  coordinates_119:
+    latitude: '48.592237'
+    longitude: '6.492339'
+  coordinates_120:
+    latitude: '49.185884'
+    longitude: '5.372079'
+  coordinates_121:
+    latitude: '48.740177'
+    longitude: '5.210682'
+  coordinates_122:
+    latitude: '47.778797'
+    longitude: '-3.337021'
+  coordinates_123:
+    latitude: '48.056171'
+    longitude: '-2.941992'
+  coordinates_124:
+    latitude: '47.663149'
+    longitude: '-2.796476'
+  coordinates_125:
+    latitude: '49.116396'
+    longitude: '7.102093'
+  coordinates_126:
+    latitude: '49.155059'
+    longitude: '6.157619'
+  coordinates_127:
+    latitude: '49.348429'
+    longitude: '6.178499'
+  coordinates_128:
+    latitude: '49.541753'
+    longitude: '5.782711'
+  coordinates_129:
+    latitude: '49.196175'
+    longitude: '6.706996'
+  coordinates_130:
+    latitude: '49.2221409'
+    longitude: '6.62169'
+  coordinates_131:
+    latitude: '46.989069'
+    longitude: '3.176722'
+  coordinates_132:
+    latitude: '50.367963'
+    longitude: '3.120089'
+  coordinates_133:
+    latitude: '50.175569'
+    longitude: '3.215982'
+  coordinates_134:
+    latitude: '50.625431'
+    longitude: '2.98033'
+  coordinates_135:
+    latitude: '50.3587334'
+    longitude: '3.0803021'
+  coordinates_136:
+    latitude: '50.637044'
+    longitude: '3.122697'
+  coordinates_137:
+    latitude: '50.371723'
+    longitude: '3.509943'
+  coordinates_138:
+    latitude: '50.266636'
+    longitude: '3.965445'
+  coordinates_139:
+    latitude: '49.239066'
+    longitude: '2.465189'
+  coordinates_140:
+    latitude: '49.429539'
+    longitude: '2.080712'
+  coordinates_141:
+    latitude: '49.385692'
+    longitude: '2.78653'
+  coordinates_142:
+    latitude: '48.411494'
+    longitude: '0.089247'
+  coordinates_143:
+    latitude: '50.740194'
+    longitude: '2.27979'
+  coordinates_144:
+    latitude: '50.439452'
+    longitude: '2.808549'
+  coordinates_145:
+    latitude: '50.297335'
+    longitude: '2.775118'
+  coordinates_146:
+    latitude: '50.513225'
+    longitude: '2.687677'
+  coordinates_147:
+    latitude: '45.815548'
+    longitude: '3.110195'
+  coordinates_148:
+    latitude: '43.442061'
+    longitude: '-1.487846'
+  coordinates_149:
+    latitude: '43.312254'
+    longitude: '-0.417363'
+  coordinates_150:
+    latitude: '43.211712'
+    longitude: '0.04905'
+  coordinates_151:
+    latitude: '42.667911'
+    longitude: '2.899324'
+  coordinates_152:
+    latitude: '48.796022'
+    longitude: '7.805047'
+  coordinates_153:
+    latitude: '48.635489'
+    longitude: '7.741404'
+  coordinates_154:
+    latitude: '48.635489'
+    longitude: '7.741404'
+  coordinates_155:
+    latitude: '48.095609'
+    longitude: '7.368119'
+  coordinates_156:
+    latitude: '47.777186'
+    longitude: '7.381223'
+  coordinates_157:
+    latitude: '47.601085'
+    longitude: '7.547163'
+  coordinates_158:
+    latitude: '45.765428'
+    longitude: '4.873635'
+  coordinates_159:
+    latitude: '45.979484'
+    longitude: '4.727608'
+  coordinates_160:
+    latitude: '45.772122'
+    longitude: '4.791481'
+  coordinates_161:
+    latitude: '47.621431'
+    longitude: '6.139536'
+  coordinates_162:
+    latitude: '47.674625'
+    longitude: '6.51641'
+  coordinates_163:
+    latitude: '46.2887'
+    longitude: '4.814874'
+  coordinates_164:
+    latitude: '46.767518'
+    longitude: '4.866674'
+  coordinates_165:
+    latitude: '46.680954'
+    longitude: '4.362149'
+  coordinates_166:
+    latitude: '47.984868'
+    longitude: '0.174193'
+  coordinates_167:
+    latitude: '45.662352'
+    longitude: '6.370275'
+  coordinates_168:
+    latitude: '45.568538'
+    longitude: '5.965047'
+  coordinates_169:
+    latitude: '45.913428'
+    longitude: '6.651377'
+  coordinates_170:
+    latitude: '46.350458'
+    longitude: '6.443493'
+  coordinates_171:
+    latitude: '45.890104'
+    longitude: '6.114994'
+  coordinates_172:
+    latitude: '46.201615'
+    longitude: '6.247144'
+  coordinates_173:
+    latitude: '48.856627'
+    longitude: '2.404329'
+  coordinates_174:
+    latitude: '48.845719'
+    longitude: '2.2898533'
+  coordinates_175:
+    latitude: '48.8976056'
+    longitude: '2.3390366'
+  coordinates_176:
+    latitude: '50.645926'
+    longitude: '3.0537663'
+  coordinates_177:
+    latitude: '49.446734'
+    longitude: '1.070717'
+  coordinates_178:
+    latitude: '49.497127'
+    longitude: '0.136309'
+  coordinates_179:
+    latitude: '49.4911'
+    longitude: '0.14473'
+  coordinates_180:
+    latitude: '49.904557'
+    longitude: '1.092876'
+  coordinates_181:
+    latitude: '48.565625'
+    longitude: '2.630558'
+  coordinates_182:
+    latitude: '48.697196'
+    longitude: '2.605867'
+  coordinates_183:
+    latitude: '48.7203'
+    longitude: '2.442546'
+  coordinates_184:
+    latitude: '48.934063'
+    longitude: '2.873364'
+  coordinates_185:
+    latitude: '48.367878'
+    longitude: '2.95728'
+  coordinates_186:
+    latitude: '48.905991'
+    longitude: '2.049715'
+  coordinates_187:
+    latitude: '48.989323'
+    longitude: '1.714958'
+  coordinates_188:
+    latitude: '46.323716'
+    longitude: '-0.464777'
+  coordinates_189:
+    latitude: '49.846226'
+    longitude: '2.268329'
+  coordinates_190:
+    latitude: '43.900829'
+    longitude: '2.146966'
+  coordinates_191:
+    latitude: '43.587421'
+    longitude: '2.187512'
+  coordinates_192:
+    latitude: '43.997191'
+    longitude: '1.3379226'
+  coordinates_193:
+    latitude: '43.986632'
+    longitude: '1.330578'
+  coordinates_194:
+    latitude: '43.137402'
+    longitude: '6.008194'
+  coordinates_195:
+    latitude: '43.124228'
+    longitude: '5.928'
+  coordinates_196:
+    latitude: '43.455329'
+    longitude: '6.68408'
+  coordinates_197:
+    latitude: '43.918657'
+    longitude: '4.873304'
+  coordinates_198:
+    latitude: '46.670511'
+    longitude: '-1.426442'
+  coordinates_199:
+    latitude: '46.609205'
+    longitude: '0.320571'
+  coordinates_200:
+    latitude: '51.0450181'
+    longitude: '2.4062944'
+  coordinates_201:
+    latitude: '45.888324'
+    longitude: '1.278314'
+  coordinates_202:
+    latitude: '48.234108'
+    longitude: '6.438231'
+  coordinates_203:
+    latitude: '50.387'
+    longitude: '2.91926'
+  coordinates_204:
+    latitude: '50.387'
+    longitude: '2.91926'
+  coordinates_205:
+    latitude: '50.387'
+    longitude: '2.91926'
+  coordinates_206:
+    latitude: '48.204532'
+    longitude: '3.289548'
+  coordinates_207:
+    latitude: '50.387'
+    longitude: '2.91926'
+  coordinates_208:
+    latitude: '47.804169'
+    longitude: '3.583087'
+  coordinates_209:
+    latitude: '47.642358'
+    longitude: '6.882982'
+  coordinates_210:
+    latitude: '47.509637'
+    longitude: '7.002627'
+  coordinates_211:
+    latitude: '48.673782'
+    longitude: '2.137776'
+  coordinates_212:
+    latitude: '48.613335'
+    longitude: '2.453153'
+  coordinates_213:
+    latitude: '48.424779'
+    longitude: '2.176566'
+  coordinates_214:
+    latitude: '48.691637'
+    longitude: '2.3702905'
+  coordinates_215:
+    latitude: '48.857098'
+    longitude: '2.210403'
+  coordinates_216:
+    latitude: '48.911426'
+    longitude: '2.28488'
+  coordinates_217:
+    latitude: '50.3868344'
+    longitude: '2.9193784'
+  coordinates_218:
+    latitude: '48.923464'
+    longitude: '2.514525'
+  coordinates_219:
+    latitude: '48.9247526'
+    longitude: '2.547468'
+  coordinates_220:
+    latitude: '48.830205'
+    longitude: '2.561571'
+  coordinates_221:
+    latitude: '48.9334321'
+    longitude: '2.3509883'
+  coordinates_222:
+    latitude: '48.810953'
+    longitude: '2.469916'
+  coordinates_223:
+    latitude: '48.792551'
+    longitude: '2.319436'
+  coordinates_224:
+    latitude: '48.771268'
+    longitude: '2.368741'
+  coordinates_225:
+    latitude: '49.078173'
+    longitude: '2.350819'
+  coordinates_226:
+    latitude: '48.960979'
+    longitude: '2.403733'
+  coordinates_227:
+    latitude: '49.033822'
+    longitude: '2.119401'
+  coordinates_228:
+    latitude: '43.730125'
+    longitude: '7.413632'
+  coordinates_229:
+    latitude: '43.782457'
+    longitude: '7.494584'
+  coordinates_230:
+    latitude: '-20.892049'
+    longitude: '55.4920291'

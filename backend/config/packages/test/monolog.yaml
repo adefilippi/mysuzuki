@@ -1,0 +1,12 @@
+monolog:
+    handlers:
+        main:
+            type: stream
+            path: "%kernel.logs_dir%/%kernel.environment%.log"
+            level: debug
+            channels: ["!event"]
+        delete_user_webhook:
+            type: stream
+            path: "%kernel.logs_dir%/delete_user_webhook_%kernel.environment%.log"
+            level: info
+            channels: [ 'delete_user_webhook' ]

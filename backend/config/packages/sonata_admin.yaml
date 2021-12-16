@@ -1,0 +1,69 @@
+sonata_admin:
+    title: 'Back-office mySUZUKI'
+    dashboard:
+        blocks:
+            - { type: sonata.admin.block.admin_list, position: left }
+        groups:
+            users:
+                on_top: true
+                label: Users
+                icon: <i class="fa fa-users"></i>
+                items:
+                    - App\Admin\UserAdmin
+
+            homepage:
+                on_top: true
+                label: En ce moment
+                icon: <i class="fa fa-home"></i>
+                items:
+                    - App\Admin\FeaturedContentAdmin
+
+            article:
+                keep_open: true
+                label: Article
+                icon: <i class="fa fa-newspaper-o"></i>
+                items:
+                    - App\Admin\NewsAdmin
+                    - App\Admin\AdviceTutorialAdmin
+                    - App\Admin\TagAdmin
+                    - App\Admin\VehicleModelAdmin
+            offer:
+                keep_open: true
+                label: Offres
+                icon: <i class="fa fa-tags"></i>
+                items:
+                    - App\Admin\ManualOfferAdmin
+                    - App\Admin\GameAdmin
+
+            faq:
+                keep_open: true
+                label: FAQ
+                icon: <i class="fa fa-question-circle-o"></i>
+                items:
+                    - App\Admin\QuestionAdmin
+                    - App\Admin\TopicAdmin
+
+            contact_form:
+                on_top: true
+                label: Sujets formulaire de contact
+                icon: <i class="fa fa-address-book-o"></i>
+                items:
+                    - App\Admin\IssueTypeAdmin
+
+            banner:
+                on_top: true
+                label: Bannières
+                icon: <i class="fa fa-image"></i>
+                items:
+                    - App\Admin\BannerAdmin
+
+    assets:
+        extra_javascripts:
+            - bundles/fosckeditor/ckeditor.js
+            - bundles/sonataformatter/vendor/markitup-markitup/markitup/jquery.markitup.js
+            - collections.js
+
+sonata_block:
+    blocks:
+        sonata.admin.block.admin_list:
+            contexts: [admin]

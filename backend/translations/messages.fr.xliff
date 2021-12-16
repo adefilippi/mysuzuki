@@ -1,0 +1,704 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="file.ext">
+        <body>
+            <!-- Traductions des messages de l'admin des utilisateurs -->
+            <trans-unit id="admin.user.action.send_activation_link">
+                <source>admin.user.action.send_activation_link</source>
+                <target>Renvoyer activation</target>
+            </trans-unit>
+            <trans-unit id="admin.user.action.login_as_another_user">
+                <source>admin.user.action.login_as_another_user</source>
+                <target>Se connecter en temps que</target>
+            </trans-unit>
+            <trans-unit id="admin.user.section.recurrent">
+                <source>admin.user.section.recurrent</source>
+                <target>Modification récurrentes</target>
+            </trans-unit>
+            <trans-unit id="admin.user.section.general">
+                <source>admin.user.section.general</source>
+                <target>General</target>
+            </trans-unit>
+            <trans-unit id="admin.user.section.information">
+                <source>admin.user.section.information</source>
+                <target>Informations complémentaires</target>
+            </trans-unit>
+            <trans-unit id="admin.user.choice.civ.m">
+                <source>admin.user.choice.civ.m</source>
+                <target>M</target>
+            </trans-unit>
+            <trans-unit id="admin.user.choice.civ.mme">
+                <source>admin.user.choice.civ.mme</source>
+                <target>MME</target>
+            </trans-unit>
+            <trans-unit id="admin.user.choice.civ.ste">
+                <source>admin.user.choice.civ.ste</source>
+                <target>STE</target>
+            </trans-unit>
+            <trans-unit id="admin.user.field.email">
+                <source>admin.user.field.email</source>
+                <target>Email</target>
+            </trans-unit>
+            <trans-unit id="admin.user.field.civ">
+                <source>admin.user.field.civ</source>
+                <target>Civilité</target>
+            </trans-unit>
+            <trans-unit id="admin.user.field.first_name">
+                <source>admin.user.field.first_name</source>
+                <target>Prénom</target>
+            </trans-unit>
+            <trans-unit id="admin.user.field.last_name">
+                <source>admin.user.field.last_name</source>
+                <target>Nom</target>
+            </trans-unit>
+            <trans-unit id="admin.user.field.date_of_birth">
+                <source>admin.user.field.date_of_birth</source>
+                <target>Date de naissance</target>
+            </trans-unit>
+            <trans-unit id="admin.user.field.enabled">
+                <source>admin.user.field.enabled</source>
+                <target>Activé</target>
+            </trans-unit>
+            <trans-unit id="admin.user.field.id">
+                <source>admin.user.field.id</source>
+                <target>ID</target>
+            </trans-unit>
+            <trans-unit id="admin.user.field.external_id">
+                <source>admin.user.field.external_id</source>
+                <target>ID Client</target>
+            </trans-unit>
+            <trans-unit id="admin.user.field.signed_up_at">
+                <source>admin.user.field.signed_up_at</source>
+                <target>Enregistré le</target>
+            </trans-unit>
+            <trans-unit id="admin.user.field.updated_at">
+                <source>admin.user.field.updated_at</source>
+                <target>Modifié le</target>
+            </trans-unit>
+            <trans-unit id="admin.user.field.email_confirmation_sent_at">
+                <source>admin.user.field.email_confirmation_sent_at</source>
+                <target>Email de confirmation envoyé le</target>
+            </trans-unit>
+
+            <!-- Traductions des messages de l'admin des articles -->
+            <trans-unit id="admin.featured_content.section.title">
+                <source>admin.featured_content.section.title</source>
+                <target>En ce moment</target>
+            </trans-unit>
+             <trans-unit id="admin.featured_content.field.type">
+                <source>admin.featured_content.field.type</source>
+                <target>Type</target>
+            </trans-unit>
+            <trans-unit id="admin.featured_content.label.type">
+                <source>admin.featured_content.label.type</source>
+                <target>Type</target>
+            </trans-unit>
+            <trans-unit id="admin.featured_content.label.entity">
+                <source>admin.featured_content.label.entity</source>
+                <target>Contenu</target>
+            </trans-unit>
+            <trans-unit id="admin.featured_content.field.article">
+                <source>admin.featured_content.field.article</source>
+                <target>Article</target>
+            </trans-unit>
+            <trans-unit id="admin.featured_content.field.offer">
+                <source>admin.featured_content.field.offer</source>
+                <target>Offre</target>
+            </trans-unit>
+            <trans-unit id="admin.featured_content.field.game">
+                <source>admin.featured_content.field.game</source>
+                <target>Jeu</target>
+            </trans-unit>
+
+            <!-- Traductions des messages de l'admin des articles -->
+            <trans-unit id="admin.article.type.news">
+                <source>news</source>
+                <target>Actualité</target>
+            </trans-unit>
+            <trans-unit id="admin.article.type.tutorial">
+                <source>tutorial</source>
+                <target>Tutoriel</target>
+            </trans-unit>
+            <trans-unit id="admin.article.type.advice">
+                <source>advice</source>
+                <target>Conseil</target>
+            </trans-unit>
+            <trans-unit id="admin.article.excerpt">
+                <source>admin.article.excerpt</source>
+                <target>Résumé</target>
+            </trans-unit>
+            <trans-unit id="admin.article.section.general">
+                <source>admin.article.section.general</source>
+                <target>Général</target>
+            </trans-unit>
+            <trans-unit id="admin.article.section.informations">
+                <source>admin.article.section.informations</source>
+                <target>Informations</target>
+            </trans-unit>
+            <trans-unit id="admin.article.field.title">
+                <source>admin.article.field.title</source>
+                <target>Titre</target>
+            </trans-unit>
+            <trans-unit id="admin.article.field.tags">
+                <source>admin.article.field.tags</source>
+                <target>Tags</target>
+            </trans-unit>
+            <trans-unit id="admin.article.field.vehicle_models">
+                <source>admin.article.field.vehicle_models</source>
+                <target>Modèles de véhicules</target>
+            </trans-unit>
+            <trans-unit id="admin.article.field.excerpt">
+                <source>admin.article.field.excerpt</source>
+                <target>Résumé</target>
+            </trans-unit>
+            <trans-unit id="admin.article.field.category">
+                <source>admin.article.field.category</source>
+                <target>Catégorie</target>
+            </trans-unit>
+            <trans-unit id="admin.article.field.publish_date">
+                <source>admin.article.field.publish_date</source>
+                <target>Date de publication</target>
+            </trans-unit>
+            <trans-unit id="admin.article.field.publish_date.help">
+                <source>admin.article.field.publish_date.help</source>
+                <target>Avant cette date, l'article n'apparaîtra pas sur le site</target>
+            </trans-unit>
+            <trans-unit id="admin.article.field.media">
+                <source>admin.article.field.media</source>
+                <target>Image de la liste</target>
+            </trans-unit>
+            <trans-unit id="admin.article.field.media.help">
+                <source>admin.article.field.media.help</source>
+                <target>
+					L'image fournie doit mesurer 1040px de largeur minimum et 800px de hauteur minimum.
+					Elle n'est pas obligée de respecter ces dimensions exactes
+					car elle sera redimensionnée automatiquement.
+				</target>
+            </trans-unit>
+            <trans-unit id="admin.article.section.content">
+                <source>admin.article.section.content</source>
+                <target>Contenu</target>
+            </trans-unit>
+            <trans-unit id="admin.article.field.body">
+                <source>admin.article.field.body</source>
+                <target>Corps de l'article</target>
+            </trans-unit>
+            <trans-unit id="admin.template.picture.no_image">
+                <source>admin.template.picture.no_image</source>
+                <target>Pas d'image</target>
+            </trans-unit>
+
+            <!-- Messages de l'admin des offres -->
+            <trans-unit id="article">
+                <source>article</source>
+                <target>Article</target>
+            </trans-unit>
+            <trans-unit id="game">
+                <source>game</source>
+                <target>Jeu</target>
+            </trans-unit>
+            <trans-unit id="offer">
+                <source>offer</source>
+                <target>Offre</target>
+            </trans-unit>
+            <trans-unit id="invitation">
+                <source>invitation</source>
+                <target>Invitation</target>
+            </trans-unit>
+            <trans-unit id="advantage">
+                <source>advantage</source>
+                <target>Avantage</target>
+            </trans-unit>
+            <trans-unit id="admin.offer.section.general">
+                <source>admin.offer.section.general</source>
+                <target>Général</target>
+            </trans-unit>
+            <trans-unit id="admin.offer.field.title">
+                <source>admin.offer.field.title</source>
+                <target>Titre</target>
+            </trans-unit>
+            <trans-unit id="admin.offer.field.category">
+                <source>admin.offer.field.category</source>
+                <target>Catégorie</target>
+            </trans-unit>
+            <trans-unit id="admin.offer.field.summary">
+                <source>admin.offer.field.summary</source>
+                <target>Résumé</target>
+            </trans-unit>
+            <trans-unit id="admin.offer.section.period">
+                <source>admin.offer.section.period</source>
+                <target>Période de l'offre</target>
+            </trans-unit>
+            <trans-unit id="admin.offer.field.start_date">
+                <source>admin.offer.field.start_date</source>
+                <target>Date de début</target>
+            </trans-unit>
+            <trans-unit id="admin.offer.field.start_date.help">
+                <source>admin.offer.field.start_date.help</source>
+                <target>Avant cette date, l'offre ne sera pas visible sur le site</target>
+            </trans-unit>
+            <trans-unit id="admin.offer.field.end_date">
+                <source>admin.offer.field.end_date</source>
+                <target>Date de fin</target>
+            </trans-unit>
+            <trans-unit id="admin.offer.section.cta">
+                <source>admin.offer.section.cta</source>
+                <target>CTA</target>
+            </trans-unit>
+            <trans-unit id="admin.offer.field.cta_type">
+                <source>admin.offer.field.cta_type</source>
+                <target>Type de CTA</target>
+            </trans-unit>
+            <trans-unit id="admin.offer.field.type.placeholder">
+                <source>admin.offer.field.type.placeholder</source>
+                <target>Pas de CTA</target>
+            </trans-unit>
+            <trans-unit id="admin.offer.field.cta_content">
+                <source>admin.offer.field.cta_content</source>
+                <target>Lien du CTA</target>
+            </trans-unit>
+            <trans-unit id="admin.offer.field.cta_label">
+                <source>admin.offer.field.cta_label</source>
+                <target>Texte affiché dans le bouton</target>
+            </trans-unit>
+            <trans-unit id="admin.offer.section.media">
+                <source>admin.offer.section.media</source>
+                <target>Image</target>
+            </trans-unit>
+            <trans-unit id="admin.offer.field.media">
+                <source>admin.offer.field.media</source>
+                <target>Téléverser l'image</target>
+            </trans-unit>
+            <trans-unit id="admin.offer.field.media.help">
+                <source>admin.offer.field.media.help</source>
+                <target>
+                	L'image fournie doit mesurer 1040px de largeur minimum et 800px de hauteur minimum.
+                	Elle n'est pas obligée de respecter ces dimensions exactes
+                	 car elle sera redimensionnée automatiquement.
+				 </target>
+            </trans-unit>
+            <trans-unit id="admin.offer.section.file">
+                <source>admin.offer.section.file</source>
+                <target>Document lié</target>
+            </trans-unit>
+            <trans-unit id="admin.offer.field.file">
+                <source>admin.offer.field.file</source>
+                <target>Téléverser le fichier</target>
+            </trans-unit>
+            <trans-unit id="admin.offer.section.content">
+                <source>admin.offer.section.content</source>
+                <target>Contenu</target>
+            </trans-unit>
+            <trans-unit id="admin.offer.field.body_description">
+                <source>admin.offer.field.body_description</source>
+                <target>Description de l'offre</target>
+            </trans-unit>
+            <trans-unit id="admin.offer.field.body_conditions">
+                <source>admin.offer.field.body_conditions</source>
+                <target>Conditions de l'offre</target>
+            </trans-unit>
+            <trans-unit id="admin.offer.field.body_rules">
+                <source>admin.offer.field.body_rules</source>
+                <target>Comment en profiter ?</target>
+            </trans-unit>
+            <trans-unit id="admin.offer.field.type">
+                <source>admin.offer.field.type</source>
+                <target>Type</target>
+            </trans-unit>
+            <trans-unit id="admin.target.section.targeting">
+                <source>admin.target.section.targeting</source>
+                <target>Ciblage</target>
+            </trans-unit>
+            <trans-unit id="admin.target.field.targetType">
+                <source>admin.target.field.targetType</source>
+                <target>Cible</target>
+            </trans-unit>
+            <trans-unit id="admin.target.field.targetType.help">
+                <source>admin.target.field.targetType.help</source>
+                <target>Affichez l'offre à tout le monde ou ciblez des clients en téléversant une liste d'ID client ou (exlusif) de VIN.</target>
+            </trans-unit>
+            <trans-unit id="admin.target.field.targetType.userCount">
+                <source>admin.target.field.targetType.userCount</source>
+                <target>Il y a actuellement {userCount} utilisateur(s) ciblé(s) par cette offre.</target>
+            </trans-unit>
+            <trans-unit id="admin.target.field.targetType.callout">
+                <source>admin.target.field.targetType.callout</source>
+                <target>Téléverser un nouveau fichier remplacera les cibles actuelles.</target>
+            </trans-unit>
+            <trans-unit id="admin.game.field.requiredFields">
+                <source>admin.game.field.requiredFields</source>
+                <target>Informations utilisateur requises</target>
+            </trans-unit>
+            <trans-unit id="admin.game.field.maximumParticipants">
+                <source>admin.game.field.maximumParticipants</source>
+                <target>Nombre de lots</target>
+            </trans-unit>
+            <trans-unit id="admin.game.field.file">
+                <source>admin.game.field.file</source>
+                <target>Règlement du jeu</target>
+            </trans-unit>
+            <trans-unit id="admin.game.help.maximumParticipants">
+                <source>admin.game.help.maximumParticipants</source>
+                <target>Renseigner ce champs uniquement pour les jeux "INSTANT GAGNANT"</target>
+            </trans-unit>
+            <trans-unit id="admin.game.export.no_participation">
+                <source>admin.game.export.no_participation</source>
+                <target>Aucun participant à ce jeu</target>
+            </trans-unit>
+            <trans-unit id="admin.game.export.download_list">
+                <source>admin.game.export.download_list</source>
+                <target>Liste des participants</target>
+            </trans-unit>
+            <trans-unit id="admin.game.export.export_disabled">
+                <source>admin.game.export.export_disabled</source>
+                <target>L'export n'est plus disponible</target>
+            </trans-unit>
+            <trans-unit id="lastName">
+                <source>lastName</source>
+                <target>Nom de famille</target>
+            </trans-unit>
+            <trans-unit id="firstName">
+                <source>firstName</source>
+                <target>Prénom</target>
+            </trans-unit>
+            <trans-unit id="phone">
+                <source>phone</source>
+                <target>Téléphone</target>
+            </trans-unit>
+            <trans-unit id="email">
+                <source>email</source>
+                <target>Email</target>
+            </trans-unit>
+            <trans-unit id="address">
+                <source>address</source>
+                <target>Adresse postale</target>
+            </trans-unit>
+            <trans-unit id="everyone">
+                <source>everyone</source>
+                <target>Tout le monde</target>
+            </trans-unit>
+            <trans-unit id="filtered">
+                <source>filtered</source>
+                <target>Groupe</target>
+            </trans-unit>
+            <trans-unit id="none">
+                <source>none</source>
+                <target>Personne</target>
+            </trans-unit>
+            <trans-unit id="admin.target.field.clientIdsFile">
+                <source>admin.target.field.clientIdsFile</source>
+                <target>Téléversez le ficher ID client (.csv)</target>
+            </trans-unit>
+            <trans-unit id="admin.target.field.clientIdsFile.help">
+                <source>admin.target.field.clientIdsFile.help</source>
+                <target>Le fichier fourni doit être un csv contenant une colonne avec l'en-tête "id client".</target>
+            </trans-unit>
+            <trans-unit id="admin.target.field.vinsFile">
+                <source>admin.target.field.vinsFile</source>
+                <target>(ou) Téléversez le ficher VIN (.csv)</target>
+            </trans-unit>
+            <trans-unit id="admin.target.field.vinsFile.help">
+                <source>admin.target.field.vinsFile.help</source>
+                <target>Le fichier fourni doit être un csv contenant une colonne avec l'en-tête "vin". Ignoré si un fichier d'ID client est téléversé.</target>
+            </trans-unit>
+
+            <!-- Traductions des messages de l'admin des questions FAQ -->
+            <trans-unit id="admin.question.field.question">
+                <source>admin.question.field.question</source>
+                <target>Question</target>
+            </trans-unit>
+            <trans-unit id="admin.question.field.answer">
+                <source>admin.question.field.answer</source>
+                <target>Réponse</target>
+            </trans-unit>
+            <trans-unit id="admin.question.field.topic">
+                <source>admin.question.field.topic</source>
+                <target>Sujet de la question</target>
+            </trans-unit>
+            <trans-unit id="admin.question.field.topic.help">
+                <source>admin.question.field.topic.help</source>
+                <target>Vous pouvez sélectionner un sujet parmis ceux déjà existant</target>
+            </trans-unit>
+            <trans-unit id="admin.question.field.associated_questions">
+                <source>admin.question.field.associated_questions</source>
+                <target>Questions associées</target>
+            </trans-unit>
+            <trans-unit id="admin.question.field.associated_questions.help">
+                <source>admin.question.field.associated_questions.help</source>
+                <target>Vous pouvez associer cette question à plusieurs autres. Pour faciliter cette tâche, ce champs est aussi une barre de recherche.</target>
+            </trans-unit>
+            <trans-unit id="admin.question.field.type.placeholder">
+                <source>admin.question.field.type.placeholder</source>
+                <target>Pas de CTA</target>
+            </trans-unit>
+            <trans-unit id="form">
+                <source>form</source>
+                <target>Formulaire de demande</target>
+            </trans-unit>
+            <trans-unit id="link">
+                <source>link</source>
+                <target>Lien externe</target>
+            </trans-unit>
+            <trans-unit id="admin.question.section.cta">
+                <source>admin.question.section.cta</source>
+                <target>CTA</target>
+            </trans-unit>
+            <trans-unit id="admin.question.field.cta_type">
+                <source>admin.question.field.cta_type</source>
+                <target>Type de CTA</target>
+            </trans-unit>
+            <trans-unit id="admin.question.field.position.help">
+                <source>admin.question.field.position.help</source>
+                <target>Les questions seront triés par ordre croissant sur cet attribut. Il est recommandé de mettre des multiples de 10 pour faciliter l'insertion des futures questions.</target>
+            </trans-unit>
+            <trans-unit id="admin.question.field.cta_issue_type">
+                <source>admin.question.field.cta_issue_type</source>
+                <target>Sujet de la demande du formulaire</target>
+            </trans-unit>
+            <trans-unit id="admin.question.field.cta_issue_type.placeholder">
+                <source>admin.question.field.cta_issue_type.placeholder</source>
+                <target>Laisser l'utilisateur choisir</target>
+            </trans-unit>
+            <trans-unit id="admin.question.field.cta_content">
+                <source>admin.question.field.cta_content</source>
+                <target>Lien du CTA</target>
+            </trans-unit>
+            <trans-unit id="admin.question.field.cta_label">
+                <source>admin.question.field.cta_label</source>
+                <target>Texte affiché dans le bouton</target>
+            </trans-unit>
+            <trans-unit id="admin.question.section.questions">
+                <source>admin.question.section.questions</source>
+                <target>Sujet et question associées</target>
+            </trans-unit>
+            <trans-unit id="admin.question.section.cta.description">
+                <source>admin.question.section.cta.description</source>
+                <target>Si le type "Formulaire de demande" est choisi, ce bouton ouvrira le formulaire de demande avec le type de demande prérempli si vous en sélectionnez un ci-dessous.</target>
+            </trans-unit>
+
+            <!-- Traductions des messages de l'admin des sujets FAQ -->
+            <trans-unit id="admin.topic.section.general">
+                <source>admin.topic.section.general</source>
+                <target>Général</target>
+            </trans-unit>
+            <trans-unit id="admin.topic.section.questions">
+                <source>admin.topic.section.questions</source>
+                <target>Liste des questions de ce sujet (éditables)</target>
+            </trans-unit>
+            <trans-unit id="admin.topic.section.questions.description">
+                <source>admin.topic.section.questions.description</source>
+                <target>Vous pouvez ajouter et modifier les questions portant sur ce sujet. Vous pouvez aussi les supprimer mais elles seront définitevement perdues. Pour changer la catégorie d'une question, merci de vous rendre sur la page d'édition de cette question.</target>
+            </trans-unit>
+            <trans-unit id="admin.topic.field.position">
+                <source>admin.topic.field.position</source>
+                <target>Position</target>
+            </trans-unit>
+            <trans-unit id="admin.topic.field.label">
+                <source>admin.topic.field.label</source>
+                <target>Intitulé du sujet</target>
+            </trans-unit>
+            <trans-unit id="admin.topic.field.questions">
+                <source>admin.topic.field.questions</source>
+                <target>Questions</target>
+            </trans-unit>
+            <trans-unit id="admin.topic.field.media">
+                <source>admin.topic.field.media</source>
+                <target>Icône associée au sujet</target>
+            </trans-unit>
+            <trans-unit id="admin.topic.field.position.help">
+                <source>admin.topic.field.position.help</source>
+                <target>Les sujets seront triés par ordre croissant sur cet attribut. Il est recommandé de mettre des multiples de 10 pour faciliter l'insertion des futurs sujets.</target>
+            </trans-unit>
+
+            <!-- Admin des types de demandes -->
+            <trans-unit id="connected">
+                <source>connected</source>
+                <target>Connecté</target>
+            </trans-unit>
+            <trans-unit id="disconnected">
+                <source>disconnected</source>
+                <target>Déconnecté</target>
+            </trans-unit>
+            <trans-unit id="connected_disconnected">
+                <source>connected_disconnected</source>
+                <target>Connecté et déconnecté</target>
+            </trans-unit>
+            <trans-unit id="admin.issue_type.field.label">
+                <source>admin.issue_type.field.label</source>
+                <target>Nature de la demande</target>
+            </trans-unit>
+            <trans-unit id="admin.issue_type.field.email">
+                <source>admin.issue_type.field.email</source>
+                <target>Email qui recevra la demande</target>
+            </trans-unit>
+            <trans-unit id="admin.issue_type.field.email.help">
+                <source>admin.issue_type.field.email.help</source>
+                <target>Cet email ne sera jamais affiché sur le site. Il servira uniquement à y envoyer la demande d'un utilisateur.</target>
+            </trans-unit>
+            <trans-unit id="admin.issue_type.field.appears_when">
+                <source>admin.issue_type.field.appears_when</source>
+                <target>Apparaît en mode</target>
+            </trans-unit>
+            <trans-unit id="admin.issue_type.field.appears_when.help">
+                <source>admin.issue_type.field.appears_when.help</source>
+                <target>Exemple : si vous choisissez 'Connecté', l'utilisateur verra ce sujet apparaître uniquement s'il est connecté au site avec ses identifiants mySUZUKI.</target>
+            </trans-unit>
+
+            <!-- Admin des modèles de véhicules -->
+            <trans-unit id="admin.vehicle_model.field.name">
+                <source>admin.vehicle_model.field.name</source>
+                <target>Nom</target>
+            </trans-unit>
+            <trans-unit id="admin.vehicle_model.section.general">
+                <source>admin.vehicle_model.section.general</source>
+                <target>Modèles de véhicules</target>
+            </trans-unit>
+
+            <!-- Admin des tags -->
+            <trans-unit id="admin.tag.field.name">
+                <source>admin.tag.field.name</source>
+                <target>Nom</target>
+            </trans-unit>
+            <trans-unit id="admin.tag.section.general">
+                <source>admin.tag.section.general</source>
+                <target>Tags</target>
+            </trans-unit>
+            <!-- Admin des banner -->
+            <trans-unit id="admin.banner.section.informations">
+                <source>admin.banner.section.informations</source>
+                <target>Informations sur l'image</target>
+            </trans-unit>
+            <trans-unit id="admin.banner.field.position">
+                <source>admin.banner.field.position</source>
+                <target>Position de l'image dans le slider</target>
+            </trans-unit>
+            <trans-unit id="admin.banner.field.position.help">
+                <source>admin.banner.field.position.help</source>
+                <target>Les imags seront triés par ordre croissant sur cet attribut. </target>
+            </trans-unit>
+            <trans-unit id="admin.banner.field.start_date.help">
+                <source>admin.banner.field.start_date.help</source>
+                <target>Avant cette date, la bannière n'apparaîtra pas dans le slider</target>
+            </trans-unit>
+            <trans-unit id="admin.banner.field.name">
+                <source>admin.banner.field.name</source>
+                <target>Nom</target>
+            </trans-unit>
+            <trans-unit id="admin.banner.field.start_date">
+                <source>admin.banner.field.start_date</source>
+                <target>Date de début</target>
+            </trans-unit>
+            <trans-unit id="admin.banner.field.end_date">
+                <source>admin.banner.field.end_date</source>
+                <target>Date de Fin</target>
+            </trans-unit>
+            <trans-unit id="admin.banner.section.media">
+                <source>admin.banner.section.media</source>
+                <target>Images sélectionnées</target>
+            </trans-unit>
+            <trans-unit id="admin.banner.field.media_desktop">
+                <source>admin.banner.field.media_desktop</source>
+                <target>Image format navigateur PC</target>
+            </trans-unit>
+            <trans-unit id="admin.banner.field.media_mobile">
+                <source>admin.banner.field.media_mobile</source>
+                <target>Image format mobile</target>
+            </trans-unit>
+            <trans-unit id="admin.banner.section.link">
+                <source>admin.banner.section.link</source>
+                <target>Lien URL</target>
+            </trans-unit>
+            <trans-unit id="admin.banner.field.link">
+                <source>admin.banner.field.link</source>
+                <target>URL associé à l'image</target>
+            </trans-unit>
+            <!-- Messages des templates -->
+            <trans-unit id="mail.issue.link_label">
+                <source>mail.issue.link_label</source>
+                <target>Lien vers la pièce jointe</target>
+            </trans-unit>
+
+            <!-- Exceptions -->
+            <trans-unit id="exception.500">
+                <source>exception.500</source>
+                <target>Une erreur serveur est survenue. Merci de réessayer plus tard.</target>
+            </trans-unit>
+            <trans-unit id="exception.no_vehicles">
+                <source>exception.no_vehicles</source>
+                <target>error.login.disabled</target>
+            </trans-unit>
+            <trans-unit id="exception.invalid_credentials">
+                <source>exception.invalid_credentials</source>
+                <target>error.login.credentials</target>
+            </trans-unit>
+
+            <!-- Welcome offer -->
+            <trans-unit id="welcome_offer.type">
+                <source>welcome_offer.type</source>
+                <target>welcome-offer</target>
+            </trans-unit>
+            <trans-unit id="welcome_offer.title">
+                <source>welcome_offer.title</source>
+                <target>OFFRE BIENVENUE MYSUZUKI</target>
+            </trans-unit>
+            <trans-unit id="welcome_offer.body.description">
+                <source>welcome_offer.body.description</source>
+                <target><![CDATA[<p>Pour vous souhaiter la bienvenue, Suzuki vous fait bénéficier d’une offre exceptionnelle : 20% de remise sur l’achat de votre prochain accessoire dès 50 € TTC d’achat(1) (hors pose et main d’œuvre) valable la première année après la mise en circulation de votre véhicule.</p><p>Venez vite en profiter dans votre concession sur présentation du coupon reçu par email et de votre carte mySUZUKI !</p><p>L’équipe Suzuki France</p>]]></target>
+            </trans-unit>
+            <trans-unit id="welcome_offer.body.conditions">
+                <source>welcome_offer.body.conditions</source>
+                <target><![CDATA[<p>(1) Offre non cumulable avec d'autres offres promotionnelles, réservée aux particuliers dans le réseau Suzuki participant et valable une fois dans votre concession SUZUKI jusqu’à un an après la mise en circulation de votre véhicule.</p>]]></target>
+            </trans-unit>
+            <trans-unit id="welcome_offer.body.rules">
+                <source>welcome_offer.body.rules</source>
+                <target></target>
+            </trans-unit>
+            <trans-unit id="welcome_offer.origin">
+                <source>welcome_offer.origin</source>
+                <target>mysuzuki</target>
+            </trans-unit>
+
+            <!-- PDF Offer -->
+            <trans-unit id="pdf.pdf-title">
+                <source>pdf.pdf-title</source>
+                <target>mySuzuki offre {barcode}</target>
+            </trans-unit>
+            <trans-unit id="pdf.slogan-translation">
+                <source>pdf.slogan-translation</source>
+                <target>*Un style de vie!</target>
+            </trans-unit>
+            <trans-unit id="pdf.title">
+                <source>pdf.title</source>
+                <target>VOTRE OFFRE</target>
+            </trans-unit>
+            <trans-unit id="pdf.validity">
+                <source>pdf.validity</source>
+                <target>OFFRE VALABLE JUSQU'AU {date}</target>
+            </trans-unit>
+            <trans-unit id="pdf.content.message1">
+                <source>pdf.content.message1</source>
+                <target>Profitez de votre offre exceptionnelle</target>
+            </trans-unit>
+            <trans-unit id="pdf.content.message2">
+                <source>pdf.content.message2</source>
+                <target>en présentant ce coupon à votre concessionnaire{dealershipName} !</target>
+            </trans-unit>
+            <trans-unit id="pdf.content.disclaimer">
+                <source>pdf.content.disclaimer</source>
+                <target>*Offre non cumulable avec d'autres offres promotionnelles, valable une fois dans votre concession{dealershipName} jusqu'au {date}. Offre réservée aux particuliers.</target>
+            </trans-unit>
+            <trans-unit id="pdf.coupon.title">
+                <source>pdf.coupon.title</source>
+                <target>COUPON DE RÉDUCTION À IMPRIMER</target>
+            </trans-unit>
+            <trans-unit id="pdf.coupon.value-free">
+                <source>pdf.coupon.value-free</source>
+                <target>Gratuit</target>
+            </trans-unit>
+            <trans-unit id="pdf.coupon.disclaimer">
+                <source>pdf.coupon.disclaimer</source>
+                <target>*Offre valable une fois, dans votre concession{dealershipName}, jusqu'au {date}. Voir conditions et minimum d’achat auprès de votre concessionnaire.</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

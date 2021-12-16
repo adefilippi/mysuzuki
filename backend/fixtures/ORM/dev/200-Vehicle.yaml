@@ -1,0 +1,20 @@
+App\Entity\Vehicle:
+    vehicle (template):
+        annualMileage: 12000
+        color: "GALACTIC GRAY METAL"
+        mileage: <numberBetween(0, 450000)>
+    vehicle_richard (extends vehicle):
+        vin: "19UUB2F73FA074352"
+        owner: "@user_richard"
+    vehicle_dupont (extends vehicle):
+        vin: "19UUB2F73FA074355"
+        owner: "@user_dupont"
+    vehicle_martin (extends vehicle):
+        vin: "19UUB2F73FA074356"
+        owner: "@user_martin"
+    vehicle_bernard (extends vehicle):
+        vin: "19UUB2F73FA074357"
+        owner: "@user_bernard"
+    vehicle_petit (extends vehicle):
+        vin: "19UUB2F73FA074358"
+        owner: "@user_petit"

@@ -1,0 +1,71 @@
+name: backend
+
+type: php:7.2
+
+runtime:
+    extensions:
+        - apcu
+        - gd
+        - imagick
+    disabled_extensions:
+        - ldap
+        - sqlite3
+        - sockets
+        - sybase
+        - xmlrpc
+        - pspell
+        - pdo_sqlite
+        - interbase
+
+build:
+    flavor: 'none'
+
+variables:
+    env:
+        APP_ENV: 'prod'
+        APP_DEBUG: 0
+    php:
+        "date.timezone": "Europe/Paris"
+
+relationships:
+    database: "db:mysql"
+
+disk: 6000
+
+mounts:
+    "/var/cache": "shared:files/cache"
+    "/var/log": "shared:files/log"
+    "/public/upload": "shared:files/uploads"
+    "/public/media": "shared:files/media"
+
+web:
+    locations:
+        "/":
+            root: "public"
+            passthru: "/index.php"
+
+hooks:
+    build: |
+        curl -sS https://platform.sh/cli/installer | php
+        composer install --prefer-dist --classmap-authoritative --no-progress --no-ansi --no-interaction
+        php bin/console --env=prod ckeditor:install --clear=drop --quiet
+        php bin/console --env=prod assets:install --symlink --no-debug
+    deploy: |
+        rm -rf var/cache/*
+        php bin/console --env=prod cache:warmup
+        php bin/console --env=prod doctrine:migrations:migrate --no-interaction --no-debug
+
+crons:
+    # This CRON job will update dealerships every day at 3:00 AM
+    # The output is not redirected to /dev/null so that it will be logged in /var/log/cron.log
+    dealerships:
+        spec: '0 3 * * *'
+        cmd: '/usr/bin/php /app/bin/console mysuzuki:dealership:update'
+
+    renewcert:
+        # Force a redeploy at 3 am (UTC) on the 1st and 15th of every month.
+        spec: '0 3 1,15 * *'
+        cmd: |
+            if [ "$PLATFORM_BRANCH" = master ]; then
+                platform redeploy --yes --no-wait
+            fi

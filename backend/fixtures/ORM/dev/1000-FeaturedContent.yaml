@@ -1,0 +1,32 @@
+App\Entity\FeaturedContent:
+  featured_content_article:
+    type: 'article'
+    article: '@news_1'
+
+  featured_content_offer :
+    type: 'offer'
+    offer: '@offer_1'
+
+  featured_content_not_published_article:
+    type: 'article'
+    article: '@not_published_article_1'
+
+  featured_content_not_started_offer:
+    type: 'offer'
+    offer: '@not_started_offer_1'
+
+  featured_content_expired_offer:
+    type: 'offer'
+    offer: '@expired_offer_1'
+
+  featured_content_game:
+    type: 'game'
+    game: '@game_random1'
+
+  featured_content_not_started_game:
+    type: 'game'
+    game: '@game_not_started1'
+
+  featured_content_expired_game:
+    type: 'game'
+    game: '@game_expired1'

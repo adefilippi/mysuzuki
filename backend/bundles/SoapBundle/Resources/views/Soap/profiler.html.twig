@@ -1,0 +1,190 @@
+{% extends 'WebProfilerBundle:Profiler:layout.html.twig' %}
+
+{% block head %}
+    {{ parent() }}
+    <style>
+        .code-container {
+            display: none;
+        }
+
+        .soap-badge {
+            padding: 0px 5px;
+            border-radius: 5px;
+            margin-bottom: 0px;
+            color: white;
+        }
+
+        .soap-badge-green {
+            background-color: #759e1a;
+        }
+
+        .soap-badge-red {
+            background-color: #a33;
+        }
+
+        .soap-exception {
+            background-color: #F2DEDE;
+            border-color: #eed3d7;
+            color: #b94a48;
+            font-size: 0.9em;
+            padding: 10px;
+        }
+    </style>
+    <link rel="stylesheet" href="{{ asset('bundles/soap/css/highlightjs/zenburn.css') }}" />
+{% endblock %}
+
+{% block toolbar %}
+    {% set icon %}
+
+        {% if profiler_markup_version == 1 %}
+            {{  dump(profiler_markup_version) }}
+            <img width="24" height="24" alt="Soap" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAADUgAAA1IBEAAkSgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAFmSURBVEiJ1dWxalRREAbgb0yUGGIjAWOjSbBNJdhZWQgK9oLIIvgCpkth5QPEMj5BCIKIjWJjL3kD2WCX1UIQxSpMij1rLsvds7tsAvrDcO/MnJl/5szhnMhMZ4n5mjMi5rFc1Jt4OYjJzNWZCCJiEZ/QbZiv4fwkif8iM1sFK9ht6B3kQEbFDcu5CncPW6WbS062atDhykwdlKoX8BB7zeqLfMFTLNdyxKhTFBG38Rr7+FbMN7CGj0W/iDt4kZnbU3WAt+gM2Tp4P2RbxyEuTDuD+3hX8Q8K7OI7brX5awRzOBpHUHBkxJGvEZwKzpygelXgcUSsN/QfEBHPcbnYfs5CcA93G/pO+T7B9fLf0z9Frfj/Z/DPEfzCByxNGjBuyMPYnHL92A7+TJCjuqZG0MXnCQje4CoO2py1LdrBAzzDBqJlzYH+bbqfmV/bktTegwU80n9Urowo4jd28Soze1MRnBaOATgg38FYJp3WAAAAAElFTkSuQmCC" alt=""/>
+            <span class="sf-toolbar-status sf-toolbar-status-green">{{ collector.soapResults | length }}</span>
+            {% if collector.soapExceptions | length > 0 %}
+                <span class="sf-toolbar-status sf-toolbar-status-red">{{ collector.soapExceptions | length }}</span>
+            {% endif %}
+
+        {% else %}
+
+            {#{% set status = collector.invalidEntityCount > 0 ? 'red' : collector.querycount > 50 ? 'yellow' %}#}
+
+            {{ include('@Soap/Soap/icon.svg') }}
+            {% set resultCount =  collector.soapResults|length %}
+            {% set exceptionCount =  collector.soapExceptions|length %}
+
+            {% set totalResults = resultCount + exceptionCount %}
+
+            {% if resultCount == 0 and exceptionCount > 0 %}
+                <span class="sf-toolbar-value">{{ exceptionCount }}</span>
+                <span class="sf-toolbar-label">errors</span>
+            {% else %}
+                <span class="sf-toolbar-value">{{ resultCount }}</span>
+                <span class="sf-toolbar-info-piece-additional-detail">
+                        <span class="sf-toolbar-label">in</span>
+                        <span class="sf-toolbar-value">{{ '%0.2f'|format(collector.totalDuration) }}</span>
+                        <span class="sf-toolbar-label">ms</span>
+                    </span>
+            {% endif %}
+
+        {% endif %}
+    {% endset %}
+
+    {% set text %}
+        {% for result in collector.soapResults %}
+            <div class="sf-toolbar-info-piece" style="min-width: 250px">
+                <b style="min-width: 210px">{{ result.method }}</b>
+                <span class="sf-toolbar-status sf-toolbar-status-{% if result.duration > 1000 %}red{% else %}green{% endif %}">{{ result.duration }} ms</span>
+            </div>
+        {% endfor %}
+        {% for result in collector.soapExceptions %}
+            <div class="sf-toolbar-info-piece" style="min-width: 250px">
+                <b style="min-width: 210px">{{ result.method }}</b>
+                <span class="sf-toolbar-status sf-toolbar-status-red">Fail</span>
+            </div>
+        {% endfor %}
+    {% endset %}
+    {% include 'WebProfilerBundle:Profiler:toolbar_item.html.twig' with { 'link': profiler_url } %}
+{% endblock %}
+
+{% block menu %}
+    <span class="label">
+        <span class="icon">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAADUgAAA1IBEAAkSgAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAFmSURBVEiJ1dWxalRREAbgb0yUGGIjAWOjSbBNJdhZWQgK9oLIIvgCpkth5QPEMj5BCIKIjWJjL3kD2WCX1UIQxSpMij1rLsvds7tsAvrDcO/MnJl/5szhnMhMZ4n5mjMi5rFc1Jt4OYjJzNWZCCJiEZ/QbZiv4fwkif8iM1sFK9ht6B3kQEbFDcu5CncPW6WbS062atDhykwdlKoX8BB7zeqLfMFTLNdyxKhTFBG38Rr7+FbMN7CGj0W/iDt4kZnbU3WAt+gM2Tp4P2RbxyEuTDuD+3hX8Q8K7OI7brX5awRzOBpHUHBkxJGvEZwKzpygelXgcUSsN/QfEBHPcbnYfs5CcA93G/pO+T7B9fLf0z9Frfj/Z/DPEfzCByxNGjBuyMPYnHL92A7+TJCjuqZG0MXnCQje4CoO2py1LdrBAzzDBqJlzYH+bbqfmV/bktTegwU80n9Urowo4jd28Soze1MRnBaOATgg38FYJp3WAAAAAElFTkSuQmCC" alt=""/>
+        </span>
+        <strong>SOAP</strong>
+        <span class="count"><span>{{ collector.soapResults | length }}</span></span>
+    </span>
+{% endblock %}
+
+{% block panel %}
+    <h2>Requêtes SOAP</h2>
+    <ul class="alt">
+        {% for i, result in collector.soapResults %}
+            <li class="{{ cycle(['even', 'odd'], i) }}" data-target-id="{{ i }}">
+                <div style="margin-top: 4px">
+                    <div onclick="return expandEnvelope(this);" title="Expand Envelope" data-target-id="code-{{ i }}" style="cursor: pointer;">
+                        <img alt="+" src="{{ asset('bundles/framework/images/blue_picto_more.gif') }}" style="display: inline;width: 15px;vertical-align: bottom;" />
+                        <img alt="-" src="{{ asset('bundles/framework/images/blue_picto_less.gif') }}" style="display: none;width: 15px;vertical-align: bottom;" />
+                        <span style="display: none">Shrink Envelope</span>
+                        <span id="smallcode-{{ i }}">
+                            <strong>{{ result.method }}</strong> - <em><span class="soap-badge soap-badge-{% if result.duration > 1000 %}red{% else %}green{% endif %}">{{ result.duration }} ms</span></em> - <i>{{ result.wsdl[:70] }}</i>
+                        </span>
+                    </div>
+
+                    <div id="code-{{ i }}" class="code-container">
+                        <small>
+                            <strong>Method:</strong>: <strong>{{ result.method }}</strong><br />
+                            <strong>WSDL</strong>: <a href="{{ result.wsdl }}" target="_blank">{{ result.wsdl }}</a><br />
+                            <strong>Time</strong>: <span class="soap-badge soap-badge-{% if result.duration > 1000 %}red{% else %}green{% endif %}">{{ result.duration }} ms</span>
+                        </small>
+
+                        <br/>
+
+                        <h4> Request </h4>
+                        <button class="js-clipboard-btn" id="clipboard-button-request-{{ i }}" data-clipboard-target="clipboard-content-request-{{ i }}">Copy to Clipboard</button>
+                        <pre class="js-xmlcode" id="clipboard-content-request-{{ i }}">
+                            <code>
+                                {{ result.request }}
+                            </code>
+                        </pre>
+
+                        <br/>
+
+                        <h4> Response </h4>
+                        <button class="js-clipboard-btn" id="clipboard-button-response-{{ i }}" data-clipboard-target="clipboard-content-response-{{ i }}">Copy to Clipboard</button>
+                        <pre class="js-xmlcode" id="clipboard-content-response-{{ i }}">
+                            <code>
+                                {{ result.response }}
+                            </code>
+                        </pre>
+                    </div>
+                </div>
+            </li>
+        {% else %}
+            <li>No soap requests executed.</li>
+        {% endfor %}
+    </ul>
+
+    {% if collector.soapExceptions | length > 0 %}
+        <h2>Exceptions</h2>
+        <ul class="alt">
+        {% for i, result in collector.soapExceptions %}
+            <li class="{{ cycle(['even', 'odd'], i) }}" data-target-id="{{ i }}">
+                <div style="margin-top: 4px">
+                    <div onclick="return expandEnvelope(this);" title="Show exception" data-target-id="code-{{ i }}" style="cursor: pointer;">
+                        <img alt="+" src="{{ asset('bundles/framework/images/blue_picto_more.gif') }}" style="display: inline;width: 15px;vertical-align: bottom;" />
+                        <img alt="-" src="{{ asset('bundles/framework/images/blue_picto_less.gif') }}" style="display: none;width: 15px;vertical-align: bottom;" />
+                        <span style="display: none">Shrink Envelope</span>
+                        <span id="smallcode-{{ i }}">
+                            <strong>{{ result.method }}</strong> - <i>{{ result.wsdl[:70] }}</i>
+                        </span>
+                    </div>
+
+                    <div id="code-{{ i }}" class="code-container">
+                        <small>
+                            <strong>WSDL</strong>: <a href="{{ result.wsdl }}" target="_blank">{{ result.wsdl }}</a><br />
+                        </small>
+
+                        <br/>
+
+                        <h4>Message</h4>
+                        <pre class="soap-exception"><code>{{ result.message }}</code></pre>
+
+                        <br/>
+
+                        <h4>Stack trace</h4>
+                        <pre class="soap-exception"><code>{{ result.stackTrace }}</code></pre>
+                    </div>
+                </div>
+            </li>
+        {% endfor %}
+        </ul>
+    {% endif %}
+    <script src="{{ asset('bundles/soap/js/vkbeautify.js') }}"></script>
+    <script src="{{ asset('bundles/soap/js/highlight.pack.js') }}"></script>
+    <script src="{{ asset('bundles/soap/js/ZeroClipboard.min.js') }}"></script>
+    <script>
+        ZeroClipboard.config( { swfPath: "{{ asset('bundles/soap/swf/ZeroClipboard.swf') }}" } );
+    </script>
+    <script src="{{ asset('bundles/soap/js/soapTracer.js') }}"></script>
+{% endblock %}

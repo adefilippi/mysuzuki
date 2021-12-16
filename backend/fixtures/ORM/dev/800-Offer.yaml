@@ -1,0 +1,59 @@
+include:
+    - ../../Template/Media.yaml
+
+ApplicationSonataMediaBundle\Entity\Media:
+    media_{1..9} (extends media-template):
+
+App\Entity\Embed\Body:
+    offer_body_{1..9}:
+        description: <randomHtml()>
+        rules: <randomHtml()>
+        conditions: <randomHtml()>
+
+App\Entity\Embed\CTA:
+    offer_cta_{1..9}:
+        content: <url()>
+        type: 'link'
+        label: <realText(25)>
+
+App\Entity\ManualOffer:
+    offer (template):
+        title: <sentence(6)>
+        type: <randomElement(['offer', 'game', 'invitation', 'advantage'])>
+        startDate: <dateTimeThisYear()>
+        endDate: <dateTimeBetween('now', '+2 months')>
+        summary: <realText(140, 5)>
+        targetType: 'everyone'
+        media: '@media_<current()>'
+        body: '@offer_body_<current()>'
+        cta: '@offer_cta_<current()>'
+
+    offer_{1..8} (extends offer):
+        body: '@offer_body_<current()>'
+        cta: '@offer_cta_<current()>'
+
+    not_started_offer_{1..4} (extends offer):
+        body: '@offer_body_9'
+        startDate: <dateTimeBetween('+2 days', '+2 months')>
+        endDate: <dateTimeBetween('+2 months', '+6 months')>
+        cta: '@offer_cta_9'
+
+    expired_offer_{1..4} (extends offer):
+        startDate: <dateTimeBetween('-6 months', '-5 months')>
+        endDate: <dateTimeBetween('-3 month', 'now')>
+
+    no_targeted_offer_{1..2} (extends offer):
+        targetType: 'none'
+
+    targeted_offer_richard_{1..2} (extends offer):
+        users:
+            - '@user_richard'
+
+    targeted_offer_dupont_{1..2} (extends offer):
+        users:
+            - '@user_dupont'
+
+    targeted_offer_richard_and_dupont_{1..2} (extends offer):
+        users:
+            - '@user_richard'
+            - '@user_dupont'

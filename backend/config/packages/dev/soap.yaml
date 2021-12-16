@@ -1,0 +1,3 @@
+soap:
+    mocking:
+        enable: 1

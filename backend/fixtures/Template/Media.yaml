@@ -1,0 +1,8 @@
+ApplicationSonataMediaBundle\Entity\Media:
+  media-template (template):
+    name: <words(1, true)>
+    enabled: false
+    providerName: sonata.media.provider.image
+    providerStatus: 1
+    binaryContent: <transportImage()>
+    context: default

@@ -1,0 +1,20 @@
+<p>{{ 'admin.target.field.targetType.help' | trans }}</p>
+<p>{{ 'admin.target.field.targetType.userCount' | trans({'{userCount}' : users.count})}}</p>
+{% if users.count > 0 %}
+    <table>
+        <thead>
+            <tr>
+                <td>#</td>
+                <td>Nom</td>
+            </tr>
+        </thead>
+        <tbody>
+            {% for user in users %}
+                <tr>
+                    <td>{{ user.externalId }}</td>
+                    <td>{{user.firstName}} {{user.lastName}}</td>
+                </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+{% endif %}

@@ -1,0 +1,11 @@
+App\Entity\Article:
+    news-template (template):
+        category: news
+        excerpt: <realText(140, 5)>
+        body: <realText(2000)>
+        publishDate: <dateTimeThisYear()>
+        media: '@media_<current()>'
+
+    tuto-advice-template (template, extends news-template):
+        category: <randomElement(['tutorial', 'advice'])>
+

@@ -1,0 +1,62 @@
+security:
+
+    role_hierarchy:
+        ROLE_USER: ['ROLE_USER_NOT_ENABLED']
+        ROLE_ADMIN:       ROLE_USER
+        ROLE_SUPER_ADMIN: ROLE_ADMIN
+
+    encoders:
+        App\Entity\User:
+            algorithm: bcrypt
+        App\Security\Provider\UserProvider:
+            algorithm: bcrypt
+        Symfony\Component\Security\Core\User\User:
+            algorithm: plaintext
+
+    providers:
+        database_provider:
+            id: App\Security\Provider\UserProvider
+        in_memory:
+            memory:
+                users:
+                    admin:
+                        password: '%env(ADMIN_PASSWORD)%'
+                        roles: 'ROLE_ADMIN'
+                    widop:
+                        password: '%env(WIDOP_ADMIN_PASSWORD)%'
+                        roles: 'ROLE_SUPER_ADMIN'
+
+    firewalls:
+        dev:
+            pattern:  ^/(_(profiler|wdt)|css|images|js)/
+            security: false
+
+        oauth_token:
+            pattern:    ^/oauth/v2/token
+            security:   false
+
+        api:
+            pattern:    ^/api
+            fos_oauth:  true
+            stateless:  true
+            anonymous:  false
+            provider:   database_provider
+
+        admin:
+            pattern:    ^/admin
+            http_basic: true
+            anonymous:  true
+            provider:   in_memory
+
+    access_control:
+        - { path: ^/admin, roles: ROLE_ADMIN }
+        - { path: ^/api/users, method: POST, role: IS_AUTHENTICATED_FULLY }
+        - { path: ^/api/users/current, method: GET, role: ROLE_USER_NOT_ENABLED }
+        - { path: ^/api/vins, method: GET, role: IS_AUTHENTICATED_FULLY }
+        - { path: ^/api/password-request-tokens, method: [POST, PUT], role: IS_AUTHENTICATED_FULLY }
+        - { path: ^/api/attachments, method: [POST], role: IS_AUTHENTICATED_FULLY }
+        - { path: ^/api/issues, method: [POST], role: IS_AUTHENTICATED_FULLY }
+        - { path: ^/api/issue-types, method: [GET], role: IS_AUTHENTICATED_FULLY }
+        - { path: ^/api/topics, method: [GET], role: IS_AUTHENTICATED_FULLY }
+        - { path: ^/api/questions, method: [GET], role: IS_AUTHENTICATED_FULLY }
+        - { path: ^/api, role: ROLE_USER }

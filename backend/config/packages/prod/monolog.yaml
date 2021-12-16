@@ -1,0 +1,23 @@
+monolog:
+    channels: ['delete_user_webhook']
+    handlers:
+        main:
+            type: fingers_crossed
+            action_level: error
+            handler: nested
+            excluded_404s:
+                # regex: exclude all 404 errors from the logs
+                - ^/
+        nested:
+            type: stream
+            path: "%kernel.logs_dir%/%kernel.environment%.log"
+            level: debug
+        console:
+            type:   console
+            process_psr_3_messages: false
+            channels: ["!event", "!doctrine"]
+        delete_user_webhook:
+            type: stream
+            path: "%kernel.logs_dir%/delete_user_webhook_%kernel.environment%.log"
+            level: info
+            channels: ['delete_user_webhook']

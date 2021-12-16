@@ -1,0 +1,56 @@
+version: '3.8'
+services:
+
+  php-fpm:
+    image: ghcr.io/adefilippi/build-php7.4:latest
+    environment:
+      FPM_UID: ${FPM_UID:-83}
+      FPM_GID: ${FPM_GID:-83}
+    depends_on:
+      - database
+    volumes:
+      - ./:/var/www/
+      - ./docker/php/conf.d/php.dev.ini:/usr/local/etc/php/conf.d/php.ini
+
+  nginx:
+    image: ghcr.io/syneido/dev-nginx:latest
+    environment:
+      FPM_ENTRYPOINT: index
+      PHP_FPM_CONTAINER: php-fpm
+      NGINX_PROJECT: local
+      NGINX_HOST: api-commercial-info.fr
+      NGINX_ROOT_DIR: public
+    ports:
+      # HTTP
+      - target: 80
+        published: 80
+        protocol: tcp
+      # HTTPS
+      - target: 443
+        published: 443
+        protocol: tcp
+    volumes:
+      - ./:/var/www/
+    depends_on:
+      - php-fpm
+
+  database:
+    image: mariadb:10.2
+    environment:
+      MARIADB_DATABASE: mysuzuki
+      MARIADB_USER: user
+      MARIADB_PASSWORD: password
+      MARIADB_ROOT_PASSWORD: password
+    volumes:
+      - ./:/app/
+      - database:/var/lib/mysql
+    ports:
+      - "3306:3306"
+
+  build-php:
+    image: ghcr.io/adefilippi/build-php7.4:latest
+    volumes:
+      - ./:/app/
+
+volumes:
+  database:

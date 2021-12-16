@@ -1,0 +1,40 @@
+include:
+    - ../../Template/Article.yaml
+    - ../../Template/Media.yaml
+
+ApplicationSonataMediaBundle\Entity\Media:
+    news_media_{1..8} (extends media-template):
+    article_without_tags_media_{1..8} (extends media-template):
+    article_with_single_tag_media_{1..8} (extends media-template):
+    article_with_multiple_tags_media_{1..8} (extends media-template):
+    not_published_article_media_{1..4} (extends media-template):
+
+App\Entity\Article:
+    news_{1..8} (extends news-template):
+        title: <realText(70)>
+        media: '@news_media_<current()>'
+
+    article_without_tags{1..8} (extends tuto-advice-template):
+        title: <realText(70)>
+        media: '@article_without_tags_media_<current()>'
+
+    article_with_single_tag{1..8} (extends tuto-advice-template):
+        title: <realText(70)>
+        media: '@article_with_single_tag_media_<current()>'
+        vehicleModels: ['@model_*']
+        __calls:
+            - addTag: ['@tag_<current()>']
+
+    article_with_multiple_tags{1..8} (extends tuto-advice-template):
+        title: <realText(70)>
+        media: '@article_with_multiple_tags_media_<current()>'
+        vehicleModels: ['@model_swift', '@model_vitara', '@model_alto', '@model_jimny', '@model_ignis']
+        __calls:
+            - addTag: ['@tag_<numberBetween(0, 4)>']
+            - addTag: ['@tag_<randomDigit(5, 9)>']
+
+    not_published_article_{1..4} (extends news-template):
+        title: <realText(70)>
+        category: <randomElement(['tutorial', 'news', 'advice'])>
+        publishDate: <dateTimeBetween('+2 days', '+2 months')>
+        media: '@not_published_article_media_<current()>'

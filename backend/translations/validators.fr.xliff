@@ -1,0 +1,257 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="file.ext">
+        <body>
+            <!-- Validation de l'utilisateur -->
+            <trans-unit id="user.unique">
+                <source>user.unique</source>
+                <target>Un utilisateur de ce nom existe déjà pour ce véhicule</target>
+            </trans-unit>
+            <trans-unit id="user.email.unique">
+                <source>user.email.unique</source>
+                <target>Cet email est déjà utilisé</target>
+            </trans-unit>
+            <trans-unit id="user.last_name.not_blank">
+                <source>user.last_name.not_blank</source>
+                <target>Votre nom de famille est obligatoire</target>
+            </trans-unit>
+            <trans-unit id="user.first_name.length">
+                <source>user.first_name.max_length</source>
+                <target>Votre prénom ne peut pas faire plus de 32 charactères</target>
+            </trans-unit>
+            <trans-unit id="user.password.not_blank">
+                <source>user.password.not_blank</source>
+                <target>Le mot de passe est obligatoire</target>
+            </trans-unit>
+            <trans-unit id="user.email.is_email">
+                <source>user.email.is_email</source>
+                <target>Votre email ne respecte pas le bon format</target>
+            </trans-unit>
+            <trans-unit id="user.email.not_blank">
+                <source>user.email.not_blank</source>
+                <target>Votre email ne peut pas être vide</target>
+            </trans-unit>
+            <trans-unit id="user.email.max_lenth">
+                <source>user.email.max_lenth</source>
+                <target>Votre email est trop long</target>
+            </trans-unit>
+            <trans-unit id="user.optin.true">
+                <source>user.optin.true</source>
+                <target>Vous devez accepter l'utilisation de votre email par Suzuki France</target>
+            </trans-unit>
+            <trans-unit id="user.job.name.max_length">
+                <source>user.job.name.max_length</source>
+                <target>L'intitulé de votre poste est trop long</target>
+            </trans-unit>
+            <trans-unit id="user.job.department.max_length">
+                <source>user.job.department.max_length</source>
+                <target>Le nom de votre service est trop long</target>
+            </trans-unit>
+            <trans-unit id="user.organization.name.max_length">
+                <source>user.organization.name.max_length</source>
+                <target>Le raison sociale es trop longue</target>
+            </trans-unit>
+            <trans-unit id="user.organization.number_vehicles.max_length">
+                <source>user.organization.number_vehicles.max_length</source>
+                <target>Le nombre de véhicules est trop grand</target>
+            </trans-unit>
+            <trans-unit id="user.organization.siret.max_length">
+                <source>user.organization.siret.max_length</source>
+                <target>Le numéro de SIRET est trop long</target>
+            </trans-unit>
+            <trans-unit id="user.date_of_birth.format">
+                <source>user.date_of_birth.format</source>
+                <target>Votre date de naissance ne respecte pas le bon format</target>
+            </trans-unit>
+            <trans-unit id="user.address.street.max_length">
+                <source>user.address.street.max_length</source>
+                <target>Votre nom de rue est trop long</target>
+            </trans-unit>
+            <trans-unit id="user.address.street.not_blank">
+                <source>user.address.street.not_blank</source>
+                <target>Votre nom de rue ne peut pas être vide</target>
+            </trans-unit>
+            <trans-unit id="user.address.additional1.max_length">
+                <source>user.address.additional1.max_length</source>
+                <target>Votre complément d'adresse est trop long</target>
+            </trans-unit>
+            <trans-unit id="user.address.additional2.max_length">
+                <source>user.address.additional1.max_length</source>
+                <target>Votre complément d'adresse est trop long</target>
+            </trans-unit>
+            <trans-unit id="user.address.zip_code.max_length">
+                <source>user.address.zip_code.max_length</source>
+                <target>Votre code postal doit faire 5 caractères maximum</target>
+            </trans-unit>
+            <trans-unit id="user.address.zip_code.not_blank">
+                <source>user.address.zip_code.not_blank</source>
+                <target>Votre code postal ne peut pas être vide</target>
+            </trans-unit>
+            <trans-unit id="user.address.city.max_length">
+                <source>user.address.city.max_length</source>
+                <target>Votre nom de ville est trop long</target>
+            </trans-unit>
+            <trans-unit id="user.address.city.not_blank">
+                <source>user.address.city.not_blank</source>
+                <target>Votre nom de ville ne peut pas être vide</target>
+            </trans-unit>
+            <trans-unit id="user.civ.choice">
+                <source>user.civ.choice</source>
+                <target>Vous devez choir M ou MME</target>
+            </trans-unit>
+            <trans-unit id="user.mobile_phone.format">
+                <source>user.mobile_phone.format</source>
+                <target>Votre numéro mobile ne respecte pas le bon format</target>
+            </trans-unit>
+            <trans-unit id="user.landline_phone.format">
+                <source>user.landline_phone.format</source>
+                <target>Votre numéro fixe ne respecte pas le bon format</target>
+            </trans-unit>
+            <trans-unit id="user.phone.one_or_both">
+                <source>user.phone.one_or_both</source>
+                <target>Vous devez renseigner au moins un des deux numéros</target>
+            </trans-unit>
+
+
+            <!-- Validation des opérations véhicules-->
+            <trans-unit id="maintenance.date.format">
+                <source>maintenance.date.format</source>
+                <target>La date de l'opération ne respecte pas le bon format</target>
+            </trans-unit>
+            <trans-unit id="maintenance.type.not_blank">
+                <source>maintenance.type.not_blank</source>
+                <target>Le type de l'opération est obligatoire</target>
+            </trans-unit>
+            <trans-unit id="maintenance.place.not_blank">
+                <source>maintenance.place.not_blank</source>
+                <target>Le lieu de l'opération est obligatoire</target>
+            </trans-unit>
+
+            <!-- Validation du changement de mot de passe -->
+            <trans-unit id="password_change.old_password.not_blank">
+                <source>password_change.old_password.not_blank</source>
+                <target>L'ancien mot de passe est obligatoire</target>
+            </trans-unit>
+            <trans-unit id="password_change.old_password.match">
+                <source>password_change.old_password.match</source>
+                <target>L'ancien mot de passe est incorrect</target>
+            </trans-unit>
+            <trans-unit id="password_change.new_password.not_blank">
+                <source>password_change.new_password.not_blank</source>
+                <target>Le nouveau mot de passe est obligatoire</target>
+            </trans-unit>
+            <trans-unit id="password_change.new_password.same">
+                <source>password_change.new_password.same</source>
+                <target>L'ancien et le nouveau mot de passe ne doivent pas être identiques</target>
+            </trans-unit>
+
+            <!-- Validation du mot de passe oublié -->
+            <trans-unit id="password_request_token.email.not_blank">
+                <source>password_request_token.email.not_blank</source>
+                <target>L'email doit être renseigné</target>
+            </trans-unit>
+            <trans-unit id="password_request_token.email.is_email">
+                <source>password_request_token.email.is_email</source>
+                <target>L'email ne respecte pas le bon format</target>
+            </trans-unit>
+            <trans-unit id="password_request_token.new_password.not_blank">
+                <source>password_request_token.new_password.not_blank</source>
+                <target>Le mot de passe ne doit pas être vide</target>
+            </trans-unit>
+
+            <!-- Validation des demandes formulaire de contact -->
+            <trans-unit id="issue.email.not_null_no_user">
+                <source>issue.email.not_null_no_user</source>
+                <target>L'email doit être spécifié si vous n'êtes pas connecté</target>
+            </trans-unit>
+            <trans-unit id="issue.type.not_null">
+                <source>issue.type.not_null</source>
+                <target>Le type doit être spécifié</target>
+            </trans-unit>
+            <trans-unit id="issue.subject.not_blank">
+                <source>issue.subject.not_blank</source>
+                <target>Le type doit être spécifié</target>
+            </trans-unit>
+            <trans-unit id="issue.message.not_blank">
+                <source>issue.message.not_blank</source>
+                <target>Le message ne doit pas être vide</target>
+            </trans-unit>
+            <trans-unit id="issue.email.is_email">
+                <source>issue.email.is_email</source>
+                <target>L'email ne respecte pas le bon format</target>
+            </trans-unit>
+            <trans-unit id="issue_type.email.is_email">
+                <source>issue_type.email.is_email</source>
+                <target>Cet email ne respecte pas le bon format</target>
+            </trans-unit>
+
+            <!-- Validation des pièces jointes du formulaire contact -->
+            <trans-unit id="attachment.file.not_null">
+                <source>attachment.file.not_null</source>
+                <target>Le fichier ne peut pas être vide</target>
+            </trans-unit>
+            <trans-unit id="attachment.file.max_size">
+                <source>attachment.file.max_size</source>
+                <target>Le fichier doit faire au maximum 10Mo</target>
+            </trans-unit>
+
+            <!-- Validation des tokens -->
+            <trans-unit id="token.url.not_blank">
+                <source>token.url.not_blank</source>
+                <target>L'URL est nécessaire pour pouvoir construire le lien.</target>
+            </trans-unit>
+
+            <!-- Validation des offres -->
+            <trans-unit id="offer.media.not_null">
+                <source>offer.media.not_null</source>
+                <target>Vous devez obligatoirement fournir une image</target>
+            </trans-unit>
+
+            <trans-unit id="offer.game.unique">
+                <source>offer.game.unique</source>
+                <target>Vous ne pouvez participer qu'une seule fois à un jeu.</target>
+            </trans-unit>
+
+            <trans-unit id="offer.game.opened">
+                <source>offer.game.opened</source>
+                <target>Ce jeu est terminé.</target>
+            </trans-unit>
+            <trans-unit id="offer.game.full">
+                <source>offer.game.full</source>
+                <target>Tous les lots ont déjà été distribués.</target>
+            </trans-unit>
+
+            <!-- Validation des articles -->
+            <trans-unit id="article.media.not_null">
+                <source>article.media.not_null</source>
+                <target>Une image doit être spécifiée</target>
+            </trans-unit>
+
+            <!-- Validation des questions -->
+            <trans-unit id="question.topic.not_null">
+                <source>question.topic.not_null</source>
+                <target>Un sujet doit être sélectionné</target>
+            </trans-unit>
+
+            <!-- User exists validation -->
+            <trans-unit id="user.exists">
+                <source>user.exists</source>
+                <target>Aucun compte n'est associé à l'adresse email {email}</target>
+            </trans-unit>
+
+            <!-- Validation des véhicules -->
+            <trans-unit id="vehicle.mileage.too_big">
+                <source>vehicle.mileage.too_big</source>
+                <target>La valeur saisie est trop grande</target>
+            </trans-unit>
+            <trans-unit id="vehicle.purchase_date.in_future">
+                <source>vehicle.purchase_date.in_future</source>
+                <target>La date ne peut pas être dans le futur</target>
+            </trans-unit>
+            <trans-unit id="vehicle.purchase_date.not_blank">
+                <source>vehicle.purchase_date.not_blank</source>
+                <target>La date ne peut pas être vide</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

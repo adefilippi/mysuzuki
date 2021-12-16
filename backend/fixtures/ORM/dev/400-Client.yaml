@@ -1,0 +1,8 @@
+App\Entity\Client:
+    client :
+        randomId: '123456789'
+        secret:   '987654321'
+        public:   true
+        allowedGrantTypes:
+            - password
+            - refresh_token

@@ -1,0 +1,17 @@
+include:
+    - ../../Template/Question.yaml
+
+App\Entity\Topic:
+    topic_1:
+        label: "GARANTIES & EXTENSIONS"
+        position: 50
+    topic_2:
+        label: "FINANCEMENT"
+        position: 40
+    topic_3:
+        label: "ENTRETIENS"
+        position: 70
+
+App\Entity\Question:
+    question_{1..15} (extends question-template):
+        topic: "@topic_<numberBetween(1,3)>"

@@ -1,0 +1,5 @@
+App\Entity\Question:
+    question-template (template):
+        question: <sentence()>
+        answer: <paragraph(5)>
+        position: <randomNumber()>

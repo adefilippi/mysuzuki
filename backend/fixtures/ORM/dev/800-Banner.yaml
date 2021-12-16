@@ -1,0 +1,17 @@
+include:
+  - ../../Template/Media.yaml
+
+ApplicationSonataMediaBundle\Entity\Media:
+  mediaDesktop_{1..2} (extends media-template):
+  mediaMobile_{1..2} (extends media-template):
+
+App\Entity\Banner:
+  banner_{1..2}:
+    name: <realText(20)>
+    position: <numberBetween(1, 10)>
+    mediaDesktop: '@mediaDesktop_<current()>'
+    mediaMobile: '@mediaMobile_<current()>'
+    link: <url()>
+    startDate: <dateTimeBetween('-2 days', 'now')>
+    endDate: <dateTimeBetween('+1 day', '+6 months')>
+    targetType: 'everyone'
